@@ -10,4 +10,8 @@ public class MapPanel : AMainPanel{
     {
         canvasGroup = GetComponent<CanvasGroup>();
     }
+    public override void PrepareContent()
+    {
+        //Empty
+    }
 }

@@ -27,10 +27,13 @@ public abstract class AMainPanel: MonoBehaviour{
         if (velocity == -1) velocity = movingVelocity;
         RectTransform rect = GetComponent<RectTransform>();
         rect.DOAnchorPosX(0, velocity);
+        PrepareContent();
     }
     private int GetBias()
     {
         if (comeFromRight) return -1;
         else return 1;
     }
+    //Toda vez que vai mostrar a lista de eventos/propriedades chama essa função e ela carrega essas coisas
+    abstract public void PrepareContent();
 }
