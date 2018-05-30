@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 222463759569512644}
   - component: {fileID: 114170228592067458}
   m_Layer: 5
-  m_Name: remainingTime
+  m_Name: passedTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 114969367115591310}
   - component: {fileID: 114539630506015970}
   - component: {fileID: 114656712640578584}
+  - component: {fileID: 114918800123955656}
   m_Layer: 5
   m_Name: TimerPanel
   m_TagString: Untagged
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.304
+  m_FillAmount: 0.31
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!114 &114181835086400432
@@ -204,6 +205,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: DIA
+--- !u!114 &114918800123955656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951624732004344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4befc5237cbc71142b0ff4f1f13dd6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  dayLength: 30
+  currentDay: 0
+  passedTime: {fileID: 114170228592067458}
 --- !u!114 &114969367115591310
 MonoBehaviour:
   m_ObjectHideFlags: 1
