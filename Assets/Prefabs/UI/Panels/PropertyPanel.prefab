@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 222582801585027600}
   - component: {fileID: 114544907417181776}
   - component: {fileID: 225236119216577610}
+  - component: {fileID: 114143909737182228}
   m_Layer: 5
   m_Name: PropertyPanel
   m_TagString: Untagged
@@ -532,6 +533,21 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &114143909737182228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1692193647845080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b222d8f9f06768848a642131527df033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comeFromRight: 1
+  changePosition: 1
+  movingVelocity: 0.25
+  panelName: Tela de Propriedades
 --- !u!114 &114152880503032704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -982,7 +998,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114459226039462768}
   m_HandleRect: {fileID: 224600850478141084}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1247,7 +1263,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224817643982830876}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1628,8 +1644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 61.6}
-  m_SizeDelta: {x: 0, y: -123.2}
+  m_AnchoredPosition: {x: -721, y: 61.600006}
+  m_SizeDelta: {x: 0, y: -125.19995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224517091871448670
 RectTransform:
@@ -1855,7 +1871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015696654, y: 0.000014056088}
+  m_AnchoredPosition: {x: 0.000000090444175, y: -0.000013054407}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224971763859393916
@@ -1883,7 +1899,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1692193647845080}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
