@@ -5,21 +5,16 @@ using UnityEngine.UI;
 using DG.Tweening;
 
 public class PanelController : MonoBehaviour{
-    [SerializeField]
-    private List<AMainPanel> panels;
-    [SerializeField]
-    private int currentPanel;
-    [SerializeField]
-    private Text currentPanelName;
+    [SerializeField] private List<AMainPanel> panels;
+    [SerializeField] private int currentPanel;
+    [SerializeField] private Text currentPanelName;
 
     public void Start()
     {
-        foreach(AMainPanel panel in panels)
-        {
-            panel.HidePanel(0);
-        }
+        HideAllPanels();
         panels[currentPanel].ShowPanel(0);
     }
+
     public void ChangePanel(int direction)
     {
         int newPanel = currentPanel + direction;
@@ -30,9 +25,19 @@ public class PanelController : MonoBehaviour{
 
         currentPanel = newPanel;
         ChangeName(panels[currentPanel].panelName);
+        panels[currentPanel].PrepareContent();
     }
+
     private void ChangeName(string name)
     {
         currentPanelName.DOText(name, 0.5f);
+    }
+
+    private void HideAllPanels()
+    {
+        foreach (AMainPanel panel in panels)
+        {
+            panel.HidePanel(0);
+        }
     }
 }

@@ -21,22 +21,17 @@ public class PropertyManager : MonoBehaviour {
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-        Debug.Log(Propriedades.Count);
     }
 
     private void OnApplicationQuit()
     {
         //salvar as coisas
-
         FileStream fs = new FileStream(filepath, FileMode.Create, FileAccess.Write);
-
         //StreamWriter sw 
-
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-
         foreach(Property prop in Propriedades)
         {
-
+            //ToDo
         }
     }
 

@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 222519733428605950}
   - component: {fileID: 114235129707059112}
   - component: {fileID: 114225070706486568}
+  - component: {fileID: 114902778644551516}
   m_Layer: 5
-  m_Name: Property
+  m_Name: PropertyBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,6 +261,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Montanhas de Amalur
+--- !u!114 &114902778644551516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223301996960928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33fab3c7526973e4494ddf49f8b2464d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: {fileID: 114824567405509474}
+  level: {fileID: 114441463968002498}
+  icon: {fileID: 114056852517588510}
 --- !u!222 &222226511054877504
 CanvasRenderer:
   m_ObjectHideFlags: 1

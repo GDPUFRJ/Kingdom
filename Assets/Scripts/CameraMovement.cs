@@ -13,10 +13,6 @@ public class CameraMovement : MonoBehaviour {
     private float rayLength = 200;
     public LayerMask layerMask;
 
-    // Use this for initialization
-    void Start () {
-
-	}
 
     void Update()
     {

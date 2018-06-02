@@ -4,15 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Property : MonoBehaviour, IPointerClickHandler{
-
-    public enum Tipo
-    {
-        Castelo, Mina, Vila, Fazenda, Floresta
-    }
-
-    [SerializeField] private Tipo tipo;
+    [Header("Basic Informations")]
+    public string customTitle = " ";
+    public Tipo tipo;
     public bool dominada = false;
+    public int level = 1;
 
+    [Header("Production Information")]
     [Range(-100, 100)] public int riqueza = 0;
     [Range(-100, 100)] public int construcao = 0;
     [Range(-100, 100)] public int alimento = 0;
@@ -48,19 +46,13 @@ public class Property : MonoBehaviour, IPointerClickHandler{
         }
     }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void OnPointerClick(PointerEventData eventData)
     {
         //ative aqui o metodo para mostrar propriedades
         Debug.Log("Tocou!");
     }
+}
+public enum Tipo
+{
+    Castelo, Mina, Vila, Fazenda, Floresta
 }

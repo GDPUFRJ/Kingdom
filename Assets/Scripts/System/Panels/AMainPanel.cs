@@ -1,18 +1,12 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using DG.Tweening;
 
 public abstract class AMainPanel: MonoBehaviour{
-    [SerializeField]
-    private bool comeFromRight;
-    [SerializeField]
-    private bool changePosition;
-    [SerializeField]
-    private float movingVelocity;
-    [SerializeField]
-    public string panelName;
-
+    [SerializeField] public string panelName;
     private const int CANVAS_WIDTH = 720;
+    [SerializeField] private bool comeFromRight;
+    [SerializeField] private bool changePosition;
+    [SerializeField] private float movingVelocity;
 
     public void HidePanel(float velocity = -1)
     {
@@ -34,6 +28,5 @@ public abstract class AMainPanel: MonoBehaviour{
         if (comeFromRight) return -1;
         else return 1;
     }
-    //Toda vez que vai mostrar a lista de eventos/propriedades chama essa função e ela carrega essas coisas
     abstract public void PrepareContent();
 }
