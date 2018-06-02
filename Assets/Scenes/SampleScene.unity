@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 361505745}
   m_Layer: 0
   m_Name: Propriedade (2)
-  m_TagString: fazenda
+  m_TagString: vila
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 3
+  tipo: 2
   dominada: 0
   riqueza: 0
   construcao: 0
@@ -301,7 +301,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b8b29d751c2ffac42878ef98cda4e647, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef5e69e06e28abd4cb98a96682a632e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -442,6 +442,9 @@ MonoBehaviour:
   ZoomSpeed: 0.01
   MaxDist: 10
   MinDist: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -536,6 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e368915a97a33d4db76b55aa5c4f16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Propriedade: {fileID: 0}
   Castelo: {fileID: 21300000, guid: 201143a7bf719bc41a4a43aef2a3e80a, type: 3}
   Mina: {fileID: 21300000, guid: 1d189a3803682864da412b5e45453bae, type: 3}
   Vila: {fileID: 21300000, guid: ef5e69e06e28abd4cb98a96682a632e3, type: 3}
@@ -550,6 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970776231}
   - component: {fileID: 970776232}
+  - component: {fileID: 970776233}
   m_Layer: 0
   m_Name: world-map
   m_TagString: Untagged
@@ -615,6 +620,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &970776233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970776230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12, y: 7.15, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1046291978
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +644,7 @@ GameObject:
   - component: {fileID: 1046291980}
   m_Layer: 0
   m_Name: Propriedade (3)
-  m_TagString: vila
+  m_TagString: mina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -656,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 2
+  tipo: 1
   dominada: 0
   riqueza: 0
   construcao: 0
@@ -696,7 +713,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ef5e69e06e28abd4cb98a96682a632e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d189a3803682864da412b5e45453bae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -748,7 +765,7 @@ GameObject:
   - component: {fileID: 1194851518}
   m_Layer: 0
   m_Name: Propriedade (4)
-  m_TagString: mina
+  m_TagString: fazenda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -777,7 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 1
+  tipo: 3
   dominada: 0
   riqueza: 0
   construcao: 0
@@ -817,7 +834,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d189a3803682864da412b5e45453bae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8b29d751c2ffac42878ef98cda4e647, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1409,6 +1426,11 @@ Prefab:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224900715546990226, guid: db5a7ff1535dfab41b7b8debe57113b5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000056673016
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db5a7ff1535dfab41b7b8debe57113b5, type: 2}
   m_IsPrefabParent: 0
@@ -1909,7 +1931,7 @@ Prefab:
     - target: {fileID: 224623732476265568, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00000358406
+      value: 0.000013159692
       objectReference: {fileID: 0}
     - target: {fileID: 224884537834551180, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
@@ -1962,9 +1984,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipo: 4
   dominada: 0
-  riqueza: 0
-  construcao: 0
-  alimento: 0
+  riqueza: 26
+  construcao: 3
+  alimento: 8
 --- !u!212 &1761077140
 SpriteRenderer:
   m_ObjectHideFlags: 0

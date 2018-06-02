@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraMovement : MonoBehaviour {
 
@@ -8,6 +9,9 @@ public class CameraMovement : MonoBehaviour {
     public float ZoomSpeed = 0.5f;        // The rate of change of the orthographic size in orthographic mode.
     public float MaxDist = 5;
     public float MinDist = 1;
+
+    private float rayLength = 200;
+    public LayerMask layerMask;
 
     // Use this for initialization
     void Start () {
@@ -17,10 +21,21 @@ public class CameraMovement : MonoBehaviour {
     void Update()
     {
         // se tiver apenas um dedo, interpreta como movimentacao
-        if(Input.touchCount == 1)
+        if (Input.touchCount == 1 && WorldMapController.Selecionado) 
         {
+
+
             //Armazena o toque
             Touch touchZero = Input.GetTouch(0);
+
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(touchZero.position);
+
+
+            if (Physics.Raycast(ray, out hit, rayLength, layerMask))
+            {
+                Debug.Log(hit.collider.name);
+            }
 
             // Descobre a posicao do toque no frame anterior
             Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
@@ -32,7 +47,7 @@ public class CameraMovement : MonoBehaviour {
         }
 
         // Se tiver dois toques, interpreta como movimento de zoom
-        else if (Input.touchCount == 2)
+        else if (Input.touchCount == 2 && WorldMapController.Selecionado)
         {
             // Armazena os dois toques
             Touch touchZero = Input.GetTouch(0);
