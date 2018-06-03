@@ -423,6 +423,7 @@ GameObject:
   - component: {fileID: 361505744}
   - component: {fileID: 361505746}
   - component: {fileID: 361505745}
+  - component: {fileID: 361505747}
   m_Layer: 0
   m_Name: village_VilaKakarico
   m_TagString: vila
@@ -437,7 +438,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361505743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.082, y: -0.767, z: 0}
+  m_LocalPosition: {x: -3.15, y: -2.49, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -506,6 +507,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &361505747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361505743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &388916262
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420475202}
   - component: {fileID: 420475204}
+  - component: {fileID: 420475205}
   - component: {fileID: 420475203}
   m_Layer: 0
   m_Name: castle_CasteloDoMonteRoxo
@@ -651,7 +665,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 420475201}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.243, y: -1.055, z: 0}
+  m_LocalPosition: {x: -3.79, y: -2.47, z: 0}
   m_LocalScale: {x: 0.11712003, y: 0.11712003, z: 0.11712003}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -720,6 +734,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &420475205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420475201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.1200004, y: 5.1200004, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &431259384
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000027547098, y: -0.000007837107}
+  m_AnchoredPosition: {x: -0.0000036890922, y: 0.000068662586}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &508453117
@@ -842,6 +868,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -873,7 +900,7 @@ MonoBehaviour:
   MinDist: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 33
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -917,12 +944,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -4.82, y: -1.52, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -768656878, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &583334472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1396,7 @@ GameObject:
   - component: {fileID: 970776231}
   - component: {fileID: 970776232}
   - component: {fileID: 970776233}
+  - component: {fileID: 970776234}
   m_Layer: 0
   m_Name: world-map
   m_TagString: Untagged
@@ -1368,7 +1411,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970776230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.17, y: 1.64, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1.8733745, y: 1.8733745, z: 1.8733745}
   m_Children: []
   m_Father: {fileID: 352276158}
@@ -1431,6 +1474,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12, y: 7.15, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &970776234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970776230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b5547df7c56b6498ce3116185654b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1046291978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1495,7 @@ GameObject:
   - component: {fileID: 1046291979}
   - component: {fileID: 1046291981}
   - component: {fileID: 1046291980}
+  - component: {fileID: 1046291982}
   m_Layer: 0
   m_Name: mine_MontanhaAnil
   m_TagString: mina
@@ -1455,7 +1510,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1046291978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.781, y: -1.636, z: 0}
+  m_LocalPosition: {x: -3.61, y: -3.25, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -1524,6 +1579,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1046291982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046291978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1054705958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1631,7 @@ GameObject:
   - component: {fileID: 1194851517}
   - component: {fileID: 1194851519}
   - component: {fileID: 1194851518}
+  - component: {fileID: 1194851520}
   m_Layer: 0
   m_Name: farm_LonLonRanch
   m_TagString: fazenda
@@ -1578,7 +1646,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1194851516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.154, y: -2.245, z: 0}
+  m_LocalPosition: {x: -4.04, y: -3.86, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -1647,6 +1715,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1194851520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1194851516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1287599016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,7 +2381,7 @@ Prefab:
     - target: {fileID: 224623732476265568, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00010849841
+      value: -0.00012998388
       objectReference: {fileID: 0}
     - target: {fileID: 224884537834551180, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
@@ -2321,7 +2401,7 @@ Prefab:
     - target: {fileID: 224623732476265568, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000004328749
+      value: -0.000009178455
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6bef4dcb0fac0541b083101c7de07d7, type: 2}
@@ -2408,6 +2488,7 @@ GameObject:
   - component: {fileID: 1761077138}
   - component: {fileID: 1761077140}
   - component: {fileID: 1761077139}
+  - component: {fileID: 1761077141}
   m_Layer: 0
   m_Name: forest_FlorestaDeLothric
   m_TagString: floresta
@@ -2422,7 +2503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761077137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.378, y: -0.603, z: 0}
+  m_LocalPosition: {x: -4.64, y: -2.2, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -2491,6 +2572,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1761077141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761077137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1863398165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,8 +2649,8 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2615,6 +2708,7 @@ GameObject:
   - component: {fileID: 1936302331}
   - component: {fileID: 1936302333}
   - component: {fileID: 1936302332}
+  - component: {fileID: 1936302334}
   m_Layer: 0
   m_Name: farm_OlDrakesFarm
   m_TagString: fazenda
@@ -2629,7 +2723,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936302330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.154, y: -2.245, z: 0}
+  m_LocalPosition: {x: -4.3, y: -3.06, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -2698,6 +2792,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1936302334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1936302330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2076333424 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114680537650318356, guid: a2bc92f7c64b03941a266a9bfcd400d0,
@@ -2721,7 +2827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -720, y: 61.600006}
+  m_AnchoredPosition: {x: -720, y: 61.599976}
   m_SizeDelta: {x: 0, y: -125.19995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2132048964
@@ -3665,6 +3771,21 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225059846407236638, guid: a2bc92f7c64b03941a266a9bfcd400d0,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224081262194650744, guid: a2bc92f7c64b03941a266a9bfcd400d0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 58.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 225059846407236638, guid: a2bc92f7c64b03941a266a9bfcd400d0,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2bc92f7c64b03941a266a9bfcd400d0, type: 2}

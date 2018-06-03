@@ -17,21 +17,10 @@ public class CameraMovement : MonoBehaviour {
     void Update()
     {
         // se tiver apenas um dedo, interpreta como movimentacao
-        if (Input.touchCount == 1 && WorldMapController.Selecionado) 
+        if (Input.touchCount == 1 && WorldMapController.Selecionado)
         {
-
-
             //Armazena o toque
             Touch touchZero = Input.GetTouch(0);
-
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(touchZero.position);
-
-
-            if (Physics.Raycast(ray, out hit, rayLength, layerMask))
-            {
-                Debug.Log(hit.collider.name);
-            }
 
             // Descobre a posicao do toque no frame anterior
             Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
