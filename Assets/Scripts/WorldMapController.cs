@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class WorldMapController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
+public class WorldMapController : Singleton<WorldMapController>, IPointerDownHandler, IPointerUpHandler {
 
-    public static bool Selecionado; //{ get; private set;}
+    protected WorldMapController() { }
+
+    public bool Selecionado; //{ get; private set;}
 
     public void OnPointerDown(PointerEventData eventData)
     {

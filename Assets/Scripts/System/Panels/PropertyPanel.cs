@@ -14,7 +14,7 @@ public class PropertyPanel : AMainPanel {
     public override void PrepareContent()
     {
         EraseAllPropertiesInPanel();
-        CreatePropertiesInPanel(PropertyManager.Propriedades);
+        CreatePropertiesInPanel(PropertyManager.Instance.Propriedades);
     }
 
     private void EraseAllPropertiesInPanel()
@@ -41,6 +41,8 @@ public class PropertyPanel : AMainPanel {
     {
         foreach(Property property in propertyList)
         {
+            if (!property.dominated)
+                continue;
             PropertyBox box = Instantiate(propertyPrefab, propertiesParent).GetComponent<PropertyBox>();
             box.SetInformation(property.customTitle, property.level.ToString(), null, property);
         }

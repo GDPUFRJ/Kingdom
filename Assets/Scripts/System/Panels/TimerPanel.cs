@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,11 @@ public class TimerPanel : MonoBehaviour {
     [Header("UI Elements")]
     [SerializeField]
     private Image passedTime;
+
+    public delegate void DayEnd();
+    public static event DayEnd OnDayEnd;
+
+
 
     public float GetTime()
     {
@@ -56,7 +62,10 @@ public class TimerPanel : MonoBehaviour {
     {
         currentDay++;
         print("DAWN OF THE "+(currentDay+1)+"th DAY");
+        if(OnDayEnd != null)
+            OnDayEnd();
     }
+
     public void SetPause(bool isPaused)
     {
         paused = isPaused;

@@ -10,14 +10,10 @@ public class CameraMovement : MonoBehaviour {
     public float MaxDist = 5;
     public float MinDist = 1;
 
-    private float rayLength = 200;
-    public LayerMask layerMask;
-
-
     void Update()
     {
         // se tiver apenas um dedo, interpreta como movimentacao
-        if (Input.touchCount == 1 && WorldMapController.Selecionado)
+        if (Input.touchCount == 1 && WorldMapController.Instance.Selecionado)
         {
             //Armazena o toque
             Touch touchZero = Input.GetTouch(0);
@@ -32,7 +28,7 @@ public class CameraMovement : MonoBehaviour {
         }
 
         // Se tiver dois toques, interpreta como movimento de zoom
-        else if (Input.touchCount == 2 && WorldMapController.Selecionado)
+        else if (Input.touchCount == 2 && WorldMapController.Instance.Selecionado)
         {
             // Armazena os dois toques
             Touch touchZero = Input.GetTouch(0);
