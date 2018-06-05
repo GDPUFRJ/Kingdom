@@ -16,7 +16,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
     [Range(-100, 100)] public int food = 0;
 
     [Header("Neighborhood")]
-    public List<Property> Neighbors = new List<Property>();
+    [HideInInspector]public List<Property> Neighbors = new List<Property>();
     
 
     private void Start()
@@ -36,23 +36,13 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
             GetComponent<SpriteRenderer>().color = Color.white;
         else
             GetComponent<SpriteRenderer>().color = PropertyManager.Instance.NotDominatedProperty;
-
+        
         foreach (Property p in Neighbors)
         {
             if (p.Neighbors.Contains(this) == false)
                 p.Neighbors.Add(this);
         }
-
-        //Neighbors.Sort();
-        int index = 0;
-        while (index < Neighbors.Count - 1)
-        {
-            if (Neighbors[index] == Neighbors[index + 1])
-                Neighbors.RemoveAt(index);
-            else
-                index++;
-        }
-
+        
         switch (type)
         {
             case Tipo.Castelo:
@@ -80,15 +70,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
                 GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Castelo;
                 break;
         }
-
-        
-
-
-
-        //PropertyManager.Instance.UpdateAllNeighborLinesEditor();
-
-        //DestroyNeighborLines();
-        //BuildNeighborLines();
     }
 
     private void OnDayEnd()
