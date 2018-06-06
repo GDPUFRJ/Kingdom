@@ -2,22 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LineManager : MonoBehaviour {
+public class LineManager : Singleton<LineManager> {
 
     public Line newLine;
 
-	// Use this for initialization
-	void Start () {
-
-        //try //DAR UM JEITO DE REMOVER ESSE TRY-CATCH DAQUI
-        //{
-            
-        //}
-        //catch (System.Exception) { }
-    }
-
-    private void OnEnable()
+    public void BuildLines()
     {
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
+
         foreach (Property p in PropertyManager.Instance.Propriedades)
         {
             foreach (Property p2 in p.Neighbors)
@@ -29,9 +24,4 @@ public class LineManager : MonoBehaviour {
             }
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
