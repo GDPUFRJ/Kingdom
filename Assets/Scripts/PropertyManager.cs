@@ -21,6 +21,8 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     public List<Property> Propriedades = new List<Property>();
 
+    [SerializeField] private LineManager lineManager;
+
     //private string filepath;
 
     private void Awake()
@@ -32,7 +34,8 @@ public class PropertyManager : Singleton<PropertyManager> {
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-        LineManager.Instance.BuildLines();
+       
+        lineManager.BuildLines(Propriedades);
         //LineManager.SetActive(true); //ensure that it will only trace lines after fill up properties list
     }
 

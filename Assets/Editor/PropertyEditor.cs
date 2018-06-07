@@ -6,7 +6,6 @@ using UnityEngine;
 
 
 [CustomEditor(typeof(Property))]
-[CanEditMultipleObjects]
 public class PropertyEditor : Editor {
 
     enum displayFieldType { DisplayAsAutomaticFields, DisplayAsCustomizableGUIFields }
@@ -14,6 +13,7 @@ public class PropertyEditor : Editor {
 
     Property propertyScript;
     SerializedObject GetTarget;
+    ///SerializedProperty TargetNeighborsList;
     
     List<Property> ToRemove = new List<Property>();
 
@@ -21,6 +21,8 @@ public class PropertyEditor : Editor {
     {
         propertyScript = (Property)target;
         GetTarget = new SerializedObject(propertyScript);
+        //TargetNeighborsList = GetTarget.FindProperty("Neighbors");
+        
     }
 
     public override void OnInspectorGUI()
@@ -98,8 +100,6 @@ public class PropertyEditor : Editor {
             if (p.Neighbors.Contains(propertyScript) == false)
                 p.Neighbors.Add(propertyScript);
         }
-        if(LineManager.Instance != null)
-            LineManager.Instance.BuildLines();
 
         //-----------------------------------------------------------------------------------------------------------
         if (PropertyManager.Instance != null)
@@ -145,9 +145,9 @@ public class PropertyEditor : Editor {
         }
 
         GetTarget.ApplyModifiedProperties();
-
-
     }
+
+    
 
     public void DropAreaGUI()
     {
@@ -192,4 +192,6 @@ public class PropertyEditor : Editor {
                 break;
         }
     }
+
+    
 }

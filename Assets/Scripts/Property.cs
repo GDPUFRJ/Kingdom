@@ -27,6 +27,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
         //BuildNeighborLines();
     }
 
+
     private void OnDayEnd()
     {
         //Debug.Log("A propriedade " + customTitle + " Passou para o dia seguinte");
