@@ -10,12 +10,12 @@ public class PropertyBox : MonoBehaviour {
 
     private Property property;
 
-    public void SetInformation(string name, string level, Sprite icon, Property prop)
+    public void SetInformation(string name, Level level, Sprite icon, Property prop)
     {
         if(icon != null)
             this.icon.sprite = icon;
         this.title.text = name;
-        this.level.text = "Level " + level;
+        this.level.text = "Level " + (int)level;
         this.property = prop;
     }
 }

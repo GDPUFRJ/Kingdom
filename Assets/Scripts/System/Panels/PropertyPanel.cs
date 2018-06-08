@@ -44,7 +44,7 @@ public class PropertyPanel : AMainPanel {
             if (!property.dominated)
                 continue;
             PropertyBox box = Instantiate(propertyPrefab, propertiesParent).GetComponent<PropertyBox>();
-            box.SetInformation(property.customTitle, property.level.ToString(), null, property);
+            box.SetInformation(property.customTitle, property.level, null, property);
         }
     }
 }

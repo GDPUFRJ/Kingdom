@@ -22,7 +22,8 @@ public class TimerPanel : MonoBehaviour {
     public delegate void DayEnd();
     public static event DayEnd OnDayEnd;
 
-
+    public delegate void AfterDayEnd();
+    public static event DayEnd OnAfterDayEnd;
 
     public float GetTime()
     {
@@ -64,6 +65,9 @@ public class TimerPanel : MonoBehaviour {
         print("DAWN OF THE "+(currentDay+1)+"th DAY");
         if(OnDayEnd != null)
             OnDayEnd();
+
+        if (OnAfterDayEnd != null)
+            OnAfterDayEnd();
     }
 
     public void SetPause(bool isPaused)
