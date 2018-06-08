@@ -301,7 +301,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 346906157}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -797,7 +797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000036890922, y: -0.000022244165}
+  m_AnchoredPosition: {x: -0.0000036890922, y: 0.0000009503917}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &508453117
@@ -1214,6 +1214,7 @@ MonoBehaviour:
   NotDominatedLine: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   NotDominatedProperty: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   Propriedades: []
+  lineManager: {fileID: 1983170130}
 --- !u!1 &787076799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1747,7 @@ MonoBehaviour:
   food: 0
   Neighbors:
   - {fileID: 420475203}
+  - {fileID: 1194851518}
 --- !u!1 &1054705958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1812,8 @@ MonoBehaviour:
   gold: 0
   buildingMaterial: 0
   food: 0
-  Neighbors: []
+  Neighbors:
+  - {fileID: 1046291980}
 --- !u!1 &1227787732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2702,7 @@ Prefab:
     - target: {fileID: 224623732476265568, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00011673094
+      value: 0.000044100816
       objectReference: {fileID: 0}
     - target: {fileID: 224884537834551180, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
