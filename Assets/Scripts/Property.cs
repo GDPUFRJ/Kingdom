@@ -42,6 +42,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
     }
 
 
+
     private void OnDayEnd()
     {
         //Debug.Log("A propriedade " + customTitle + " Passou para o dia seguinte");
@@ -65,7 +66,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
                 PropertyManager.Instance.Building += buildingLevel3;
                 break;
         }
-
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -95,15 +95,37 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
         this.level = level;
         UpdateSprite(this);
     }
+    //in game
+    public void SetDominated(bool dominated)
+    {
+        if (dominated)
+        {
+            this.dominated = dominated;
+            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+        }
+        else
+        {
+            this.dominated = dominated;
+            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+        }
+    }
 
+    //in editor
     public void UpdateSprite(Property property)
     {
         SpriteRenderer spriteRenderer = property.GetComponent<SpriteRenderer>();
 
         if (property.dominated)
+        {
             spriteRenderer.color = Color.white;
+            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+        }
         else
+        {
             spriteRenderer.color = PropertyManager.Instance.NotDominatedProperty;
+            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+        }
+            
 
         switch (property.type)
         {

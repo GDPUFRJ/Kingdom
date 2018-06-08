@@ -7,8 +7,46 @@ public class LineManager : MonoBehaviour
 {
     
     public Line newLine;
-    private List<Line> lines = new List<Line>();
-    
+    public List<Line> lines = new List<Line>();
+
+    public void AddLine(Property start, Property end)
+    {
+        newLine.GetComponent<Line>().start = start;
+        newLine.GetComponent<Line>().end = end;
+        lines.Add(Instantiate(newLine, transform));
+    }
+
+    public void UpdateRelatedLines(Property property)
+    {
+        List<Line> lines = new List<Line>(GetComponentsInChildren<Line>());
+        foreach (Line line in lines)
+        {
+            if (line.start.Equals(property) || line.end.Equals(property))
+                line.UpdateLineColor();
+        }
+    }
+
+    public void RemoveAnyLineConnecting(Property p1, Property p2)
+    {
+        List<Line> toRemove = new List<Line>();
+        List<Line> lines = new List<Line>(GetComponentsInChildren<Line>());
+        foreach (Line line in lines)
+        {
+            if (line.start.Equals(p1) && line.end.Equals(p2))
+                toRemove.Add(line);
+            if (line.start.Equals(p2) && line.end.Equals(p1))
+                toRemove.Add(line);
+        }
+
+        foreach (Line line in toRemove)
+        {
+            lines.Remove(line);
+            DestroyImmediate(line.gameObject);
+        }
+
+        toRemove.Clear();
+    }
+    /*
     public void BuildLines(List<Property> properties)
     {
         foreach (Transform child in transform)
@@ -40,4 +78,6 @@ public class LineManager : MonoBehaviour
         }
         return false;
     }
+    */
+    
 }

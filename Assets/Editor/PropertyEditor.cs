@@ -86,8 +86,10 @@ public class PropertyEditor : Editor {
         {
             foreach (Property p in ToRemove)
             {
+                PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
                 propertyScript.Neighbors.Remove(p);
                 p.Neighbors.Remove(propertyScript);
+                
             }
             ToRemove.Clear();
         }
@@ -112,13 +114,8 @@ public class PropertyEditor : Editor {
             EditorUtility.SetDirty(propertyScript);
             EditorSceneManager.MarkSceneDirty(propertyScript.gameObject.scene);
         }
-
         GetTarget.ApplyModifiedProperties();
     }
-
-
-    
-    
 
     public void DropAreaGUI()
     {
@@ -151,7 +148,11 @@ public class PropertyEditor : Editor {
                                 if (propertyScript.Neighbors.Contains(DraggedProperty))
                                     Debug.LogWarning("This property is already a Neighbor");
                                 else
-                                    propertyScript.Neighbors.Add((dragged_object as GameObject).GetComponent<Property>());
+                                {
+                                    Property dragged_Property = (dragged_object as GameObject).GetComponent<Property>();
+                                    propertyScript.Neighbors.Add(dragged_Property);
+                                    PropertyManager.Instance.lineManager.AddLine(propertyScript, dragged_Property);
+                                }        
                             }
                             else
                                 Debug.LogWarning("This Gameobject do not have a Property Component");

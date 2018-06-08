@@ -51,7 +51,7 @@ public class PropertyManager : Singleton<PropertyManager> {
     public Color NotDominatedProperty;
 
     [Header("Others")]
-    [SerializeField] private LineManager lineManager;
+    public LineManager lineManager;
     public List<Property> Propriedades = new List<Property>();
 
 
@@ -67,12 +67,9 @@ public class PropertyManager : Singleton<PropertyManager> {
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-       
-        lineManager.BuildLines(Propriedades);
-
+        
         TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
         OnAfterDayEnd();
-        //LineManager.SetActive(true); //ensure that it will only trace lines after fill up properties list
     }
 
     private void OnAfterDayEnd()
@@ -103,6 +100,7 @@ public class PropertyManager : Singleton<PropertyManager> {
             }
         }
     }
+
 
     private void OnApplicationQuit()
     {
