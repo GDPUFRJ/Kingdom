@@ -19,12 +19,9 @@ public class PropertyManager : Singleton<PropertyManager> {
     public Color NotDominatedLine;
     public Color NotDominatedProperty;
 
-    [Header("Others")]
-    public GameObject LineManager;
-    public GameObject NeighborLine;
-
-
     public List<Property> Propriedades = new List<Property>();
+
+    [SerializeField] private LineManager lineManager;
 
     //private string filepath;
 
@@ -37,7 +34,9 @@ public class PropertyManager : Singleton<PropertyManager> {
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-        LineManager.SetActive(true); //ensure that it will only trace lines after fill up properties list
+       
+        lineManager.BuildLines(Propriedades);
+        //LineManager.SetActive(true); //ensure that it will only trace lines after fill up properties list
     }
 
     private void OnApplicationQuit()

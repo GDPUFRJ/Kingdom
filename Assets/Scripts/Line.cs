@@ -31,9 +31,13 @@ public class Line : MonoBehaviour {
         }
             
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public override bool Equals(object other)
+    {
+        if (start == (other as Line).start && end == (other as Line).end)
+            return true;
+        else
+            return false;
 
     }
 }
