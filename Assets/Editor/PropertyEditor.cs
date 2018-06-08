@@ -104,38 +104,7 @@ public class PropertyEditor : Editor {
         //-----------------------------------------------------------------------------------------------------------
         if (PropertyManager.Instance != null)
         {
-            if (propertyScript.dominated)
-                propertyScript.GetComponent<SpriteRenderer>().color = Color.white;
-            else
-                propertyScript.GetComponent<SpriteRenderer>().color = PropertyManager.Instance.NotDominatedProperty;
-
-            switch (propertyScript.type)
-            {
-                case Tipo.Castelo:
-                    propertyScript.gameObject.tag = "castelo";
-                    propertyScript.GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Castelo;
-                    break;
-                case Tipo.Mina:
-                    propertyScript.gameObject.tag = "mina";
-                    propertyScript.GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Mina;
-                    break;
-                case Tipo.Vila:
-                    propertyScript.gameObject.tag = "vila";
-                    propertyScript.GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Vila;
-                    break;
-                case Tipo.Fazenda:
-                    propertyScript.gameObject.tag = "fazenda";
-                    propertyScript.GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Fazenda;
-                    break;
-                case Tipo.Floresta:
-                    propertyScript.gameObject.tag = "floresta";
-                    propertyScript.GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Floresta;
-                    break;
-                default:
-                    propertyScript.gameObject.tag = "castelo";
-                    propertyScript.GetComponent<SpriteRenderer>().sprite = PropertyManager.Instance.Castelo;
-                    break;
-            }
+            propertyScript.UpdateSprite(propertyScript);
         }
 
         if (GUI.changed)
@@ -147,6 +116,8 @@ public class PropertyEditor : Editor {
         GetTarget.ApplyModifiedProperties();
     }
 
+
+    
     
 
     public void DropAreaGUI()

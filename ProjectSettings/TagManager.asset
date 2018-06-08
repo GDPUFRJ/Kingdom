@@ -4,11 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - castelo
-  - mina
-  - floresta
-  - vila
-  - fazenda
+  - castle
+  - mine
+  - forest
+  - village
+  - farm
+  - other
   layers:
   - Default
   - TransparentFX
