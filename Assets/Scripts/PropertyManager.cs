@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class PropertyManager : Singleton<PropertyManager> {
 
     protected PropertyManager() { } // guarantee this will be always a singleton only - can't use the constructor!
