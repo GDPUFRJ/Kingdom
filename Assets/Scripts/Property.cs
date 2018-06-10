@@ -31,7 +31,10 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
 
     [Header("Neighborhood")]
     [HideInInspector]public List<Property> Neighbors = new List<Property>();
-    
+
+    [Header("Property Window")]
+    public Transform canvasParent;
+    public GameObject propertyWindowPrefab;
 
     private void Start()
     {
@@ -40,8 +43,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
         // DestroyNeighborLines();
         //BuildNeighborLines();
     }
-
-
 
     private void OnDayEnd()
     {
@@ -70,8 +71,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //ative aqui o metodo para mostrar propriedades
-        //propertyWindow
+        var pw = Instantiate(propertyWindowPrefab, canvasParent).GetComponent<PropertyWindow>();
+        pw.GetProperty(this);
         Debug.Log("Tocou!");
     }
 
