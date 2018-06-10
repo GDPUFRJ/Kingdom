@@ -71,6 +71,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
     public void OnPointerClick(PointerEventData eventData)
     {
         //ative aqui o metodo para mostrar propriedades
+        //propertyWindow
         Debug.Log("Tocou!");
     }
 
