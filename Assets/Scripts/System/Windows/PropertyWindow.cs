@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PropertyWindow : MonoBehaviour {
     private Property property;
@@ -18,6 +19,22 @@ public class PropertyWindow : MonoBehaviour {
         this.property = property;
         UpdatePropertyInfo();
     }
+
+    private void Update()
+    {
+        if (Input.touchCount == 1)
+        {
+            //Armazena o toque
+            Touch touchZero = Input.GetTouch(0);
+
+            if (!RectTransformUtility.RectangleContainsScreenPoint(GetComponent<RectTransform>(),touchZero.position))
+            {
+                //Debug.Log("Inside");
+                Close();
+            }
+        }
+    }
+
     public void UpdatePropertyInfo()
     {
         propertyName.text = property.customTitle;
@@ -58,6 +75,8 @@ public class PropertyWindow : MonoBehaviour {
     public void GiveUpProperty()
     {
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
+        //desativo a propriedade, depois verifico se algum vizinho ficou
+        //isolado. Se ficou, desfaz, se nao, mantém o abandono.
         if (property.SetDominated(false))
         {
             PropertyManager.Instance.UpdateComsumption();
@@ -69,4 +88,6 @@ public class PropertyWindow : MonoBehaviour {
     {
         Destroy(this.gameObject);
     }
+
+
 }

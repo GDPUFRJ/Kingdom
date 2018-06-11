@@ -113,7 +113,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public bool SetDominated(bool dominated)
     {
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
-
+        //desativo a propriedade, depois verifico se algum vizinho ficou
+        //isolado. Se ficou, desfaz, se nao, mantém o abandono.
         if (type == Tipo.Castle)
             return false;
 
