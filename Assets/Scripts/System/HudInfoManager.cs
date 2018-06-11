@@ -19,16 +19,16 @@ public class HudInfoManager : MonoBehaviour {
         TimerPanel.OnAfterDayEnd += UpdateHUD;
         UpdateHUD();
     }
-    private void UpdateHUD()
+    public void UpdateHUD()
     {
-        PropertyManager pm = FindObjectOfType<PropertyManager>();
-        currentRiq.text = pm.Gold.ToString();
-        nextRiq.text = pm.GoldNext.ToString();
+        //PropertyManager pm = FindObjectOfType<PropertyManager>();
+        currentRiq.text = PropertyManager.Instance.Gold.ToString();
+        nextRiq.text = PropertyManager.Instance.GoldNext.ToString();
 
-        currentCon.text = pm.Building.ToString();
-        nextCon.text = pm.BuildingNext.ToString();
+        currentCon.text = PropertyManager.Instance.Building.ToString();
+        nextCon.text = PropertyManager.Instance.BuildingNext.ToString();
 
-        currentAli.text = pm.Food.ToString();
-        nextAli.text = pm.FoodNext.ToString();
+        currentAli.text = PropertyManager.Instance.Food.ToString();
+        nextAli.text = PropertyManager.Instance.FoodNext.ToString();
     }
 }

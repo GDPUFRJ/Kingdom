@@ -51,11 +51,16 @@ public class PropertyManager : Singleton<PropertyManager> {
     public Color NotDominatedLine;
     public Color NotDominatedProperty;
 
+    [Header("Property Window")]
+    public Transform canvasParent;
+    public GameObject propertyWindowPrefab;
+
     [Header("Others")]
     public LineManager lineManager;
-    public List<Property> Propriedades = new List<Property>();
+    public HudInfoManager hudInfoManager;
 
 
+    [HideInInspector]public List<Property> Propriedades = new List<Property>();
 
     //private string filepath;
 
@@ -100,6 +105,25 @@ public class PropertyManager : Singleton<PropertyManager> {
                     break;
             }
         }
+    }
+
+    public void UpdateComsumption()
+    {
+        OnAfterDayEnd();
+        hudInfoManager.UpdateHUD();
+    }
+
+    public bool ConsumeItens(int gold, int building, int food = 0)
+    {
+        if(gold <= this.Gold && building <= this.Building && food <= this.Food)
+        {
+            Gold -= gold;
+            Building -= building;
+            Food -= food;
+            hudInfoManager.UpdateHUD();
+            return true;
+        }
+        return false;
     }
 
 

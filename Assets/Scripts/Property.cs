@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
+public class Property : MonoBehaviour, IPointerClickHandler, IComparer
+{
     [Header("Basic Informations")]
     public string customTitle = " ";
     public Tipo type;
@@ -24,17 +25,26 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
     [Range(-100, 100)] public int foodLevel3 = 0;
     [Range(-100, 100)] public int buildingLevel3 = 0;
 
+    [Header("Upgrade Demands")]
+    [Range(-100, 100)]
+    public int goldToLevel2 = 0;
+    [Range(-100, 100)] public int foodToLevel2 = 0;
+    [Range(-100, 100)] public int buildingToLevel2 = 0;
+    [Space(10)]
+    [Range(-100, 100)]
+    public int goldToLevel3 = 0;
+    [Range(-100, 100)] public int foodToLevel3 = 0;
+    [Range(-100, 100)] public int buildingToLevel3 = 0;
+
     [Header("Custom Sprites")]
     public Sprite CustomLevel1;
     public Sprite CustomLevel2;
     public Sprite CustomLevel3;
 
-    [Header("Neighborhood")]
-    [HideInInspector]public List<Property> Neighbors = new List<Property>();
 
-    [Header("Property Window")]
-    public Transform canvasParent;
-    public GameObject propertyWindowPrefab;
+    [HideInInspector] public List<Property> Neighbors = new List<Property>();
+
+
 
     private void Start()
     {
@@ -71,7 +81,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        var pw = Instantiate(propertyWindowPrefab, canvasParent).GetComponent<PropertyWindow>();
+        var pw = Instantiate(PropertyManager.Instance.propertyWindowPrefab,
+                             PropertyManager.Instance.canvasParent).GetComponent<PropertyWindow>();
         pw.GetProperty(this);
         Debug.Log("Tocou!");
     }
@@ -92,14 +103,20 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
             return 1;
     }
 
-    public void SetLevel(Level level)
+    public void LevelUp(Level level)
     {
         this.level = level;
         UpdateSprite(this);
     }
+
     //in game
-    public void SetDominated(bool dominated)
+    public bool SetDominated(bool dominated)
     {
+        //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
+
+        if (type == Tipo.Castle)
+            return false;
+
         if (dominated)
         {
             this.dominated = dominated;
@@ -110,6 +127,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
             this.dominated = dominated;
             PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
         }
+
+        return true;
     }
 
     //in editor
@@ -127,7 +146,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
             spriteRenderer.color = PropertyManager.Instance.NotDominatedProperty;
             PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
         }
-            
+
 
         switch (property.type)
         {
@@ -227,7 +246,40 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer{
                 break;
         }
     }
+
+
+    public int CurrentResource(Resource resource)
+    {
+        switch (resource)
+        {
+            case Resource.Gold:
+                if (level == Level.Level1)
+                    return goldLevel1;
+                else if (level == Level.Level2)
+                    return goldLevel2;
+                else
+                    return goldLevel3;
+            case Resource.Building:
+                if (level == Level.Level1)
+                    return buildingLevel1;
+                else if (level == Level.Level2)
+                    return buildingLevel2;
+                else
+                    return buildingLevel3;
+            case Resource.Food:
+                if (level == Level.Level1)
+                    return foodLevel1;
+                else if (level == Level.Level2)
+                    return foodLevel2;
+                else
+                    return foodLevel3;
+            default:
+                return 0;
+        }
+    }
+
 }
+
 public enum Tipo
 {
     Castle, Mine, Village, Farm, Forest, Other 
@@ -235,4 +287,9 @@ public enum Tipo
 public enum Level
 {
     Level1 = 1, Level2 = 2, Level3 = 3
+}
+
+public enum Resource
+{
+    Gold, Building, Food
 }

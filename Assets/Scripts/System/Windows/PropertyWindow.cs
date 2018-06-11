@@ -22,18 +22,48 @@ public class PropertyWindow : MonoBehaviour {
     {
         propertyName.text = property.customTitle;
         propertyLevel.text = property.level.GetHashCode().ToString();
-        //MUDAR: Criar método em todas propriedade que retorna os valores de recurso levando em conta seu level
-        riqResource.text = property.goldLevel1.ToString();
-        aliResource.text = property.foodLevel1.ToString();
-        conResource.text = property.buildingLevel1.ToString();
+        riqResource.text = property.CurrentResource(Resource.Gold).ToString();
+        aliResource.text = property.CurrentResource(Resource.Food).ToString();
+        conResource.text = property.CurrentResource(Resource.Building).ToString();
     }
     public void UpgradeProperty()
     {
-        print("Upgraded");
+        //consumir itens e aprimorar nivel da propriedade
+
+        if (property.level == Level.Level1)
+        {
+            if (PropertyManager.Instance.ConsumeItens(property.goldToLevel2, 
+                                                      property.buildingToLevel2,
+                                                      property.foodToLevel2))
+            {
+                property.LevelUp(Level.Level2);
+                print("Upgraded");
+                UpdatePropertyInfo();
+            }
+                
+        }
+        else if(property.level == Level.Level2)
+        {
+            if (PropertyManager.Instance.ConsumeItens(property.goldToLevel3,
+                                                      property.buildingToLevel3,
+                                                      property.foodToLevel3))
+            {
+                property.LevelUp(Level.Level3);
+                print("Upgraded");
+                UpdatePropertyInfo();
+            }
+        }
+        
     }
     public void GiveUpProperty()
     {
-        print("Give Up");
+        //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
+        if (property.SetDominated(false))
+        {
+            PropertyManager.Instance.UpdateComsumption();
+            print("Give Up");
+        }
+            
     }
     public void Close()
     {

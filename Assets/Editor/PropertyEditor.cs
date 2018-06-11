@@ -6,6 +6,7 @@ using UnityEngine;
 
 
 [CustomEditor(typeof(Property))]
+[CanEditMultipleObjects]
 public class PropertyEditor : Editor
 {
     enum displayFieldType { DisplayAsAutomaticFields, DisplayAsCustomizableGUIFields }
