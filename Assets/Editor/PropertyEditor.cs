@@ -6,15 +6,15 @@ using UnityEngine;
 
 
 [CustomEditor(typeof(Property))]
-public class PropertyEditor : Editor {
-
+public class PropertyEditor : Editor
+{
     enum displayFieldType { DisplayAsAutomaticFields, DisplayAsCustomizableGUIFields }
     displayFieldType DisplayFieldType;
 
     Property propertyScript;
     SerializedObject GetTarget;
     ///SerializedProperty TargetNeighborsList;
-    
+
     List<Property> ToRemove = new List<Property>();
 
     private void OnEnable()
@@ -22,7 +22,7 @@ public class PropertyEditor : Editor {
         propertyScript = (Property)target;
         GetTarget = new SerializedObject(propertyScript);
         //TargetNeighborsList = GetTarget.FindProperty("Neighbors");
-        
+
     }
 
     public override void OnInspectorGUI()
@@ -36,76 +36,57 @@ public class PropertyEditor : Editor {
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField(propertyScript.Neighbors.Count + " Neighbors", EditorStyles.boldLabel);
-
-        //Avoid duplicates in case of direct assignment in the list
-        int i;
-        Property DupToRemove = null;
-        for (i = 0; i < propertyScript.Neighbors.Count; i++)
-        {
-            for (int j = 0; j < propertyScript.Neighbors.Count; j++)
-            {
-                if (i == j)
-                    continue;
-                if (propertyScript.Neighbors[i].Equals(propertyScript.Neighbors[j]))
-                    DupToRemove = propertyScript.Neighbors[j];
-            }
-        }
-        if (DupToRemove != null)
-            propertyScript.Neighbors.Remove(DupToRemove);
-
-        i = 0;
-        foreach (Property p in propertyScript.Neighbors)
-        {
-            using (var horizontalScope = new EditorGUILayout.HorizontalScope())
-            {
-                propertyScript.Neighbors[i] = (Property)EditorGUILayout.ObjectField("Neighbor " + i, p, typeof(Property), true);
-                if (GUILayout.Button("Remove",GUILayout.MaxWidth(60)))
-                    ToRemove.Add(p);
-            }
-            i++;
-        }
-
-        EditorGUILayout.Space();
-
-        using (var horizontalScope = new EditorGUILayout.HorizontalScope())
-        {
-            DropAreaGUI();
-
-            //if(GUILayout.Button("Add Property Slot")) {propertyScript.Neighbors.Add(null);}
-            
-            if (GUILayout.Button("Clear", GUILayout.MaxWidth(60), GUILayout.MinHeight(45)))
-            {
-                foreach(Property p in propertyScript.Neighbors)
-                {
-                    ToRemove.Add(p);
-                }
-            }
-        }
-
-        if (ToRemove.Count > 0)
-        {
-            foreach (Property p in ToRemove)
-            {
-                PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
-                propertyScript.Neighbors.Remove(p);
-                p.Neighbors.Remove(propertyScript);
-                
-            }
-            ToRemove.Clear();
-        }
-
-        foreach (Property p in propertyScript.Neighbors)
-        {
-            if (p == null)
-                continue;
-
-            if (p.Neighbors.Contains(propertyScript) == false)
-                p.Neighbors.Add(propertyScript);
-        }
-
-        //-----------------------------------------------------------------------------------------------------------
         if (PropertyManager.Instance != null)
         {
+
+            CheckDuplicatesAndNulls();
+
+            RemovePendent();
+
+            //REMOVE Button
+            int i = 0;
+            foreach (Property p in propertyScript.Neighbors)
+            {
+                using (var horizontalScope = new EditorGUILayout.HorizontalScope())
+                {
+                    propertyScript.Neighbors[i] = (Property)EditorGUILayout.ObjectField("Neighbor " + i, p, typeof(Property), true);
+                    if (GUILayout.Button("Remove", GUILayout.MaxWidth(60)))
+                        ToRemove.Add(p);
+                }
+                i++;
+            }
+
+            EditorGUILayout.Space();
+
+            //CLEAR BUTTON AND DROP AREA
+            using (var horizontalScope = new EditorGUILayout.HorizontalScope())
+            {
+                DropAreaGUI();
+
+                //if(GUILayout.Button("Add Property Slot")) {propertyScript.Neighbors.Add(null);}
+
+                if (GUILayout.Button("Clear", GUILayout.MaxWidth(60), GUILayout.MinHeight(45)))
+                {
+                    foreach (Property p in propertyScript.Neighbors)
+                    {
+                        ToRemove.Add(p);
+                    }
+                }
+            }
+
+            RemovePendent();
+
+            foreach (Property p in propertyScript.Neighbors)
+            {
+                if (p == null)
+                    continue;
+
+                if (p.Neighbors.Contains(propertyScript) == false)
+                    p.Neighbors.Add(propertyScript);
+            }
+
+            //-----------------------------------------------------------------------------------------------------------
+
             propertyScript.UpdateSprite(propertyScript);
         }
 
@@ -115,6 +96,50 @@ public class PropertyEditor : Editor {
             EditorSceneManager.MarkSceneDirty(propertyScript.gameObject.scene);
         }
         GetTarget.ApplyModifiedProperties();
+    }
+
+    private void CheckDuplicatesAndNulls()
+    {
+        //Avoid duplicates in case of direct assignment in the list
+        int i;
+        for (i = 0; i < propertyScript.Neighbors.Count; i++)
+        {
+            for (int j = 0; j < propertyScript.Neighbors.Count; j++)
+            {
+                if (i == j)
+                    continue;
+
+                if (propertyScript.Neighbors[i] == null)
+                    ToRemove.Add(propertyScript.Neighbors[i]);
+
+                if (propertyScript.Neighbors[j] == null)
+                    ToRemove.Add(propertyScript.Neighbors[j]);
+
+                if (ToRemove.Contains(propertyScript.Neighbors[i]) || ToRemove.Contains(propertyScript.Neighbors[j]))
+                    continue;
+
+                if (propertyScript.Neighbors[i].Equals(propertyScript.Neighbors[j]))
+                    ToRemove.Add(propertyScript.Neighbors[j]);
+            }
+        }
+    }
+
+    private bool RemovePendent()
+    {
+        if (ToRemove.Count > 0)
+        {
+            foreach (Property p in ToRemove)
+            {
+                PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
+                propertyScript.Neighbors.Remove(p);
+                p.Neighbors.Remove(propertyScript);
+
+            }
+            ToRemove.Clear();
+
+            return true;
+        }
+        return false;
     }
 
     public void DropAreaGUI()
@@ -152,7 +177,7 @@ public class PropertyEditor : Editor {
                                     Property dragged_Property = (dragged_object as GameObject).GetComponent<Property>();
                                     propertyScript.Neighbors.Add(dragged_Property);
                                     PropertyManager.Instance.lineManager.AddLine(propertyScript, dragged_Property);
-                                }        
+                                }
                             }
                             else
                                 Debug.LogWarning("This Gameobject do not have a Property Component");
@@ -165,5 +190,5 @@ public class PropertyEditor : Editor {
         }
     }
 
-    
+
 }
