@@ -19,6 +19,10 @@ public class TimerPanel : MonoBehaviour {
     [SerializeField]
     private Image passedTime;
 
+
+    public delegate void BeforeDayEnd();
+    public static event DayEnd OnBeforeDayEnd;
+
     public delegate void DayEnd();
     public static event DayEnd OnDayEnd;
 
@@ -61,8 +65,12 @@ public class TimerPanel : MonoBehaviour {
     }
     public void RiseNewDay()
     {
+        if (OnBeforeDayEnd != null)
+            OnBeforeDayEnd();
+
         currentDay++;
         print("DAWN OF THE "+(currentDay+1)+"th DAY");
+
         if(OnDayEnd != null)
             OnDayEnd();
 

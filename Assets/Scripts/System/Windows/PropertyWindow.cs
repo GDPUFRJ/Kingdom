@@ -49,7 +49,7 @@ public class PropertyWindow : MonoBehaviour {
 
         if (property.level == Level.Level1)
         {
-            if (PropertyManager.Instance.ConsumeItens(property.goldToLevel2, 
+            if (GameManager.Instance.ConsumeItens(property.goldToLevel2, 
                                                       property.buildingToLevel2,
                                                       property.foodToLevel2))
             {
@@ -61,7 +61,7 @@ public class PropertyWindow : MonoBehaviour {
         }
         else if(property.level == Level.Level2)
         {
-            if (PropertyManager.Instance.ConsumeItens(property.goldToLevel3,
+            if (GameManager.Instance.ConsumeItens(property.goldToLevel3,
                                                       property.buildingToLevel3,
                                                       property.foodToLevel3))
             {
@@ -79,7 +79,7 @@ public class PropertyWindow : MonoBehaviour {
         //isolado. Se ficou, desfaz, se nao, mantém o abandono.
         if (property.SetDominated(false))
         {
-            PropertyManager.Instance.UpdateComsumption();
+            GameManager.Instance.UpdateComsumption();
             print("Give Up");
         }
             

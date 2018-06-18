@@ -9,17 +9,6 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     protected PropertyManager() { } // guarantee this will be always a singleton only - can't use the constructor!
 
-    [Header("Status")]
-    public int Population = 10;
-    public float Happiness = 100f;
-    [Space(10)]
-    public int Gold = 1000;
-    public int GoldNext = 0;
-    public int Food = 1000;
-    public int FoodNext = 0;
-    public int Building = 1000;
-    public int BuildingNext = 0;
-
     [Header("Sprites")]
     [Space(10)]
     [Header("Castle")]
@@ -57,8 +46,6 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     [Header("Others")]
     public LineManager lineManager;
-    public HudInfoManager hudInfoManager;
-
 
     [HideInInspector]public List<Property> Propriedades = new List<Property>();
 
@@ -73,63 +60,11 @@ public class PropertyManager : Singleton<PropertyManager> {
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-        
-        TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
-        OnAfterDayEnd();
     }
-
-    private void OnAfterDayEnd()
-    {
-        GoldNext = 0;
-        FoodNext = 0;
-        BuildingNext = 0;
-        foreach(Property p in Propriedades)
-        {
-            if (!p.dominated) continue;
-            switch (p.level)
-            {
-                case Level.Level1:
-                    GoldNext += p.goldLevel1;
-                    FoodNext += p.foodLevel1;
-                    BuildingNext += p.buildingLevel1;
-                    break;
-                case Level.Level2:
-                    GoldNext += p.goldLevel2;
-                    FoodNext += p.foodLevel2;
-                    BuildingNext += p.buildingLevel2;
-                    break;
-                case Level.Level3:
-                    GoldNext += p.goldLevel3;
-                    FoodNext += p.foodLevel3;
-                    BuildingNext += p.buildingLevel3;
-                    break;
-            }
-        }
-    }
-
-    public void UpdateComsumption()
-    {
-        OnAfterDayEnd();
-        hudInfoManager.UpdateHUD();
-    }
-
-    public bool ConsumeItens(int gold, int building, int food = 0)
-    {
-        if(gold <= this.Gold && building <= this.Building && food <= this.Food)
-        {
-            Gold -= gold;
-            Building -= building;
-            Food -= food;
-            hudInfoManager.UpdateHUD();
-            return true;
-        }
-        return false;
-    }
-
 
     private void OnApplicationQuit()
     {
-        TimerPanel.OnAfterDayEnd -= OnAfterDayEnd;
+
         //salvar as coisas
         //FileStream fs = new FileStream(filepath, FileMode.Create, FileAccess.Write);
         //StreamWriter sw 

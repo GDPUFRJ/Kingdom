@@ -9,8 +9,6 @@ using UnityEngine;
 [CanEditMultipleObjects]
 public class PropertyEditor : Editor
 {
-    enum displayFieldType { DisplayAsAutomaticFields, DisplayAsCustomizableGUIFields }
-    displayFieldType DisplayFieldType;
 
     Property propertyScript;
     SerializedObject GetTarget;

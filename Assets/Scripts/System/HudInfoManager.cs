@@ -21,14 +21,14 @@ public class HudInfoManager : MonoBehaviour {
     }
     public void UpdateHUD()
     {
-        //PropertyManager pm = FindObjectOfType<PropertyManager>();
-        currentRiq.text = PropertyManager.Instance.Gold.ToString();
-        nextRiq.text = PropertyManager.Instance.GoldNext.ToString();
+        //GameManager pm = FindObjectOfType<GameManager>();
+        currentRiq.text = GameManager.Instance.Gold.ToString();
+        nextRiq.text = GameManager.Instance.GoldNext.ToString();
 
-        currentCon.text = PropertyManager.Instance.Building.ToString();
-        nextCon.text = PropertyManager.Instance.BuildingNext.ToString();
+        currentCon.text = GameManager.Instance.Building.ToString();
+        nextCon.text = GameManager.Instance.BuildingNext.ToString();
 
-        currentAli.text = PropertyManager.Instance.Food.ToString();
-        nextAli.text = PropertyManager.Instance.FoodNext.ToString();
+        currentAli.text = GameManager.Instance.Food.ToString();
+        nextAli.text = GameManager.Instance.FoodNext.ToString();
     }
 }

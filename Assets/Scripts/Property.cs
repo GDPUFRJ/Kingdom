@@ -62,19 +62,19 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         switch (level)
         {
             case Level.Level1:
-                PropertyManager.Instance.Gold += goldLevel1;
-                PropertyManager.Instance.Food += foodLevel1;
-                PropertyManager.Instance.Building += buildingLevel1;
+                GameManager.Instance.Gold += goldLevel1;
+                GameManager.Instance.Food += foodLevel1;
+                GameManager.Instance.Building += buildingLevel1;
                 break;
             case Level.Level2:
-                PropertyManager.Instance.Gold += goldLevel2;
-                PropertyManager.Instance.Food += foodLevel2;
-                PropertyManager.Instance.Building += buildingLevel2;
+                GameManager.Instance.Gold += goldLevel2;
+                GameManager.Instance.Food += foodLevel2;
+                GameManager.Instance.Building += buildingLevel2;
                 break;
             case Level.Level3:
-                PropertyManager.Instance.Gold += goldLevel3;
-                PropertyManager.Instance.Food += foodLevel3;
-                PropertyManager.Instance.Building += buildingLevel3;
+                GameManager.Instance.Gold += goldLevel3;
+                GameManager.Instance.Food += foodLevel3;
+                GameManager.Instance.Building += buildingLevel3;
                 break;
         }
     }

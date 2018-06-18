@@ -731,6 +731,23 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654365761}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &338686961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: New Event
+  Description: 
+  Question: Ask a Question
+  chance: 3
+  Respostas: []
+  showInInspector: 1
 --- !u!1 &339246755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,14 +2274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e368915a97a33d4db76b55aa5c4f16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Population: 10
-  Happiness: 100
-  Gold: 1000
-  GoldNext: 275
-  Food: 1000
-  FoodNext: 339
-  Building: 1000
-  BuildingNext: 331
   CastleLevel1: {fileID: 21300000, guid: 201143a7bf719bc41a4a43aef2a3e80a, type: 3}
   CastleLevel2: {fileID: 0}
   CastleLevel3: {fileID: 0}
@@ -2287,7 +2296,6 @@ MonoBehaviour:
   propertyWindowPrefab: {fileID: 1003950535373766, guid: 46b23beb2f67d3c47b308f1aadf30595,
     type: 2}
   lineManager: {fileID: 1983170130}
-  hudInfoManager: {fileID: 339246757}
   Propriedades:
   - {fileID: 420475203}
   - {fileID: 1761077139}
@@ -3384,6 +3392,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1054705959}
+  - component: {fileID: 1054705961}
+  - component: {fileID: 1054705960}
+  - component: {fileID: 1054705962}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -3407,6 +3418,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054705960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054705958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e628099d4190034daa9d09fa491ea4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KEvents:
+  - {fileID: 1343919401}
+--- !u!114 &1054705961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054705958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c64019f1aac0f42bca3208cfd87d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Population: 10
+  Happiness: 100
+  CanBattle: 1
+  Gold: 1000
+  GoldNext: 275
+  Food: 1000
+  FoodNext: 339
+  Building: 1000
+  BuildingNext: 331
+--- !u!114 &1054705962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054705958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e1e191b8ec1d418d14cf1815d99c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KHappenings:
+  - {fileID: 338686961}
+  - {fileID: 1180563814}
+--- !u!114 &1180563814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: New Event
+  Description: Describe it here
+  Question: Ask a Question
+  chance: 3
+  Respostas: []
+  showInInspector: 1
 --- !u!4 &1194851517
 Transform:
   m_ObjectHideFlags: 0
@@ -4085,6 +4160,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293816
+--- !u!114 &1343919401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Seca
+  Description: "Vinda do sul uma grande seca se aproximou e agora acaba com grande
+    parte das produ\xE7\xF5es de alimento."
+  Duration: 7
+  intensity: 0
+  mode: 0
+  battle: 1
+  chance: 3
+  PercentGoldLight: 0
+  PercentFoodLight: -25
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: -35
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: -50
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 1
 --- !u!114 &1351915842 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114552059263885382, guid: 6d6113f4524ea5a4492426e757059f30,
@@ -5101,7 +5217,7 @@ Prefab:
     - target: {fileID: 224623732476265568, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000005811453
+      value: 0.000092143644
       objectReference: {fileID: 0}
     - target: {fileID: 224884537834551180, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
@@ -5131,7 +5247,7 @@ Prefab:
     - target: {fileID: 114212357076419148, guid: d6bef4dcb0fac0541b083101c7de07d7,
         type: 2}
       propertyPath: m_Size
-      value: 0.9999998
+      value: 0.9999997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6bef4dcb0fac0541b083101c7de07d7, type: 2}
