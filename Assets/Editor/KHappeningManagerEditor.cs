@@ -1,17 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [CustomEditor(typeof(KHappeningManager))]
-public class KHappeningManagerEditor : Editor {
-
-
+public class KHappeningManagerEditor : Editor
+{
     KHappeningManager KHappeningManagerScript;
     SerializedObject GetTarget;
 
     List<KHappening> ToRemove = new List<KHappening>();
+    List<KAnswer> AnswerToRemove = new List<KAnswer>();
 
     private void OnEnable()
     {
@@ -22,13 +23,15 @@ public class KHappeningManagerEditor : Editor {
     public override void OnInspectorGUI()
     {
         //base.OnInspectorGUI();
+        GetTarget.Update();
+
         RemovePendent();
 
-        EditorGUILayout.LabelField(KHappeningManagerScript.KHappenings.Count + " Possible Events", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField(KHappeningManagerScript.KHappenings.Count + " Possible Happenings", EditorStyles.boldLabel);
 
         foreach (KHappening khpp in KHappeningManagerScript.KHappenings)
         {
-            khpp.showInInspector = EditorGUILayout.Foldout(khpp.showInInspector, "Event " + khpp.Name);
+            khpp.showInInspector = EditorGUILayout.Foldout(khpp.showInInspector, "Happening " + khpp.Name);
             if (khpp.showInInspector)
             {
                 EditorGUILayout.BeginHorizontal();
@@ -37,39 +40,119 @@ public class KHappeningManagerEditor : Editor {
 
                 if (GUILayout.Button("Delete", GUILayout.MaxWidth(50)) &&
                     EditorUtility.DisplayDialog("Confirm Deletion",
-                                                "Are you sure to delete " + khpp.Name + " event? This action cannot be undone.",
-                                                "Yes", "No")
-                )
+                    "Are you sure to delete " + khpp.Name + " event? This action cannot be undone.",
+                    "Yes", "No"))
                     ToRemove.Add(khpp);
 
                 EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginVertical();
+
+
                 khpp.Question = EditorGUILayout.TextField(new GUIContent("Question"), khpp.Question);
                 khpp.chance = (KHappening.Chance)EditorGUILayout.EnumPopup("Chance", khpp.chance);
-
-                EditorGUILayout.EndVertical();
 
                 EditorGUILayout.BeginHorizontal();
 
                 EditorGUILayout.PrefixLabel("Description");
 
                 EditorStyles.textArea.wordWrap = true;
-
                 khpp.Description = EditorGUILayout.TextArea(khpp.Description);
+
                 EditorGUILayout.EndHorizontal();
+
+                EditorGUI.indentLevel++;
+
+                khpp.showAnswers = EditorGUILayout.Foldout(khpp.showAnswers, "Answers List");
+                if (khpp.showAnswers)
+                {
+                    EditorGUI.indentLevel++;
+                    foreach (KAnswer kans in khpp.Answers)
+                    {
+
+                        kans.showInInspector = EditorGUILayout.Foldout(kans.showInInspector, "Answer: '" + kans.answer + "'");
+                        if (kans.showInInspector)
+                        {
+                            EditorGUILayout.BeginHorizontal();
+                            kans.answer = EditorGUILayout.TextField(new GUIContent("Text"), kans.answer);
+
+                            if (GUILayout.Button("Delete", GUILayout.MaxWidth(50)) &&
+                        EditorUtility.DisplayDialog("Confirm Deletion",
+                                                    "Are you sure to delete Answer " + kans.answer + "from " + khpp.Name + " event? This action cannot be undone.",
+                                                    "Yes", "No")
+                    )
+                                AnswerToRemove.Add(kans);
+
+                            EditorGUILayout.EndHorizontal();
+
+                            //----------------
+                            List<string> availableEvents = new List<string>();
+                            foreach(KEvent kevt in KEventManager.Instance.KEvents)
+                            {
+                                availableEvents.Add(kevt.Name);
+                            }
+
+                            // Set the choice index to the previously selected index
+                            int _choiceIndex = Array.IndexOf(KEventManager.Instance.KEvents.ToArray(), kans.answerEvent);
+
+                            // If the choice is not in the array then the _choiceIndex will be -1 so set back to 0
+                            if (_choiceIndex < 0)
+                                _choiceIndex = 0;
+
+                            _choiceIndex = EditorGUILayout.Popup(new GUIContent("Event"),_choiceIndex, availableEvents.ToArray());
+                            kans.answerEvent = KEventManager.Instance.KEvents[_choiceIndex];
+
+                            kans.intensity = (KEvent.Intensity)EditorGUILayout.EnumPopup("Intensity", kans.intensity);
+                        }
+                    }
+
+                    AnswerRemovePendent(khpp);
+
+                    EditorGUILayout.Space();
+                    EditorGUILayout.BeginHorizontal();
+
+                    GUILayout.Button("", new GUIStyle());
+
+                    if (GUILayout.Button("Add Answer", GUILayout.MinHeight(20), GUILayout.MaxWidth(100)))
+                    {
+                        khpp.Answers.Add(CreateInstance<KAnswer>());
+                    }
+
+                    GUILayout.Button("", new GUIStyle());
+
+                    EditorGUILayout.EndHorizontal();
+
+                    EditorGUILayout.Space();
+
+                    EditorGUI.indentLevel--;
+
+                }
+                EditorGUI.indentLevel--;
+
+
             }
         }
 
-        EditorGUILayout.LabelField("//TODO IMPLEMENTAR LISTA DE OPCOES COM OS NOMES DOS EVENTOS DISPONIVEIS", EditorStyles.boldLabel);
+
+
+        // EditorGUILayout.LabelField("//TODO IMPLEMENTAR LISTA DE OPCOES COM OS NOMES DOS EVENTOS DISPONIVEIS", EditorStyles.boldLabel);
+
+
 
         EditorGUILayout.Space();
 
         EditorGUILayout.BeginHorizontal();
-        if (GUILayout.Button("Add Event", GUILayout.MinHeight(30)))
+
+        GUILayout.Button("", new GUIStyle());
+
+        if (GUILayout.Button("Add Happening", GUILayout.MinHeight(30)))
         {
             KHappeningManagerScript.KHappenings.Add(CreateInstance<KHappening>());
         }
+
+        GUILayout.Button("", new GUIStyle());
+
         EditorGUILayout.EndHorizontal();
+
+        EditorGUILayout.Space();
 
         if (GUI.changed)
         {
@@ -88,6 +171,21 @@ public class KHappeningManagerEditor : Editor {
                 KHappeningManagerScript.KHappenings.Remove(khpp);
             }
             ToRemove.Clear();
+
+            return true;
+        }
+        return false;
+    }
+
+    private bool AnswerRemovePendent(KHappening khpp)
+    {
+        if (AnswerToRemove.Count > 0)
+        {
+            foreach (KAnswer kans in AnswerToRemove)
+            {
+                khpp.Answers.Remove(kans);
+            }
+            AnswerToRemove.Clear();
 
             return true;
         }

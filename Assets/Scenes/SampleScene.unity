@@ -320,7 +320,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 114956737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.46, y: -1.242, z: 0}
+  m_LocalPosition: {x: -3.58, y: -1.292, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -563,6 +563,26 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224031696857970514, guid: 6d6113f4524ea5a4492426e757059f30,
     type: 2}
   m_PrefabInternal: {fileID: 1397792197}
+--- !u!114 &149715686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Estiagem a Espreita
+  Description: Describe it here
+  Question: Deseja Irrigar a plantacao?
+  chance: 3
+  Answers:
+  - {fileID: 1211729133}
+  - {fileID: 859219643}
+  showInInspector: 1
+  showAnswers: 1
 --- !u!114 &180858199 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114683760722533478, guid: 6d6113f4524ea5a4492426e757059f30,
@@ -673,8 +693,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -731,23 +751,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654365761}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!114 &338686961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: New Event
-  Description: 
-  Question: Ask a Question
-  chance: 3
-  Respostas: []
-  showInInspector: 1
 --- !u!1 &339246755
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +876,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5496d100d2f98e9439be9378d2e3cfc1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -961,7 +964,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -3.924, y: -2.634, z: 0}
-  - {x: -1.497, y: -2.459, z: 0}
+  - {x: -1.497, y: -2.329, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -982,8 +985,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -1138,7 +1141,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 340350037}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.497, y: -2.459, z: 0}
+  m_LocalPosition: {x: -1.497, y: -2.329, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -1158,7 +1161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila
   type: 2
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 18
   foodLevel1: 31
@@ -1491,8 +1494,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -1701,8 +1704,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -2406,6 +2409,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &859219643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Irrigar
+  answerEvent: {fileID: 1343919401}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &864789676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,7 +2564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila
   type: 2
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 18
   foodLevel1: 31
@@ -2631,7 +2649,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5496d100d2f98e9439be9378d2e3cfc1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3446,11 +3464,11 @@ MonoBehaviour:
   Happiness: 100
   CanBattle: 1
   Gold: 1000
-  GoldNext: 275
+  GoldNext: 112
   Food: 1000
-  FoodNext: 339
+  FoodNext: 99
   Building: 1000
-  BuildingNext: 331
+  BuildingNext: 114
 --- !u!114 &1054705962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3463,25 +3481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KHappenings:
-  - {fileID: 338686961}
-  - {fileID: 1180563814}
---- !u!114 &1180563814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: New Event
-  Description: Describe it here
-  Question: Ask a Question
-  chance: 3
-  Respostas: []
-  showInInspector: 1
+  - {fileID: 149715686}
 --- !u!4 &1194851517
 Transform:
   m_ObjectHideFlags: 0
@@ -3533,6 +3533,21 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 420475203}
   - {fileID: 1234089219}
+--- !u!114 &1211729133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Nao irrigar
+  answerEvent: {fileID: 1343919401}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &1227787732
 GameObject:
   m_ObjectHideFlags: 0
@@ -3603,7 +3618,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 64960207f76150c40aebf57417d441b8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3658,7 +3673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Mina
   type: 1
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 35
   foodLevel1: 19
@@ -3745,7 +3760,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 572eb665f320f3040951434ef205d408, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3802,7 +3817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Fazenda
   type: 3
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 24
   foodLevel1: 34
@@ -3886,7 +3901,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b7b92f05155886469f17ae9edc31656, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3997,8 +4012,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -4200,7 +4215,7 @@ MonoBehaviour:
   AbsoluteGoldHeavy: 0
   AbsoluteFoodHeavy: 0
   AbsoluteBuildingHeavy: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!114 &1351915842 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114552059263885382, guid: 6d6113f4524ea5a4492426e757059f30,
@@ -4599,7 +4614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila
   type: 2
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 18
   foodLevel1: 31
@@ -4683,7 +4698,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5496d100d2f98e9439be9378d2e3cfc1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5467,8 +5482,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -5602,8 +5617,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -5809,8 +5824,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -6019,7 +6034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Floresta
   type: 4
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 13
   foodLevel1: 30
@@ -6147,7 +6162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Floresta
   type: 4
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 13
   foodLevel1: 30
@@ -6232,7 +6247,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 64960207f76150c40aebf57417d441b8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6573,7 +6588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Fazenda
   type: 3
-  dominated: 1
+  dominated: 0
   level: 1
   goldLevel1: 24
   foodLevel1: 34
@@ -6645,7 +6660,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b7b92f05155886469f17ae9edc31656, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6747,7 +6762,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -3.924, y: -2.634, z: 0}
-  - {x: -2.46, y: -1.242, z: 0}
+  - {x: -3.58, y: -1.292, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -6903,8 +6918,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}

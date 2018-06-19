@@ -67,7 +67,7 @@ namespace UnityEditor
 		
 		protected ReorderableList m_ReorderableList;
 		public RuleTile tile { get { return (target as RuleTile); } }
-		protected Rect m_ListRect;
+		//protected Rect m_ListRect;
 
 		protected const float k_DefaultElementHeight = 48f;
 		protected const float k_PaddingBetweenRules = 13f;
@@ -393,7 +393,7 @@ namespace UnityEditor
 				EditorJsonUtility.FromJsonOverwrite(EditorGUIUtility.systemCopyBuffer, rulesWrapper);
 				tile.m_TilingRules.AddRange(rulesWrapper.rules);
 			}
-			catch (Exception e)
+			catch (Exception)
 			{
 				Debug.LogError("Unable to paste rules from system copy buffer");
 			}
