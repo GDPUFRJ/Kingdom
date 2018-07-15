@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 222172131832484520}
   - component: {fileID: 114181066032040790}
   - component: {fileID: 114987718047636746}
+  - component: {fileID: 114714825900373888}
   m_Layer: 5
   m_Name: PropertyBox
   m_TagString: Untagged
@@ -964,6 +965,24 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: -32
+--- !u!114 &114714825900373888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879561081694618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33fab3c7526973e4494ddf49f8b2464d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 114368075912457376}
+  title: {fileID: 114272466082128546}
+  riq: {fileID: 114666899777016110}
+  con: {fileID: 114909244639575014}
+  food: {fileID: 114616302481605592}
+  happiness: {fileID: 114161607866374080}
+  soldier: {fileID: 114309759405584788}
 --- !u!114 &114802253586984308
 MonoBehaviour:
   m_ObjectHideFlags: 1
