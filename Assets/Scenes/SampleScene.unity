@@ -1228,6 +1228,7 @@ MonoBehaviour:
   comeFromRight: 0
   changePosition: 0
   movingVelocity: 0
+  canvasGroup: {fileID: 0}
 --- !u!1 &210906247
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,6 +4376,7 @@ GameObject:
   - component: {fileID: 781580105}
   - component: {fileID: 781580104}
   - component: {fileID: 781580103}
+  - component: {fileID: 781580107}
   m_Layer: 5
   m_Name: New Canvas
   m_TagString: Untagged
@@ -4464,6 +4466,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &781580107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781580102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55cbc89440cee124493ed0ba18ccfadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panels:
+  - {fileID: 1098702809}
+  - {fileID: 923098284}
+  - {fileID: 1007702360}
+  - {fileID: 1170363737}
+  - {fileID: 2040384722}
+  buttons:
+  - {fileID: 940699385}
+  - {fileID: 2140349958}
+  - {fileID: 1342351211}
+  - {fileID: 1466718079}
+  - {fileID: 1242671754}
 --- !u!1 &785027690
 GameObject:
   m_ObjectHideFlags: 0
@@ -6161,6 +6186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923098282}
   - component: {fileID: 923098283}
+  - component: {fileID: 923098284}
   m_Layer: 5
   m_Name: Tela 2 - Mapa
   m_TagString: Untagged
@@ -6198,6 +6224,17 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &923098284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923098281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ea97b68f1cb8a4eb57f5a8c35ed5b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940699380
 GameObject:
   m_ObjectHideFlags: 0
@@ -6209,6 +6246,7 @@ GameObject:
   - component: {fileID: 940699383}
   - component: {fileID: 940699382}
   - component: {fileID: 940699384}
+  - component: {fileID: 940699385}
   m_Layer: 5
   m_Name: B_History
   m_TagString: Untagged
@@ -6305,9 +6343,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 940699382}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 781580107}
+        m_MethodName: ChangePanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &940699385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940699380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01d99d77785524595833de66b15503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &946836382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,6 +6568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1007702358}
   - component: {fileID: 1007702359}
+  - component: {fileID: 1007702360}
   m_Layer: 5
   m_Name: Tela 3 - Propriedades
   m_TagString: Untagged
@@ -6545,6 +6606,18 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1007702360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007702357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b58178dce6e4a48ba7d5f02e15a1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyBoxPrefab: {fileID: 0}
 --- !u!1 &1032534168
 GameObject:
   m_ObjectHideFlags: 0
@@ -6721,6 +6794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098702807}
   - component: {fileID: 1098702808}
+  - component: {fileID: 1098702809}
   m_Layer: 5
   m_Name: Tela 1 - Historico
   m_TagString: Untagged
@@ -6758,6 +6832,19 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1098702809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098702806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 982b9d595c8926b49835abb26dd40608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dateBoxPrefab: {fileID: 0}
+  timeBoxPrefab: {fileID: 0}
 --- !u!1 &1122123770
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,6 +7162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170363735}
   - component: {fileID: 1170363736}
+  - component: {fileID: 1170363737}
   m_Layer: 5
   m_Name: Tela 4 - Eventos
   m_TagString: Untagged
@@ -7112,6 +7200,18 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1170363737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170363734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02e2d7f24617b8469055ada17722438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventBoxPrefab: {fileID: 0}
 --- !u!1 &1176883030
 GameObject:
   m_ObjectHideFlags: 0
@@ -7844,6 +7944,7 @@ GameObject:
   - component: {fileID: 1242671752}
   - component: {fileID: 1242671751}
   - component: {fileID: 1242671753}
+  - component: {fileID: 1242671754}
   m_Layer: 5
   m_Name: B_Soldiers
   m_TagString: Untagged
@@ -7940,9 +8041,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1242671751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 781580107}
+        m_MethodName: ChangePanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1242671754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242671749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01d99d77785524595833de66b15503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1247369278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8230,6 +8353,7 @@ MonoBehaviour:
   comeFromRight: 1
   changePosition: 1
   movingVelocity: 0.25
+  canvasGroup: {fileID: 0}
   propertiesParent: {fileID: 508453116}
   propertyPrefab: {fileID: 1223301996960928, guid: 8dafda910f4e3b74297016bf883c5326,
     type: 2}
@@ -8249,6 +8373,7 @@ MonoBehaviour:
   comeFromRight: 0
   changePosition: 1
   movingVelocity: 0.25
+  canvasGroup: {fileID: 0}
 --- !u!1 &1300151428
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,6 +8592,7 @@ GameObject:
   - component: {fileID: 1342351209}
   - component: {fileID: 1342351208}
   - component: {fileID: 1342351210}
+  - component: {fileID: 1342351211}
   m_Layer: 5
   m_Name: B_Properties
   m_TagString: Untagged
@@ -8563,9 +8689,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1342351208}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 781580107}
+        m_MethodName: ChangePanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1342351211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342351206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01d99d77785524595833de66b15503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1343919401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9170,6 +9318,7 @@ GameObject:
   - component: {fileID: 1466718077}
   - component: {fileID: 1466718076}
   - component: {fileID: 1466718078}
+  - component: {fileID: 1466718079}
   m_Layer: 5
   m_Name: B_Events
   m_TagString: Untagged
@@ -9266,9 +9415,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1466718076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 781580107}
+        m_MethodName: ChangePanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1466718079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466718074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01d99d77785524595833de66b15503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1475552010
 Prefab:
   m_ObjectHideFlags: 0
@@ -11812,7 +11983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -11959,11 +12130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panels:
-  - {fileID: 1287599016}
-  - {fileID: 210520901}
-  - {fileID: 1295613065}
-  currentPanel: 1
-  currentPanelName: {fileID: 2076333424}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  buttons: []
 --- !u!1 &1873093656
 GameObject:
   m_ObjectHideFlags: 0
@@ -13284,6 +13454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040384720}
   - component: {fileID: 2040384721}
+  - component: {fileID: 2040384722}
   m_Layer: 5
   m_Name: Tela 5 - Soldados
   m_TagString: Untagged
@@ -13320,6 +13491,17 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &2040384722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2040384719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f431d4cb935a78841b46d1e0b3279d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2057654246
 GameObject:
   m_ObjectHideFlags: 0
@@ -13668,6 +13850,7 @@ GameObject:
   - component: {fileID: 2140349956}
   - component: {fileID: 2140349955}
   - component: {fileID: 2140349957}
+  - component: {fileID: 2140349958}
   m_Layer: 5
   m_Name: B_Map
   m_TagString: Untagged
@@ -13764,6 +13947,28 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2140349955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 781580107}
+        m_MethodName: ChangePanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2140349958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2140349953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01d99d77785524595833de66b15503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
