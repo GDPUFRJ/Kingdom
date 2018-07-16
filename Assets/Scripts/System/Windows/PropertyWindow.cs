@@ -47,30 +47,17 @@ public class PropertyWindow : MonoBehaviour {
     {
         //consumir itens e aprimorar nivel da propriedade
 
-        if (property.level == Level.Level1)
+        if (property.Upgradable())
         {
-            if (GameManager.Instance.ConsumeItens(property.goldToLevel2, 
-                                                      property.buildingToLevel2,
-                                                      property.foodToLevel2))
+            if (GameManager.Instance.ConsumeItens(property.GetUpgradeInformations()))
             {
-                property.LevelUp(Level.Level2);
+                property.LevelUp();
                 print("Upgraded");
                 UpdatePropertyInfo();
-            }
-                
-        }
-        else if(property.level == Level.Level2)
-        {
-            if (GameManager.Instance.ConsumeItens(property.goldToLevel3,
-                                                      property.buildingToLevel3,
-                                                      property.foodToLevel3))
-            {
-                property.LevelUp(Level.Level3);
-                print("Upgraded");
-                UpdatePropertyInfo();
+
             }
         }
-        
+        UpdatePropertyInfo();
     }
     public void GiveUpProperty()
     {

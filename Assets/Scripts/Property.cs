@@ -15,15 +15,18 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public int happiness = 90;
 
     [Header("Production Information")]
-    [Range(-100, 100)] public int goldLevel1 = 0;
+    [Range(-100, 100)]
+    public int goldLevel1 = 0;
     [Range(-100, 100)] public int foodLevel1 = 0;
     [Range(-100, 100)] public int buildingLevel1 = 0;
     [Space(10)]
-    [Range(-100, 100)] public int goldLevel2 = 0;
+    [Range(-100, 100)]
+    public int goldLevel2 = 0;
     [Range(-100, 100)] public int foodLevel2 = 0;
     [Range(-100, 100)] public int buildingLevel2 = 0;
     [Space(10)]
-    [Range(-100, 100)] public int goldLevel3 = 0;
+    [Range(-100, 100)]
+    public int goldLevel3 = 0;
     [Range(-100, 100)] public int foodLevel3 = 0;
     [Range(-100, 100)] public int buildingLevel3 = 0;
 
@@ -46,7 +49,32 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
 
-    
+    public UpgradeInformations GetUpgradeInformations()
+    {
+        UpgradeInformations upgradeInformations = new UpgradeInformations();
+
+        if (level == Level.Level3)
+            return null;
+
+        switch (level)
+        {
+            case Level.Level1:
+                upgradeInformations.Gold = goldToLevel2;
+                upgradeInformations.Building = buildingToLevel2;
+                upgradeInformations.Food = foodToLevel2;
+                break;
+            case Level.Level2:
+                upgradeInformations.Gold = goldToLevel3;
+                upgradeInformations.Building = buildingToLevel3;
+                upgradeInformations.Food = foodToLevel3;
+                break;
+            default:
+                break;
+        }
+
+        return upgradeInformations;
+    }
+
 
     public Informations GetInfo()
     {
@@ -77,7 +105,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     }
 
 
-        private void Start()
+    private void Start()
     {
         TimerPanel.OnDayEnd += OnDayEnd;
 
@@ -90,6 +118,11 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         //Debug.Log("A propriedade " + customTitle + " Passou para o dia seguinte");
         if (!dominated) return;
 
+        AddConsumption();
+    }
+
+    private void AddConsumption()
+    {
         switch (level)
         {
             case Level.Level1:
@@ -134,10 +167,31 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
             return 1;
     }
 
-    public void LevelUp(Level level)
+    public void LevelUp()
+    {
+        if (level == Level.Level3)
+            return;
+
+        if (level == Level.Level1)
+            this.level = Level.Level2;
+        if (level == Level.Level2)
+            this.level = Level.Level3;
+
+        UpdateSprite(this);
+    }
+
+    public void SetLevel(Level level)
     {
         this.level = level;
         UpdateSprite(this);
+    }
+
+    public bool Upgradable()
+    {
+        if (level == Level.Level1 || level == Level.Level2)
+            return true;
+        else
+            return false;
     }
 
     //in game
@@ -310,12 +364,23 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         }
     }
 
+
+
+    public enum Tipo
+    {
+        Castle, Mine, Village, Farm, Forest, Other
+    }
+
+
+
+    public class UpgradeInformations
+    {
+        public int Gold;
+        public int Food;
+        public int Building;
+    }
 }
 
-public enum Tipo
-{
-    Castle, Mine, Village, Farm, Forest, Other 
-}
 public enum Level
 {
     Level1 = 1, Level2 = 2, Level3 = 3
@@ -324,6 +389,7 @@ public enum Resource
 {
     Gold, Building, Food
 }
+
 public struct Informations
 {
     public Sprite sprite;

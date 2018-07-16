@@ -78,13 +78,18 @@ public class GameManager : Singleton<GameManager> {
         hud.UpdateHUD();
     }
 
-    public bool ConsumeItens(int gold, int building, int food = 0)
+    public bool ConsumeItens(Property.UpgradeInformations upgradeInformations)
     {
-        if (gold <= this.Gold && building <= this.Building && food <= this.Food)
+        if (upgradeInformations == null)
+            return false;
+
+        if (upgradeInformations.Gold <= this.Gold &&
+            upgradeInformations.Building <= this.Building &&
+            upgradeInformations.Food <= this.Food)
         {
-            Gold -= gold;
-            Building -= building;
-            Food -= food;
+            Gold -= upgradeInformations.Gold;
+            Building -= upgradeInformations.Building;
+            Food -= upgradeInformations.Food;
             hud.UpdateHUD();
             return true;
         }

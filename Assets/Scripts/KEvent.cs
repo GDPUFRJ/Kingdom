@@ -7,10 +7,13 @@ public class KEvent : ScriptableObject
 
     public string Name = "New Event";
     public string Description = "Describe it here";
+
     public int Duration = 1;
+    public int LeftDuration = 1;
 
     public enum Intensity { light = 0, medium = 1, heavy = 2 }
     public Intensity intensity = Intensity.light;
+    public Intensity ActiveIntensity = Intensity.light;
 
     public enum Mode { UsePercentage = 0, UseAbsolute = 1}
     public Mode mode = Mode.UsePercentage;
@@ -50,13 +53,8 @@ public class KEvent : ScriptableObject
 
     public bool showInInspector = true;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+
+
 }

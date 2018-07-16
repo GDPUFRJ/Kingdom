@@ -49,7 +49,7 @@ public class KEventManagerEditor : Editor
                     EditorGUILayout.EndHorizontal();
                     EditorGUILayout.BeginVertical();
 
-                    kevt.Duration = EditorGUILayout.IntSlider(new GUIContent("Duration Days"), kevt.Duration, 0, +30);
+                    kevt.Duration = EditorGUILayout.IntSlider(new GUIContent("Duration Days"), kevt.Duration, 0, +30);  
 
                     kevt.intensity = (KEvent.Intensity)EditorGUILayout.EnumPopup("Intensity", kevt.intensity);
                     kevt.chance = (KEvent.Chance)EditorGUILayout.EnumPopup("Chance", kevt.chance);

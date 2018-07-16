@@ -8,7 +8,11 @@ public class KEventManager : Singleton<KEventManager> {
 
     protected KEventManager() { }
 
+    private int MaxActiveEvent = 3;
+
     public List<KEvent> KEvents = new List<KEvent>();
+
+    private List<KEvent> KEventsActives = new List<KEvent>();
 
     private List<KEvent> ManualEvents = new List<KEvent>();
     private List<KEvent> MuitoComumEvents = new List<KEvent>();
@@ -17,10 +21,19 @@ public class KEventManager : Singleton<KEventManager> {
     private List<KEvent> RaroEvents = new List<KEvent>();
     private List<KEvent> MuitoRaroEvents = new List<KEvent>();
 
+    private List<List<KEvent>> EventsByRarity = new List<List<KEvent>>();
+
+
     // Use this for initialization
     void Start() {
 
         TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
+
+        EventsByRarity.Add(MuitoComumEvents);
+        EventsByRarity.Add(ComumEvents);
+        EventsByRarity.Add(NormalEvents);
+        EventsByRarity.Add(RaroEvents);
+        EventsByRarity.Add(MuitoRaroEvents);
 
         foreach (KEvent kevt in KEvents)
         {
@@ -58,10 +71,14 @@ public class KEventManager : Singleton<KEventManager> {
 		
 	}
 
-    private bool FireEvent(KEvent kevt, KEvent.Intensity intensity)
+    public bool FireEvent(KEvent kevt, KEvent.Intensity intensity)
     {
         if (kevt != null)
         {
+            KEvent EventToAdd = Instantiate(kevt);//creates a copy of the event
+            EventToAdd.LeftDuration = EventToAdd.Duration;
+            EventToAdd.ActiveIntensity = intensity;
+            KEventsActives.Add(EventToAdd); 
 
             return true;
         }
@@ -83,6 +100,25 @@ public class KEventManager : Singleton<KEventManager> {
         }
 
         return null;
+    }
+
+    private bool GenerateNewKEvent()
+    {
+        if (MaxActiveEvent < KEventsActives.Count)
+            return false;
+
+        if (UnityEngine.Random.Range(0, 1000000) < 750000)
+            return false;
+
+        int rarity = UnityEngine.Random.Range(0, 1000000) % 5;
+        int intensity = UnityEngine.Random.Range(0, 1000000) % 3;
+
+        List<KEvent> SelectedList = EventsByRarity[rarity];
+
+        KEvent selectedEvent = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
+
+        return FireEvent(selectedEvent, (KEvent.Intensity)intensity);
+
     }
 
 }
