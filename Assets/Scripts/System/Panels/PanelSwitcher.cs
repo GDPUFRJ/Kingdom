@@ -10,17 +10,16 @@ public class PanelSwitcher : MonoBehaviour {
 
     private RectTransform rectTransform;
 
-    public void Start()
-    {
-        rectTransform = GetComponent<RectTransform>();
-    }
     public void ActiveButton()
     {
-
+        if(rectTransform == null)
+            rectTransform = GetComponent<RectTransform>();
         rectTransform.DORotate(new Vector3(ACTIVE_ANGLE, 0, 0),DURATION);
     }
     public void DisableButton()
     {
+        if (rectTransform == null)
+            rectTransform = GetComponent<RectTransform>();
         rectTransform.DORotate(new Vector3(0, 0, 0), DURATION);
     }
 

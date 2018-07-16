@@ -16,8 +16,7 @@ public class PanelController : MonoBehaviour{
     {
         HideAllPanels();
         currentPanel = DEFAULT_PANEL;
-        panels[currentPanel].ShowPanel(0);
-        buttons[currentPanel].ActiveButton();
+        TogglePanelAndButton(true, currentPanel);
     }
 
     public void ChangePanel(int newPanel)
@@ -26,10 +25,8 @@ public class PanelController : MonoBehaviour{
         {
             newPanel = DEFAULT_PANEL;
         }
-        panels[currentPanel].HidePanel();
-        buttons[currentPanel].DisableButton();
-        panels[newPanel].ShowPanel();
-        buttons[newPanel].ActiveButton();
+        TogglePanelAndButton(false, currentPanel);
+        TogglePanelAndButton(true, newPanel);
 
         currentPanel = newPanel;
         panels[currentPanel].PrepareContent();
@@ -40,6 +37,26 @@ public class PanelController : MonoBehaviour{
         foreach (AMainPanel panel in panels)
         {
             panel.HidePanel(0);
+        }
+    }
+
+    private void TogglePanelAndButton(bool enable, int id, float duration = -1)
+    {
+        if (enable)
+        {
+            buttons[id].ActiveButton();
+            if(duration != -1)
+                panels[id].ShowPanel(duration);
+            else
+                panels[id].ShowPanel();
+        }
+        else
+        {
+            buttons[id].DisableButton();
+            if (duration != -1)
+                panels[id].HidePanel(duration);
+            else
+                panels[id].HidePanel();
         }
     }
 }

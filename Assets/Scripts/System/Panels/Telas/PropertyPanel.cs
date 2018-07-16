@@ -16,7 +16,7 @@ public class PropertyPanel : AMainPanel
             if (prop.dominated)
             {
                 var obj = Instantiate(propertyBoxPrefab, root).GetComponent<PropertyBox>();
-                obj.SetInformation(prop);
+                obj.SetInformation(prop,prop.GetInfo());
             }
         }
     }

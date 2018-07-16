@@ -69,7 +69,6 @@ public class TimerPanel : MonoBehaviour {
             OnBeforeDayEnd();
 
         currentDay++;
-        print("DAWN OF THE "+(currentDay+1)+"th DAY");
 
         if(OnDayEnd != null)
             OnDayEnd();

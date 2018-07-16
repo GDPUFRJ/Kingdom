@@ -978,8 +978,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 114368075912457376}
   title: {fileID: 114272466082128546}
-  riq: {fileID: 114666899777016110}
-  con: {fileID: 114909244639575014}
+  gold: {fileID: 114666899777016110}
+  building: {fileID: 114909244639575014}
   food: {fileID: 114616302481605592}
   happiness: {fileID: 114161607866374080}
   soldier: {fileID: 114309759405584788}

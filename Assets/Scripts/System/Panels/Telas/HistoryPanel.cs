@@ -8,6 +8,5 @@ public class HistoryPanel : AMainPanel {
 
     public override void PrepareContent()
     {
-        print("PREPARING");
     }
 }

@@ -46,19 +46,11 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
 
-    public struct Infomations
-    {
-        public Sprite sprite;
-        public int Gold;
-        public int Food;
-        public int Building;
-        public int Soldiers;
-        public int happiness;
-    }
+    
 
-    public Infomations GetInfo()
+    public Informations GetInfo()
     {
-        Infomations info = new Infomations();
+        Informations info = new Informations();
 
         switch (level)
         {
@@ -318,9 +310,9 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         }
     }
 
-    }
+}
 
-    public enum Tipo
+public enum Tipo
 {
     Castle, Mine, Village, Farm, Forest, Other 
 }
@@ -328,9 +320,16 @@ public enum Level
 {
     Level1 = 1, Level2 = 2, Level3 = 3
 }
-
 public enum Resource
 {
     Gold, Building, Food
 }
+public struct Informations
+{
+    public Sprite sprite;
+    public int Gold;
+    public int Food;
+    public int Building;
+    public int Soldiers;
+    public int happiness;
 }

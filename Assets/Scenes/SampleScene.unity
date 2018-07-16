@@ -458,6 +458,8 @@ MonoBehaviour:
   type: 2
   dominated: 1
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -1476,6 +1478,8 @@ MonoBehaviour:
   type: 2
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -1597,6 +1601,8 @@ MonoBehaviour:
   type: 0
   dominated: 1
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
@@ -3878,6 +3884,8 @@ MonoBehaviour:
   type: 2
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -4162,7 +4170,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 923098281}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -4592,6 +4600,8 @@ MonoBehaviour:
   type: 1
   dominated: 1
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
@@ -5137,6 +5147,8 @@ MonoBehaviour:
   type: 3
   dominated: 1
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
@@ -5397,6 +5409,8 @@ MonoBehaviour:
   type: 1
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
@@ -5541,6 +5555,8 @@ MonoBehaviour:
   type: 3
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
@@ -7421,6 +7437,8 @@ MonoBehaviour:
   type: 2
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -8461,6 +8479,8 @@ MonoBehaviour:
   type: 4
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
@@ -8517,6 +8537,8 @@ MonoBehaviour:
   type: 4
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
@@ -8739,7 +8761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -9227,6 +9249,8 @@ MonoBehaviour:
   type: 3
   dominated: 0
   level: 1
+  soldiers: 14
+  happiness: 90
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
