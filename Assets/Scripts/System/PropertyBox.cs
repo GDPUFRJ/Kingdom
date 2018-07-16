@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class PropertyBox : MonoBehaviour {
+    private const float TIME_TO_GIVEUP = 0.1f;
+    private const float TIME_TO_UPGRADE = 0.1f;
+    private const float BOX_MAX_INCREASE_TAX = 0.1f;
+
     [Header("Property HUD Elements")]
     [SerializeField] private Image icon;
     [SerializeField] private Text title;
@@ -36,12 +41,26 @@ public class PropertyBox : MonoBehaviour {
     }
     public void Upgrade()
     {
-        this.property.LevelUp();
-        this.SetInformation(property, propertyPanel);
+        if(property.level != Level.Level3)
+            StartCoroutine(UpgradeAnimation());
     }
     public void GiveUp()
     {
+        if (property.type != Property.Tipo.Castle)
+            StartCoroutine(GiveUpAnimation());
+    }
+    private IEnumerator GiveUpAnimation()
+    {
         this.property.SetDominated(false);
+        this.gameObject.transform.DOScale(0, TIME_TO_GIVEUP);
+        yield return new WaitForSeconds(TIME_TO_GIVEUP);
         propertyPanel.PrepareContent();
+    }
+    private IEnumerator UpgradeAnimation()
+    {
+        this.property.LevelUp();
+        this.gameObject.transform.DOPunchScale(new Vector3(BOX_MAX_INCREASE_TAX, BOX_MAX_INCREASE_TAX, BOX_MAX_INCREASE_TAX), TIME_TO_UPGRADE);
+        yield return new WaitForSeconds(TIME_TO_UPGRADE);
+        this.SetInformation(property, propertyPanel);
     }
 }
