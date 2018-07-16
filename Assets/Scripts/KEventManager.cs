@@ -116,4 +116,8 @@ public class KEventManager : Singleton<KEventManager> {
 
     }
 
+    public List<KEvent> GetAllActiveEvents()
+    {
+        return KEventsActives;
+    }
 }

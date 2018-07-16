@@ -53,8 +53,21 @@ public class KEvent : ScriptableObject
 
     public bool showInInspector = true;
 
+    public EventInfo GetInfo()
+    {
+        return new EventInfo(this.Name,this.Description,this.LeftDuration);
+    }
+}
+public class EventInfo
+{
+    public string name;
+    public string description;
+    public int remainingDays;
 
-
-
-
+    public EventInfo(string _name,string _description,int _remainingDays)
+    {
+        this.name = _name;
+        this.description = _description;
+        this.remainingDays = _remainingDays;
+    }
 }
