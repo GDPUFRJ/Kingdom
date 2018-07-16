@@ -4,44 +4,44 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PropertyBox : MonoBehaviour {
+    [Header("Property HUD Elements")]
     [SerializeField] private Image icon;
     [SerializeField] private Text title;
-
     [SerializeField] private Text gold;
     [SerializeField] private Text building;
     [SerializeField] private Text food;
-
     [SerializeField] private Text happiness;
     [SerializeField] private Text soldier;
 
     private Property property;
+    private PropertyPanel propertyPanel;
 
-    public void SetInformation(Property prop, Informations info)
+    public void SetInformation(Property prop, PropertyPanel panel)
     {
-        //funcao dentro de toda propriedade que retorna os recursos que ela atualmente gasta/produz
-        //funcao que retorna facilmente seu sprite
+        Informations info = prop.GetInfo();
+
+        this.propertyPanel = panel;
         this.property = prop;
         this.icon.sprite = info.sprite;
-
-        this.title.text = prop.customTitle;
-
-        this.food.text = "+" + info.Food.ToString();
-        this.gold.text = "+" + info.Gold.ToString();
-        this.building.text = "+" + info.Building.ToString();
-
-        this.happiness.text = "+" + info.happiness.ToString();
-        this.soldier.text = "+" + info.Soldiers.ToString();
+        this.title.text = "[" + prop.level + "] " + prop.customTitle;
+        this.food.text = info.Food.ToString();
+        this.gold.text = info.Gold.ToString();
+        this.building.text = info.Building.ToString();
+        this.happiness.text = info.happiness.ToString();
+        this.soldier.text = info.Soldiers.ToString();
     }
     public Property GetProperty()
     {
-        return property;
+        return this.property;
     }
     public void Upgrade()
     {
-        //levelUp
+        this.property.LevelUp();
+        this.SetInformation(property, propertyPanel);
     }
     public void GiveUp()
     {
-        //isDominated = false
+        this.property.SetDominated(false);
+        propertyPanel.PrepareContent();
     }
 }

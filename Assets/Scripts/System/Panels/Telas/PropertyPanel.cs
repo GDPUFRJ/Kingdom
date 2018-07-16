@@ -16,15 +16,15 @@ public class PropertyPanel : AMainPanel
             if (prop.dominated)
             {
                 var obj = Instantiate(propertyBoxPrefab, root).GetComponent<PropertyBox>();
-                obj.SetInformation(prop,prop.GetInfo());
+                obj.SetInformation(prop,this);
             }
         }
     }
     private void DeleteAllChilds()
     {
-        for(int i = root.childCount; i > 0; i--)
+        for(int i = root.childCount-1; i >= 0; i--)
         {
-            Destroy(root.GetChild(0).gameObject);
+            Destroy(root.GetChild(i).gameObject);
         }
     }
 }

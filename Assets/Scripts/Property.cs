@@ -171,12 +171,10 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     {
         if (level == Level.Level3)
             return;
-
         if (level == Level.Level1)
             this.level = Level.Level2;
-        if (level == Level.Level2)
+        else if (level == Level.Level2)
             this.level = Level.Level3;
-
         UpdateSprite(this);
     }
 

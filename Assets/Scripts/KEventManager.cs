@@ -66,11 +66,6 @@ public class KEventManager : Singleton<KEventManager> {
         throw new NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
-
     public bool FireEvent(KEvent kevt, KEvent.Intensity intensity)
     {
         if (kevt != null)
