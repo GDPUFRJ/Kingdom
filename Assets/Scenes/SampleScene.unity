@@ -1923,8 +1923,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
-      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -3882,7 +3882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila
   type: 2
-  dominated: 0
+  dominated: 1
   level: 1
   soldiers: 14
   happiness: 90
@@ -3969,7 +3969,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5496d100d2f98e9439be9378d2e3cfc1, type: 3}
-  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5407,7 +5407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Mina
   type: 1
-  dominated: 0
+  dominated: 1
   level: 1
   soldiers: 14
   happiness: 90
@@ -5496,7 +5496,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 572eb665f320f3040951434ef205d408, type: 3}
-  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5957,8 +5957,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
-      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -8267,8 +8267,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
-      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -8535,7 +8535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Floresta
   type: 4
-  dominated: 0
+  dominated: 1
   level: 1
   soldiers: 14
   happiness: 90
@@ -8622,7 +8622,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 64960207f76150c40aebf57417d441b8, type: 3}
-  m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9579,8 +9579,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
-      key1: {r: 0.69803923, g: 0.69411767, b: 0.69411767, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}

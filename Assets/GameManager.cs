@@ -39,9 +39,14 @@ public class GameManager : Singleton<GameManager> {
         GoldNext = 0;
         FoodNext = 0;
         BuildingNext = 0;
+        int DominatedProperties = 0;
         foreach (Property p in PropertyManager.Instance.Propriedades)
         {
-            if (!p.dominated) continue;
+            if (p.dominated)
+                DominatedProperties++;
+            else
+                continue;
+
             switch (p.level)
             {
                 case Level.Level1:
@@ -61,6 +66,9 @@ public class GameManager : Singleton<GameManager> {
                     break;
             }
         }
+
+        if (DominatedProperties == PropertyManager.Instance.Propriedades.Count)
+            GameWon();
     }
 
     //called only when a new property is added or removed
@@ -86,5 +94,10 @@ public class GameManager : Singleton<GameManager> {
     private void OnApplicationQuit()
     {
         TimerPanel.OnAfterDayEnd -= OnAfterDayEnd;
+    }
+
+    void GameWon()
+    {
+        Debug.Log("GANHOU!");
     }
 }
