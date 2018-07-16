@@ -2,31 +2,22 @@
 using DG.Tweening;
 
 public abstract class AMainPanel: MonoBehaviour{
-    [SerializeField] public string panelName;
-    private const int CANVAS_WIDTH = 720;
-    [SerializeField] private bool comeFromRight;
-    [SerializeField] private bool changePosition;
-    [SerializeField] private float movingVelocity;
+    private const float FADE_DURATION = 0.5f;
 
-    public void HidePanel(float velocity = -1)
+    public void HidePanel(float duration = FADE_DURATION)
     {
-        if (!changePosition) return;
-        if (velocity == -1) velocity = movingVelocity;
-        RectTransform rect = GetComponent<RectTransform>();
-        rect.DOAnchorPosX(720 * GetBias(), velocity);
+        CanvasGroup group = GetComponent<CanvasGroup>();
+        group.DOFade(0, duration);
+        group.interactable = false;
+        group.blocksRaycasts = false;
     }
-    public void ShowPanel(float velocity = -1)
+    public void ShowPanel(float duration = FADE_DURATION)
     {
-        if (!changePosition) return;
-        if (velocity == -1) velocity = movingVelocity;
-        RectTransform rect = GetComponent<RectTransform>();
-        rect.DOAnchorPosX(0, velocity);
+        CanvasGroup group = GetComponent<CanvasGroup>();
+        group.DOFade(1, duration);
+        group.interactable = true;
+        group.blocksRaycasts = true;
         PrepareContent();
-    }
-    private int GetBias()
-    {
-        if (comeFromRight) return -1;
-        else return 1;
     }
     abstract public void PrepareContent();
 }
