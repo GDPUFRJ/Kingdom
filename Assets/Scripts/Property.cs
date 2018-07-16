@@ -11,6 +11,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public Tipo type;
     public bool dominated = false;
     public Level level = Level.Level1; //DO NOT CHANGE THIS DIRECTLY
+    public int soldiers = 14;
+    public int happiness = 90;
 
     [Header("Production Information")]
     [Range(-100, 100)] public int goldLevel1 = 0;
@@ -44,9 +46,46 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
 
+    public struct Infomations
+    {
+        public Sprite sprite;
+        public int Gold;
+        public int Food;
+        public int Building;
+        public int Soldiers;
+        public int happiness;
+    }
+
+    public Infomations GetInfo()
+    {
+        Infomations info = new Infomations();
+
+        switch (level)
+        {
+            case Level.Level1:
+                info.Gold = goldLevel1;
+                info.Food = foodLevel1;
+                info.Building = buildingLevel1;
+                break;
+            case Level.Level2:
+                info.Gold = goldLevel2;
+                info.Food = foodLevel2;
+                info.Building = buildingLevel2;
+                break;
+            case Level.Level3:
+                info.Gold = goldLevel3;
+                info.Food = foodLevel3;
+                info.Building = buildingLevel3;
+                break;
+        }
+        info.Soldiers = soldiers;
+        info.happiness = happiness;
+
+        return info;
+    }
 
 
-    private void Start()
+        private void Start()
     {
         TimerPanel.OnDayEnd += OnDayEnd;
 
@@ -279,9 +318,9 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         }
     }
 
-}
+    }
 
-public enum Tipo
+    public enum Tipo
 {
     Castle, Mine, Village, Farm, Forest, Other 
 }
@@ -293,4 +332,5 @@ public enum Level
 public enum Resource
 {
     Gold, Building, Food
+}
 }
