@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 224352374492265210}
   - component: {fileID: 222633630290329756}
   - component: {fileID: 114894829459645470}
+  - component: {fileID: 114441070503066152}
   m_Layer: 5
   m_Name: TextBox
   m_TagString: Untagged
@@ -45,6 +46,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114441070503066152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381877582086748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6730870097402914da923af126ccaa24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114693341402968610
 MonoBehaviour:
   m_ObjectHideFlags: 1
