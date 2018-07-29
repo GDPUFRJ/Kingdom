@@ -8,7 +8,16 @@ public class KEventManager : Singleton<KEventManager> {
 
     protected KEventManager() { }
 
-    private int MaxActiveEvent = 3;
+    public int MaxActiveEvent = 3;
+
+    public int MuitoComumChance = 20;
+    public int ComumChance = 20;
+    public int NormalChance = 20;
+    public int RaroChance = 20;
+    public int MuitoRaroChance = 20;
+
+
+
 
     public List<KEvent> KEvents = new List<KEvent>();
 
@@ -99,6 +108,7 @@ public class KEventManager : Singleton<KEventManager> {
 
     private bool GenerateNewKEvent()
     {
+        //To be modified
         if (MaxActiveEvent < KEventsActives.Count)
             return false;
 

@@ -15,7 +15,6 @@ public class KHappening : ScriptableObject {
     public bool showInInspector = true;
     public bool showAnswers = true;
 
-
     // Use this for initialization
     void Start () {
 		
