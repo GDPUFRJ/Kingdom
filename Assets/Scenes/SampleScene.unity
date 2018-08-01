@@ -687,12 +687,12 @@ MonoBehaviour:
   Name: Estiagem a Espreita
   Description: Describe it here
   Question: Deseja Irrigar a plantacao?
-  chance: 3
+  chance: 5
   Answers:
   - {fileID: 1211729133}
   - {fileID: 859219643}
   showInInspector: 1
-  showAnswers: 0
+  showAnswers: 1
 --- !u!1 &193695274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,8 +1086,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 193695276}
   m_HandleRect: {fileID: 193695275}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 0.5
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2734,7 +2734,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000045776367}
+  m_AnchoredPosition: {x: 0, y: -0.000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -3331,7 +3331,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 411ed351771329345b6a0b00f6ec9bac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f85e11de73d83241b3a7ec2c521b26c, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3430,9 +3430,8 @@ MonoBehaviour:
   DominatedLine: {r: 1, g: 1, b: 1, a: 1}
   NotDominatedLine: {r: 0.6981132, g: 0.6948202, b: 0.6948202, a: 1}
   NotDominatedProperty: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
-  canvasParent: {fileID: 0}
-  propertyWindowPrefab: {fileID: 1003950535373766, guid: 46b23beb2f67d3c47b308f1aadf30595,
-    type: 2}
+  canvasParent: {fileID: 781580106}
+  propertyWindowPrefab: {fileID: 916748411}
   lineManager: {fileID: 1983170130}
   Propriedades:
   - {fileID: 420475203}
@@ -4129,7 +4128,7 @@ MonoBehaviour:
   answer: Irrigar
   answerEvent: {fileID: 1343919401}
   intensity: 0
-  showInInspector: 0
+  showInInspector: 1
 --- !u!1 &865820117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,6 +4483,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 420475203}
   end: {fileID: 1194851518}
+--- !u!1 &916748411 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1879561081694618, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+    type: 2}
+  m_PrefabInternal: {fileID: 797614061}
 --- !u!1 &923098281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5189,6 +5193,13 @@ MonoBehaviour:
   FoodNext: 179
   Building: 1000
   BuildingNext: 209
+  happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
+    type: 2}
+  answerPrefab: {fileID: 1021142946201792, guid: 551dbad544f7753429e78ace9f2f1a9b,
+    type: 2}
+  newDayPrefab: {fileID: 1913524636860988, guid: 16b0d517c32ede348b59b16c5d235f37,
+    type: 2}
+  canvasRoot: {fileID: 781580106}
 --- !u!114 &1054705962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7010,7 +7021,7 @@ MonoBehaviour:
   ActiveIntensity: 0
   mode: 0
   battle: 1
-  chance: 3
+  chance: 5
   PercentGoldLight: 0
   PercentFoodLight: -25
   PercentBuildingLight: 0
@@ -7032,7 +7043,7 @@ MonoBehaviour:
   AbsoluteGoldHeavy: 0
   AbsoluteFoodHeavy: 0
   AbsoluteBuildingHeavy: 0
-  showInInspector: 0
+  showInInspector: 1
 --- !u!1 &1347065579
 GameObject:
   m_ObjectHideFlags: 0
@@ -8277,7 +8288,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722285217}
   m_HandleRect: {fileID: 722285216}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9420,7 +9431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -10801,7 +10812,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645001500}
   m_HandleRect: {fileID: 1645001499}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 0.5
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:

@@ -72,7 +72,7 @@ public class KEventManager : Singleton<KEventManager> {
 
     private void OnAfterDayEnd()
     {
-        throw new NotImplementedException();
+        print("ON AFTER DAY END");
     }
 
     public bool FireEvent(KEvent kevt, KEvent.Intensity intensity)

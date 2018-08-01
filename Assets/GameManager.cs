@@ -1,108 +1,104 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections; 
+using System.Collections.Generic; 
+using UnityEngine; 
 
-public class GameManager : Singleton<GameManager> {
+public class GameManager:Singleton < GameManager >  {
 
-    protected GameManager() { }
+    protected GameManager() {}
 
     [Header("Status")]
-    public int Population = 10;
-    public float Happiness = 100f;
-    public bool CanBattle = true;
+    public int Population = 10; 
+    public float Happiness = 100f; 
+    public bool CanBattle = true; 
     [Space(10)]
-    public int Gold = 1000;
-    public int GoldNext = 0;
-    public int Food = 1000;
-    public int FoodNext = 0;
-    public int Building = 1000;
-    public int BuildingNext = 0;
+    public int Gold = 1000; 
+    public int GoldNext = 0; 
+    public int Food = 1000; 
+    public int FoodNext = 0; 
+    public int Building = 1000; 
+    public int BuildingNext = 0; 
 
-    private HudInfoManager hud;
+    private HudInfoManager hud; 
+
+    [Header("Prefabs")]
+    public GameObject happeningWindowPrefab; 
+    public GameObject answerPrefab;
+    public GameObject newDayPrefab;
+    public Transform canvasRoot;
 
     // Use this for initialization
-    void Start()
-    {
-        TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
-        OnAfterDayEnd();
-        hud = FindObjectOfType<HudInfoManager>();
+    void Start() {
+        TimerPanel.OnAfterDayEnd += OnAfterDayEnd; 
+        OnAfterDayEnd(); 
+        hud = FindObjectOfType < HudInfoManager > (); 
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
 
     }
 
-    private void OnAfterDayEnd()
-    {
-        GoldNext = 0;
-        FoodNext = 0;
-        BuildingNext = 0;
-        int DominatedProperties = 0;
-        foreach (Property p in PropertyManager.Instance.Propriedades)
-        {
+    private void OnAfterDayEnd() {
+        GoldNext = 0; 
+        FoodNext = 0; 
+        BuildingNext = 0; 
+        int DominatedProperties = 0; 
+        foreach (Property p in PropertyManager.Instance.Propriedades) {
             if (p.dominated)
-                DominatedProperties++;
+                DominatedProperties++; 
             else
-                continue;
+                continue; 
 
-            switch (p.level)
-            {
+            switch (p.level) {
                 case Level.Level1:
-                    GoldNext += p.goldLevel1;
-                    FoodNext += p.foodLevel1;
-                    BuildingNext += p.buildingLevel1;
-                    break;
+                    GoldNext += p.goldLevel1; 
+                    FoodNext += p.foodLevel1; 
+                    BuildingNext += p.buildingLevel1; 
+                    break; 
                 case Level.Level2:
-                    GoldNext += p.goldLevel2;
-                    FoodNext += p.foodLevel2;
-                    BuildingNext += p.buildingLevel2;
-                    break;
+                    GoldNext += p.goldLevel2; 
+                    FoodNext += p.foodLevel2; 
+                    BuildingNext += p.buildingLevel2; 
+                    break; 
                 case Level.Level3:
-                    GoldNext += p.goldLevel3;
-                    FoodNext += p.foodLevel3;
-                    BuildingNext += p.buildingLevel3;
-                    break;
+                    GoldNext += p.goldLevel3; 
+                    FoodNext += p.foodLevel3; 
+                    BuildingNext += p.buildingLevel3; 
+                    break; 
             }
         }
 
         if (DominatedProperties == PropertyManager.Instance.Propriedades.Count)
-            GameWon();
+            GameWon(); 
     }
 
     //called only when a new property is added or removed
-    public void UpdateComsumption()
-    {
-        OnAfterDayEnd();
-        hud.UpdateHUD();
+    public void UpdateComsumption() {
+        OnAfterDayEnd(); 
+        hud.UpdateHUD(); 
     }
 
-    public bool ConsumeItens(Property.UpgradeInformations upgradeInformations)
-    {
+    public bool ConsumeItens(Property.UpgradeInformations upgradeInformations) {
         if (upgradeInformations == null)
-            return false;
+            return false; 
 
-        if (upgradeInformations.Gold <= this.Gold &&
-            upgradeInformations.Building <= this.Building &&
-            upgradeInformations.Food <= this.Food)
-        {
-            Gold -= upgradeInformations.Gold;
-            Building -= upgradeInformations.Building;
-            Food -= upgradeInformations.Food;
-            hud.UpdateHUD();
-            return true;
+        if (upgradeInformations.Gold <= this.Gold && 
+            upgradeInformations.Building <= this.Building && 
+            upgradeInformations.Food <= this.Food) {
+            Gold -= upgradeInformations.Gold; 
+            Building -= upgradeInformations.Building; 
+            Food -= upgradeInformations.Food; 
+            hud.UpdateHUD(); 
+            return true; 
         }
-        return false;
+        return false; 
     }
 
-    private void OnApplicationQuit()
-    {
-        TimerPanel.OnAfterDayEnd -= OnAfterDayEnd;
+    private void OnApplicationQuit() {
+        TimerPanel.OnAfterDayEnd -= OnAfterDayEnd; 
     }
 
-    void GameWon()
-    {
-        Debug.Log("GANHOU!");
+    void GameWon() {
+        Debug.Log("GANHOU!"); 
     }
 }
