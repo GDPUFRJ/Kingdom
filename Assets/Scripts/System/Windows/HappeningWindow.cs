@@ -22,8 +22,14 @@ public class HappeningWindow:MonoBehaviour {
         description.text = happening.Description; 
         for (int i = 0; i < happening.Answers.Count; i++) {
             GameObject ans = Instantiate(GameManager.Instance.answerPrefab, answersRoot); 
-            ans.GetComponent < HappeningWindowAnswer > ().SetAnswer(happening.Answers[i]); 
+            ans.GetComponent < HappeningWindowAnswer > ().SetAnswer(happening.Answers[i]);
+            ans.GetComponent<HappeningWindowAnswer>().SetEvent(happening.Answers[i].answerEvent);
+            ans.GetComponent<HappeningWindowAnswer>().SetHappeningWindow(this);
         }
     }
-
+    public void DestroyWindow()
+    {
+        Destroy(this.gameObject);
+        TimerPanel.SetPause(false);
+    }
 }

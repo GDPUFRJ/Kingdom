@@ -57,15 +57,15 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
 
     private bool GenerateNewKHappening() {
         //To be modified
-        //if (UnityEngine.Random.Range(0, 1000000) < 750000)
-            //return false; 
+        if (UnityEngine.Random.Range(0, 1000000) < 750000)
+            return false; 
 
-        //int rarity = UnityEngine.Random.Range(0, 1000000) % 5; 
+        int rarity = UnityEngine.Random.Range(0, 1000000) % 5; 
 
-        //List < KHappening > SelectedList = HappeningsByRarity[rarity];
+        List < KHappening > SelectedList = HappeningsByRarity[rarity];
 
-        //KHappening selectedHappening = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
-        KHappening selectedHappening = MuitoComumHappenings[0];
+        KHappening selectedHappening = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
+
         return FireHappening(selectedHappening); 
 
     }
@@ -73,9 +73,10 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
     public bool FireHappening(KHappening khpp) {
         if (khpp != null) {
             KHappening HappeningToAdd = Instantiate(khpp); //creates a copy of the Happening
-            KHappeningsHistory.Add(HappeningToAdd); 
+            KHappeningsHistory.Add(HappeningToAdd);
 
             //PEDRO, CHAME O QUE VOCE PRECISA AQUI
+            TimerPanel.SetPause(true);
             GameObject window = Instantiate(GameManager.Instance.happeningWindowPrefab, GameManager.Instance.canvasRoot); 
             window.GetComponent < HappeningWindow > ().SetHappening(khpp);
             window.GetComponent<HappeningWindow>().UpdateInfo();

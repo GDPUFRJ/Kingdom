@@ -13,7 +13,7 @@ public class TimerPanel : MonoBehaviour {
     [SerializeField]
     private int currentDay;
 
-    private bool paused;
+    private static bool paused;
 
     [Header("UI Elements")]
     [SerializeField]
@@ -77,7 +77,7 @@ public class TimerPanel : MonoBehaviour {
             OnAfterDayEnd();
     }
 
-    public void SetPause(bool isPaused)
+    public static void SetPause(bool isPaused)
     {
         paused = isPaused;
     }
