@@ -1606,7 +1606,7 @@ MonoBehaviour:
   customTitle: Castelo do Gulliver
   type: 0
   dominated: 1
-  level: 1
+  level: 2
   soldiers: 14
   happiness: 90
   goldLevel1: 35
@@ -3412,21 +3412,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e368915a97a33d4db76b55aa5c4f16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CastleLevel1: {fileID: 21300000, guid: 937c5650bbb0bf14395f4a4c0d3961c9, type: 3}
-  CastleLevel2: {fileID: 0}
-  CastleLevel3: {fileID: 0}
-  MineLevel1: {fileID: 21300000, guid: 9973b31ef3585554790a03fffea16cf2, type: 3}
-  MineLevel2: {fileID: 0}
-  MineLevel3: {fileID: 0}
+  CastleLevel1: {fileID: 21300000, guid: 944435474ba835c47a7c4d0fe1448104, type: 3}
+  CastleLevel2: {fileID: 21300000, guid: 1c2fc887950cbc745a2f04c41dbf1eb2, type: 3}
+  CastleLevel3: {fileID: 21300000, guid: 3b197da3cbcb92d4cbaa03148bab9e19, type: 3}
+  MineLevel1: {fileID: 21300000, guid: cb6a28244c85b86438c6a6ae2b6735bb, type: 3}
+  MineLevel2: {fileID: 21300000, guid: d986fb1f88715f641ad0dd13a3f0dab9, type: 3}
+  MineLevel3: {fileID: 21300000, guid: 876110a2cb32f63448c7bb46936c0a85, type: 3}
   VillageLevel1: {fileID: 21300000, guid: 7d0515de254c9c442be384693dc50396, type: 3}
   VillageLevel2: {fileID: 0}
   VillageLevel3: {fileID: 0}
-  FarmLevel1: {fileID: 21300000, guid: a0e03ac812dba3d4bbd3183732464465, type: 3}
-  FarmLevel2: {fileID: 0}
-  FarmLevel3: {fileID: 0}
-  ForestLevel1: {fileID: 21300000, guid: a0594890dfb8fa641a07f216610f97a8, type: 3}
-  ForestLevel2: {fileID: 0}
-  ForestLevel3: {fileID: 0}
+  FarmLevel1: {fileID: 21300000, guid: 77db01079334e944aa4d60bd5baf955a, type: 3}
+  FarmLevel2: {fileID: 21300000, guid: b3d0d235144ef974097bf37b28632117, type: 3}
+  FarmLevel3: {fileID: 21300000, guid: 504be519de32e6843ace9408874b6e61, type: 3}
+  ForestLevel1: {fileID: 21300000, guid: a12c09e853e5cba47b6da453dda04117, type: 3}
+  ForestLevel2: {fileID: 21300000, guid: f935b9e210a253c4c8808d47d646ed3e, type: 3}
+  ForestLevel3: {fileID: 21300000, guid: 2e16a4dd0aaeaa04e84e663f39a5b8ef, type: 3}
   DominatedLine: {r: 1, g: 1, b: 1, a: 1}
   NotDominatedLine: {r: 0.6981132, g: 0.6948202, b: 0.6948202, a: 1}
   NotDominatedProperty: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
@@ -4748,7 +4748,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9973b31ef3585554790a03fffea16cf2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb6a28244c85b86438c6a6ae2b6735bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5425,7 +5425,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5663,7 +5663,7 @@ MonoBehaviour:
   customTitle: Rancho Lon Lon
   type: 3
   dominated: 1
-  level: 1
+  level: 3
   soldiers: 14
   happiness: 90
   goldLevel1: 24
@@ -5871,7 +5871,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0594890dfb8fa641a07f216610f97a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a12c09e853e5cba47b6da453dda04117, type: 3}
   m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6016,7 +6016,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9973b31ef3585554790a03fffea16cf2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb6a28244c85b86438c6a6ae2b6735bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6159,7 +6159,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0e03ac812dba3d4bbd3183732464465, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77db01079334e944aa4d60bd5baf955a, type: 3}
   m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6730,7 +6730,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0e03ac812dba3d4bbd3183732464465, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 504be519de32e6843ace9408874b6e61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7316,7 +7316,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 937c5650bbb0bf14395f4a4c0d3961c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c2fc887950cbc745a2f04c41dbf1eb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9291,7 +9291,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0594890dfb8fa641a07f216610f97a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a12c09e853e5cba47b6da453dda04117, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9431,7 +9431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -9843,7 +9843,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9991,7 +9991,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0e03ac812dba3d4bbd3183732464465, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77db01079334e944aa4d60bd5baf955a, type: 3}
   m_Color: {r: 0.6226415, g: 0.61970454, b: 0.61970454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
