@@ -12,11 +12,16 @@ public class GameManager:Singleton < GameManager >  {
     public bool CanBattle = true; 
     [Space(10)]
     public int Gold = 1000; 
-    public int GoldNext = 0; 
+    public int GoldNext = 0;
+    public int GoldNextEventModifier = 0;
+    [Space(10)]
     public int Food = 1000; 
-    public int FoodNext = 0; 
+    public int FoodNext = 0;
+    public int FoodNextEventModifier = 0;
+    [Space(10)]
     public int Building = 1000; 
-    public int BuildingNext = 0; 
+    public int BuildingNext = 0;
+    public int BuildingNextEventModifier = 0;
 
     private HudInfoManager hud; 
 
@@ -28,8 +33,8 @@ public class GameManager:Singleton < GameManager >  {
 
     // Use this for initialization
     void Start() {
-        TimerPanel.OnAfterDayEnd += OnAfterDayEnd; 
-        OnAfterDayEnd(); 
+        TimerPanel.OnDayEnd += OnDayEnd; 
+        OnDayEnd(); 
         hud = FindObjectOfType < HudInfoManager > (); 
     }
 
@@ -38,7 +43,7 @@ public class GameManager:Singleton < GameManager >  {
 
     }
 
-    private void OnAfterDayEnd() {
+    private void OnDayEnd() {
         GoldNext = 0; 
         FoodNext = 0; 
         BuildingNext = 0; 
@@ -74,7 +79,7 @@ public class GameManager:Singleton < GameManager >  {
 
     //called only when a new property is added or removed
     public void UpdateComsumption() {
-        OnAfterDayEnd(); 
+        OnDayEnd(); 
         hud.UpdateHUD(); 
     }
 
@@ -95,7 +100,7 @@ public class GameManager:Singleton < GameManager >  {
     }
 
     private void OnApplicationQuit() {
-        TimerPanel.OnAfterDayEnd -= OnAfterDayEnd; 
+        TimerPanel.OnDayEnd -= OnDayEnd; 
     }
 
     void GameWon() {

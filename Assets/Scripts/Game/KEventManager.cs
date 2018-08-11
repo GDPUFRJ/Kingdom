@@ -16,9 +16,6 @@ public class KEventManager : Singleton<KEventManager> {
     public int RaroChance = 20;
     public int MuitoRaroChance = 20;
 
-
-
-
     public List<KEvent> KEvents = new List<KEvent>();
 
     private List<KEvent> KEventsActives = new List<KEvent>();
@@ -73,6 +70,49 @@ public class KEventManager : Singleton<KEventManager> {
     private void OnAfterDayEnd()
     {
         print("ON AFTER DAY END");
+
+        int BuildingNext = GameManager.Instance.BuildingNext;
+        int FoodNext = GameManager.Instance.FoodNext;
+        int GoldNext = GameManager.Instance.GoldNext;
+
+        KEvent.Battle battle = KEvent.Battle.Allowed;
+
+        List<KEvent> ToRemove = new List<KEvent>();
+
+        foreach(KEvent kevt in KEventsActives)
+        {
+            kevt.LeftDuration--;
+
+            if(kevt.LeftDuration == -1)
+            {
+                ToRemove.Add(kevt);
+                continue;
+            }
+                
+
+            BuildingNext = kevt.GetNextResource(Resource.Building);
+            FoodNext = kevt.GetNextResource(Resource.Food);
+            GoldNext = kevt.GetNextResource(Resource.Gold);
+
+            if (kevt.battle != KEvent.Battle.Allowed)
+                battle = KEvent.Battle.NotAllowed;
+        }
+
+        foreach(KEvent kevt in ToRemove)
+        {
+            KEventsActives.Remove(kevt);
+        }
+
+        GameManager.Instance.BuildingNextEventModifier = BuildingNext;
+        GameManager.Instance.FoodNextEventModifier = FoodNext;
+        GameManager.Instance.GoldNextEventModifier = GoldNext;
+
+        GameManager.Instance.BuildingNext += BuildingNext;
+        GameManager.Instance.FoodNext += FoodNext;
+        GameManager.Instance.GoldNext += GoldNext;
+
+        GameManager.Instance.CanBattle = battle == KEvent.Battle.Allowed ? true : false;
+
     }
 
     public bool FireEvent(KEvent kevt, KEvent.Intensity intensity)

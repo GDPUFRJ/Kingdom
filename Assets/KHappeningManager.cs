@@ -64,6 +64,9 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
 
         List < KHappening > SelectedList = HappeningsByRarity[rarity];
 
+        //Isto está aqui para evitar uma divisao por zero, caso nao tenha acontecimentos de uma determinada raridade
+        if (SelectedList.Count == 0) return FireHappening((KHappening)null);
+
         KHappening selectedHappening = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
 
         return FireHappening(selectedHappening); 

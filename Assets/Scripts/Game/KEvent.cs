@@ -15,10 +15,10 @@ public class KEvent : ScriptableObject
     public Intensity intensity = Intensity.light;
     public Intensity ActiveIntensity = Intensity.light;
 
-    public enum Mode { UsePercentage = 0, UseAbsolute = 1}
+    public enum Mode { UsePercentage = 0, UseAbsolute = 1 }
     public Mode mode = Mode.UsePercentage;
 
-    public enum Battle { NotAllowed = 0, Allowed = 1}
+    public enum Battle { NotAllowed = 0, Allowed = 1 }
     public Battle battle = Battle.Allowed;
 
     public enum Chance { Manual = 0, MuitoRaro = 1, Raro = 2, Normal = 3, Comum = 4, MuitoComum = 5 }
@@ -55,7 +55,81 @@ public class KEvent : ScriptableObject
 
     public EventInfo GetInfo()
     {
-        return new EventInfo(this.Name,this.Description,this.LeftDuration);
+        return new EventInfo(this.Name, this.Description, this.LeftDuration, this.battle);
+    }
+
+    public int GetNextResource(Resource resource)
+    {
+        switch (resource)
+        {
+            case Resource.Gold:
+                switch (ActiveIntensity)
+                {
+                    case Intensity.light:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteGoldLight;
+                        else
+                            return ((PercentGoldLight * GameManager.Instance.GoldNext) / 100);
+
+                    case Intensity.medium:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteGoldMedium;
+                        else
+                            return ((PercentGoldMedium * GameManager.Instance.GoldNext) / 100);
+
+                    case Intensity.heavy:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteGoldHeavy;
+                        else
+                            return ((PercentGoldHeavy * GameManager.Instance.GoldNext) / 100);
+                }
+                break;
+            case Resource.Building:
+                switch (ActiveIntensity)
+                {
+                    case Intensity.light:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteBuildingLight;
+                        else
+                            return ((PercentBuildingLight * GameManager.Instance.BuildingNext) / 100);
+
+                    case Intensity.medium:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteBuildingMedium;
+                        else
+                            return ((PercentBuildingMedium * GameManager.Instance.BuildingNext) / 100);
+
+                    case Intensity.heavy:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteBuildingHeavy;
+                        else
+                            return ((PercentBuildingHeavy * GameManager.Instance.BuildingNext) / 100);
+                }
+                break;
+            case Resource.Food:
+                switch (ActiveIntensity)
+                {
+                    case Intensity.light:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteFoodLight;
+                        else
+                            return ((PercentFoodLight * GameManager.Instance.FoodNext) / 100);
+
+                    case Intensity.medium:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteFoodMedium;
+                        else
+                            return ((PercentFoodMedium * GameManager.Instance.FoodNext) / 100);
+
+                    case Intensity.heavy:
+                        if (mode == Mode.UseAbsolute)
+                            return AbsoluteFoodHeavy;
+                        else
+                            return ((PercentFoodHeavy * GameManager.Instance.FoodNext) / 100);
+                }
+                break;
+        }
+        return 0;
     }
 }
 public class EventInfo
@@ -64,10 +138,18 @@ public class EventInfo
     public string description;
     public int remainingDays;
 
-    public EventInfo(string _name,string _description,int _remainingDays)
+    public int BuildingToAddOrRemove;
+    public int FoodToAddOrRemove;
+    public int GoldToAddOrRemove;
+    public KEvent.Battle BattleEnabled;
+
+    public EventInfo(string name, string description, 
+                     int remainingDays, KEvent.Battle BattleEnabled)
     {
-        this.name = _name;
-        this.description = _description;
-        this.remainingDays = _remainingDays;
+        this.name = name;
+        this.description = description;
+        this.remainingDays = remainingDays;
+        this.BattleEnabled = BattleEnabled;
+
     }
 }

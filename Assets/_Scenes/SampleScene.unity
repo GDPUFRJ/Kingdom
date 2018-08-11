@@ -685,7 +685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Estiagem a Espreita
-  Description: Describe it here
+  Description: "Vinda do sul uma grande seca se aproximou e agora acaba com grande
+    parte das produ\xE7\xF5es de alimento."
   Question: Deseja Irrigar a plantacao?
   chance: 5
   Answers:
@@ -827,7 +828,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -3.07, y: -3.88, z: 0}
+  - {x: -3.315, y: -3.682, z: 0}
   - {x: -3.31, y: -4.89, z: 0}
   m_Parameters:
     serializedVersion: 2
@@ -1667,7 +1668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: -0.00016784668}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -2049,7 +2050,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -5.77, y: -4.39, z: 0}
-  - {x: -3.07, y: -3.88, z: 0}
+  - {x: -3.315, y: -3.682, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -2734,7 +2735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: -0.000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -4152,7 +4153,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 865820117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.79, y: -4.33, z: 0}
+  m_LocalPosition: {x: -4.79, y: -4.33, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 352276158}
@@ -5074,7 +5075,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 946836382}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.07, y: -3.88, z: 0}
+  m_LocalPosition: {x: -3.315, y: -3.682, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -5188,11 +5189,14 @@ MonoBehaviour:
   Happiness: 100
   CanBattle: 1
   Gold: 1000
-  GoldNext: 178
+  GoldNext: 156
+  GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 179
+  FoodNext: 184
+  FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 209
+  BuildingNext: 211
+  BuildingNextEventModifier: 0
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
     type: 2}
   answerPrefab: {fileID: 1021142946201792, guid: 551dbad544f7753429e78ace9f2f1a9b,
@@ -5425,7 +5429,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9050,7 +9054,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -6.52, y: -3.03, z: 0}
-  - {x: -3.07, y: -3.88, z: 0}
+  - {x: -3.315, y: -3.682, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -9431,7 +9435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -9842,7 +9846,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348453625}
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10812,8 +10816,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645001500}
   m_HandleRect: {fileID: 1645001499}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0.5
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
