@@ -29,6 +29,7 @@ public class GameManager:Singleton < GameManager >  {
     public GameObject happeningWindowPrefab; 
     public GameObject answerPrefab;
     public GameObject newDayPrefab;
+    public GameObject battleWindow;
     public Transform canvasRoot;
 
     // Use this for initialization

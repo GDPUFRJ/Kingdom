@@ -15,6 +15,12 @@ public class PropertyManager : Singleton<PropertyManager> {
     public Sprite CastleLevel1;
     public Sprite CastleLevel2;
     public Sprite CastleLevel3;
+
+    [Header("quarter")]
+    public Sprite quarterLevel1;
+    public Sprite quarterLevel2;
+    public Sprite quarterLevel3;
+
     [Header("Mine")]
     public Sprite MineLevel1;
     public Sprite MineLevel2;

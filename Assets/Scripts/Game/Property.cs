@@ -109,6 +109,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     {
         TimerPanel.OnDayEnd += OnDayEnd;
 
+        if (dominated == false) soldiers = Random.Range(10, 20);
         // DestroyNeighborLines();
         //BuildNeighborLines();
     }
@@ -310,8 +311,23 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                         break;
                 }
                 property.gameObject.tag = "forest";
-
                 break;
+            case Tipo.quarter:
+                switch (property.level)
+                {
+                    case Level.Level1:
+                        spriteRenderer.sprite = PropertyManager.Instance.quarterLevel1;
+                        break;
+                    case Level.Level2:
+                        spriteRenderer.sprite = PropertyManager.Instance.quarterLevel2;
+                        break;
+                    case Level.Level3:
+                        spriteRenderer.sprite = PropertyManager.Instance.quarterLevel3;
+                        break;
+                }
+                property.gameObject.tag = "quarter";
+                break;
+
             default:
                 switch (property.level)
                 {
@@ -366,7 +382,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     public enum Tipo
     {
-        Castle, Mine, Village, Farm, Forest, Other
+        Castle, Mine, Village, Farm, Forest, Other, quarter
     }
 
 

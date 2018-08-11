@@ -34,7 +34,7 @@ public class BattleWindow : MonoBehaviour {
 
 	private void Start()
 	{
-		Show(3,1);
+		//Show(3,1);
 	}
 	public void Show(int playerBattlePoints,int enemyBattlePoints)
 	{
