@@ -173,7 +173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6727278
 GameObject:
@@ -875,6 +875,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -1142,6 +1144,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
@@ -2052,6 +2056,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -2176,6 +2182,8 @@ MonoBehaviour:
   level: 2
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
@@ -2234,7 +2242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00016784668}
+  m_AnchoredPosition: {x: 0, y: -0.00010681152}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -3103,7 +3111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -3301,7 +3309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000076293945}
+  m_AnchoredPosition: {x: 0, y: -0.0001373291}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -3813,7 +3821,7 @@ RectTransform:
   - {fileID: 2040384720}
   - {fileID: 319030514}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3831,6 +3839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55cbc89440cee124493ed0ba18ccfadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentPanel: 0
   panels:
   - {fileID: 1098702809}
   - {fileID: 923098284}
@@ -4018,6 +4027,7 @@ MonoBehaviour:
   - {fileID: 1234089219}
   - {fileID: 1234937611}
   - {fileID: 866971831}
+  - {fileID: 173384176}
 --- !u!1001 &797614061
 Prefab:
   m_ObjectHideFlags: 0
@@ -4813,6 +4823,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -5670,6 +5682,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
@@ -5760,13 +5774,13 @@ MonoBehaviour:
   Happiness: 100
   CanBattle: 1
   Gold: 1000
-  GoldNext: 156
+  GoldNext: 191
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 184
+  FoodNext: 199
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 211
+  BuildingNext: 241
   BuildingNextEventModifier: 0
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
     type: 2}
@@ -6000,7 +6014,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255732447}
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6242,6 +6256,8 @@ MonoBehaviour:
   level: 3
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
@@ -6507,6 +6523,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
@@ -6654,6 +6672,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
@@ -7593,7 +7613,7 @@ MonoBehaviour:
     parte das produ\xE7\xF5es de alimento."
   Duration: 7
   LeftDuration: 1
-  intensity: 0
+  intensity: 2
   ActiveIntensity: 0
   mode: 0
   battle: 1
@@ -8684,6 +8704,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
@@ -9726,6 +9748,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
@@ -9784,6 +9808,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
@@ -10418,7 +10444,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348453625}
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10497,6 +10523,8 @@ MonoBehaviour:
   level: 1
   soldiers: 14
   happiness: 90
+  MoveSoldier: 0
+  ReadyToReceiveSoldier: 0
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15

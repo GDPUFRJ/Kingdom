@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class Property : MonoBehaviour, IPointerClickHandler, IComparer
+public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, 
+                        IPointerEnterHandler, IPointerUpHandler, IComparer
 {
     [Header("Basic Informations")]
     public string customTitle = " ";
@@ -14,14 +15,15 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public int soldiers = 14;
     public int happiness = 90;
 
+    public bool MoveSoldier = false;
+    public bool ReadyToReceiveSoldier = false;
+
     [Header("Production Information")]
-    [Range(-100, 100)]
-    public int goldLevel1 = 0;
+    [Range(-100, 100)] public int goldLevel1 = 0;
     [Range(-100, 100)] public int foodLevel1 = 0;
     [Range(-100, 100)] public int buildingLevel1 = 0;
     [Space(10)]
-    [Range(-100, 100)]
-    public int goldLevel2 = 0;
+    [Range(-100, 100)] public int goldLevel2 = 0;
     [Range(-100, 100)] public int foodLevel2 = 0;
     [Range(-100, 100)] public int buildingLevel2 = 0;
     [Space(10)]
@@ -31,13 +33,11 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     [Range(-100, 100)] public int buildingLevel3 = 0;
 
     [Header("Upgrade Demands")]
-    [Range(-100, 100)]
-    public int goldToLevel2 = 0;
+    [Range(-100, 100)] public int goldToLevel2 = 0;
     [Range(-100, 100)] public int foodToLevel2 = 0;
     [Range(-100, 100)] public int buildingToLevel2 = 0;
     [Space(10)]
-    [Range(-100, 100)]
-    public int goldToLevel3 = 0;
+    [Range(-100, 100)] public int goldToLevel3 = 0;
     [Range(-100, 100)] public int foodToLevel3 = 0;
     [Range(-100, 100)] public int buildingToLevel3 = 0;
 
@@ -45,6 +45,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public Sprite CustomLevel1;
     public Sprite CustomLevel2;
     public Sprite CustomLevel3;
+
+    private PanelController panelController;
 
 
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
@@ -109,6 +111,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     {
         TimerPanel.OnDayEnd += OnDayEnd;
 
+        panelController = GameManager.Instance.canvasRoot.GetComponent<PanelController>();
+
         if (dominated == false) soldiers = Random.Range(10, 20);
         // DestroyNeighborLines();
         //BuildNeighborLines();
@@ -149,8 +153,56 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         var pw = Instantiate(PropertyManager.Instance.propertyWindowPrefab,
                              PropertyManager.Instance.canvasParent).GetComponent<PropertyWindow>();
         pw.GetProperty(this);
+
         Debug.Log("Tocou!");
     }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if(panelController.currentPanel == 4)
+        {
+            ReadyToReceiveSoldier = false;
+            MoveSoldier = true;
+        }
+
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (!MoveSoldier)
+        {
+            foreach(Property neighbor in Neighbors)
+            {
+                if (neighbor.MoveSoldier)
+                {
+                    ReadyToReceiveSoldier = true;
+                    break;
+                }
+            }
+        }
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        if (ReadyToReceiveSoldier)
+        {
+            ReadyToReceiveSoldier = false;
+            soldiers++;
+            foreach (Property neighbor in Neighbors)
+            {
+                if (neighbor.MoveSoldier)
+                {
+
+                    neighbor.soldiers--;
+                    MoveSoldier = false;
+                    Debug.Log("Moveu!");
+                    break;
+                }
+            }
+        }
+    }
+
+
 
     private void OnApplicationQuit()
     {
@@ -377,8 +429,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 return 0;
         }
     }
-
-
 
     public enum Tipo
     {
