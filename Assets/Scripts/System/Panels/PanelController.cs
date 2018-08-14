@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class PanelController : MonoBehaviour{
+public class PanelController : MonoBehaviour {
     private const int DEFAULT_PANEL = 1;
 
-    private int currentPanel;
+    public int currentPanel;
 
     [SerializeField] private List<AMainPanel> panels;
     [SerializeField] private List<PanelSwitcher> buttons;
