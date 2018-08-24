@@ -192,13 +192,13 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        StartCoroutine(Camera.main.GetComponent<CameraMovement>().FollowPosition(transform.position));
+
         var pw = Instantiate(PropertyManager.Instance.propertyWindowPrefab,
                              PropertyManager.Instance.canvasParent).GetComponent<PropertyWindow>();
         pw.GetProperty(this);
-
-        //Debug.Log("Tocou!");
+        pw.Open();
     }
-
 
     private void OnApplicationQuit()
     {

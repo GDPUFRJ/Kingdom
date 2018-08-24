@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class CameraMovement : MonoBehaviour {
 
@@ -10,8 +11,13 @@ public class CameraMovement : MonoBehaviour {
     public float MaxDist = 5;
     public float MinDist = 1;
 
+    private bool canControl = true;
+    private float timeToMove = 0.5f;
+
     void Update()
     {
+        if (!canControl)
+            return;
         // se tiver apenas um dedo, interpreta como movimentacao
         if (Input.touchCount == 1 && WorldMapController.Instance.Selecionado)
         {
@@ -56,5 +62,12 @@ public class CameraMovement : MonoBehaviour {
                 Camera.main.orthographicSize = Mathf.Min(Camera.main.orthographicSize, MaxDist);
             }
         }
+    }
+    public IEnumerator FollowPosition(Vector2 position)
+    {
+        canControl = false;
+        transform.DOMove(new Vector3(position.x, position.y, transform.position.z), timeToMove);
+        yield return new WaitForSeconds(timeToMove);
+        canControl = true;
     }
 }
