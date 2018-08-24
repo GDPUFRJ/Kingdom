@@ -90,6 +90,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public Informations GetInfo()
     {
         Informations info = new Informations();
+        info.sprite = GetComponent<SpriteRenderer>().sprite;
 
         switch (level)
         {

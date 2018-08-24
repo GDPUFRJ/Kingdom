@@ -445,8 +445,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: GiveUp
+      - m_Target: {fileID: 114925413222343956}
+        m_MethodName: GiveUpProperty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -894,8 +894,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 114925413222343956}
+        m_MethodName: UpgradeProperty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
