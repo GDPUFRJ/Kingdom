@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
-public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, 
-                        IPointerEnterHandler, IPointerUpHandler, IComparer
+public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 {
     [Header("Basic Informations")]
     public string customTitle = " ";
@@ -13,6 +13,13 @@ public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     public bool dominated = false;
     public Level level = Level.Level1; //DO NOT CHANGE THIS DIRECTLY
     public int soldiers = 14;
+
+    public int SoldiersToGetOut = 0;
+    public int EnemySoldiers = 0;
+
+    public List<BattleArrowController> ArrowsComingIn = new List<BattleArrowController>();
+    public List<BattleArrowController> ArrowsComingOut = new List<BattleArrowController>();
+
     public int happiness = 90;
 
     public bool MoveSoldier = false;
@@ -47,6 +54,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     public Sprite CustomLevel3;
 
     private PanelController panelController;
+    private GameObject NumSoldier;
+
 
 
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
@@ -110,12 +119,45 @@ public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     private void Start()
     {
         TimerPanel.OnDayEnd += OnDayEnd;
+        TimerPanel.OnAfterDayEnd += TimerPanel_OnAfterDayEnd;
 
         panelController = GameManager.Instance.canvasRoot.GetComponent<PanelController>();
 
         if (dominated == false) soldiers = Random.Range(10, 20);
         // DestroyNeighborLines();
         //BuildNeighborLines();
+
+        NumSoldier = Instantiate(GameManager.Instance.NumSoldier, GameManager.Instance.CanvasBattle.transform);
+        NumSoldier.GetComponent<Text>().text = soldiers.ToString();
+        NumSoldier.GetComponent<NumSoldiersTextController>().Owner = this.transform;
+
+        foreach(Property neighbor in Neighbors)
+        {
+            GameObject NewArrow;
+            if(neighbor.dominated && this.dominated)
+                NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, GameManager.Instance.CanvasBattle.transform);
+            else if(neighbor.dominated == false && this.dominated)
+                NewArrow = Instantiate(GameManager.Instance.BattlePrefab, GameManager.Instance.CanvasBattle.transform);
+            else
+                NewArrow = Instantiate(GameManager.Instance.AbortPrefab, GameManager.Instance.CanvasBattle.transform);
+
+            BattleArrowController newBattleArrowController = NewArrow.GetComponent<BattleArrowController>();
+            newBattleArrowController.SetSourceAndDestination(this, destination: neighbor);
+            ArrowsComingOut.Add(newBattleArrowController);
+            neighbor.ArrowsComingIn.Add(newBattleArrowController);
+        }
+
+        UpdateSoldierInfo();
+    }
+
+    private void TimerPanel_OnAfterDayEnd()
+    {
+        soldiers -= SoldiersToGetOut;
+        SoldiersToGetOut = 0;
+        UpdateSoldierInfo();
+
+        if (EnemySoldiers > 0)
+            GameManager.Instance.BattleQueue.Enqueue(this);
     }
 
     private void OnDayEnd()
@@ -154,54 +196,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
                              PropertyManager.Instance.canvasParent).GetComponent<PropertyWindow>();
         pw.GetProperty(this);
 
-        Debug.Log("Tocou!");
+        //Debug.Log("Tocou!");
     }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if(panelController.currentPanel == 4)
-        {
-            ReadyToReceiveSoldier = false;
-            MoveSoldier = true;
-        }
-
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (!MoveSoldier)
-        {
-            foreach(Property neighbor in Neighbors)
-            {
-                if (neighbor.MoveSoldier)
-                {
-                    ReadyToReceiveSoldier = true;
-                    break;
-                }
-            }
-        }
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        if (ReadyToReceiveSoldier)
-        {
-            ReadyToReceiveSoldier = false;
-            soldiers++;
-            foreach (Property neighbor in Neighbors)
-            {
-                if (neighbor.MoveSoldier)
-                {
-
-                    neighbor.soldiers--;
-                    MoveSoldier = false;
-                    Debug.Log("Moveu!");
-                    break;
-                }
-            }
-        }
-    }
-
 
 
     private void OnApplicationQuit()
@@ -435,13 +431,21 @@ public class Property : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
         Castle, Mine, Village, Farm, Forest, Other, quarter
     }
 
-
-
     public class UpgradeInformations
     {
         public int Gold;
         public int Food;
         public int Building;
+    }
+
+    public void UpdateSoldierInfo()
+    {
+        NumSoldiersTextController numSoldiersTextController = NumSoldier.GetComponent<NumSoldiersTextController>();
+
+        if (dominated) numSoldiersTextController.SetColor(false);
+        else numSoldiersTextController.SetColor(true);
+
+        NumSoldier.GetComponent<NumSoldiersTextController>().UpdateText(soldiers.ToString());
     }
 }
 

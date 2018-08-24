@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 
-public abstract class AMainPanel: MonoBehaviour{
+public abstract class AMainPanel: MonoBehaviour
+{
     private const float FADE_DURATION = 0.5f;
 
     public void HidePanel(float duration = FADE_DURATION)
@@ -10,6 +11,7 @@ public abstract class AMainPanel: MonoBehaviour{
         group.DOFade(0, duration);
         group.interactable = false;
         group.blocksRaycasts = false;
+        UnprepareContent();
     }
     public void ShowPanel(float duration = FADE_DURATION)
     {
@@ -20,4 +22,5 @@ public abstract class AMainPanel: MonoBehaviour{
         PrepareContent();
     }
     abstract public void PrepareContent();
+    public virtual void UnprepareContent() { }
 }

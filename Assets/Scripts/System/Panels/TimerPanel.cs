@@ -29,6 +29,9 @@ public class TimerPanel : MonoBehaviour {
     public delegate void AfterDayEnd();
     public static event DayEnd OnAfterDayEnd;
 
+    public delegate void BattleTime();
+    public static event BattleTime OnBattleTime;
+
     public float GetTime()
     {
         return time;
@@ -75,6 +78,10 @@ public class TimerPanel : MonoBehaviour {
 
         if (OnAfterDayEnd != null)
             OnAfterDayEnd();
+
+        if (OnBattleTime != null)
+            OnBattleTime();
+            
     }
 
     public static void SetPause(bool isPaused)

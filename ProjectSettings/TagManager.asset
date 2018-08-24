@@ -11,6 +11,9 @@ TagManager:
   - farm
   - other
   - quarter
+  - seta
+  - fight
+  - abort
   layers:
   - Default
   - TransparentFX

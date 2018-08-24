@@ -45,13 +45,15 @@ public class BattleWindow : MonoBehaviour {
 	}
 	private IEnumerator ShowBattleScene()
 	{
+        TimerPanel.SetPause(true);
 		InitializeAllValues();
 		yield return ShowAndHideShield();
 		yield return AnimateBattleSceneAndBackground();
 		yield return ShowBattlePoints();
 		yield return Battle();
 		yield return ShowResults();
-	}
+        TimerPanel.SetPause(false);
+    }
 	private void InitializeAllValues()
 	{
 		battleScene.DOSizeDelta(new Vector2(720,0),0);
@@ -106,7 +108,7 @@ public class BattleWindow : MonoBehaviour {
 		yield return new WaitForSeconds(1f);
 		GetComponent<CanvasGroup>().DOFade(0, 0.5f);
 		GetComponent<CanvasGroup>().blocksRaycasts = false;
-		Destroy(this.gameObject,0.5f);
+        // Destroy(this.gameObject,0.5f);
 	}
 	private bool PlayerIsTheWinner(){
 		if(playerBattlePoints >= enemyBattlePoints){

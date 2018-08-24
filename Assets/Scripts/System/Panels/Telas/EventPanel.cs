@@ -17,6 +17,7 @@ public class EventPanel : AMainPanel
             obj.SetInformation(e, this);
         }
     }
+
     private void DeleteAllChilds()
     {
         for (int i = root.childCount - 1; i >= 0; i--)

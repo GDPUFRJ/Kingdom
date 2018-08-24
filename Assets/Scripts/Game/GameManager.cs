@@ -23,6 +23,9 @@ public class GameManager:Singleton < GameManager >  {
     public int BuildingNext = 0;
     public int BuildingNextEventModifier = 0;
 
+    [Space(10)]
+    public Queue<Property> BattleQueue = new Queue<Property>();
+
     private HudInfoManager hud; 
 
     [Header("Prefabs")]
@@ -31,13 +34,52 @@ public class GameManager:Singleton < GameManager >  {
     public GameObject newDayPrefab;
     public GameObject battleWindow;
     public Transform canvasRoot;
+    [Space(10)]
+    public GameObject CanvasBattle;
+    public GameObject ArrowPrefab;
+    public GameObject BattlePrefab;
+    public GameObject AbortPrefab;
+    public GameObject NumSoldier;
 
     // Use this for initialization
     void Start() {
-        TimerPanel.OnDayEnd += OnDayEnd; 
+        TimerPanel.OnDayEnd += OnDayEnd;
+        TimerPanel.OnBattleTime += TimerPanel_OnBattleTime;
         OnDayEnd(); 
         hud = FindObjectOfType < HudInfoManager > (); 
     }
+
+    private void TimerPanel_OnBattleTime()
+    {
+        Property p;
+        BattleWindow bw = battleWindow.GetComponent<BattleWindow>();
+
+        if (BattleQueue.Count == 0) return;
+        //COMO NAO TEM COMO AGUARDAR O FIM DA CORROTINA, VOU LIMITAR A UMA BATALHA POR DIA
+        //while(BattleQueue.Count > 0)
+        //{
+            p = BattleQueue.Dequeue();
+            if(p.soldiers == 0)
+            {
+                p.SetDominated(!p.dominated);
+                p.soldiers = p.EnemySoldiers;
+                //DEVERIA TER UMA ANIMACAO DE BATALHA, CASO NAO HAJA SOLDADOS?
+                //continue;
+            }
+            bw.Show(p.EnemySoldiers, p.soldiers);
+            if(p.EnemySoldiers > p.soldiers)
+            {
+                p.SetDominated(!p.dominated);
+                p.soldiers = p.EnemySoldiers - p.soldiers;
+            }
+            else
+            {
+                p.soldiers = p.soldiers - p.EnemySoldiers;
+            }
+        p.EnemySoldiers = 0;
+        //}
+    }
+
 
     // Update is called once per frame
     void Update() {
