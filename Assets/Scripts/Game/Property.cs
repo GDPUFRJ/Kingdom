@@ -158,7 +158,9 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         UpdateSoldierInfo();
 
         if (EnemySoldiers > 0)
-            GameManager.Instance.BattleQueue.Enqueue(this);
+        {
+            FindObjectOfType<BattleManager>().AddBattleProperty(this);
+        }
     }
 
     private void OnDayEnd()

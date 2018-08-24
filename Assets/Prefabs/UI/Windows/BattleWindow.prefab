@@ -157,6 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224851479056890628}
   - component: {fileID: 114380540231492866}
+  - component: {fileID: 114121080197193632}
   - component: {fileID: 225002783784755534}
   m_Layer: 5
   m_Name: BattleWindow
@@ -492,6 +493,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114121080197193632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1484176672531734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5aff0a108449c4ca6cb7b237fdc4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleWindow: {fileID: 114380540231492866}
 --- !u!114 &114253818516818588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1576,7 +1589,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!225 &225408517881937518
 CanvasGroup:

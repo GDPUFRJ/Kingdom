@@ -32,6 +32,8 @@ public class BattleWindow : MonoBehaviour {
 	private int playerBattlePoints;
 	private int enemyBattlePoints;
 
+    public Coroutine currentBattle;
+
 	private void Start()
 	{
 		//Show(3,1);
@@ -41,18 +43,16 @@ public class BattleWindow : MonoBehaviour {
 		GetComponent<CanvasGroup>().DOFade(1,0);
 		this.playerBattlePoints = playerBattlePoints;
 		this.enemyBattlePoints = enemyBattlePoints;
-		StartCoroutine( ShowBattleScene() );
+		currentBattle = StartCoroutine( ShowBattleScene() );
 	}
 	private IEnumerator ShowBattleScene()
 	{
-        TimerPanel.SetPause(true);
 		InitializeAllValues();
 		yield return ShowAndHideShield();
 		yield return AnimateBattleSceneAndBackground();
 		yield return ShowBattlePoints();
 		yield return Battle();
 		yield return ShowResults();
-        TimerPanel.SetPause(false);
     }
 	private void InitializeAllValues()
 	{
@@ -67,7 +67,9 @@ public class BattleWindow : MonoBehaviour {
 		enemyBattlePointsText.transform.DOScale(0,0);
 		playerBattlePointsText.text = playerBattlePoints.ToString();
 		enemyBattlePointsText.text = enemyBattlePoints.ToString();
-	}
+        enemy.DOScale(1f, 0.3f);
+        player.DOScale(1f, 0.3f);
+    }
 	private IEnumerator ShowAndHideShield()
 	{
 		background.DOFade(1,0.5f);

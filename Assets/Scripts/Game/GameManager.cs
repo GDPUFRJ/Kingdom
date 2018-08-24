@@ -26,7 +26,8 @@ public class GameManager:Singleton < GameManager >  {
     [Space(10)]
     public Queue<Property> BattleQueue = new Queue<Property>();
 
-    private HudInfoManager hud; 
+    private HudInfoManager hud;
+    public BattleManager battleManager;
 
     [Header("Prefabs")]
     public GameObject happeningWindowPrefab; 
@@ -41,8 +42,11 @@ public class GameManager:Singleton < GameManager >  {
     public GameObject AbortPrefab;
     public GameObject NumSoldier;
 
+    
+
     // Use this for initialization
     void Start() {
+        battleManager = FindObjectOfType<BattleManager>();
         TimerPanel.OnDayEnd += OnDayEnd;
         TimerPanel.OnBattleTime += TimerPanel_OnBattleTime;
         OnDayEnd(); 
@@ -51,35 +55,8 @@ public class GameManager:Singleton < GameManager >  {
 
     private void TimerPanel_OnBattleTime()
     {
-        Property p;
-        BattleWindow bw = battleWindow.GetComponent<BattleWindow>();
-
-        if (BattleQueue.Count == 0) return;
-        //COMO NAO TEM COMO AGUARDAR O FIM DA CORROTINA, VOU LIMITAR A UMA BATALHA POR DIA
-        //while(BattleQueue.Count > 0)
-        //{
-            p = BattleQueue.Dequeue();
-            if(p.soldiers == 0)
-            {
-                p.SetDominated(!p.dominated);
-                p.soldiers = p.EnemySoldiers;
-                //DEVERIA TER UMA ANIMACAO DE BATALHA, CASO NAO HAJA SOLDADOS?
-                //continue;
-            }
-            bw.Show(p.EnemySoldiers, p.soldiers);
-            if(p.EnemySoldiers > p.soldiers)
-            {
-                p.SetDominated(!p.dominated);
-                p.soldiers = p.EnemySoldiers - p.soldiers;
-            }
-            else
-            {
-                p.soldiers = p.soldiers - p.EnemySoldiers;
-            }
-        p.EnemySoldiers = 0;
-        //}
+        battleManager.BeginBattles();
     }
-
 
     // Update is called once per frame
     void Update() {

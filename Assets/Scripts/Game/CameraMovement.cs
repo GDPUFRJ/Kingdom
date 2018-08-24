@@ -8,11 +8,13 @@ public class CameraMovement : MonoBehaviour {
 
     public float MovementSpeed = 0.5f;
     public float ZoomSpeed = 0.5f;        // The rate of change of the orthographic size in orthographic mode.
+    public float zoomAnimationTax = 0.6f;
     public float MaxDist = 5;
     public float MinDist = 1;
 
     private bool canControl = true;
     private float timeToMove = 0.5f;
+    
 
     void Update()
     {
@@ -67,6 +69,14 @@ public class CameraMovement : MonoBehaviour {
     {
         canControl = false;
         transform.DOMove(new Vector3(position.x, position.y, transform.position.z), timeToMove);
+        yield return new WaitForSeconds(timeToMove);
+        canControl = true;
+    }
+    public IEnumerator Zoom(bool toggle)
+    {
+        canControl = false;
+        float tax = toggle ? zoomAnimationTax : 1f / zoomAnimationTax;
+        Camera.main.DOOrthoSize(Camera.main.orthographicSize*tax, timeToMove);
         yield return new WaitForSeconds(timeToMove);
         canControl = true;
     }
