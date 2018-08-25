@@ -14,6 +14,8 @@ public class BattleArrowController : MonoBehaviour {
 
     private Text ArrowText;
 
+    public GameObject NumSoldierFather;
+
     // Use this for initialization
     void Start () {
         TimerPanel.OnDayEnd += TimerPanel_OnDayEnd;
@@ -42,16 +44,24 @@ public class BattleArrowController : MonoBehaviour {
     {
         if (Source == null || Destination == null) return;
 
+        float CamSize = Camera.main.orthographicSize;
 
         Vector3 SourceOnScreen = Camera.main.WorldToScreenPoint(Source.transform.position);
         Vector3 DestinationOnScreen = Camera.main.WorldToScreenPoint(Destination.transform.position);
 
         Vector3 MediumPoint = (SourceOnScreen + DestinationOnScreen) / 2;
-        transform.position = FindIdealPosition(SourceOnScreen, 50, MediumPoint);
+        transform.position = FindIdealPosition(SourceOnScreen, 350/CamSize, MediumPoint);
+        float NewFloat = Map(CamSize, 1, 10, 4, 1.5f);
+        transform.localScale = new Vector3(NewFloat, NewFloat, NewFloat);
 
         float angle = Mathf.Atan2(SourceOnScreen.y - DestinationOnScreen.y, SourceOnScreen.x - DestinationOnScreen.x) * Mathf.Rad2Deg;
         this.transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
 
+    }
+
+    public float Map(float value, float fromSource, float toSource, float fromTarget, float toTarget)
+    {
+        return (value - fromSource) / (toSource - fromSource) * (toTarget - fromTarget) + fromTarget;
     }
 
     public void SetSourceAndDestination(Property source, Property destination)

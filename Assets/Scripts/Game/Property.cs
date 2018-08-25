@@ -135,15 +135,17 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         foreach(Property neighbor in Neighbors)
         {
             GameObject NewArrow;
+
             if(neighbor.dominated && this.dominated)
-                NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, GameManager.Instance.CanvasBattle.transform);
+                NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, NumSoldier.transform);
             else if(neighbor.dominated == false && this.dominated)
-                NewArrow = Instantiate(GameManager.Instance.BattlePrefab, GameManager.Instance.CanvasBattle.transform);
+                NewArrow = Instantiate(GameManager.Instance.BattlePrefab, NumSoldier.transform);
             else
-                NewArrow = Instantiate(GameManager.Instance.AbortPrefab, GameManager.Instance.CanvasBattle.transform);
+                NewArrow = Instantiate(GameManager.Instance.AbortPrefab, NumSoldier.transform);
 
             BattleArrowController newBattleArrowController = NewArrow.GetComponent<BattleArrowController>();
             newBattleArrowController.SetSourceAndDestination(this, destination: neighbor);
+            newBattleArrowController.NumSoldierFather = NumSoldier;
             ArrowsComingOut.Add(newBattleArrowController);
             neighbor.ArrowsComingIn.Add(newBattleArrowController);
         }
@@ -195,6 +197,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (panelController.currentPanel == 4) return;
+
         StartCoroutine(Camera.main.GetComponent<CameraMovement>().FollowPosition(transform.position));
 
         var pw = Instantiate(PropertyManager.Instance.propertyWindowPrefab,
