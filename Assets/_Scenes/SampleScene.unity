@@ -1054,7 +1054,7 @@ GameObject:
   - component: {fileID: 114956742}
   - component: {fileID: 114956739}
   m_Layer: 0
-  m_Name: village (1)
+  m_Name: Vila Kokiri
   m_TagString: village
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 137315938}
   - component: {fileID: 137315937}
   m_Layer: 0
-  m_Name: forest (2)
+  m_Name: Floresta dos Lobos
   m_TagString: forest
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Floresta dos Malandros
+  customTitle: Floresta dos Lobos
   type: 4
   dominated: 0
   level: 1
@@ -1479,7 +1479,7 @@ GameObject:
   - component: {fileID: 173384178}
   - component: {fileID: 173384177}
   m_Layer: 0
-  m_Name: Quarter
+  m_Name: Quartel do Rei
   m_TagString: quarter
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Castelo do Gulliver
+  customTitle: Quartel do Rei
   type: 6
   dominated: 1
   level: 1
@@ -2132,7 +2132,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -1.975, y: -1.898, z: 0}
+  - {x: -2.167, y: -2.02, z: 0}
   - {x: -3.868, y: -1.632, z: 0}
   m_Parameters:
     serializedVersion: 2
@@ -2215,7 +2215,7 @@ GameObject:
   - component: {fileID: 340350040}
   - component: {fileID: 340350038}
   m_Layer: 0
-  m_Name: village
+  m_Name: Vila Imperial
   m_TagString: village
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2594,7 +2594,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -3.525, y: -2.452, z: 0}
-  - {x: -1.772, y: -3.245, z: 0}
+  - {x: -1.432, y: -3.48, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Vila Kakariko
+  customTitle: Vila Imperial
   type: 2
   dominated: 0
   level: 1
@@ -2787,8 +2787,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -1.772, y: -3.245, z: 0}
-  - {x: -1.975, y: -1.898, z: 0}
+  - {x: -1.432, y: -3.48, z: 0}
+  - {x: -2.167, y: -2.02, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -3023,7 +3023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000045776367}
+  m_AnchoredPosition: {x: 0, y: -0.00010681152}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -3352,7 +3352,7 @@ GameObject:
   - component: {fileID: 469971039}
   - component: {fileID: 469971038}
   m_Layer: 0
-  m_Name: mine (2)
+  m_Name: "Ninho da \xC1guia"
   m_TagString: mine
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3370,7 +3370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Pico Terroso
+  customTitle: "Ninho da \xC1guia"
   type: 1
   dominated: 0
   level: 1
@@ -4647,7 +4647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000076293945}
+  m_AnchoredPosition: {x: 0, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -5462,8 +5462,8 @@ MonoBehaviour:
   MineLevel2: {fileID: 21300000, guid: d986fb1f88715f641ad0dd13a3f0dab9, type: 3}
   MineLevel3: {fileID: 21300000, guid: 876110a2cb32f63448c7bb46936c0a85, type: 3}
   VillageLevel1: {fileID: 21300000, guid: cc3408ab93c1e8147aa2724496352fa7, type: 3}
-  VillageLevel2: {fileID: 21300000, guid: cc3408ab93c1e8147aa2724496352fa7, type: 3}
-  VillageLevel3: {fileID: 21300000, guid: cc3408ab93c1e8147aa2724496352fa7, type: 3}
+  VillageLevel2: {fileID: 21300000, guid: 76660871d21c8d14aba16226841890d6, type: 3}
+  VillageLevel3: {fileID: 21300000, guid: 40af93907b077134696066e752054cca, type: 3}
   FarmLevel1: {fileID: 21300000, guid: 77db01079334e944aa4d60bd5baf955a, type: 3}
   FarmLevel2: {fileID: 21300000, guid: b3d0d235144ef974097bf37b28632117, type: 3}
   FarmLevel3: {fileID: 21300000, guid: 504be519de32e6843ace9408874b6e61, type: 3}
@@ -6327,7 +6327,7 @@ GameObject:
   - component: {fileID: 866971833}
   - component: {fileID: 866971832}
   m_Layer: 0
-  m_Name: village (2)
+  m_Name: Burgo do Ham
   m_TagString: village
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6345,7 +6345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Burgo do Oeste
+  customTitle: Burgo do Ham
   type: 2
   dominated: 1
   level: 1
@@ -6819,7 +6819,7 @@ GameObject:
   - component: {fileID: 946836385}
   - component: {fileID: 946836383}
   m_Layer: 0
-  m_Name: mine
+  m_Name: Montanha da Morte
   m_TagString: mine
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -7897,7 +7897,7 @@ GameObject:
   - component: {fileID: 1125633896}
   - component: {fileID: 1125633895}
   m_Layer: 0
-  m_Name: mine (3)
+  m_Name: Montanha Lunar
   m_TagString: mine
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -7915,7 +7915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Pico Terroso
+  customTitle: Montanha Lunar
   type: 1
   dominated: 0
   level: 1
@@ -8029,7 +8029,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125633893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.975, y: -1.898, z: 0}
+  m_LocalPosition: {x: -2.167, y: -2.02, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -8257,7 +8257,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255732447}
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -8493,7 +8493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Rancho Lon Lon
+  customTitle: Fazenda Montgomery
   type: 3
   dominated: 1
   level: 3
@@ -8670,7 +8670,7 @@ GameObject:
   - component: {fileID: 1227787735}
   - component: {fileID: 1227787733}
   m_Layer: 0
-  m_Name: forest
+  m_Name: Floresta dos Malandros
   m_TagString: forest
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8761,7 +8761,7 @@ GameObject:
   - component: {fileID: 1234089221}
   - component: {fileID: 1234089220}
   m_Layer: 0
-  m_Name: mine (1)
+  m_Name: Pico Terroso
   m_TagString: mine
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8782,7 +8782,7 @@ MonoBehaviour:
   customTitle: Pico Terroso
   type: 1
   dominated: 0
-  level: 1
+  level: 3
   soldiers: 14
   SoldiersToGetOut: 0
   EnemySoldiers: 0
@@ -8876,7 +8876,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cb6a28244c85b86438c6a6ae2b6735bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 876110a2cb32f63448c7bb46936c0a85, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8914,7 +8914,7 @@ GameObject:
   - component: {fileID: 1234937613}
   - component: {fileID: 1234937612}
   m_Layer: 0
-  m_Name: farm (2)
+  m_Name: Rancho do Barney
   m_TagString: farm
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9557,7 +9557,7 @@ GameObject:
   - component: {fileID: 1300151431}
   - component: {fileID: 1300151429}
   m_Layer: 0
-  m_Name: farm
+  m_Name: Fazenda Montgomery
   m_TagString: farm
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9709,7 +9709,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029535602}
   m_HandleRect: {fileID: 2029535601}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10158,7 +10158,7 @@ GameObject:
   - component: {fileID: 1358880442}
   - component: {fileID: 1358880440}
   m_Layer: 0
-  m_Name: castle
+  m_Name: Castelo de Gulliver
   m_TagString: castle
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11101,7 +11101,7 @@ MonoBehaviour:
   customTitle: Vila do Sul
   type: 2
   dominated: 0
-  level: 1
+  level: 2
   soldiers: 14
   SoldiersToGetOut: 0
   EnemySoldiers: 0
@@ -11195,7 +11195,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cc3408ab93c1e8147aa2724496352fa7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76660871d21c8d14aba16226841890d6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11402,7 +11402,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -3.416, y: -0.605, z: 0}
-  - {x: -1.975, y: -1.898, z: 0}
+  - {x: -2.167, y: -2.02, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -11484,7 +11484,7 @@ GameObject:
   - component: {fileID: 1564080337}
   - component: {fileID: 1564080336}
   m_Layer: 0
-  m_Name: village (3)
+  m_Name: Vila Mimosa
   m_TagString: village
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11759,7 +11759,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -1.772, y: -3.245, z: 0}
+  - {x: -1.432, y: -3.48, z: 0}
   - {x: -3.095, y: -3.426, z: 0}
   m_Parameters:
     serializedVersion: 2
@@ -12602,7 +12602,7 @@ GameObject:
   - component: {fileID: 1761837154}
   - component: {fileID: 1761837153}
   m_Layer: 0
-  m_Name: village (4)
+  m_Name: Vilarejo Allor
   m_TagString: village
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -12620,10 +12620,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Burgo do Oeste
+  customTitle: Vilarejo Allor
   type: 2
   dominated: 0
-  level: 1
+  level: 2
   soldiers: 14
   SoldiersToGetOut: 0
   EnemySoldiers: 0
@@ -12715,7 +12715,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cc3408ab93c1e8147aa2724496352fa7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76660871d21c8d14aba16226841890d6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12733,7 +12733,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761837151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.772, y: -3.245, z: 0}
+  m_LocalPosition: {x: -1.432, y: -3.48, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -12753,7 +12753,7 @@ GameObject:
   - component: {fileID: 1791031548}
   - component: {fileID: 1791031547}
   m_Layer: 0
-  m_Name: forest (1)
+  m_Name: Floresta Sombria
   m_TagString: forest
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -13142,7 +13142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -13462,7 +13462,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -1.975, y: -1.898, z: 0}
+  - {x: -2.167, y: -2.02, z: 0}
   - {x: -3.525, y: -2.452, z: 0}
   m_Parameters:
     serializedVersion: 2
@@ -13624,6 +13624,7 @@ GameObject:
   - component: {fileID: 1939245399}
   - component: {fileID: 1939245398}
   - component: {fileID: 1939245397}
+  - component: {fileID: 1939245400}
   m_Layer: 5
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
@@ -13688,8 +13689,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348453625}
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999999
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13729,6 +13730,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939245395}
+--- !u!225 &1939245400
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939245395}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1944822421
 GameObject:
   m_ObjectHideFlags: 0
@@ -13743,7 +13755,7 @@ GameObject:
   - component: {fileID: 1944822426}
   - component: {fileID: 1944822423}
   m_Layer: 0
-  m_Name: farm (1)
+  m_Name: Fazenda do Chico
   m_TagString: farm
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

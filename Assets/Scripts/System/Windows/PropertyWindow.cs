@@ -60,6 +60,7 @@ public class PropertyWindow : MonoBehaviour {
     }
     public void UpdatePropertyInfo()
     {
+        icon.sprite = property.GetComponent<SpriteRenderer>().sprite;
         propertyName.text = property.customTitle;
         propertyLevel.text = property.level.GetHashCode().ToString();
         riqResource.text = property.CurrentResource(Resource.Gold).ToString();
