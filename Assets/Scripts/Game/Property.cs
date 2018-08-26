@@ -12,32 +12,31 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public PropertyType type;
     public bool dominated = false;
     public Level level = Level.Level1; //DO NOT CHANGE THIS DIRECTLY
-    public int soldiers = 14;
 
-    public int SoldiersToGetOut = 0;
-    public int EnemySoldiers = 0;
+    private int soldiers = 14;
+    private int SoldiersToGetOut = 0;
+    private int EnemySoldiers = 0;
 
     public List<BattleArrowController> ArrowsComingIn = new List<BattleArrowController>();
     public List<BattleArrowController> ArrowsComingOut = new List<BattleArrowController>();
 
     public int happiness = 90;
 
-    public bool MoveSoldier = false;
-    public bool ReadyToReceiveSoldier = false;
-
     [Header("Production Information")]
     [Range(-100, 100)] public int goldLevel1 = 0;
     [Range(-100, 100)] public int foodLevel1 = 0;
     [Range(-100, 100)] public int buildingLevel1 = 0;
+    [Range(0, 100)] public int soldierLevel1 = 0;
     [Space(10)]
     [Range(-100, 100)] public int goldLevel2 = 0;
     [Range(-100, 100)] public int foodLevel2 = 0;
     [Range(-100, 100)] public int buildingLevel2 = 0;
+    [Range(0, 100)] public int soldierLevel2 = 0;
     [Space(10)]
-    [Range(-100, 100)]
-    public int goldLevel3 = 0;
+    [Range(-100, 100)] public int goldLevel3 = 0;
     [Range(-100, 100)] public int foodLevel3 = 0;
     [Range(-100, 100)] public int buildingLevel3 = 0;
+    [Range(0, 100)] public int soldierLevel3 = 0;
 
     [Header("Upgrade Demands")]
     [Range(-100, 100)] public int goldToLevel2 = 0;
@@ -177,7 +176,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
         return info;
     }
-   
+
     private void AddConsumption()
     {
         switch (level)
@@ -186,16 +185,19 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 GameManager.Instance.Gold += goldLevel1;
                 GameManager.Instance.Food += foodLevel1;
                 GameManager.Instance.Building += buildingLevel1;
+                AddSoldiers(SoldierType.InProperty, soldierLevel1);
                 break;
             case Level.Level2:
                 GameManager.Instance.Gold += goldLevel2;
                 GameManager.Instance.Food += foodLevel2;
                 GameManager.Instance.Building += buildingLevel2;
+                AddSoldiers(SoldierType.InProperty, soldierLevel2);
                 break;
             case Level.Level3:
                 GameManager.Instance.Gold += goldLevel3;
                 GameManager.Instance.Food += foodLevel3;
                 GameManager.Instance.Building += buildingLevel3;
+                AddSoldiers(SoldierType.InProperty, soldierLevel3);
                 break;
         }
     }
@@ -226,12 +228,14 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     }
 
     //in game
-    public bool SetDominated(bool dominated)
+    //byUser Means that the user requested it over UI
+    //If it was a battle, byUser should be false, always
+    public bool SetDominated(bool dominated, bool byUser)
     {
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
         //desativo a propriedade, depois verifico se algum vizinho ficou
         //isolado. Se ficou, desfaz, se nao, mantém o abandono.
-        if (type == PropertyType.Castle)
+        if (type == PropertyType.Castle || type == PropertyType.quarter)
             return false;
 
         this.dominated = dominated;
@@ -239,8 +243,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
 
 
-        //distribuyte soldiers over near friend properties
-        if(dominated == false)
+        //distribute soldiers over near friend properties
+        if(dominated == false && byUser == true)
         {
             while(soldiers > 0)
             {
@@ -421,6 +425,71 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
             default:
                 return 0;
         }
+    }
+
+    public void AddSoldiers(SoldierType type, int SoldiersToAdd)
+    {
+        //SHOW ANIMATION, PRINT, PARTICLE, WHAT EVER
+        switch (type)
+        {
+            case SoldierType.InProperty:
+                soldiers += SoldiersToAdd;
+                break;
+            case SoldierType.Enemy:
+                EnemySoldiers += SoldiersToAdd;
+                break;
+            case SoldierType.ToGetOut:
+                SoldiersToGetOut += SoldiersToAdd;
+                break;
+        }
+    }
+
+    public int GetSoldiers(SoldierType type)
+    {
+        switch (type)
+        {
+            case SoldierType.InProperty:
+                return soldiers;
+            case SoldierType.Enemy:
+                return EnemySoldiers;
+            case SoldierType.ToGetOut:
+                return SoldiersToGetOut;
+        }
+        return 0;
+    }
+
+    public void SetSoldiers(SoldierType type, int SoldiersToSet)
+    {
+        switch (type)
+        {
+            case SoldierType.InProperty:
+                soldiers = SoldiersToSet;
+                break;
+            case SoldierType.Enemy:
+                EnemySoldiers = SoldiersToSet;
+                break;
+            case SoldierType.ToGetOut:
+                SoldiersToGetOut = SoldiersToSet;
+                break;
+        }
+
+    }
+
+    public void RemoveSoldiers(SoldierType type, int SoldiersToRemove)
+    {
+        switch (type)
+        {
+            case SoldierType.InProperty:
+                soldiers -= SoldiersToRemove;
+                break;
+            case SoldierType.Enemy:
+                EnemySoldiers -= SoldiersToRemove;
+                break;
+            case SoldierType.ToGetOut:
+                SoldiersToGetOut -= SoldiersToRemove;
+                break;
+        }
+
     }
 
     public void UpdateSoldierInfo()

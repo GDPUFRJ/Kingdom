@@ -11,6 +11,7 @@ public enum Mode { UsePercentage = 0, UseAbsolute = 1 }
 public enum Battle { NotAllowed = 0, Allowed = 1 }
 
 public enum PropertyType { Castle, Mine, Village, Farm, Forest, Other, quarter }
+public enum SoldierType { InProperty, Enemy, ToGetOut }
 
 public enum Level { Level1 = 1, Level2 = 2, Level3 = 3 }
 public enum Resource { Gold, Building, Food }

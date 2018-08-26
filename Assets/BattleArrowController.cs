@@ -36,8 +36,8 @@ public class BattleArrowController : MonoBehaviour {
     private void TimerPanel_OnDayEnd()
     {
         if (Destination == null) return;
-        if (Destination.dominated) Destination.soldiers += SoldiersToBeTransfered;
-        else Destination.EnemySoldiers += SoldiersToBeTransfered;
+        if (Destination.dominated) Destination.AddSoldiers(SoldierType.InProperty, SoldiersToBeTransfered);
+        else Destination.AddSoldiers(SoldierType.Enemy, SoldiersToBeTransfered);
         SoldiersToBeTransfered = 0;
         UpdateArrowText();
         Source.UpdateSoldierInfo();
@@ -116,13 +116,14 @@ public class BattleArrowController : MonoBehaviour {
         if (OpositeArrow.SoldiersToBeTransfered > 0 && tipo != ArrowType.Battle)
         {
             OpositeArrow.SoldiersToBeTransfered--;
-            OpositeArrow.Source.SoldiersToGetOut--;
+            OpositeArrow.Source.RemoveSoldiers(SoldierType.ToGetOut, 1);
             OpositeArrow.UpdateArrowText();
         }
 
-        else if (Source.SoldiersToGetOut < Source.soldiers && tipo != ArrowType.Abort)
+        else if (Source.GetSoldiers(SoldierType.ToGetOut) < Source.GetSoldiers(SoldierType.InProperty) 
+                    && tipo != ArrowType.Abort)
         {
-            this.Source.SoldiersToGetOut++;
+            this.Source.AddSoldiers(SoldierType.ToGetOut, 1);
             this.SoldiersToBeTransfered++;
             this.UpdateArrowText();
         }

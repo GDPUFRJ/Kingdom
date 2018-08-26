@@ -969,23 +969,21 @@ MonoBehaviour:
   type: 2
   dominated: 1
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -1223,23 +1221,21 @@ MonoBehaviour:
   type: 4
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
+  soldierLevel1: 0
   goldLevel2: 36
   foodLevel2: 51
   buildingLevel2: 37
+  soldierLevel2: 0
   goldLevel3: 19
   foodLevel3: 41
   buildingLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -1393,23 +1389,21 @@ MonoBehaviour:
   type: 6
   dominated: 1
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
+  soldierLevel1: 10
   goldLevel2: 20
   foodLevel2: 15
   buildingLevel2: 17
+  soldierLevel2: 30
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 26
+  soldierLevel3: 50
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -2449,23 +2443,21 @@ MonoBehaviour:
   type: 2
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -2713,23 +2705,21 @@ MonoBehaviour:
   type: 0
   dominated: 1
   level: 2
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: 15
   buildingLevel2: 17
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 26
+  soldierLevel3: 0
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -3129,23 +3119,21 @@ MonoBehaviour:
   type: 1
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -4201,7 +4189,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.77, y: -1.58, z: -10}
+  m_LocalPosition: {x: -6.08, y: -1.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4403,7 +4391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: -0.000045776367}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -5970,23 +5958,21 @@ MonoBehaviour:
   type: 2
   dominated: 1
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -7123,23 +7109,21 @@ MonoBehaviour:
   type: 1
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -7572,23 +7556,21 @@ MonoBehaviour:
   type: 1
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -7910,8 +7892,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255732447}
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8150,23 +8132,21 @@ MonoBehaviour:
   type: 3
   dominated: 1
   level: 3
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -8436,23 +8416,21 @@ MonoBehaviour:
   type: 1
   dominated: 0
   level: 3
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -8588,23 +8566,21 @@ MonoBehaviour:
   type: 3
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -10753,23 +10729,21 @@ MonoBehaviour:
   type: 2
   dominated: 0
   level: 2
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -11939,23 +11913,21 @@ MonoBehaviour:
   type: 4
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
+  soldierLevel1: 0
   goldLevel2: 36
   foodLevel2: 51
   buildingLevel2: 37
+  soldierLevel2: 0
   goldLevel3: 19
   foodLevel3: 41
   buildingLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -12003,23 +11975,21 @@ MonoBehaviour:
   type: 2
   dominated: 0
   level: 2
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -12154,23 +12124,21 @@ MonoBehaviour:
   type: 4
   dominated: 1
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
+  soldierLevel1: 0
   goldLevel2: 36
   foodLevel2: 51
   buildingLevel2: 37
+  soldierLevel2: 0
   goldLevel3: 19
   foodLevel3: 41
   buildingLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -13156,23 +13124,21 @@ MonoBehaviour:
   type: 3
   dominated: 0
   level: 1
-  soldiers: 14
-  SoldiersToGetOut: 0
-  EnemySoldiers: 0
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
-  MoveSoldier: 0
-  ReadyToReceiveSoldier: 0
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25

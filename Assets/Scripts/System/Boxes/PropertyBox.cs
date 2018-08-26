@@ -51,7 +51,7 @@ public class PropertyBox : MonoBehaviour {
     }
     private IEnumerator GiveUpAnimation()
     {
-        this.property.SetDominated(false);
+        this.property.SetDominated(false, true);
         this.gameObject.transform.DOScale(0, TIME_TO_GIVEUP);
         yield return new WaitForSeconds(TIME_TO_GIVEUP);
         propertyPanel.PrepareContent();

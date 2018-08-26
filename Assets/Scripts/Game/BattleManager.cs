@@ -43,23 +43,24 @@ public class BattleManager : MonoBehaviour {
 
         if (PropertyIsEmpty(property))
         {
-            property.SetDominated(!property.dominated);
-            property.soldiers = property.EnemySoldiers;
+            property.SetDominated(!property.dominated, false);
+            property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.Enemy));
         }
-        battleWindow.Show(property.EnemySoldiers, property.soldiers);
+        battleWindow.Show(property.GetSoldiers(SoldierType.Enemy), property.GetSoldiers(SoldierType.InProperty));
         if (InvaderIsTheWinner(property))
         {
-            property.SetDominated(!property.dominated);
-            property.soldiers = property.EnemySoldiers - property.soldiers;
+            property.SetDominated(!property.dominated, false);
+            property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.Enemy) - property.GetSoldiers(SoldierType.InProperty));
         }
         else
         {
-            property.soldiers = property.soldiers - property.EnemySoldiers;
+            property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.InProperty) - property.GetSoldiers(SoldierType.Enemy));
         }
-        property.EnemySoldiers = 0;
+        property.SetSoldiers(SoldierType.Enemy, 0);
         yield return battleWindow.currentBattle;
         yield return cam.Zoom(false);
     }
-    private bool PropertyIsEmpty(Property p) { return p.soldiers == 0; }
-    private bool InvaderIsTheWinner(Property p) { return p.EnemySoldiers > p.soldiers; }
+
+    private bool PropertyIsEmpty(Property p) { return p.GetSoldiers(SoldierType.InProperty) == 0; }
+    private bool InvaderIsTheWinner(Property p) { return p.GetSoldiers(SoldierType.Enemy) > p.GetSoldiers(SoldierType.InProperty); }
 }
