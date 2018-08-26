@@ -15,7 +15,9 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
     private List < KHappening > ComumHappenings = new List < KHappening > (); 
     private List < KHappening > NormalHappenings = new List < KHappening > (); 
     private List < KHappening > RaroHappenings = new List < KHappening > (); 
-    private List < KHappening > MuitoRaroHappenings = new List < KHappening > (); 
+    private List < KHappening > MuitoRaroHappenings = new List < KHappening > ();
+
+    private List<KHappening> ManualHappenings = new List<KHappening>();
 
     private List < List < KHappening >> HappeningsByRarity = new List < List < KHappening >> (); 
 
@@ -31,19 +33,22 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
 
         foreach (KHappening khpp in KHappenings) {
             switch (khpp.chance) {
-                case KHappening.Chance.MuitoRaro:
+                case Chance.Manual:
+                    ManualHappenings.Add(khpp);
+                    break;
+                case Chance.MuitoRaro:
                     MuitoRaroHappenings.Add(khpp); 
                     break; 
-                case KHappening.Chance.Raro:
+                case Chance.Raro:
                     RaroHappenings.Add(khpp); 
                     break; 
-                case KHappening.Chance.Normal:
+                case Chance.Normal:
                     NormalHappenings.Add(khpp); 
                     break; 
-                case KHappening.Chance.Comum:
+                case Chance.Comum:
                     ComumHappenings.Add(khpp); 
                     break; 
-                case KHappening.Chance.MuitoComum:
+                case Chance.MuitoComum:
                     MuitoComumHappenings.Add(khpp); 
                     break; 
             }
@@ -80,7 +85,7 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
 
             //PEDRO, CHAME O QUE VOCE PRECISA AQUI
             TimerPanel.SetPause(true);
-            GameObject window = Instantiate(GameManager.Instance.happeningWindowPrefab, GameManager.Instance.canvasRoot); 
+            GameObject window = Instantiate(GameManager.Instance.happeningWindowPrefab, GameManager.Instance.CanvasHUD); 
             window.GetComponent < HappeningWindow > ().SetHappening(khpp);
             window.GetComponent<HappeningWindow>().UpdateInfo();
 

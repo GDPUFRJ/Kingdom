@@ -22,7 +22,7 @@ public class HappeningWindowAnswer:MonoBehaviour {
     }
     public void ActivateEvent()
     {
-        KEventManager.Instance.FireEvent(kevent, KEvent.Intensity.light);
+        KEventManager.Instance.FireEvent(kevent, Intensity.light);
         happeningWindow.DestroyWindow();
     }
 }

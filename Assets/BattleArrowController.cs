@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ArrowType { Arrow, Battle, Abort, Disabled }
+
 
 public class BattleArrowController : MonoBehaviour {
 

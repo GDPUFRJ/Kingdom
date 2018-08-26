@@ -9,7 +9,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 {
     [Header("Basic Informations")]
     public string customTitle = " ";
-    public Tipo type;
+    public PropertyType type;
     public bool dominated = false;
     public Level level = Level.Level1; //DO NOT CHANGE THIS DIRECTLY
     public int soldiers = 14;
@@ -57,9 +57,71 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     private GameObject NumSoldier;
     private GameObject EditButtons;
 
-
-
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
+
+    private void Start()
+    {
+        TimerPanel.OnDayEnd += OnDayEnd;
+        TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
+
+        panelController = GameManager.Instance.CanvasHUD.GetComponent<PanelController>();
+        EditButtons = GameManager.Instance.EditButtons;
+
+        if (dominated == false) soldiers = Random.Range(10, 20);
+
+        NumSoldier = Instantiate(GameManager.Instance.NumSoldier, GameManager.Instance.CanvasBattle.transform);
+        NumSoldier.GetComponent<Text>().text = soldiers.ToString();
+        NumSoldier.GetComponent<NumSoldiersTextController>().Owner = this.transform;
+        NumSoldier.transform.position = this.transform.position;
+
+        foreach (Property neighbor in Neighbors)
+        {
+            GameObject NewArrow;
+            NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, EditButtons.transform);
+
+            BattleArrowController newBAC = NewArrow.GetComponent<BattleArrowController>();
+            newBAC.SetSourceAndDestination(this, destination: neighbor);
+            newBAC.CreateSoldierButton();
+            newBAC.NumSoldierFather = NumSoldier;
+
+            newBAC.SetPosition();
+
+            ArrowsComingOut.Add(newBAC);
+            neighbor.ArrowsComingIn.Add(newBAC);
+        }
+
+        UpdateSoldierInfo();
+    }
+
+    private void OnDayEnd()
+    {
+        if (!dominated) return;
+        AddConsumption();
+    }
+
+    private void OnAfterDayEnd()
+    {
+        soldiers -= SoldiersToGetOut;
+        SoldiersToGetOut = 0;
+        UpdateSoldierInfo();
+
+        if (EnemySoldiers > 0)
+        {
+            FindObjectOfType<BattleManager>().AddBattleProperty(this);
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (panelController.currentPanel == 4 && SoldierPanel.isEditButtonsEnable == true) return;
+
+        StartCoroutine(Camera.main.GetComponent<CameraMovement>().FollowPosition(transform.position));
+
+        var pw = Instantiate(PropertyManager.Instance.propertyWindowPrefab,
+                             PropertyManager.Instance.canvasParent).GetComponent<PropertyWindow>();
+        pw.GetProperty(this);
+        pw.Open();
+    }
 
     public UpgradeInformations GetUpgradeInformations()
     {
@@ -86,7 +148,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
         return upgradeInformations;
     }
-
 
     public Informations GetInfo()
     {
@@ -116,62 +177,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
         return info;
     }
-
-
-    private void Start()
-    {
-        TimerPanel.OnDayEnd += OnDayEnd;
-        TimerPanel.OnAfterDayEnd += TimerPanel_OnAfterDayEnd;
-
-        panelController = GameManager.Instance.canvasRoot.GetComponent<PanelController>();
-        EditButtons = GameManager.Instance.EditButtons;
-
-        if (dominated == false) soldiers = Random.Range(10, 20);
-
-        NumSoldier = Instantiate(GameManager.Instance.NumSoldier, GameManager.Instance.CanvasBattle.transform);
-        NumSoldier.GetComponent<Text>().text = soldiers.ToString();
-        NumSoldier.GetComponent<NumSoldiersTextController>().Owner = this.transform;
-        NumSoldier.transform.position = this.transform.position;
-
-        foreach(Property neighbor in Neighbors)
-        {
-            GameObject NewArrow;
-            NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, EditButtons.transform);
-
-            BattleArrowController newBAC = NewArrow.GetComponent<BattleArrowController>();
-            newBAC.SetSourceAndDestination(this, destination: neighbor);
-            newBAC.CreateSoldierButton();
-            newBAC.NumSoldierFather = NumSoldier;
-
-            newBAC.SetPosition();
-
-            ArrowsComingOut.Add(newBAC);
-            neighbor.ArrowsComingIn.Add(newBAC);
-        }
-
-        UpdateSoldierInfo();
-    }
-
-    private void TimerPanel_OnAfterDayEnd()
-    {
-        soldiers -= SoldiersToGetOut;
-        SoldiersToGetOut = 0;
-        UpdateSoldierInfo();
-
-        if (EnemySoldiers > 0)
-        {
-            FindObjectOfType<BattleManager>().AddBattleProperty(this);
-        }
-    }
-
-    private void OnDayEnd()
-    {
-        //Debug.Log("A propriedade " + customTitle + " Passou para o dia seguinte");
-        if (!dominated) return;
-
-        AddConsumption();
-    }
-
+   
     private void AddConsumption()
     {
         switch (level)
@@ -192,34 +198,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 GameManager.Instance.Building += buildingLevel3;
                 break;
         }
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (panelController.currentPanel == 4) return;
-
-        StartCoroutine(Camera.main.GetComponent<CameraMovement>().FollowPosition(transform.position));
-
-        var pw = Instantiate(PropertyManager.Instance.propertyWindowPrefab,
-                             PropertyManager.Instance.canvasParent).GetComponent<PropertyWindow>();
-        pw.GetProperty(this);
-        pw.Open();
-    }
-
-    private void OnApplicationQuit()
-    {
-        TimerPanel.OnDayEnd -= OnDayEnd;
-    }
-
-    public int Compare(object x, object y)
-    {
-        Property a = x as Property;
-        Property b = y as Property;
-
-        if (a.gameObject.Equals(b.gameObject))
-            return 0;
-        else
-            return 1;
     }
 
     public void LevelUp()
@@ -253,7 +231,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
         //desativo a propriedade, depois verifico se algum vizinho ficou
         //isolado. Se ficou, desfaz, se nao, mantém o abandono.
-        if (type == Tipo.Castle)
+        if (type == PropertyType.Castle)
             return false;
 
         this.dominated = dominated;
@@ -303,7 +281,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
         switch (property.type)
         {
-            case Tipo.Castle:
+            case PropertyType.Castle:
                 switch (property.level)
                 {
                     case Level.Level1:
@@ -318,7 +296,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 }
                 property.gameObject.tag = "castle";
                 break;
-            case Tipo.Mine:
+            case PropertyType.Mine:
                 switch (property.level)
                 {
                     case Level.Level1:
@@ -334,7 +312,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 property.gameObject.tag = "mine";
 
                 break;
-            case Tipo.Village:
+            case PropertyType.Village:
                 switch (property.level)
                 {
                     case Level.Level1:
@@ -349,7 +327,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 }
                 property.gameObject.tag = "village";
                 break;
-            case Tipo.Farm:
+            case PropertyType.Farm:
                 switch (property.level)
                 {
                     case Level.Level1:
@@ -365,7 +343,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 property.gameObject.tag = "farm";
 
                 break;
-            case Tipo.Forest:
+            case PropertyType.Forest:
                 switch (property.level)
                 {
                     case Level.Level1:
@@ -380,7 +358,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 }
                 property.gameObject.tag = "forest";
                 break;
-            case Tipo.quarter:
+            case PropertyType.quarter:
                 switch (property.level)
                 {
                     case Level.Level1:
@@ -415,8 +393,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         }
     }
 
-
-    public int CurrentResource(Resource resource)
+    public int GetCurrentResource(Resource resource)
     {
         switch (resource)
         {
@@ -446,18 +423,6 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         }
     }
 
-    public enum Tipo
-    {
-        Castle, Mine, Village, Farm, Forest, Other, quarter
-    }
-
-    public class UpgradeInformations
-    {
-        public int Gold;
-        public int Food;
-        public int Building;
-    }
-
     public void UpdateSoldierInfo()
     {
         NumSoldiersTextController numSoldiersTextController = NumSoldier.GetComponent<NumSoldiersTextController>();
@@ -467,23 +432,21 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
         NumSoldier.GetComponent<NumSoldiersTextController>().UpdateText(soldiers.ToString());
     }
+
+    public int Compare(object x, object y)
+    {
+        Property a = x as Property;
+        Property b = y as Property;
+
+        if (a.gameObject.Equals(b.gameObject))
+            return 0;
+        else
+            return 1;
+    }
+
+    private void OnApplicationQuit()
+    {
+        TimerPanel.OnDayEnd -= OnDayEnd;
+    }
 }
 
-public enum Level
-{
-    Level1 = 1, Level2 = 2, Level3 = 3
-}
-public enum Resource
-{
-    Gold, Building, Food
-}
-
-public struct Informations
-{
-    public Sprite sprite;
-    public int Gold;
-    public int Food;
-    public int Building;
-    public int Soldiers;
-    public int happiness;
-}

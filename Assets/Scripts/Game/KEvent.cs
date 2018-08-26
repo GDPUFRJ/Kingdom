@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class KEvent : ScriptableObject
 {
 
@@ -11,17 +13,10 @@ public class KEvent : ScriptableObject
     public int Duration = 1;
     public int LeftDuration = 1;
 
-    public enum Intensity { light = 0, medium = 1, heavy = 2 }
     public Intensity intensity = Intensity.light;
     public Intensity ActiveIntensity = Intensity.light;
-
-    public enum Mode { UsePercentage = 0, UseAbsolute = 1 }
     public Mode mode = Mode.UsePercentage;
-
-    public enum Battle { NotAllowed = 0, Allowed = 1 }
     public Battle battle = Battle.Allowed;
-
-    public enum Chance { Manual = 0, MuitoRaro = 1, Raro = 2, Normal = 3, Comum = 4, MuitoComum = 5 }
     public Chance chance = Chance.Normal;
 
     public int PercentGoldLight = 0;
@@ -141,15 +136,14 @@ public class EventInfo
     public int BuildingToAddOrRemove;
     public int FoodToAddOrRemove;
     public int GoldToAddOrRemove;
-    public KEvent.Battle BattleEnabled;
+    public Battle BattleEnabled;
 
     public EventInfo(string name, string description, 
-                     int remainingDays, KEvent.Battle BattleEnabled)
+                     int remainingDays, Battle BattleEnabled)
     {
         this.name = name;
         this.description = description;
         this.remainingDays = remainingDays;
         this.BattleEnabled = BattleEnabled;
-
     }
 }

@@ -45,22 +45,22 @@ public class KEventManager : Singleton<KEventManager> {
         {
             switch (kevt.chance)
             {
-                case KEvent.Chance.Manual:
+                case Chance.Manual:
                     ManualEvents.Add(kevt);
                     break;
-                case KEvent.Chance.MuitoRaro:
+                case Chance.MuitoRaro:
                     MuitoRaroEvents.Add(kevt);
                     break;
-                case KEvent.Chance.Raro:
+                case Chance.Raro:
                     RaroEvents.Add(kevt);
                     break;
-                case KEvent.Chance.Normal:
+                case Chance.Normal:
                     NormalEvents.Add(kevt);
                     break;
-                case KEvent.Chance.Comum:
+                case Chance.Comum:
                     ComumEvents.Add(kevt);
                     break;
-                case KEvent.Chance.MuitoComum:
+                case Chance.MuitoComum:
                     MuitoComumEvents.Add(kevt);
                     break;
             }
@@ -75,7 +75,7 @@ public class KEventManager : Singleton<KEventManager> {
         int FoodNext = GameManager.Instance.FoodNext;
         int GoldNext = GameManager.Instance.GoldNext;
 
-        KEvent.Battle battle = KEvent.Battle.Allowed;
+        Battle battle = Battle.Allowed;
 
         List<KEvent> ToRemove = new List<KEvent>();
 
@@ -94,8 +94,8 @@ public class KEventManager : Singleton<KEventManager> {
             FoodNext = kevt.GetNextResource(Resource.Food);
             GoldNext = kevt.GetNextResource(Resource.Gold);
 
-            if (kevt.battle != KEvent.Battle.Allowed)
-                battle = KEvent.Battle.NotAllowed;
+            if (kevt.battle != Battle.Allowed)
+                battle = Battle.NotAllowed;
         }
 
         foreach(KEvent kevt in ToRemove)
@@ -111,11 +111,11 @@ public class KEventManager : Singleton<KEventManager> {
         GameManager.Instance.FoodNext += FoodNext;
         GameManager.Instance.GoldNext += GoldNext;
 
-        GameManager.Instance.CanBattle = battle == KEvent.Battle.Allowed ? true : false;
+        GameManager.Instance.CanBattle = battle == Battle.Allowed ? true : false;
 
     }
 
-    public bool FireEvent(KEvent kevt, KEvent.Intensity intensity)
+    public bool FireEvent(KEvent kevt, Intensity intensity)
     {
         if (kevt != null)
         {
@@ -130,7 +130,7 @@ public class KEventManager : Singleton<KEventManager> {
             return false;
     }
 
-    public bool FireEvent(string name, KEvent.Intensity intensity)
+    public bool FireEvent(string name, Intensity intensity)
     {
         return FireEvent(FindEventByName(name), intensity);
     }
@@ -162,7 +162,7 @@ public class KEventManager : Singleton<KEventManager> {
 
         KEvent selectedEvent = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
 
-        return FireEvent(selectedEvent, (KEvent.Intensity)intensity);
+        return FireEvent(selectedEvent, (Intensity)intensity);
 
     }
 

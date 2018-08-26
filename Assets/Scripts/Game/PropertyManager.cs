@@ -55,29 +55,8 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     [HideInInspector]public List<Property> Propriedades = new List<Property>();
 
-    //private string filepath;
-
-    private void Awake()
-    {
-        //carregar coisas
-        //filepath = Application.persistentDataPath + "/properties.sav";
-    }
-
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-    }
-
-    private void OnApplicationQuit()
-    {
-
-        //salvar as coisas
-        //FileStream fs = new FileStream(filepath, FileMode.Create, FileAccess.Write);
-        //StreamWriter sw 
-        //Propriedades = new List<Property>(GetComponentsInChildren<Property>());
-        //foreach(Property prop in Propriedades)
-        //{
-        //ToDo
-        //}
     }
 }

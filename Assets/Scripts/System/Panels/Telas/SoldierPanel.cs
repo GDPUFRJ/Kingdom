@@ -14,7 +14,7 @@ public class SoldierPanel : AMainPanel
     [SerializeField] private Color editEnabledColor = Color.green;
     [SerializeField] private Color editDisabledColor = Color.red;
 
-    private bool isEditButtonsEnable = false;
+    public static bool isEditButtonsEnable = false;
 
     private void Start()
     {
@@ -39,7 +39,7 @@ public class SoldierPanel : AMainPanel
     }
     public void ToggleEditButtons()
     {
-        print("AEW");
+        //print("AEW");
         isEditButtonsEnable = !isEditButtonsEnable;
         TimerPanel.SetPause(isEditButtonsEnable);
         toggle.color = isEditButtonsEnable ? editEnabledColor : editDisabledColor;

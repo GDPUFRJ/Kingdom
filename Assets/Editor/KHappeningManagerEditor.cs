@@ -48,7 +48,7 @@ public class KHappeningManagerEditor : Editor
 
 
                 khpp.Question = EditorGUILayout.TextField(new GUIContent("Question"), khpp.Question);
-                khpp.chance = (KHappening.Chance)EditorGUILayout.EnumPopup("Chance", khpp.chance);
+                khpp.chance = (Chance)EditorGUILayout.EnumPopup("Chance", khpp.chance);
 
                 EditorGUILayout.BeginHorizontal();
 
@@ -100,7 +100,7 @@ public class KHappeningManagerEditor : Editor
                             _choiceIndex = EditorGUILayout.Popup(new GUIContent("Event"),_choiceIndex, availableEvents.ToArray());
                             kans.answerEvent = KEventManager.Instance.KEvents[_choiceIndex];
 
-                            kans.intensity = (KEvent.Intensity)EditorGUILayout.EnumPopup("Intensity", kans.intensity);
+                            kans.intensity = (Intensity)EditorGUILayout.EnumPopup("Intensity", kans.intensity);
                         }
                     }
 

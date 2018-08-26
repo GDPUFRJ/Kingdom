@@ -63,9 +63,9 @@ public class PropertyWindow : MonoBehaviour {
         icon.sprite = property.GetComponent<SpriteRenderer>().sprite;
         propertyName.text = property.customTitle;
         propertyLevel.text = property.level.GetHashCode().ToString();
-        riqResource.text = property.CurrentResource(Resource.Gold).ToString();
-        aliResource.text = property.CurrentResource(Resource.Food).ToString();
-        conResource.text = property.CurrentResource(Resource.Building).ToString();
+        riqResource.text = property.GetCurrentResource(Resource.Gold).ToString();
+        aliResource.text = property.GetCurrentResource(Resource.Food).ToString();
+        conResource.text = property.GetCurrentResource(Resource.Building).ToString();
     }
     public void UpgradeProperty()
     {

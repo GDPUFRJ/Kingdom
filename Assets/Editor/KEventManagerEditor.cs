@@ -51,16 +51,16 @@ public class KEventManagerEditor : Editor
 
                     kevt.Duration = EditorGUILayout.IntSlider(new GUIContent("Duration Days"), kevt.Duration, 0, +30);  
 
-                    kevt.intensity = (KEvent.Intensity)EditorGUILayout.EnumPopup("Intensity", kevt.intensity);
-                    kevt.chance = (KEvent.Chance)EditorGUILayout.EnumPopup("Chance", kevt.chance);
-                    kevt.mode = (KEvent.Mode)EditorGUILayout.EnumPopup("Mode", kevt.mode);
-                    kevt.battle = (KEvent.Battle)EditorGUILayout.EnumPopup("Battle", kevt.battle);
+                    kevt.intensity = (Intensity)EditorGUILayout.EnumPopup("Intensity", kevt.intensity);
+                    kevt.chance = (Chance)EditorGUILayout.EnumPopup("Chance", kevt.chance);
+                    kevt.mode = (Mode)EditorGUILayout.EnumPopup("Mode", kevt.mode);
+                    kevt.battle = (Battle)EditorGUILayout.EnumPopup("Battle", kevt.battle);
 
 
                     switch (kevt.intensity)
                     {
-                        case KEvent.Intensity.light:
-                            if (kevt.mode == KEvent.Mode.UsePercentage)
+                        case Intensity.light:
+                            if (kevt.mode == Mode.UsePercentage)
                             {
                                 kevt.PercentGoldLight = EditorGUILayout.IntSlider(new GUIContent("Gold"), kevt.PercentGoldLight, -100, +100);
                                 kevt.PercentFoodLight = EditorGUILayout.IntSlider(new GUIContent("Food"), kevt.PercentFoodLight, -100, +100);
@@ -74,8 +74,8 @@ public class KEventManagerEditor : Editor
                                 kevt.AbsoluteBuildingLight = EditorGUILayout.IntSlider(new GUIContent("Building"), kevt.AbsoluteBuildingLight, -1000, +1000);
                             }
                             break;
-                        case KEvent.Intensity.medium:
-                            if (kevt.mode == KEvent.Mode.UsePercentage)
+                        case Intensity.medium:
+                            if (kevt.mode == Mode.UsePercentage)
                             {
                                 kevt.PercentGoldMedium = EditorGUILayout.IntSlider(new GUIContent("Gold"), kevt.PercentGoldMedium, -100, +100);
                                 kevt.PercentFoodMedium = EditorGUILayout.IntSlider(new GUIContent("Food"), kevt.PercentFoodMedium, -100, +100);
@@ -89,8 +89,8 @@ public class KEventManagerEditor : Editor
                                 kevt.AbsoluteBuildingMedium = EditorGUILayout.IntSlider(new GUIContent("Building"), kevt.AbsoluteBuildingMedium, -1000, +1000);
                             }
                             break;
-                        case KEvent.Intensity.heavy:
-                            if (kevt.mode == KEvent.Mode.UsePercentage)
+                        case Intensity.heavy:
+                            if (kevt.mode == Mode.UsePercentage)
                             {
                                 kevt.PercentGoldHeavy = EditorGUILayout.IntSlider(new GUIContent("Gold"), kevt.PercentGoldHeavy, -100, +100);
                                 kevt.PercentFoodHeavy = EditorGUILayout.IntSlider(new GUIContent("Food"), kevt.PercentFoodHeavy, -100, +100);

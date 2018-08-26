@@ -6,7 +6,7 @@ public class KAnswer : ScriptableObject
 {
     public string answer = "New Answer";
     public KEvent answerEvent;
-    public KEvent.Intensity intensity = KEvent.Intensity.light;
+    public Intensity intensity = Intensity.light;
 
     public bool showInInspector = true;
 }

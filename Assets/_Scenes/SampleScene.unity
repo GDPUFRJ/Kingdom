@@ -4938,7 +4938,7 @@ GameObject:
   - component: {fileID: 781580103}
   - component: {fileID: 781580107}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas - HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5020,7 +5020,7 @@ RectTransform:
   - {fileID: 2040384720}
   - {fileID: 319030514}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7186,7 +7186,7 @@ Transform:
   - {fileID: 786270578}
   - {fileID: 1983170129}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1054705960
 MonoBehaviour:
@@ -7238,16 +7238,12 @@ MonoBehaviour:
   newDayPrefab: {fileID: 1913524636860988, guid: 16b0d517c32ede348b59b16c5d235f37,
     type: 2}
   battleWindow: {fileID: 319030513}
-  canvasRoot: {fileID: 781580106}
-  CanvasBattle: {fileID: 74773466}
   ArrowPrefab: {fileID: 1674760514758016, guid: 819e2367b79017045849ed1bb30f1d40,
-    type: 2}
-  BattlePrefab: {fileID: 1404528014863652, guid: 35bb4338c50cad74d86188ef66cd9824,
-    type: 2}
-  AbortPrefab: {fileID: 1911727132975718, guid: 7ba713e4197fe9f499f1c20b7bddd3e4,
     type: 2}
   NumSoldier: {fileID: 1611824395558980, guid: b8266df41924f6749bf8fc5522968933, type: 2}
   EditButtons: {fileID: 951917380}
+  CanvasHUD: {fileID: 781580106}
+  CanvasBattle: {fileID: 74773466}
 --- !u!114 &1054705962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7915,7 +7911,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

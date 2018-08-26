@@ -46,7 +46,7 @@ public class PropertyBox : MonoBehaviour {
     }
     public void GiveUp()
     {
-        if (property.type != Property.Tipo.Castle)
+        if (property.type != PropertyType.Castle)
             StartCoroutine(GiveUpAnimation());
     }
     private IEnumerator GiveUpAnimation()

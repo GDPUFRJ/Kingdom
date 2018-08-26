@@ -34,16 +34,13 @@ public class GameManager:Singleton < GameManager >  {
     public GameObject answerPrefab;
     public GameObject newDayPrefab;
     public GameObject battleWindow;
-    public Transform canvasRoot;
     [Space(10)]
-    public GameObject CanvasBattle;
     public GameObject ArrowPrefab;
-    public GameObject BattlePrefab;
-    public GameObject AbortPrefab;
     public GameObject NumSoldier;
     public GameObject EditButtons;
-
-    
+    [Header("Canvas")]
+    public Transform CanvasHUD;
+    public GameObject CanvasBattle;
 
     // Use this for initialization
     void Start() {
@@ -57,11 +54,6 @@ public class GameManager:Singleton < GameManager >  {
     private void TimerPanel_OnBattleTime()
     {
         battleManager.BeginBattles();
-    }
-
-    // Update is called once per frame
-    void Update() {
-
     }
 
     private void OnDayEnd() {
@@ -104,7 +96,7 @@ public class GameManager:Singleton < GameManager >  {
         hud.UpdateHUD(); 
     }
 
-    public bool ConsumeItens(Property.UpgradeInformations upgradeInformations) {
+    public bool ConsumeItens(UpgradeInformations upgradeInformations) {
         if (upgradeInformations == null)
             return false; 
 
