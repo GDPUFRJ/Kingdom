@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum ArrowType { Arrow, Battle, Abort, Disabled }
+
 public class BattleArrowController : MonoBehaviour {
 
     public Property Source;
     public Property Destination;
 
+    [Range(0.01f,1.0f)]public float PropertyDistance = 0.45f;
+
     private int SoldiersToBeTransfered = 0;
+
+    private ArrowType type = ArrowType.Arrow;
+
+    public Sprite Arrow;
+    public Sprite Battle;
+    public Sprite Abort;
 
     private BattleArrowController OpositeArrow;
 
     private Text ArrowText;
 
-    public GameObject NumSoldierFather;
+    [HideInInspector]public GameObject NumSoldierFather;
 
     // Use this for initialization
     void Start () {
@@ -34,25 +44,41 @@ public class BattleArrowController : MonoBehaviour {
         Destination.UpdateSoldierInfo();
     }
 
-    // Update is called once per frame
-    void Update () {
-        SetPosition();
-
+    public void SetType(ArrowType type)
+    {
+        this.type = type; 
+        switch (type)
+        {
+            case ArrowType.Arrow:
+                GetComponent<Image>().enabled = true;
+                GetComponent<Image>().sprite = Arrow;
+                break;
+            case ArrowType.Battle:
+                GetComponent<Image>().enabled = true;
+                GetComponent<Image>().sprite = Battle;
+                break;
+            case ArrowType.Abort:
+                GetComponent<Image>().enabled = true;
+                GetComponent<Image>().sprite = Abort;
+                break;
+            case ArrowType.Disabled:
+                GetComponent<Image>().enabled = false;
+                break;
+        }
+        
     }
 
-    void SetPosition()
+    public void SetPosition()
     {
         if (Source == null || Destination == null) return;
 
         float CamSize = Camera.main.orthographicSize;
 
-        Vector3 SourceOnScreen = Camera.main.WorldToScreenPoint(Source.transform.position);
-        Vector3 DestinationOnScreen = Camera.main.WorldToScreenPoint(Destination.transform.position);
+        Vector3 SourceOnScreen = Source.transform.position;
+        Vector3 DestinationOnScreen = Destination.transform.position;
 
         Vector3 MediumPoint = (SourceOnScreen + DestinationOnScreen) / 2;
-        transform.position = FindIdealPosition(SourceOnScreen, 350/CamSize, MediumPoint);
-        float NewFloat = Map(CamSize, 1, 10, 4, 1.5f);
-        transform.localScale = new Vector3(NewFloat, NewFloat, NewFloat);
+        transform.position = FindIdealPosition(SourceOnScreen, 0.45f, MediumPoint);
 
         float angle = Mathf.Atan2(SourceOnScreen.y - DestinationOnScreen.y, SourceOnScreen.x - DestinationOnScreen.x) * Mathf.Rad2Deg;
         this.transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
@@ -85,14 +111,14 @@ public class BattleArrowController : MonoBehaviour {
             OpositeArrow = Destination.ArrowsComingOut.Find(x => x.Destination == this.Source);
         }
 
-        if (OpositeArrow.SoldiersToBeTransfered > 0 && !tag.Equals("battle"))
+        if (OpositeArrow.SoldiersToBeTransfered > 0 && type != ArrowType.Battle)
         {
             OpositeArrow.SoldiersToBeTransfered--;
             OpositeArrow.Source.SoldiersToGetOut--;
             OpositeArrow.UpdateArrowText();
         }
 
-        else if (Source.SoldiersToGetOut < Source.soldiers && !tag.Equals("abort"))
+        else if (Source.SoldiersToGetOut < Source.soldiers && type != ArrowType.Abort)
         {
             this.Source.SoldiersToGetOut++;
             this.SoldiersToBeTransfered++;
@@ -107,5 +133,29 @@ public class BattleArrowController : MonoBehaviour {
     {
         if (SoldiersToBeTransfered == 0) ArrowText.text = " ";
         else ArrowText.text = SoldiersToBeTransfered.ToString();
+    }
+
+    public void CreateSoldierButton()
+    {
+        if (Source.dominated && Destination.dominated)
+            SetType(ArrowType.Arrow);
+        else if (Source.dominated == false && Destination.dominated == true)
+            SetType(ArrowType.Abort);
+        else if (Source.dominated && Destination.dominated == false)
+            SetType(ArrowType.Battle);
+        else if (Source.dominated == false && Destination.dominated == false)
+            SetType(ArrowType.Disabled);
+    }
+
+    public void UpdateSoldierButton(int callNumber = 0)
+    {
+        CreateSoldierButton();
+
+        if (OpositeArrow == null)
+        {
+            OpositeArrow = Destination.ArrowsComingOut.Find(x => x.Destination == this.Source);
+        }
+        if (callNumber > 0) return; //AVOID STACKOVERFLOW
+        OpositeArrow.UpdateSoldierButton(1);
     }
 }

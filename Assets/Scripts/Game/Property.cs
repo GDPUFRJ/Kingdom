@@ -55,6 +55,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
     private PanelController panelController;
     private GameObject NumSoldier;
+    private GameObject EditButtons;
 
 
 
@@ -123,31 +124,29 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         TimerPanel.OnAfterDayEnd += TimerPanel_OnAfterDayEnd;
 
         panelController = GameManager.Instance.canvasRoot.GetComponent<PanelController>();
+        EditButtons = GameManager.Instance.EditButtons;
 
         if (dominated == false) soldiers = Random.Range(10, 20);
-        // DestroyNeighborLines();
-        //BuildNeighborLines();
 
         NumSoldier = Instantiate(GameManager.Instance.NumSoldier, GameManager.Instance.CanvasBattle.transform);
         NumSoldier.GetComponent<Text>().text = soldiers.ToString();
         NumSoldier.GetComponent<NumSoldiersTextController>().Owner = this.transform;
+        NumSoldier.transform.position = this.transform.position;
 
         foreach(Property neighbor in Neighbors)
         {
             GameObject NewArrow;
+            NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, EditButtons.transform);
 
-            if(neighbor.dominated && this.dominated)
-                NewArrow = Instantiate(GameManager.Instance.ArrowPrefab, NumSoldier.transform);
-            else if(neighbor.dominated == false && this.dominated)
-                NewArrow = Instantiate(GameManager.Instance.BattlePrefab, NumSoldier.transform);
-            else
-                NewArrow = Instantiate(GameManager.Instance.AbortPrefab, NumSoldier.transform);
+            BattleArrowController newBAC = NewArrow.GetComponent<BattleArrowController>();
+            newBAC.SetSourceAndDestination(this, destination: neighbor);
+            newBAC.CreateSoldierButton();
+            newBAC.NumSoldierFather = NumSoldier;
 
-            BattleArrowController newBattleArrowController = NewArrow.GetComponent<BattleArrowController>();
-            newBattleArrowController.SetSourceAndDestination(this, destination: neighbor);
-            newBattleArrowController.NumSoldierFather = NumSoldier;
-            ArrowsComingOut.Add(newBattleArrowController);
-            neighbor.ArrowsComingIn.Add(newBattleArrowController);
+            newBAC.SetPosition();
+
+            ArrowsComingOut.Add(newBAC);
+            neighbor.ArrowsComingIn.Add(newBAC);
         }
 
         UpdateSoldierInfo();
@@ -257,16 +256,12 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         if (type == Tipo.Castle)
             return false;
 
-        if (dominated)
-        {
-            this.dominated = dominated;
-            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
-        }
-        else
-        {
-            this.dominated = dominated;
-            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
-        }
+        this.dominated = dominated;
+
+        PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+
+        foreach (BattleArrowController bac in ArrowsComingOut)
+            bac.UpdateSoldierButton();
 
         return true;
     }

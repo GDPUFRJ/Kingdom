@@ -9,6 +9,11 @@ public class WorldMapController : Singleton<WorldMapController>, IPointerDownHan
 
     public bool Selecionado; //{ get; private set;}
 
+    public void Start()
+    {
+        //GameManager.Instance.CanvasBattle.GetComponent<Renderer>().bounds.size = GetComponent<SpriteRenderer>().bounds.size;
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         Selecionado = true;

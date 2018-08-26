@@ -41,6 +41,7 @@ public class GameManager:Singleton < GameManager >  {
     public GameObject BattlePrefab;
     public GameObject AbortPrefab;
     public GameObject NumSoldier;
+    public GameObject EditButtons;
 
     
 

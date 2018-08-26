@@ -19,7 +19,7 @@ public class NumSoldiersTextController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Owner == null) return;
-		this.transform.position = Camera.main.WorldToScreenPoint(Owner.position);
+		//this.transform.position = Camera.main.WorldToScreenPoint(Owner.position);
     }
 
     public void UpdateText(string num)
