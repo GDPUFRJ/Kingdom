@@ -11,19 +11,9 @@ public class NumSoldiersTextController : MonoBehaviour {
     public Color AllyTextColor;
     public Color EnemyTextColor;
 
-    // Use this for initialization
-	void Start () {
-        textComponent = GetComponent<Text>(); 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (Owner == null) return;
-		//this.transform.position = Camera.main.WorldToScreenPoint(Owner.position);
-    }
-
     public void UpdateText(string num)
     {
+        if (textComponent == null) textComponent = GetComponent<Text>();
         textComponent.text = num;
     }
 

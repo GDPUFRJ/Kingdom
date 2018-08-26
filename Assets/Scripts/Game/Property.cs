@@ -260,6 +260,24 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
         PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
 
+
+        //distribuyte soldiers over near friend properties
+        if(dominated == false)
+        {
+            while(soldiers > 0)
+            {
+                foreach(BattleArrowController bac in ArrowsComingOut)
+                {
+                    if (bac.GetTipo() == ArrowType.Arrow)
+                    {
+                        bac.Destination.soldiers++;
+                        soldiers--;
+                    }
+                }
+            }
+
+        }
+
         foreach (BattleArrowController bac in ArrowsComingOut)
             bac.UpdateSoldierButton();
 

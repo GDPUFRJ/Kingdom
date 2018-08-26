@@ -14,7 +14,7 @@ public class BattleArrowController : MonoBehaviour {
 
     private int SoldiersToBeTransfered = 0;
 
-    private ArrowType type = ArrowType.Arrow;
+    private ArrowType tipo = ArrowType.Arrow;
 
     public Sprite Arrow;
     public Sprite Battle;
@@ -44,9 +44,9 @@ public class BattleArrowController : MonoBehaviour {
         Destination.UpdateSoldierInfo();
     }
 
-    public void SetType(ArrowType type)
+    public void SetTipo(ArrowType type)
     {
-        this.type = type; 
+        this.tipo = type; 
         switch (type)
         {
             case ArrowType.Arrow:
@@ -67,6 +67,8 @@ public class BattleArrowController : MonoBehaviour {
         }
         
     }
+
+    public ArrowType GetTipo() { return tipo; }
 
     public void SetPosition()
     {
@@ -111,14 +113,14 @@ public class BattleArrowController : MonoBehaviour {
             OpositeArrow = Destination.ArrowsComingOut.Find(x => x.Destination == this.Source);
         }
 
-        if (OpositeArrow.SoldiersToBeTransfered > 0 && type != ArrowType.Battle)
+        if (OpositeArrow.SoldiersToBeTransfered > 0 && tipo != ArrowType.Battle)
         {
             OpositeArrow.SoldiersToBeTransfered--;
             OpositeArrow.Source.SoldiersToGetOut--;
             OpositeArrow.UpdateArrowText();
         }
 
-        else if (Source.SoldiersToGetOut < Source.soldiers && type != ArrowType.Abort)
+        else if (Source.SoldiersToGetOut < Source.soldiers && tipo != ArrowType.Abort)
         {
             this.Source.SoldiersToGetOut++;
             this.SoldiersToBeTransfered++;
@@ -138,13 +140,13 @@ public class BattleArrowController : MonoBehaviour {
     public void CreateSoldierButton()
     {
         if (Source.dominated && Destination.dominated)
-            SetType(ArrowType.Arrow);
+            SetTipo(ArrowType.Arrow);
         else if (Source.dominated == false && Destination.dominated == true)
-            SetType(ArrowType.Abort);
+            SetTipo(ArrowType.Abort);
         else if (Source.dominated && Destination.dominated == false)
-            SetType(ArrowType.Battle);
+            SetTipo(ArrowType.Battle);
         else if (Source.dominated == false && Destination.dominated == false)
-            SetType(ArrowType.Disabled);
+            SetTipo(ArrowType.Disabled);
     }
 
     public void UpdateSoldierButton(int callNumber = 0)
