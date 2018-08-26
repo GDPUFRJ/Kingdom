@@ -315,7 +315,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -3.26, y: 0.65, z: 0}
+  - {x: -3.671, y: 0.389, z: 0}
   - {x: -3.1, y: -0.605, z: 0}
   m_Parameters:
     serializedVersion: 2
@@ -1064,7 +1064,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 114956737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.749, y: -0.067, z: 0}
+  m_LocalPosition: {x: -8.805, y: 0.017, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -1326,7 +1326,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 137315935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.163, y: 1.171, z: 0}
+  m_LocalPosition: {x: -8.454, y: 1.077, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -1496,7 +1496,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173384175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.26, y: 0.65, z: 0}
+  m_LocalPosition: {x: -3.671, y: 0.389, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -2768,7 +2768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000076293945}
+  m_AnchoredPosition: {x: 0, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -3901,7 +3901,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -5.971, y: -0.324, z: 0}
-  - {x: -6.443, y: 1.152, z: 0}
+  - {x: -6.414, y: 1.011, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -4391,7 +4391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000045776367}
+  m_AnchoredPosition: {x: 0, y: -0.000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -5096,12 +5096,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 73c9b75e5c2608e49830e3dd71100ebe, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.703
+  m_FillAmount: 0.566
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &785027693
@@ -6545,7 +6545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.37647063, g: 0.29803923, b: 0.18823531, a: 1}
-  m_EffectDistance: {x: 4, y: -4}
+  m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
 --- !u!1 &946836382
 GameObject:
@@ -7378,7 +7378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.2392157, g: 0.15294118, b: 0.0627451, a: 1}
-  m_EffectDistance: {x: 4, y: -4}
+  m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
 --- !u!224 &1066236182 stripped
 RectTransform:
@@ -8897,7 +8897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.37647063, g: 0.29803923, b: 0.18823531, a: 1}
-  m_EffectDistance: {x: 4, y: -4}
+  m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
 --- !u!1 &1247369278
 GameObject:
@@ -9523,7 +9523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.37647063, g: 0.29803923, b: 0.18823531, a: 1}
-  m_EffectDistance: {x: 4, y: -4}
+  m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
 --- !u!114 &1343919401
 MonoBehaviour:
@@ -10202,7 +10202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.37647063, g: 0.29803923, b: 0.18823531, a: 1}
-  m_EffectDistance: {x: 4, y: -4}
+  m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
 --- !u!1001 &1475552010
 Prefab:
@@ -10918,7 +10918,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722285217}
   m_HandleRect: {fileID: 722285216}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -11249,7 +11249,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -5.321, y: 1.7, z: 0}
-  - {x: -3.26, y: 0.65, z: 0}
+  - {x: -3.671, y: 0.389, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -11814,7 +11814,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -8.749, y: -0.067, z: 0}
+  - {x: -8.805, y: 0.017, z: 0}
   - {x: -7.635, y: -1.372, z: 0}
   m_Parameters:
     serializedVersion: 2
@@ -11891,7 +11891,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1227787732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.443, y: 1.152, z: 0}
+  m_LocalPosition: {x: -6.414, y: 1.011, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children: []
   m_Father: {fileID: 786270578}
@@ -12386,8 +12386,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -8.163, y: 1.171, z: 0}
-  - {x: -8.749, y: -0.067, z: 0}
+  - {x: -8.454, y: 1.077, z: 0}
+  - {x: -8.805, y: 0.017, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -12489,7 +12489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -13036,8 +13036,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348453625}
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13305,7 +13305,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -5.971, y: -0.324, z: 0}
-  - {x: -8.749, y: -0.067, z: 0}
+  - {x: -8.805, y: 0.017, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -14052,7 +14052,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645001500}
   m_HandleRect: {fileID: 1645001499}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -14239,7 +14239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.37647063, g: 0.29803923, b: 0.18823531, a: 1}
-  m_EffectDistance: {x: 4, y: -4}
+  m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
 --- !u!1 &2143846971
 GameObject:
@@ -14307,7 +14307,7 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -3.26, y: 0.65, z: 0}
+  - {x: -3.671, y: 0.389, z: 0}
   - {x: -5.971, y: -0.324, z: 0}
   m_Parameters:
     serializedVersion: 2
