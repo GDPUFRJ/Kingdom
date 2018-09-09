@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 114662311326755668}
   - component: {fileID: 114019344005839698}
   - component: {fileID: 114328505114679566}
-  - component: {fileID: 114965010969613114}
   m_Layer: 5
   m_Name: Seta
   m_TagString: Untagged
@@ -112,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 0.02, y: 0.02}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 1
 --- !u!114 &114328505114679566
 MonoBehaviour:
@@ -128,9 +127,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Source: {fileID: 0}
   Destination: {fileID: 0}
-  Arrow: {fileID: 21300000, guid: 57ca028f994fc2d4e9e590cdfcfba5da, type: 3}
-  Battle: {fileID: 21300000, guid: d21cf84c79d18404ea85e3f0f0aeb424, type: 3}
-  Abort: {fileID: 21300000, guid: ab7bd2d5e5b82c44b9437f3c38e90d86, type: 3}
+  PropertyDistance: 0.45
+  Arrow: {fileID: 21300000, guid: 9e83a8f7639661246a1ad2b6a26d1233, type: 3}
+  Battle: {fileID: 21300000, guid: 3d70b11a83f7e64468addedf6878f8fb, type: 3}
+  Abort: {fileID: 21300000, guid: 8ef683049c0a81d4f852d5a774d314fb, type: 3}
   NumSoldierFather: {fileID: 0}
 --- !u!114 &114600825801977836
 MonoBehaviour:
@@ -152,8 +152,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 110c19da1c1878f42b4e8ee008ac1802, type: 3}
-    m_FontSize: 18
+    m_Font: {fileID: 12800000, guid: c89c3070134f005459cf14105fabb78c, type: 3}
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 57ca028f994fc2d4e9e590cdfcfba5da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e83a8f7639661246a1ad2b6a26d1233, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -192,20 +192,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114965010969613114
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1674760514758016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 0.5, y: 0.5}
-  m_UseGraphicAlpha: 1
 --- !u!222 &222005443036002302
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -226,15 +212,15 @@ RectTransform:
   m_GameObject: {fileID: 1206544841886092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224761386149654846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 24.632, y: 34.612}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1.07}
+  m_SizeDelta: {x: 0, y: -10.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224761386149654846
 RectTransform:
@@ -252,6 +238,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 24.632, y: 34.612}
+  m_AnchoredPosition: {x: -3.71, y: 4.7}
+  m_SizeDelta: {x: 44.16, y: 48.79}
   m_Pivot: {x: 0.5, y: 0.5}

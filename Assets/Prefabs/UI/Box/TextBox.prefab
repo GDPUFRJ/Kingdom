@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6730870097402914da923af126ccaa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  txt: {fileID: 114693341402968610}
 --- !u!114 &114693341402968610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -77,7 +78,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c89c3070134f005459cf14105fabb78c, type: 3}
     m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
@@ -89,7 +90,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A Seca chegou e com ela inviabiliza grande parte de minhas produ\xE7\xF5es."
+  m_Text: "a seca chegou e com ela inviabiliza grande parte de minhas produ\xE7\xF5es."
 --- !u!114 &114894829459645470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,14 +103,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6320754, g: 0.16894889, b: 0.11031505, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f0a1b1c08ea156b47b9e56c0212faf65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e670c96ccee23e7489bf23a6eb3510cd, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -144,8 +145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
+  m_AnchoredPosition: {x: 0, y: 7.879999}
+  m_SizeDelta: {x: -30, y: -45.760002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224352374492265210
 RectTransform:

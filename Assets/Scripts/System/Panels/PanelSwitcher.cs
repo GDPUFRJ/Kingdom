@@ -1,26 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class PanelSwitcher : MonoBehaviour {
 
-    private const float ACTIVE_ANGLE = 35;
-    private const float DURATION = 0.2f;
-
     private RectTransform rectTransform;
+    [SerializeField] private Sprite enabledSprite;
+    [SerializeField] private Sprite disabledSprite;
 
     public void ActiveButton()
     {
-        if(rectTransform == null)
-            rectTransform = GetComponent<RectTransform>();
-        rectTransform.DORotate(new Vector3(ACTIVE_ANGLE, 0, 0),DURATION);
+        GetComponent<Image>().sprite = enabledSprite;
     }
     public void DisableButton()
     {
-        if (rectTransform == null)
-            rectTransform = GetComponent<RectTransform>();
-        rectTransform.DORotate(new Vector3(0, 0, 0), DURATION);
+        GetComponent<Image>().sprite = disabledSprite;
     }
 
 }
