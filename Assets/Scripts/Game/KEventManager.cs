@@ -69,7 +69,7 @@ public class KEventManager : Singleton<KEventManager> {
 
     private void OnAfterDayEnd()
     {
-        print("ON AFTER DAY END");
+        //print("ON AFTER DAY END");
 
         int BuildingNext = GameManager.Instance.BuildingNext;
         int FoodNext = GameManager.Instance.FoodNext;
