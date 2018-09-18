@@ -60,14 +60,14 @@ public class GameManager:Singleton < GameManager >  {
         GoldNext = 0; 
         FoodNext = 0; 
         BuildingNext = 0; 
-        int DominatedProperties = 0; 
+        int MainPropertiesDominated = 0; 
         foreach (Property p in PropertyManager.Instance.Propriedades) {
-            if (p.dominated)
-                DominatedProperties++; 
+            if (p.mainProperty)
+                MainPropertiesDominated++; 
             else
                 continue; 
 
-            switch (p.level) {
+            switch (p.Level) {
                 case Level.Level1:
                     GoldNext += p.goldLevel1; 
                     FoodNext += p.foodLevel1; 
@@ -86,7 +86,7 @@ public class GameManager:Singleton < GameManager >  {
             }
         }
 
-        if (DominatedProperties == PropertyManager.Instance.Propriedades.Count)
+        if (MainPropertiesDominated == PropertyManager.Instance.MainProperties)
             GameWon(); 
     }
 

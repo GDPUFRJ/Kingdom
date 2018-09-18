@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -53,10 +53,20 @@ public class PropertyManager : Singleton<PropertyManager> {
     [Header("Others")]
     public LineManager lineManager;
 
-    [HideInInspector]public List<Property> Propriedades = new List<Property>();
+    [HideInInspector] public List<Property> Propriedades = new List<Property>();
+    private int mainProperties = 0;
+    [HideInInspector] public int MainProperties
+    {
+        private set { mainProperties = value; }
+        get { return mainProperties; }
+    }
 
     private void Start()
     {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
+        foreach(Property p in Propriedades)
+        {
+            if (p.mainProperty) MainProperties++;
+        }
     }
 }

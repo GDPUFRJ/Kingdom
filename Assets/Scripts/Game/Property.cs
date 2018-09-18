@@ -10,8 +10,9 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     [Header("Basic Informations")]
     public string customTitle = " ";
     public PropertyType type;
+    public bool canBeAbandonedOrLostInBattle = true;
     public bool dominated = false;
-    public Level level = Level.Level1; //DO NOT CHANGE THIS DIRECTLY
+    public bool mainProperty = false;
 
     private int soldiers = 14;
     private int SoldiersToGetOut = 0;
@@ -243,7 +244,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
         //desativo a propriedade, depois verifico se algum vizinho ficou
         //isolado. Se ficou, desfaz, se nao, mantém o abandono.
-        if (type == PropertyType.Castle || type == PropertyType.quarter)
+        if (canBeAbandonedOrLostInBattle == false)
             return false;
 
         this.dominated = dominated;
