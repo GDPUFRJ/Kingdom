@@ -830,7 +830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila Kokiri
   type: 2
+  canBeAbandonedOrLostInBattle: 1
   dominated: 1
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -1160,7 +1162,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Floresta dos Lobos
   type: 4
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -1328,7 +1332,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Quartel do Rei
   type: 6
+  canBeAbandonedOrLostInBattle: 0
   dominated: 1
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -1929,8 +1935,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 193695276}
   m_HandleRect: {fileID: 193695275}
   m_Direction: 0
-  m_Value: 0.25
-  m_Size: 0.9999998
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2485,7 +2491,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila Imperial
   type: 2
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -2781,8 +2789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Castelo do Gulliver
   type: 0
+  canBeAbandonedOrLostInBattle: 0
   dominated: 1
-  level: 2
+  mainProperty: 0
+  level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
@@ -2852,7 +2862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000076293945}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -3059,7 +3069,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: "Ninho da \xC1guia"
   type: 1
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -4390,7 +4402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0001373291}
+  m_AnchoredPosition: {x: 0, y: -0.000045776367}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -6206,7 +6218,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Burgo do Ham
   type: 2
+  canBeAbandonedOrLostInBattle: 1
   dominated: 1
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -7423,7 +7437,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Montanha da Morte
   type: 1
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -7463,6 +7479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054705959}
   - component: {fileID: 1054705961}
+  - component: {fileID: 1054705963}
   - component: {fileID: 1054705960}
   - component: {fileID: 1054705962}
   m_Layer: 0
@@ -7519,16 +7536,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Population: 10
-  Happiness: 100
+  Happiness: 60
   CanBattle: 1
   Gold: 1000
-  GoldNext: 121
+  GoldNext: 143
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 96
+  FoodNext: 131
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 169
+  BuildingNext: 167
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -7558,6 +7575,18 @@ MonoBehaviour:
   KHappenings:
   - {fileID: 149715686}
   KHappeningsHistory: []
+--- !u!114 &1054705963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054705958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f20c57b5993c64eaa6eae9cfd98d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverMoney: -10000
 --- !u!1 &1065110197
 GameObject:
   m_ObjectHideFlags: 0
@@ -7784,7 +7813,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Montanha Lunar
   type: 1
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -8296,8 +8327,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255732447}
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8460,8 +8491,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Fazenda Montgomery
   type: 3
+  canBeAbandonedOrLostInBattle: 1
   dominated: 1
-  level: 3
+  mainProperty: 0
+  level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
@@ -8729,8 +8762,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Pico Terroso
   type: 1
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
-  level: 3
+  mainProperty: 0
+  level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
@@ -8821,7 +8856,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 876110a2cb32f63448c7bb46936c0a85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb6a28244c85b86438c6a6ae2b6735bb, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8879,7 +8914,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Rancho do Barney
   type: 3
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -9547,7 +9584,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 504be519de32e6843ace9408874b6e61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77db01079334e944aa4d60bd5baf955a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9644,8 +9681,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029535602}
   m_HandleRect: {fileID: 2029535601}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10225,7 +10262,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1c2fc887950cbc745a2f04c41dbf1eb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 944435474ba835c47a7c4d0fe1448104, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11195,8 +11232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vila do Sul
   type: 2
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
-  level: 2
+  mainProperty: 0
+  level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
@@ -11566,8 +11605,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722285217}
   m_HandleRect: {fileID: 722285216}
   m_Direction: 0
-  m_Value: 0.25
-  m_Size: 0.9999998
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12667,7 +12706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Floresta dos Malandros
   type: 4
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -12729,8 +12770,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Vilarejo Allor
   type: 2
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
-  level: 2
+  mainProperty: 0
+  level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
   happiness: 90
@@ -12878,7 +12921,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Floresta Sombria
   type: 4
+  canBeAbandonedOrLostInBattle: 1
   dominated: 1
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -13306,7 +13351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -13822,8 +13867,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348453625}
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13908,7 +13953,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customTitle: Fazenda do Chico
   type: 3
+  canBeAbandonedOrLostInBattle: 1
   dominated: 0
+  mainProperty: 0
   level: 1
   ArrowsComingIn: []
   ArrowsComingOut: []
@@ -15066,7 +15113,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645001500}
   m_HandleRect: {fileID: 1645001499}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

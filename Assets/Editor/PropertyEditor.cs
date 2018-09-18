@@ -12,7 +12,6 @@ public class PropertyEditor : Editor
 
     Property propertyScript;
     SerializedObject GetTarget;
-    ///SerializedProperty TargetNeighborsList;
 
     List<Property> ToRemove = new List<Property>();
 
@@ -20,8 +19,6 @@ public class PropertyEditor : Editor
     {
         propertyScript = (Property)target;
         GetTarget = new SerializedObject(propertyScript);
-        //TargetNeighborsList = GetTarget.FindProperty("Neighbors");
-
     }
 
     public override void OnInspectorGUI()
