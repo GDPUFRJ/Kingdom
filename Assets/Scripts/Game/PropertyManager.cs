@@ -9,6 +9,8 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     protected PropertyManager() { } // guarantee this will be always a singleton only - can't use the constructor!
 
+    public Graph<Property> MapGraph = new Graph<Property>();
+
     [Header("Sprites")]
     [Space(10)]
     [Header("Castle")]
@@ -67,6 +69,7 @@ public class PropertyManager : Singleton<PropertyManager> {
         foreach(Property p in Propriedades)
         {
             if (p.mainProperty) MainProperties++;
+            MapGraph.vertices.Add(p);
         }
     }
 }

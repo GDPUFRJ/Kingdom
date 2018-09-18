@@ -5,8 +5,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-public class Property : MonoBehaviour, IPointerClickHandler, IComparer
+public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, IComparer
 {
+    public Property Data { get; set; } //IVertex
+    public List<IEdge<Line>> Linhas = new List<IEdge<Line>>();
+
     [Header("Basic Informations")]
     public string customTitle = " ";
     public PropertyType type;
@@ -20,6 +23,8 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         get { return level; }
         set { level = value; UpdateSprite(this); }
     }
+
+
 
     private int soldiers = 14;
     private int SoldiersToGetOut = 0;

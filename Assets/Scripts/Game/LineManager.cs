@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +21,12 @@ public class LineManager : MonoBehaviour
     {
         newLine.GetComponent<Line>().start = start;
         newLine.GetComponent<Line>().end = end;
-        lines.Add(Instantiate(newLine, transform));
+
+        Line line = Instantiate(newLine, transform);
+
+        start.Linhas.Add(line); //grafo
+        end.Linhas.Add(line);   //grafo
+        lines.Add(line);
     }
 
     public void UpdateRelatedLines(Property property)
@@ -71,6 +77,7 @@ public class LineManager : MonoBehaviour
         toRemove.Clear();
     }
     
+    [Obsolete("Por favor, nao usa isso aqui, tá aqui só pq deu trabalho de escrever.")]
     public void BuildLines(List<Property> properties)
     {
         foreach (Transform child in transform)
@@ -90,7 +97,6 @@ public class LineManager : MonoBehaviour
             }
         }
     }
-
 
     bool FindDup(Property start, Property end)
     {

@@ -3,23 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class Line : MonoBehaviour
+public class Line : MonoBehaviour, IEdge<Line>
 {
+    Line IEdge<Line>.Data { get; set; }
 
     public Property start;
     public Property end;
 
     private LineRenderer lr;
-    /*
-    private void OnValidate()
-    {
-        lr = GetComponent<LineRenderer>();
-        if (start || end == null)
-            return;
-        lr.SetPosition(0, start.transform.position);
-        lr.SetPosition(1, end.transform.position);
-    }
-    */
+
     // Use this for initialization
     void Start()
     {
@@ -39,23 +31,14 @@ public class Line : MonoBehaviour
 #if UNITY_EDITOR
     private void Update()
     {
-        if (start == null || end == null)
-        {
-            return;
-        } 
+        if (start == null || end == null) return;
 
-        //Debug.Log("Mudou");
         lr = GetComponent<LineRenderer>();
         if (start.transform.hasChanged)
-        {
             lr.SetPosition(0, start.transform.position);
-            //start.transform.hasChanged = false;
-        }
+
         if (end.transform.hasChanged)
-        {
             lr.SetPosition(1, end.transform.position);
-            //end.transform.hasChanged = false;
-        }
     }
 #endif
 
