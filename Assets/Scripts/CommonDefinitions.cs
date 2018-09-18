@@ -23,7 +23,7 @@ public struct Informations
     public int Food;
     public int Building;
     public int Soldiers;
-    public int happiness;
+    public float happiness;
 }
 
 public class UpgradeInformations

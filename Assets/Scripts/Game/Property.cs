@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -20,7 +20,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public List<BattleArrowController> ArrowsComingIn = new List<BattleArrowController>();
     public List<BattleArrowController> ArrowsComingOut = new List<BattleArrowController>();
 
-    public int happiness = 90;
+    public float happiness = 60;
 
     [Header("Production Information")]
     [Range(-100, 100)] public int goldLevel1 = 0;
@@ -177,9 +177,22 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         return info;
     }
 
+    private void ProcessHappiness()
+    {
+        GameManager gm = GameManager.Instance;
+
+        if (gm.Food <= 0)
+            happiness -= 2;
+        if (gm.Food > 10000)
+            happiness += 1;
+
+        if (happiness > 100) happiness = 100;
+        if (happiness < 0) happiness = 0;
+    }
+
     private void AddConsumption()
     {
-        switch (level)
+        switch (Level)
         {
             case Level.Level1:
                 GameManager.Instance.Gold += goldLevel1;
@@ -200,28 +213,23 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 AddSoldiers(SoldierType.InProperty, soldierLevel3);
                 break;
         }
+
+        ProcessHappiness();
     }
 
     public void LevelUp()
     {
-        if (level == Level.Level3)
+        if (Level == Level.Level3)
             return;
-        if (level == Level.Level1)
-            this.level = Level.Level2;
-        else if (level == Level.Level2)
-            this.level = Level.Level3;
-        UpdateSprite(this);
-    }
-
-    public void SetLevel(Level level)
-    {
-        this.level = level;
-        UpdateSprite(this);
+        if (Level == Level.Level1)
+            this.Level = Level.Level2;
+        else if (Level == Level.Level2)
+            this.Level = Level.Level3;
     }
 
     public bool Upgradable()
     {
-        if (level == Level.Level1 || level == Level.Level2)
+        if (Level == Level.Level1 || Level == Level.Level2)
             return true;
         else
             return false;
