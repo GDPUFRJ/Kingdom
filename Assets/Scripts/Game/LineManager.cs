@@ -26,6 +26,7 @@ public class LineManager : MonoBehaviour
 
         start.Linhas.Add(line); //grafo
         end.Linhas.Add(line);   //grafo
+
         lines.Add(line);
     }
 
@@ -77,7 +78,7 @@ public class LineManager : MonoBehaviour
         toRemove.Clear();
     }
     
-    [Obsolete("Por favor, nao usa isso aqui, tá aqui só pq deu trabalho de escrever.")]
+    [Obsolete("Por favor, não usa isso aqui, tá aqui só pq deu trabalho de escrever.")]
     public void BuildLines(List<Property> properties)
     {
         foreach (Transform child in transform)
