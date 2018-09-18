@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,12 +14,19 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     public bool dominated = false;
     public bool mainProperty = false;
 
+    [SerializeField]
+    private Level level = Level.Level1;
+    public Level Level {
+        get { return level; }
+        set { level = value; UpdateSprite(this); }
+    }
+
     private int soldiers = 14;
     private int SoldiersToGetOut = 0;
     private int EnemySoldiers = 0;
 
-    public List<BattleArrowController> ArrowsComingIn = new List<BattleArrowController>();
-    public List<BattleArrowController> ArrowsComingOut = new List<BattleArrowController>();
+    [HideInInspector] public List<BattleArrowController> ArrowsComingIn = new List<BattleArrowController>();
+    [HideInInspector] public List<BattleArrowController> ArrowsComingOut = new List<BattleArrowController>();
 
     public float happiness = 60;
 
@@ -127,10 +134,10 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
     {
         UpgradeInformations upgradeInformations = new UpgradeInformations();
 
-        if (level == Level.Level3)
+        if (Level == Level.Level3)
             return null;
 
-        switch (level)
+        switch (Level)
         {
             case Level.Level1:
                 upgradeInformations.Gold = goldToLevel2;
@@ -154,7 +161,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         Informations info = new Informations();
         info.sprite = GetComponent<SpriteRenderer>().sprite;
 
-        switch (level)
+        switch (Level)
         {
             case Level.Level1:
                 info.Gold = goldLevel1;
@@ -295,7 +302,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         switch (property.type)
         {
             case PropertyType.Castle:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = PropertyManager.Instance.CastleLevel1;
@@ -310,7 +317,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 property.gameObject.tag = "castle";
                 break;
             case PropertyType.Mine:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = PropertyManager.Instance.MineLevel1;
@@ -326,7 +333,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
                 break;
             case PropertyType.Village:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = PropertyManager.Instance.VillageLevel1;
@@ -341,7 +348,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 property.gameObject.tag = "village";
                 break;
             case PropertyType.Farm:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = PropertyManager.Instance.FarmLevel1;
@@ -357,7 +364,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
 
                 break;
             case PropertyType.Forest:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = PropertyManager.Instance.ForestLevel1;
@@ -372,7 +379,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 property.gameObject.tag = "forest";
                 break;
             case PropertyType.quarter:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = PropertyManager.Instance.quarterLevel1;
@@ -388,7 +395,7 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
                 break;
 
             default:
-                switch (property.level)
+                switch (property.Level)
                 {
                     case Level.Level1:
                         spriteRenderer.sprite = property.CustomLevel1;
@@ -411,23 +418,23 @@ public class Property : MonoBehaviour, IPointerClickHandler, IComparer
         switch (resource)
         {
             case Resource.Gold:
-                if (level == Level.Level1)
+                if (Level == Level.Level1)
                     return goldLevel1;
-                else if (level == Level.Level2)
+                else if (Level == Level.Level2)
                     return goldLevel2;
                 else
                     return goldLevel3;
             case Resource.Building:
-                if (level == Level.Level1)
+                if (Level == Level.Level1)
                     return buildingLevel1;
-                else if (level == Level.Level2)
+                else if (Level == Level.Level2)
                     return buildingLevel2;
                 else
                     return buildingLevel3;
             case Resource.Food:
-                if (level == Level.Level1)
+                if (Level == Level.Level1)
                     return foodLevel1;
-                else if (level == Level.Level2)
+                else if (Level == Level.Level2)
                     return foodLevel2;
                 else
                     return foodLevel3;

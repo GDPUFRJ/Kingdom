@@ -62,7 +62,7 @@ public class PropertyWindow : MonoBehaviour {
     {
         icon.sprite = property.GetComponent<SpriteRenderer>().sprite;
         propertyName.text = property.customTitle;
-        propertyLevel.text = property.level.GetHashCode().ToString();
+        propertyLevel.text = property.Level.GetHashCode().ToString();
         riqResource.text = property.GetCurrentResource(Resource.Gold).ToString();
         aliResource.text = property.GetCurrentResource(Resource.Food).ToString();
         conResource.text = property.GetCurrentResource(Resource.Building).ToString();

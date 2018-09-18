@@ -28,7 +28,7 @@ public class PropertyBox : MonoBehaviour {
         this.propertyPanel = panel;
         this.property = prop;
         this.icon.sprite = info.sprite;
-        this.title.text = "[" + prop.level + "] " + prop.customTitle;
+        this.title.text = "[" + prop.Level + "] " + prop.customTitle;
         this.food.text = info.Food.ToString();
         this.gold.text = info.Gold.ToString();
         this.building.text = info.Building.ToString();
@@ -41,7 +41,7 @@ public class PropertyBox : MonoBehaviour {
     }
     public void Upgrade()
     {
-        if(property.level != Level.Level3)
+        if(property.Level != Level.Level3)
             StartCoroutine(UpgradeAnimation());
     }
     public void GiveUp()
