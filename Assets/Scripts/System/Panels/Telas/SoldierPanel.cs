@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class SoldierPanel : AMainPanel
+public class SoldierPanel : Section
 {
     public GameObject CanvasBattle;
     [SerializeField] private CanvasGroup editButtonsGroup;
@@ -39,7 +39,6 @@ public class SoldierPanel : AMainPanel
     }
     public void ToggleEditButtons()
     {
-        //print("AEW");
         isEditButtonsEnable = !isEditButtonsEnable;
         TimerPanel.SetPause(isEditButtonsEnable);
         toggle.color = isEditButtonsEnable ? editEnabledColor : editDisabledColor;

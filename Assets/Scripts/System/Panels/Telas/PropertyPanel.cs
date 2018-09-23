@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PropertyPanel : AMainPanel
+public class PropertyPanel : Section
 {
     [SerializeField] private GameObject propertyBoxPrefab;
     [SerializeField] private Transform root;

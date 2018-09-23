@@ -3,9 +3,11 @@ using DG.Tweening;
 
 public abstract class AMainPanel: MonoBehaviour
 {
+    [HideInInspector] public float nativePos;
     private const float FADE_DURATION = 0.5f;
+    private RectTransform rect;
 
-    public void HidePanel(float duration = FADE_DURATION)
+    public virtual void HidePanel(float duration = FADE_DURATION)
     {
         CanvasGroup group = GetComponent<CanvasGroup>();
         group.DOFade(0, duration);
@@ -13,7 +15,7 @@ public abstract class AMainPanel: MonoBehaviour
         group.blocksRaycasts = false;
         UnprepareContent();
     }
-    public void ShowPanel(float duration = FADE_DURATION)
+    public virtual void ShowPanel(float duration = FADE_DURATION)
     {
         CanvasGroup group = GetComponent<CanvasGroup>();
         group.DOFade(1, duration);

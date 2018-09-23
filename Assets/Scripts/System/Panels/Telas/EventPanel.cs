@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventPanel : AMainPanel
+public class EventPanel : Section
 {
     [SerializeField] private GameObject eventBoxPrefab;
     [SerializeField] private Transform root;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapPanel : AMainPanel
+public class MapPanel : Section
 {
     public override void PrepareContent()
     {

@@ -65,7 +65,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     public Sprite CustomLevel2;
     public Sprite CustomLevel3;
 
-    private PanelController panelController;
+    private SectionManager sectionManager;
     private GameObject NumSoldier;
     private GameObject EditButtons;
 
@@ -76,7 +76,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         TimerPanel.OnDayEnd += OnDayEnd;
         TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
 
-        panelController = GameManager.Instance.CanvasHUD.GetComponent<PanelController>();
+        sectionManager = GameManager.Instance.CanvasHUD.GetComponent<SectionManager>();
         EditButtons = GameManager.Instance.EditButtons;
 
         if (dominated == false) soldiers = Random.Range(10, 20);
@@ -125,7 +125,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (panelController.currentPanel == 4 && SoldierPanel.isEditButtonsEnable == true) return;
+        if (sectionManager.currentSection == 4 && SoldierPanel.isEditButtonsEnable == true) return;
 
         StartCoroutine(Camera.main.GetComponent<CameraMovement>().FollowPosition(transform.position));
 

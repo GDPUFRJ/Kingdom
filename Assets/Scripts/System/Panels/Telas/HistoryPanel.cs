@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HistoryPanel : AMainPanel {
+public class HistoryPanel : Section {
     [SerializeField] private GameObject dateBoxPrefab;
     [SerializeField] private GameObject txtBoxPrefab;
 
