@@ -5,10 +5,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, IComparer
+public class Property : Vertex<Property>, IPointerClickHandler, IComparer
 {
-    public Property Data { get; set; } //IVertex
-    public List<IEdge<Line>> Linhas = new List<IEdge<Line>>();
 
     [Header("Basic Informations")]
     public string customTitle = " ";
@@ -23,8 +21,6 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         get { return level; }
         set { level = value; UpdateSprite(this); }
     }
-
-
 
     private int soldiers = 14;
     private int SoldiersToGetOut = 0;
@@ -69,7 +65,11 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     private GameObject NumSoldier;
     private GameObject EditButtons;
 
-    [HideInInspector] public List<Property> Neighbors = new List<Property>();
+    public delegate void PropertyStateHasChanged();
+    public static event PropertyStateHasChanged OnPropertyStateHasChanged;
+
+
+    //[HideInInspector] public List<Property> Neighbors = new List<Property>();
 
     private void Start()
     {
@@ -261,9 +261,6 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
         this.dominated = dominated;
 
-        PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
-
-
         //distribute soldiers over near friend properties
         if(dominated == false && byUser == true)
         {
@@ -295,12 +292,12 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         if (property.dominated)
         {
             spriteRenderer.color = Color.white;
-            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+            //PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
         }
         else
         {
             spriteRenderer.color = PropertyManager.Instance.NotDominatedProperty;
-            PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
+            //PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
         }
 
 

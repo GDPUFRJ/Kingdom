@@ -2,44 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-class Edge<T>
+public class Vertex<T> : MonoBehaviour
 {
-    private Vertex<T> node1;
-    private Vertex<T> node2;
+    public List<T> Neighbors;
 }
 
-class Vertex<T>
+public class Edge<T> : MonoBehaviour
 {
-    private T data;
-    private LinkedList<Edge<T>> neighbors;
-}
+    public T start;
+    public T end;
 
-public interface IVertex<T>
-{
-    T Data
-    {
-        get;
-        set;
-    }
-}
-
-public interface IEdge<T>
-{
-    T Data
-    {
-        get;
-        set;
-    }
+    public virtual int GetWeight() { return 0; }
 }
 
 public class Graph<T>
 {
-    public List<IVertex<T>> vertices;
+    public List<Vertex<T>> vertexes = new List<Vertex<T>>();
+    public List<Edge<T>> edges = new List<Edge<T>>();
 
-    public Graph()
+    public void Dijkstra(Vertex<T> source, Vertex<T> dest)
     {
-        vertices = new List<IVertex<T>>();
+        
     }
+
 }
 
 //TODO: IMPLEMENTAR ALGUNS ALGORITMOS

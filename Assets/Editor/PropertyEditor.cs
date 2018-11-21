@@ -126,12 +126,14 @@ public class PropertyEditor : Editor
         {
             foreach (Property p in ToRemove)
             {
-                PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
+                //PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
                 propertyScript.Neighbors.Remove(p);
                 p.Neighbors.Remove(propertyScript);
 
             }
             ToRemove.Clear();
+
+            
 
             return true;
         }
@@ -172,11 +174,14 @@ public class PropertyEditor : Editor
                                 {
                                     Property dragged_Property = (dragged_object as GameObject).GetComponent<Property>();
                                     propertyScript.Neighbors.Add(dragged_Property);
-                                    PropertyManager.Instance.lineManager.AddLine(propertyScript, dragged_Property);
+
+                                    
+
+                                    //PropertyManager.Instance.lineManager.AddLine(propertyScript, dragged_Property);
                                 }
                             }
                             else
-                                Debug.LogWarning("This Gameobject do not have a Property Component");
+                                Debug.LogWarning("This Gameobject do not have a 'Property' Component");
                         }
                         else
                             Debug.LogWarning("Not a gameobject");

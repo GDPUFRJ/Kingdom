@@ -11,6 +11,8 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     public Graph<Property> MapGraph = new Graph<Property>();
 
+    
+
     [Header("Sprites")]
     [Space(10)]
     [Header("Castle")]
@@ -52,9 +54,6 @@ public class PropertyManager : Singleton<PropertyManager> {
     public Transform canvasParent;
     public GameObject propertyWindowPrefab;
 
-    [Header("Others")]
-    public LineManager lineManager;
-
     [HideInInspector] public List<Property> Propriedades = new List<Property>();
     private int mainProperties = 0;
     [HideInInspector] public int MainProperties
@@ -69,7 +68,7 @@ public class PropertyManager : Singleton<PropertyManager> {
         foreach(Property p in Propriedades)
         {
             if (p.mainProperty) MainProperties++;
-            MapGraph.vertices.Add(p);
+            MapGraph.vertexes.Add(p);
         }
     }
 }
