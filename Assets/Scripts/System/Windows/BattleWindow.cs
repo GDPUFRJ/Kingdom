@@ -19,7 +19,7 @@ public class BattleWindow : MonoBehaviour {
     [SerializeField] private Image sword2;
     [SerializeField] private Animator swordsCrossingAnimator;
     //[SerializeField] private CanvasGroup shield;
-	[SerializeField] private CanvasGroup background;
+	[SerializeField] private Image background;
 	//[SerializeField] private RectTransform maskBackground;
 	//[SerializeField] private RectTransform battleScene;
     [SerializeField] private List<Image> scoreFlags;
@@ -69,8 +69,7 @@ public class BattleWindow : MonoBehaviour {
 		//shield.transform.DOScale(0,0);
 		//results.DOFade(0,0);
 		//results.blocksRaycasts = false;
-		background.DOFade(0,0);
-		background.blocksRaycasts = false;
+		//background.DOFade(0,0);
         sword1.DOColor(Color.white, 0);
         sword2.DOColor(Color.white, 0);
         sword1.DOFade(0, 0);
