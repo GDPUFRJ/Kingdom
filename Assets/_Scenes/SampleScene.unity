@@ -325,6 +325,21 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 12928307}
+--- !u!114 &15843042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Reprimir
+  answerEvent: {fileID: 1129510096}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &27099143
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +771,28 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 1
+--- !u!114 &93560218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Ca\xE7a \xE0s Bruxas"
+  Description: "H\xE1 uma como\xE7\xE3o nas ruas por crian\xE7as desaparecidas. Em
+    v\xE1rios lugares, vigilantes est\xE3o ca\xE7ando mulheres suspeitas para faz\xEA-las
+    de exemplo. Qual a posi\xE7\xE3o oficial do Trono a respeito?"
+  Question: Proibir ou estimular?
+  chance: 3
+  Answers:
+  - {fileID: 128664944}
+  - {fileID: 1783996548}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1001 &93959017
 Prefab:
   m_ObjectHideFlags: 0
@@ -1011,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Vila Kokiri
+  customTitle: vila kokiri
   type: 2
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -1130,6 +1167,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -210512
+--- !u!114 &117087425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 320329508}
+  intensity: 1
+  showInInspector: 1
+--- !u!114 &118313925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 135245344}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &123794886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1275,21 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123794886}
+--- !u!114 &128664944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Proibir
+  answerEvent: {fileID: 1941502089}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &132379525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1300,6 @@ GameObject:
   - component: {fileID: 132379526}
   - component: {fileID: 132379529}
   - component: {fileID: 132379528}
-  - component: {fileID: 132379527}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -1245,35 +1326,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 828.2}
+  m_SizeDelta: {x: 0, y: 814}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &132379527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132379525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fac6dbd069c6e6c45a336e1002f95f6e, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
 --- !u!222 &132379528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1311,6 +1365,49 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &135245344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tornado
+  Description: "Reduz pouco a satisfa\xE7\xE3o (5%) e moderadamente as riquezas (15%).
+    Dura\xE7\xE3o de um dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: -15
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &137315935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Floresta dos Lobos
+  customTitle: floresta dos lobos
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -1479,7 +1576,7 @@ MonoBehaviour:
   Answers:
   - {fileID: 1211729133}
   - {fileID: 859219643}
-  showInInspector: 1
+  showInInspector: 0
   showAnswers: 1
 --- !u!1 &173384175
 GameObject:
@@ -1513,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Quartel do Rei
+  customTitle: quartel do rei
   type: 6
   canBeAbandonedOrLostInBattle: 0
   dominated: 1
@@ -1700,6 +1797,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 193695274}
+--- !u!114 &209995895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Patrocinar
+  answerEvent: {fileID: 405683378}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &210906247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,6 +2043,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 225683723}
+--- !u!114 &236225160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Protestantismo
+  Description: "Reduz consideravelmente a satisfa\xE7\xE3o (35%). Dura\xE7\xE3o de
+    um dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &251962737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Lutero
+  Description: "A catedral principal do reino amanheceu com uma s\xE9rie de den\xFAncias,
+    questionamentos e propostas de reforma para a religi\xE3o oficial. Pessoas contr\xE1rias
+    aos posicionamentos da Igreja tomam as ruas em protestos, e articulam a funda\xE7\xE3o
+    de novas institui\xE7\xF5es antag\xF4nicas. Toda a nobreza est\xE1 atenta, e amea\xE7a
+    retirar o apoio financeiro ao clero caso a situa\xE7\xE3o n\xE3o se estabilize
+    - possivelmente impactando toda a economia."
+  Question: "Vetar as manifesta\xE7\xF5es?"
+  chance: 3
+  Answers:
+  - {fileID: 1530806957}
+  - {fileID: 1708772822}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &282332268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,7 +2183,7 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 5
-    m_Bottom: 54
+    m_Bottom: 35
   m_ChildAlignment: 4
   m_Spacing: -49.3
   m_ChildForceExpandWidth: 1
@@ -2118,8 +2298,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 193695276}
   m_HandleRect: {fileID: 193695275}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2261,6 +2441,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleWindow: {fileID: 319030516}
+--- !u!114 &320329508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Terremoto
+  Description: "Reduz muito pouco a quantidade de habitantes (5%) e um pouco a satisfa\xE7\xE3o
+    (10%) de uma s\xF3 vez. Reduz moderadamente as riquezas (25%). Dura\xE7\xE3o de
+    1 dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: -25
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: -5
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &323734500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2711,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293810
+--- !u!114 &348688353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 550254910}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &352276157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,7 +2916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Vila Imperial
+  customTitle: vila imperial
   type: 2
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -2709,6 +2948,21 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 173384176}
+--- !u!114 &361624915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 1819422460}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &369987944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,6 +3103,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224172440475273402, guid: 35bb4338c50cad74d86188ef66cd9824,
     type: 2}
   m_PrefabInternal: {fileID: 413903151}
+--- !u!114 &405683378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Circo
+  Description: "Reduz moderadamente as riquezas (25%), aumenta consideravelmente a
+    satisfa\xE7\xE3o (40%). Dura\xE7\xE3o: 1 dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 2
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: -25
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1001 &413903151
 Prefab:
   m_ObjectHideFlags: 0
@@ -2975,7 +3272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Castelo do Gulliver
+  customTitle: castelo do gulliver
   type: 0
   canBeAbandonedOrLostInBattle: 0
   dominated: 1
@@ -3050,7 +3347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -3323,7 +3620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: "Ninho da \xC1guia"
+  customTitle: "ninho da \xE1guia"
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -3486,6 +3783,21 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472769807}
+--- !u!114 &479554136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Combater
+  answerEvent: {fileID: 1681083865}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &491646316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3906,7 +4218,6 @@ GameObject:
   - component: {fileID: 508823424}
   - component: {fileID: 508823427}
   - component: {fileID: 508823426}
-  - component: {fileID: 508823425}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -3933,35 +4244,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 833.6}
+  m_SizeDelta: {x: 0, y: 814}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &508823425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 508823423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6509434, g: 0.64546037, b: 0.635591, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fac6dbd069c6e6c45a336e1002f95f6e, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
 --- !u!222 &508823426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4049,7 +4333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 20
+    m_Left: 26
     m_Right: 20
     m_Top: 20
     m_Bottom: 20
@@ -4078,8 +4362,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fac6dbd069c6e6c45a336e1002f95f6e, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fd2a4580eb433534799df0164cdc78e7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4227,6 +4511,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 420475203}
   end: {fileID: 1761077139}
+--- !u!114 &517077323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Atlas encolhe os ombros
+  Description: "A terra se debate violentamente, derrubando casas, rompendo diques,
+    destruindo planta\xE7\xF5es. O monarca ir\xE1 despender recursos para ajudar o
+    seu povo no processo de reconstru\xE7\xE3o?"
+  Question: "Ajudar a popula\xE7\xE3o?"
+  chance: 3
+  Answers:
+  - {fileID: 2141783207}
+  - {fileID: 117087425}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &518548591
 GameObject:
   m_ObjectHideFlags: 0
@@ -4614,6 +4920,64 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 536639787}
+--- !u!114 &550254910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Impostos
+  Description: "Reduz drasticamente a satisfa\xE7\xE3o (70%) e aumenta consideravelmente
+    as riquezas (40%) pelos pr\xF3ximos 10 dias."
+  Duration: 10
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 40
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &582375289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Incendiar abrigos
+  answerEvent: {fileID: 2048808401}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &609244844
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,7 +5090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000076293945}
+  m_AnchoredPosition: {x: 0, y: -0.00010681152}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -4764,12 +5128,158 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &620450709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Cirque de la Lune
+  Description: "Um circo itinerante chega ao reino! Eles gostariam de contar com a
+    coopera\xE7\xE3o real para realizar seus shows, garantindo que v\xE3o trazer alegria
+    \xE0 popula\xE7\xE3o!"
+  Question: Patrocinar ou vetar?
+  chance: 3
+  Answers:
+  - {fileID: 209995895}
+  - {fileID: 879918912}
+  showInInspector: 0
+  showAnswers: 1
+--- !u!114 &651745638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Revolu\xE7\xE3o"
+  Description: "Rreduz drasticamente as riquezas (70% total), aumenta consideravelmente
+    a satisfa\xE7\xE3o (30%), reduz pouco a quantidade de habitantes (10% total).
+    Dura\xE7\xE3o: 15 dias."
+  Duration: 15
+  LeftDuration: 1
+  intensity: 2
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 3
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: -70
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: -10
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!114 &654469760 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114413081971732150, guid: ba28d56f94573384bb723185bc6a2375,
     type: 2}
   m_PrefabInternal: {fileID: 93959017}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &660011499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Festa de Haerfest
+  Description: "Chega a colheita! Nos vilarejos, o povo cultua deuses pag\xE3os agradecendo
+    pela fartura. Oficiais do governo v\xE3o contribuir com as festividades?"
+  Question: Oferecer aos deuses?
+  chance: 3
+  Answers:
+  - {fileID: 2032535812}
+  - {fileID: 1051779030}
+  showInInspector: 0
+  showAnswers: 1
+--- !u!114 &661767944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: "Ajudar a popula\xE7\xE3o"
+  answerEvent: {fileID: 1568852439}
+  intensity: 0
+  showInInspector: 1
+--- !u!114 &670402468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Peste
+  Description: "Reduz bastante as riquezas (40% total), reduz pouco a quantidade de
+    habitantes (15% total) e a satisfa\xE7\xE3o (20% total) continuamente pela dura\xE7\xE3o
+    do efeito (15 dias)."
+  Duration: 15
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: -40
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: -15
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &706493772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,6 +5354,21 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 706493772}
+--- !u!114 &721058331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 1568852439}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &722285215
 GameObject:
   m_ObjectHideFlags: 0
@@ -4912,6 +5437,586 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 722285215}
+--- !u!1001 &739592971
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 421819238}
+    m_Modifications:
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 169.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193661492268566, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193661492268566, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193661492268566, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193661492268566, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193661492268566, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224438373977827512, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224438373977827512, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224438373977827512, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224438373977827512, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224438373977827512, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230683107277956, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230683107277956, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230683107277956, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230683107277956, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230683107277956, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224397510327039786, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224397510327039786, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224397510327039786, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224397510327039786, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224397510327039786, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186746402994966, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186746402994966, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186746402994966, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186746402994966, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186746402994966, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224834350631515488, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224834350631515488, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224834350631515488, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224834350631515488, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224834350631515488, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302769668308392, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302769668308392, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302769668308392, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302769668308392, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302769668308392, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224671607061129768, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224671607061129768, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224671607061129768, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224671607061129768, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224671607061129768, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224625102330690066, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224625102330690066, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224625102330690066, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224625102330690066, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224625102330690066, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224399541820582610, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224399541820582610, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224399541820582610, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224399541820582610, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224399541820582610, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224327152224389220, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224327152224389220, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224327152224389220, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224327152224389220, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224327152224389220, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224414982211902262, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224414982211902262, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224414982211902262, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224414982211902262, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224414982211902262, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224778347021420584, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224778347021420584, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224778347021420584, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224778347021420584, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224778347021420584, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224726942845144692, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224726942845144692, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224726942845144692, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224726942845144692, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224726942845144692, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224726942845144692, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224987187404131672, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224987187404131672, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224987187404131672, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224987187404131672, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224987187404131672, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224987187404131672, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224823613055482466, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224823613055482466, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224823613055482466, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224823613055482466, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224823613055482466, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224275177256025842, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224275177256025842, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224275177256025842, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224275177256025842, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224275177256025842, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224054783477330620, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224054783477330620, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224054783477330620, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224054783477330620, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224054783477330620, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224869777732685570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224869777732685570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224869777732685570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224869777732685570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 73aaa70e1cdd50d4cae4362627e2b490, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &746897353
 GameObject:
   m_ObjectHideFlags: 0
@@ -5047,6 +6152,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 1234089219}
   end: {fileID: 1944822422}
+--- !u!114 &747739535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: "Enviar oper\xE1rios"
+  answerEvent: {fileID: 135245344}
+  intensity: 0
+  showInInspector: 1
+--- !u!114 &755520568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sopro dos deuses
+  Description: "Os c\xE9us se agitam,  destruindo tudo pela frente. Com cidad\xE3os
+    desabrigados e muralhas destru\xEDdas, o povo n\xE3o se sente seguro, e pede por
+    interven\xE7\xE3o do governante para agilizar o processo de reconstru\xE7\xE3o."
+  Question: "Ajudar a popula\xE7\xE3o?"
+  chance: 3
+  Answers:
+  - {fileID: 747739535}
+  - {fileID: 118313925}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &770136176
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,6 +6323,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8266df41924f6749bf8fc5522968933, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &776181646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Dies Irae
+  Description: "Os altos oficiais da Igreja do reino est\xE3o acalorados. Em uma terra
+    distante, se organiza uma cruzada para reaver territ\xF3rio santo e expurgar a
+    adora\xE7\xE3o de \xEDdolos blasfemos. Dizem que a popula\xE7\xE3o de est\xE1
+    v\xE3, licenciosa e n\xE3o seguindo os princ\xEDpios do Livro Sagrado, e isto
+    coloca em risco n\xE3o somente a autoridade institucional do clero, mas a salva\xE7\xE3o
+    de suas pr\xF3prias almas na pr\xF3xima vida. Agora, est\xE3o conferindo com o
+    regente maior se deveriam enviar tropas para colaborar com os esfor\xE7os da Institui\xE7\xE3o
+    Central, com o subs\xEDdio da nobreza e realeza."
+  Question: Participar da cruzada?
+  chance: 3
+  Answers:
+  - {fileID: 1682608889}
+  - {fileID: 1663853791}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &777349171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5573,571 +6742,11 @@ MonoBehaviour:
   - {fileID: 469971037}
   - {fileID: 1125633894}
   - {fileID: 1761837152}
---- !u!1001 &797614061
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 421819238}
-    m_Modifications:
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 169.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224872832903602750, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224872832903602750, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224872832903602750, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224872832903602750, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224872832903602750, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224560055339698246, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224560055339698246, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224560055339698246, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224560055339698246, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224560055339698246, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224673240578080856, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224673240578080856, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224673240578080856, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224673240578080856, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224673240578080856, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224898411676763972, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224898411676763972, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224898411676763972, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224898411676763972, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224898411676763972, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224764876754833952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224764876754833952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224764876754833952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224764876754833952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224764876754833952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224884210863193874, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224884210863193874, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224884210863193874, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224884210863193874, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224884210863193874, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224342100016773910, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224342100016773910, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224342100016773910, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224342100016773910, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224342100016773910, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224970877083671126, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224970877083671126, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224970877083671126, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224970877083671126, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224970877083671126, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224428021492167332, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224428021492167332, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224428021492167332, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224428021492167332, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224428021492167332, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224402465546216498, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224402465546216498, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224402465546216498, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224402465546216498, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224402465546216498, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224222109721109720, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224222109721109720, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224222109721109720, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224222109721109720, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224222109721109720, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224571948886962968, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224571948886962968, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224571948886962968, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224571948886962968, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224571948886962968, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224980319409847822, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224980319409847822, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224980319409847822, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224980319409847822, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224980319409847822, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224756491908441166, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224756491908441166, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224756491908441166, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224756491908441166, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224756491908441166, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224756491908441166, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224447107664378890, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224447107664378890, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224447107664378890, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224447107664378890, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224447107664378890, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224447107664378890, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224612157647517926, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224612157647517926, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224612157647517926, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224612157647517926, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224612157647517926, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224814807084452258, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224814807084452258, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224814807084452258, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224814807084452258, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224814807084452258, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224099450098345354, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224099450098345354, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224099450098345354, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224099450098345354, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224099450098345354, guid: 73aaa70e1cdd50d4cae4362627e2b490,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 73aaa70e1cdd50d4cae4362627e2b490, type: 2}
-  m_IsPrefabParent: 0
 --- !u!224 &797614062 stripped
 RectTransform:
-  m_PrefabParentObject: {fileID: 224054469774411952, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+  m_PrefabParentObject: {fileID: 224319051852486922, guid: 73aaa70e1cdd50d4cae4362627e2b490,
     type: 2}
-  m_PrefabInternal: {fileID: 797614061}
+  m_PrefabInternal: {fileID: 739592971}
 --- !u!1 &810731886
 GameObject:
   m_ObjectHideFlags: 0
@@ -6386,6 +6995,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba28d56f94573384bb723185bc6a2375, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &847007309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sic Semper Tyrannis
+  Description: "Anos de despotismo inflamaram o esp\xEDrito revolucion\xE1rio. Hoje,
+    o povo pega em armas e grita por justi\xE7a em frente ao pal\xE1cio."
+  Question: Dialogar ou reprimir?
+  chance: 3
+  Answers:
+  - {fileID: 922866446}
+  - {fileID: 15843042}
+  - {fileID: 1878283158}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &853533610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6431,7 +7062,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 853533610}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -6536,7 +7167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Burgo do Ham
+  customTitle: burgo do ham
   type: 2
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -6655,6 +7286,90 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868960476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Nulo
+  Description: Nenhum efeito
+  Duration: 1
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 3
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &870076946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Protestantismo
+  Description: "Congela o teto de riquezas no valor atual pelos pr\xF3ximos 7 dias."
+  Duration: 7
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &876796359
 GameObject:
   m_ObjectHideFlags: 0
@@ -6790,6 +7505,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 469971037}
   end: {fileID: 1234089219}
+--- !u!114 &879918912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Vetar
+  answerEvent: {fileID: 868960476}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &886556661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6997,6 +7727,21 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 902419400}
+--- !u!114 &922866446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Dialogar
+  answerEvent: {fileID: 1129510096}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &923098281
 GameObject:
   m_ObjectHideFlags: 0
@@ -7569,6 +8314,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 1194851518}
   end: {fileID: 866971831}
+--- !u!114 &993692160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 1681083865}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &1007702357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7629,7 +8389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nativePos: 360
   panelSwitcher: {fileID: 1342351211}
-  propertyBoxPrefab: {fileID: 1879561081694618, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+  propertyBoxPrefab: {fileID: 1431291351326974, guid: 73aaa70e1cdd50d4cae4362627e2b490,
     type: 2}
   root: {fileID: 421819238}
 --- !u!1001 &1018344040
@@ -7732,6 +8492,92 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 819e2367b79017045849ed1bb30f1d40, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1039217894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Enchente
+  Description: "Reduz moderadamente a quantidade de habitantes (20% total) e a satisfa\xE7\xE3o
+    (30% total). Dura\xE7\xE3o de 3 dias."
+  Duration: 3
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: -20
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &1042552050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tornado
+  Description: "Reduz moderadamente a satisfa\xE7\xE3o (20%). Dura\xE7\xE3o de um
+    dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!4 &1046291979
 Transform:
   m_ObjectHideFlags: 0
@@ -7758,7 +8604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Montanha da Morte
+  customTitle: montanha da morte
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -7793,6 +8639,21 @@ MonoBehaviour:
   - {fileID: 1194851518}
   - {fileID: 173384176}
   - {fileID: 1125633894}
+--- !u!114 &1051779030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 868960476}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &1054705958
 GameObject:
   m_ObjectHideFlags: 0
@@ -7847,6 +8708,32 @@ MonoBehaviour:
   MuitoRaroChance: 20
   KEvents:
   - {fileID: 1343919401}
+  - {fileID: 2048808401}
+  - {fileID: 1819422460}
+  - {fileID: 670402468}
+  - {fileID: 320329508}
+  - {fileID: 1203199862}
+  - {fileID: 1568852439}
+  - {fileID: 1039217894}
+  - {fileID: 1129510096}
+  - {fileID: 1333439139}
+  - {fileID: 651745638}
+  - {fileID: 1681083865}
+  - {fileID: 1358666751}
+  - {fileID: 405683378}
+  - {fileID: 1839591816}
+  - {fileID: 1941502089}
+  - {fileID: 1502753265}
+  - {fileID: 135245344}
+  - {fileID: 1042552050}
+  - {fileID: 236225160}
+  - {fileID: 870076946}
+  - {fileID: 1914208422}
+  - {fileID: 2079948607}
+  - {fileID: 1089450818}
+  - {fileID: 550254910}
+  - {fileID: 1915713774}
+  - {fileID: 868960476}
 --- !u!114 &1054705961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7897,6 +8784,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KHappenings:
   - {fileID: 149715686}
+  - {fileID: 1447679453}
+  - {fileID: 517077323}
+  - {fileID: 1734344069}
+  - {fileID: 847007309}
+  - {fileID: 1159925450}
+  - {fileID: 620450709}
+  - {fileID: 660011499}
+  - {fileID: 93560218}
+  - {fileID: 755520568}
+  - {fileID: 251962737}
+  - {fileID: 1451726361}
+  - {fileID: 776181646}
+  - {fileID: 1816411341}
   KHappeningsHistory: []
 --- !u!114 &1054705963
 MonoBehaviour:
@@ -7910,6 +8810,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverMoney: -10000
+--- !u!114 &1063859519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: "Sentenciar \xE0 morte"
+  answerEvent: {fileID: 1914208422}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &1065110197
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,8 +8860,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 204, y: -1078}
-  m_SizeDelta: {x: -447.1, y: 125.6}
+  m_AnchoredPosition: {x: 207.8, y: -1078}
+  m_SizeDelta: {x: -454.7, y: 125.6}
   m_Pivot: {x: 0.49999997, y: 0.5000003}
 --- !u!114 &1065110199
 MonoBehaviour:
@@ -8019,7 +8934,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fac6dbd069c6e6c45a336e1002f95f6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e670c96ccee23e7489bf23a6eb3510cd, type: 3}
   m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8038,6 +8953,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224928731047467286, guid: b8266df41924f6749bf8fc5522968933,
     type: 2}
   m_PrefabInternal: {fileID: 774027300}
+--- !u!114 &1089450818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Inquisi\xE7\xE3o"
+  Description: "Reduz consideravelmente a satisfa\xE7\xE3o (33%) e moderadamente as
+    riquezas (15%) pelos pr\xF3ximos 30 dias."
+  Duration: 30
+  LeftDuration: 1
+  intensity: 2
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: -15
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1098702806
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,7 +9094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Montanha Lunar
+  customTitle: montanha lunar
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -8256,6 +9214,49 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129510096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Revolu\xE7\xE3o"
+  Description: "Reduz consideravelmente as riquezas (30%), aumenta moderadamente a
+    satisfa\xE7\xE3o (20%). Dura\xE7\xE3o de 1 dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: -30
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!224 &1131072668 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224761386149654846, guid: 819e2367b79017045849ed1bb30f1d40,
@@ -8308,7 +9309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.86666673, g: 0.627451, b: 0.06666667, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8316,7 +9317,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c89c3070134f005459cf14105fabb78c, type: 3}
+    m_Font: {fileID: 12800000, guid: c311002ae1753f948a9eb2a76c65dd62, type: 3}
     m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
@@ -8435,10 +9436,10 @@ RectTransform:
   m_Father: {fileID: 1065110198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 56.1, y: 4.1}
-  m_SizeDelta: {x: 51.81, y: 51.94}
+  m_AnchorMin: {x: 0.1101891, y: 0.5}
+  m_AnchorMax: {x: 0.2273287, y: 0.778618}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155636812
 MonoBehaviour:
@@ -8645,6 +9646,29 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159851395}
+--- !u!114 &1159925450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Kublai
+  Description: "Destacamentos de infantaria avistaram guerreiros estrangeiros cruzando
+    as fronteiras! Pela urg\xEAncia da situa\xE7\xE3o, pode ser que custe bastante
+    \xE0s nossas reservas, mas devemos enviar nossas tropas para retaliar antes que
+    cheguem \xE0s cidades?"
+  Question: Enviar tropas?
+  chance: 3
+  Answers:
+  - {fileID: 479554136}
+  - {fileID: 993692160}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &1169039078
 GameObject:
   m_ObjectHideFlags: 0
@@ -8884,7 +9908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Fazenda Montgomery
+  customTitle: fazenda montgomery
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -8920,6 +9944,64 @@ MonoBehaviour:
   - {fileID: 1046291980}
   - {fileID: 1791031546}
   - {fileID: 866971831}
+--- !u!114 &1203199862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Terremoto
+  Description: "Reduz moderadamente a quantidade de habitantes (20%) e a satisfa\xE7\xE3o
+    (30%). Dura\xE7\xE3o de 1 dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 3
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: -20
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: -20
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &1203987966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Quarentena
+  answerEvent: {fileID: 1819422460}
+  intensity: 0
+  showInInspector: 1
 --- !u!114 &1211729133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9152,7 +10234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Pico Terroso
+  customTitle: pico terroso
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -9304,7 +10386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Rancho do Barney
+  customTitle: rancho do barney
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -10074,7 +11156,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2029535601}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10119,6 +11201,50 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224313542454219392, guid: ba28d56f94573384bb723185bc6a2375,
     type: 2}
   m_PrefabInternal: {fileID: 1575984678}
+--- !u!114 &1333439139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Revolu\xE7\xE3o"
+  Description: "Reduz pouco as riquezas (10% total), reduz consideravelmente a satisfa\xE7\xE3o
+    (60% total) e reduz moderadamente a quantidade de habitantes (25% total). Dura\xE7\xE3o:
+    7 dias."
+  Duration: 7
+  LeftDuration: 1
+  intensity: 2
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: -10
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: -25
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1342351206
 GameObject:
   m_ObjectHideFlags: 0
@@ -10296,7 +11422,7 @@ MonoBehaviour:
   AbsoluteGoldHeavy: 0
   AbsoluteFoodHeavy: 0
   AbsoluteBuildingHeavy: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1347065579
 GameObject:
   m_ObjectHideFlags: 0
@@ -10585,6 +11711,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1348453623}
+--- !u!114 &1358666751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Invas\xE3o"
+  Description: "Reduz consideravelmente as riquezas (60% total), reduz consideravelmente
+    a satisfa\xE7\xE3o (45% total). Dura\xE7\xE3o: 3 dias."
+  Duration: 3
+  LeftDuration: 1
+  intensity: 2
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: -60
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1358880439
 GameObject:
   m_ObjectHideFlags: 0
@@ -10847,6 +12016,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114397497914068526, guid: 236c79e987649364fabba46be1c48fc6,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 861b2096eb1dfe549a38535578b637c0,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 114693341402968610, guid: 236c79e987649364fabba46be1c48fc6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 236c79e987649364fabba46be1c48fc6, type: 2}
@@ -10856,6 +12031,21 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224352374492265210, guid: 236c79e987649364fabba46be1c48fc6,
     type: 2}
   m_PrefabInternal: {fileID: 1441249028}
+--- !u!114 &1443699338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 1914208422}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &1445611452
 GameObject:
   m_ObjectHideFlags: 0
@@ -10901,6 +12091,55 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445611452}
+--- !u!114 &1447679453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Yersinia pestis
+  Description: "Uma epidemia de peste atingiu o reino! Por toda a parte, pessoas contaminadas
+    s\xE3o mantidas em abrigos, mas a doen\xE7a continua a se alastrar cada dia mais.
+    Seria a hora para medidas dr\xE1sticas, ou de esvaziar os cofres do pal\xE1cio
+    para criar uma for\xE7a-tarefa e combater a Morte Negra?"
+  Question: O que fazer?
+  chance: 3
+  Answers:
+  - {fileID: 582375289}
+  - {fileID: 361624915}
+  - {fileID: 1203987966}
+  showInInspector: 0
+  showAnswers: 1
+--- !u!114 &1451726361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Canto do Rouxinol
+  Description: "Criminosos n\xE3o identificados est\xE3o rotineiramente invadindo
+    feudos e condados nobres \xE0 noite para roubar suas riquezas. A popula\xE7\xE3o
+    se alvoro\xE7a, e o que se diz \xE9 que eles distribuem parte do dinheiro entre
+    camponeses, os dando grande apoio popular. Com um posicionamento oficial do reino,
+    os esfor\xE7os seriam redobrados para sua ca\xE7a e puni\xE7\xE3o, sob o risco
+    de impactar ainda mais a nobreza."
+  Question: Condenar os criminosos?
+  chance: 3
+  Answers:
+  - {fileID: 1063859519}
+  - {fileID: 1443699338}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &1466718074
 GameObject:
   m_ObjectHideFlags: 0
@@ -11275,6 +12514,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1502753265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Bruxaria
+  Description: "Reduz um pouco a quantidade de habitantes (10% total), aumenta moderadamente
+    a satisfa\xE7\xE3o (25% total). Dura\xE7\xE3o: 5 dias."
+  Duration: 5
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: -10
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1511485705
 GameObject:
   m_ObjectHideFlags: 0
@@ -11414,7 +12696,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 95.9}
+  m_SizeDelta: {x: 0, y: 68.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529031832
 MonoBehaviour:
@@ -11424,7 +12706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529031830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -11435,26 +12717,35 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: c89c3070134f005459cf14105fabb78c, type: 3}
-    m_FontSize: 80
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 80
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: historico
+  m_Sprite: {fileID: 21300000, guid: 276563caeac630240bb3ad26313503ec, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!222 &1529031833
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1529031830}
+--- !u!114 &1530806957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: "Vetar manifesta\xE7\xF5es"
+  answerEvent: {fileID: 236225160}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &1543451412
 GameObject:
   m_ObjectHideFlags: 0
@@ -11549,7 +12840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Vila do Sul
+  customTitle: vila do sul
   type: 2
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -11669,6 +12960,50 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1568852439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Enchente
+  Description: "Reduz muito pouco a quantidade de habitantes (5% total) e um pouco
+    a satisfa\xE7\xE3o (10% total). Reduz moderadamente as riquezas (25% total). Dura\xE7\xE3o
+    de 3 dias."
+  Duration: 3
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: -25
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: -5
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1001 &1575984678
 Prefab:
   m_ObjectHideFlags: 0
@@ -11924,7 +13259,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722285217}
   m_HandleRect: {fileID: 722285216}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -12465,6 +13800,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 361505745}
   end: {fileID: 173384176}
+--- !u!114 &1663853791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 868960476}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &1677325360
 GameObject:
   m_ObjectHideFlags: 0
@@ -12600,6 +13950,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 1761837152}
   end: {fileID: 469971037}
+--- !u!114 &1681083865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Invas\xE3o"
+  Description: "Reduz pouco as riquezas (15% total), reduz consideravelmente a quantidade
+    de habitantes (45% total), reduz moderadamente a satisfa\xE7\xE3o (30% total).
+    Dura\xE7\xE3o: 10 dias."
+  Duration: 10
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: -15
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: -45
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &1682608889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Participar
+  answerEvent: {fileID: 1089450818}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &1685605137
 GameObject:
   m_ObjectHideFlags: 0
@@ -12737,7 +14146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 20
+    m_Left: 34
     m_Right: 20
     m_Top: 20
     m_Bottom: 20
@@ -12766,8 +14175,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fac6dbd069c6e6c45a336e1002f95f6e, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fd2a4580eb433534799df0164cdc78e7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12780,6 +14189,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1690981527}
+--- !u!114 &1708772822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 236225160}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &1709756319
 GameObject:
   m_ObjectHideFlags: 0
@@ -12868,6 +14292,28 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709756319}
+--- !u!114 &1734344069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 30 dias e 30 noites
+  Description: "No in\xEDcio, a chuva foi bem-vinda. Irrigou os prados e matou a sede.
+    Agora, depois dos primeiros dias, as planta\xE7\xF5es n\xE3o se distinguem dos
+    charcos, e quem a sede afligia agora teme a \xE1gua."
+  Question: "Ajudar a popula\xE7\xE3o?"
+  chance: 3
+  Answers:
+  - {fileID: 661767944}
+  - {fileID: 721058331}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &1734397935
 GameObject:
   m_ObjectHideFlags: 0
@@ -13164,7 +14610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Floresta dos Malandros
+  customTitle: floresta dos malandros
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -13228,7 +14674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Vilarejo Allor
+  customTitle: vilarejo allor
   type: 2
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -13347,6 +14793,21 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783996548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Estimular
+  answerEvent: {fileID: 1941502089}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &1791031545
 GameObject:
   m_ObjectHideFlags: 0
@@ -13379,7 +14840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Floresta Sombria
+  customTitle: floresta sombria
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -13581,6 +15042,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!114 &1816411341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a65468b2a7184da12711cb08cf467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Baixa Arrecada\xE7\xE3o"
+  Description: "Os cofres est\xE3o esvaziando! \xC9 poss\xEDvel aumentar a taxa\xE7\xE3o,
+    por\xE9m haver\xE1 repercuss\xF5es negativas e aumento da rejei\xE7\xE3o ao governo."
+  Question: Aumentar impostos?
+  chance: 3
+  Answers:
+  - {fileID: 1988373062}
+  - {fileID: 348688353}
+  showInInspector: 0
+  showAnswers: 1
 --- !u!1 &1819231737
 GameObject:
   m_ObjectHideFlags: 0
@@ -13716,6 +15198,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 137315936}
   end: {fileID: 114956738}
+--- !u!114 &1819422460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Peste
+  Description: "Reduz drasticamente a quantidade de habitantes (40% total) e a consideravelmente
+    a satisfa\xE7\xE3o (40% total) continuamente pela dura\xE7\xE3o do efeito (7 dias)."
+  Duration: 7
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: -40
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1828119901
 GameObject:
   m_ObjectHideFlags: 0
@@ -13885,7 +15410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -13923,6 +15448,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &1839591816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Colheita
+  Description: "Reduz moderadamente as riquezas (20%), aumenta moderadamente a satisfa\xE7\xE3o
+    (30%). Dura\xE7\xE3o: 1 dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: -20
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1844078448
 GameObject:
   m_ObjectHideFlags: 0
@@ -13995,6 +15563,21 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1844078448}
+--- !u!114 &1878283158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Ignorar
+  answerEvent: {fileID: 1129510096}
+  intensity: 2
+  showInInspector: 1
 --- !u!1 &1879428573
 GameObject:
   m_ObjectHideFlags: 0
@@ -14040,6 +15623,90 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1879428573}
+--- !u!114 &1914208422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Justiceiros
+  Description: "Reduz drasticamente a satisfa\xE7\xE3o (40%) pelos pr\xF3ximos 5 dias."
+  Duration: 5
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
+--- !u!114 &1915713774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Impostos
+  Description: "Reduz consideravelmente as riquezas (50%) pelos pr\xF3ximos 10 dias."
+  Duration: 10
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: -50
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1921075800
 GameObject:
   m_ObjectHideFlags: 0
@@ -14333,8 +16000,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348453625}
   m_HandleRect: {fileID: 1348453624}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14385,6 +16052,48 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1941502089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Bruxaria
+  Description: "Reduz um pouco a satisfa\xE7\xE3o (15%). Dura\xE7\xE3o: 1 dia."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 0
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &1944822421
 GameObject:
   m_ObjectHideFlags: 0
@@ -14417,7 +16126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customTitle: Fazenda do Chico
+  customTitle: fazenda do chico
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -14975,6 +16684,21 @@ MonoBehaviour:
   - {fileID: 1921075803}
   - {fileID: 323734503}
   - {fileID: 876796362}
+--- !u!114 &1988373062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Aumentar impostos?
+  answerEvent: {fileID: 550254910}
+  intensity: 1
+  showInInspector: 1
 --- !u!114 &1992971186 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114413081971732150, guid: ba28d56f94573384bb723185bc6a2375,
@@ -15107,6 +16831,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2029535600}
+--- !u!114 &2032535812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: Oferendas aos deuses
+  answerEvent: {fileID: 1839591816}
+  intensity: 1
+  showInInspector: 1
 --- !u!1 &2040384719
 GameObject:
   m_ObjectHideFlags: 0
@@ -15171,8 +16910,51 @@ MonoBehaviour:
   editButtonsGroup: {fileID: 951917382}
   toggle: {fileID: 1155636812}
   editButtonsFadeTime: 0.3
-  editEnabledColor: {r: 0, g: 1, b: 0, a: 1}
+  editEnabledColor: {r: 1, g: 0.6313726, b: 0, a: 1}
   editDisabledColor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+--- !u!114 &2048808401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "Genoc\xEDdio"
+  Description: "Reduz pouco a quantidade de habitantes (15%) e a drasticamente a satisfa\xE7\xE3o
+    (60%) de uma s\xF3 vez (1 dia)."
+  Duration: 1
+  LeftDuration: 1
+  intensity: 2
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: 0
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: -15
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &2057654246
 GameObject:
   m_ObjectHideFlags: 0
@@ -15223,12 +17005,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 20
+    m_Left: 26
     m_Right: 20
-    m_Top: 20
+    m_Top: 33
     m_Bottom: 20
   m_ChildAlignment: 0
-  m_Spacing: 5
+  m_Spacing: 36.79
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -15252,8 +17034,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fac6dbd069c6e6c45a336e1002f95f6e, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fd2a4580eb433534799df0164cdc78e7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -15396,6 +17178,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2077415653}
+--- !u!114 &2079948607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff80b85ed21164b896493883a3df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Justiceiros
+  Description: "Reduz pouco a riqueza (15%) e reduz um pouco a satisfa\xE7\xE3o (10%)
+    pelos pr\xF3ximos 15 dias."
+  Duration: 15
+  LeftDuration: 1
+  intensity: 1
+  ActiveIntensity: 0
+  mode: 0
+  battle: 1
+  chance: 0
+  PercentGoldLight: 0
+  PercentFoodLight: 0
+  PercentBuildingLight: 0
+  PercentPeopleLight: 0
+  PercentGoldMedium: -15
+  PercentFoodMedium: 0
+  PercentBuildingMedium: 0
+  PercentPeopleMedium: 0
+  PercentGoldHeavy: 0
+  PercentFoodHeavy: 0
+  PercentBuildingHeavy: 0
+  PercentPeopleHeavy: 0
+  AbsoluteGoldLight: 0
+  AbsoluteFoodLight: 0
+  AbsoluteBuildingLight: 0
+  AbsoluteGoldMedium: 0
+  AbsoluteFoodMedium: 0
+  AbsoluteBuildingMedium: 0
+  AbsoluteGoldHeavy: 0
+  AbsoluteFoodHeavy: 0
+  AbsoluteBuildingHeavy: 0
+  showInInspector: 0
 --- !u!1 &2084152203
 GameObject:
   m_ObjectHideFlags: 0
@@ -15865,6 +17690,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enabledSprite: {fileID: 21300000, guid: 3d7aec51019c9cd49ae7f4f1b7fcafc1, type: 3}
   disabledSprite: {fileID: 21300000, guid: b62e085ca35d3bc46acc32e3e9560ea3, type: 3}
+--- !u!114 &2141783207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36d613d1e3738499dbc2513042b4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: "Ajudar a popula\xE7\xE3o"
+  answerEvent: {fileID: 320329508}
+  intensity: 0
+  showInInspector: 1
 --- !u!1 &2143846971
 GameObject:
   m_ObjectHideFlags: 0

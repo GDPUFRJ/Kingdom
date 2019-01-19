@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: fbe6d541d32e17b4ca0b2b327421477f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Klinic Slab
+  fontNames:
+  - Klinic Slab
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 79d47b937c70c37428c94547dedd2e1b, type: 3}
+  - {fileID: 12800000, guid: 70c2e556eaa3e97429aaf1c26f16b356, type: 3}
+  - {fileID: 12800000, guid: f762612aabcb83b429241888ab7ac521, type: 3}
+  - {fileID: 12800000, guid: 87ff476eff833154c88c6c0a5bf9aa53, type: 3}
+  - {fileID: 12800000, guid: 3b7d1dff724498b42a495d4bf57d1479, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

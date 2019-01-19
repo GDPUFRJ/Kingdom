@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour {
         transitionPanel.DOFade(0, FADE_DURATION * 3);
         ToggleGroup(groups[0], true, 0);
         ToggleGroup(groups[1], false, 0);
+        ToggleGroup(groups[2], false, 0);
     }
     public void TouchToStart()
     {
@@ -34,10 +35,36 @@ public class MainMenu : MonoBehaviour {
     public void Credits()
     {
         print("Credits");
+        ToggleGroup(groups[0], false, FADE_DURATION);
+        ToggleGroup(groups[1], false, 0);
+        ToggleGroup(groups[2], true, FADE_DURATION);
+        groups[2].GetComponent<Animator>().Play("MenuCréditos_OpenScroll");
     }
     public void Options()
     {
         print("Options");
+        ToggleGroup(groups[0], false, FADE_DURATION);
+        ToggleGroup(groups[1], true, FADE_DURATION);
+        ToggleGroup(groups[2], false, 0);
+        groups[1].GetComponent<Animator>().Play("MenuOpções_OpenScroll");
+    }
+    public void CloseOptionsAnimation()
+    {
+        groups[1].GetComponent<Animator>().Play("MenuOpções_CloseScroll");
+    }
+    public void GoBackToMenuFromOptions()
+    {
+        ToggleGroup(groups[0], true, FADE_DURATION);
+        ToggleGroup(groups[1], false, 0);
+    }
+    public void CloseCreditsAnimation()
+    {
+        groups[2].GetComponent<Animator>().Play("MenuCréditos_CloseScroll");
+    }
+    public void GoBackToMenuFromCredits()
+    {
+        ToggleGroup(groups[0], true, FADE_DURATION);
+        ToggleGroup(groups[2], false, 0);
     }
     private void ToggleGroup(CanvasGroup group, bool b, float duration = FADE_DURATION)
     {
