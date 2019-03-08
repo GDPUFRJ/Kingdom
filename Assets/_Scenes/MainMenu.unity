@@ -950,13 +950,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1920872406}
-  m_Father: {fileID: 599465856}
-  m_RootOrder: 0
+  m_Father: {fileID: 1034163245}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.35, y: 0}
-  m_AnchorMax: {x: 0.65, y: 1}
-  m_AnchoredPosition: {x: 0, y: 295.71796}
-  m_SizeDelta: {x: 120, y: -342.1}
+  m_AnchorMin: {x: 0.3, y: 0.8}
+  m_AnchorMax: {x: 0.7, y: 1}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451885849
 MonoBehaviour:
@@ -1092,13 +1092,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 451885848}
   - {fileID: 1902306840}
   m_Father: {fileID: 1175226547}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.12, y: 0.27}
-  m_AnchorMax: {x: 0.88, y: 0.65}
+  m_AnchorMin: {x: 0.12000006, y: 0.22053553}
+  m_AnchorMax: {x: 0.88000005, y: 0.8818775}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2152,6 +2151,7 @@ RectTransform:
   m_LocalScale: {x: 0.99918, y: 0.99918, z: 0.99918}
   m_Children:
   - {fileID: 1175226547}
+  - {fileID: 451885848}
   - {fileID: 2028077951}
   m_Father: {fileID: 1433979354}
   m_RootOrder: 3
@@ -2323,8 +2323,8 @@ RectTransform:
   m_Father: {fileID: 1175226547}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.65}
-  m_AnchorMax: {x: 1, y: 0.73}
+  m_AnchorMin: {x: 0, y: 0.8835613}
+  m_AnchorMax: {x: 1, y: 0.96356136}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3862,8 +3862,8 @@ RectTransform:
   m_Father: {fileID: 1175226547}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.19}
-  m_AnchorMax: {x: 1, y: 0.27}
+  m_AnchorMin: {x: 0, y: 0.14053552}
+  m_AnchorMax: {x: 1, y: 0.22053553}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4009,10 +4009,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 599465856}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2, y: 0.15}
-  m_AnchorMax: {x: 0.8, y: 0.85}
+  m_AnchorMin: {x: 0.05, y: 0.06}
+  m_AnchorMax: {x: 0.95, y: 0.87}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4048,7 +4048,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Nome Nome Nome\nFun\xE7\xE3o\nNome Nome Nome\nFun\xE7\xE3o\nNome Nome Nome\nFun\xE7\xE3o"
+  m_Text: "Ideia original: Pedro Marques\n\nGest\xE3o de Projeto: Pedro Marques, Victor
+    Corr\xEAa, Vitor Barcellos, Pierluigi Piccolo Raso\r\n\nGame Design: Victor Corr\xEAa,
+    Lucas Cordeiro\r\n\nPrograma\xE7\xE3o: Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTextos:
+    Victor Corr\xEAa\r\n\nArte: Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nImplementa\xE7\xE3o
+    do \xE1udio: Wilson Santos e Janderson Barbosa"
 --- !u!222 &1902306842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4376,12 +4380,12 @@ RectTransform:
   m_Children:
   - {fileID: 1960769575}
   m_Father: {fileID: 1034163245}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.37529865, y: 0.11769259}
-  m_AnchorMax: {x: 0.57368696, y: 0.16229518}
+  m_AnchorMin: {x: 0.2643889, y: 0.04578064}
+  m_AnchorMax: {x: 0.68477786, y: 0.11400001}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028077952
 MonoBehaviour:
