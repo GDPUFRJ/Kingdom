@@ -47,6 +47,11 @@ public class PropertyManager : Singleton<PropertyManager> {
     public Color DominatedLine;
     public Color NotDominatedLine;
     public Color NotDominatedProperty;
+    public Color BlueOutline;
+    public Color RedOutline;
+    public Color GreenOutline;
+    public Color OrangeOutline;
+    public Color PurpleOutline;
 
     [Header("Property Window")]
     public Transform canvasParent;

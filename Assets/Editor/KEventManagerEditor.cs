@@ -30,17 +30,22 @@ public class KEventManagerEditor : Editor
         foreach (KEvent kevt in KEventManagerScript.KEvents)
         {
 
-            kevt.showInInspector = EditorGUILayout.Foldout(kevt.showInInspector, "Event " + kevt.Name);
+            kevt.showInInspector = EditorGUILayout.Foldout(kevt.showInInspector, "Event " + kevt.InternalName);
             if (kevt.showInInspector)
             {
 
                     EditorGUILayout.BeginHorizontal();
 
-                    kevt.Name = EditorGUILayout.TextField(new GUIContent("Name"), kevt.Name);
+                    kevt.InternalName = EditorGUILayout.TextField(new GUIContent("Internal Name"), kevt.InternalName);
+
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.BeginVertical();
+
+                    kevt.ExhibitionName = EditorGUILayout.TextField(new GUIContent("Exhibition Name"), kevt.ExhibitionName);
 
                     if (GUILayout.Button("Delete", GUILayout.MaxWidth(50)) &&
                         EditorUtility.DisplayDialog("Confirm Deletion",
-                                                    "Are you sure to delete " + kevt.Name + " event? This action cannot be undone.",
+                                                    "Are you sure to delete " + kevt.InternalName + " event? This action cannot be undone.",
                                                     "Yes", "No")
                     )
                         ToRemove.Add(kevt);
@@ -51,13 +56,13 @@ public class KEventManagerEditor : Editor
 
                     kevt.Duration = EditorGUILayout.IntSlider(new GUIContent("Duration Days"), kevt.Duration, 0, +30);  
 
-                    kevt.intensity = (Intensity)EditorGUILayout.EnumPopup("Intensity", kevt.intensity);
+                    kevt.ActiveIntensity = (Intensity)EditorGUILayout.EnumPopup("Intensity", kevt.ActiveIntensity);
                     kevt.chance = (Chance)EditorGUILayout.EnumPopup("Chance", kevt.chance);
                     kevt.mode = (Mode)EditorGUILayout.EnumPopup("Mode", kevt.mode);
                     kevt.battle = (Battle)EditorGUILayout.EnumPopup("Battle", kevt.battle);
 
 
-                    switch (kevt.intensity)
+                    switch (kevt.ActiveIntensity)
                     {
                         case Intensity.light:
                             if (kevt.mode == Mode.UsePercentage)
@@ -66,6 +71,7 @@ public class KEventManagerEditor : Editor
                                 kevt.PercentFoodLight = EditorGUILayout.IntSlider(new GUIContent("Food"), kevt.PercentFoodLight, -100, +100);
                                 kevt.PercentBuildingLight = EditorGUILayout.IntSlider(new GUIContent("Building"), kevt.PercentBuildingLight, -100, +100);
                                 kevt.PercentPeopleLight = EditorGUILayout.IntSlider(new GUIContent("Population Growth"), kevt.PercentPeopleLight, -100, +100);
+                                kevt.PercentHappinessLight = EditorGUILayout.IntSlider(new GUIContent("Happiness"), kevt.PercentHappinessLight, -100, +100);
                             }
                             else
                             {
@@ -81,6 +87,7 @@ public class KEventManagerEditor : Editor
                                 kevt.PercentFoodMedium = EditorGUILayout.IntSlider(new GUIContent("Food"), kevt.PercentFoodMedium, -100, +100);
                                 kevt.PercentBuildingMedium = EditorGUILayout.IntSlider(new GUIContent("Building"), kevt.PercentBuildingMedium, -100, +100);
                                 kevt.PercentPeopleMedium = EditorGUILayout.IntSlider(new GUIContent("Population Growth"), kevt.PercentPeopleMedium, -100, +100);
+                                kevt.PercentHappinessMedium = EditorGUILayout.IntSlider(new GUIContent("Happiness"), kevt.PercentHappinessMedium, -100, +100);
                             }
                             else
                             {
@@ -96,6 +103,7 @@ public class KEventManagerEditor : Editor
                                 kevt.PercentFoodHeavy = EditorGUILayout.IntSlider(new GUIContent("Food"), kevt.PercentFoodHeavy, -100, +100);
                                 kevt.PercentBuildingHeavy = EditorGUILayout.IntSlider(new GUIContent("Building"), kevt.PercentBuildingHeavy, -100, +100);
                                 kevt.PercentPeopleHeavy = EditorGUILayout.IntSlider(new GUIContent("Population Growth"), kevt.PercentPeopleHeavy, -100, +100);
+                                kevt.PercentHappinessHeavy = EditorGUILayout.IntSlider(new GUIContent("Happiness"), kevt.PercentHappinessHeavy, -100, +100);
                             }
                             else
                             {

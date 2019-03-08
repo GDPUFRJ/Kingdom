@@ -7,13 +7,14 @@ using UnityEngine;
 public class KEvent : ScriptableObject
 {
 
-    public string Name = "New Event";
+    public string ExhibitionName = "New Event";
+    public string InternalName = "New Event";
     public string Description = "Describe it here";
 
     public int Duration = 1;
     public int LeftDuration = 1;
 
-    public Intensity intensity = Intensity.light;
+    //public Intensity intensity = Intensity.light;
     public Intensity ActiveIntensity = Intensity.light;
     public Mode mode = Mode.UsePercentage;
     public Battle battle = Battle.Allowed;
@@ -23,16 +24,19 @@ public class KEvent : ScriptableObject
     public int PercentFoodLight = 0;
     public int PercentBuildingLight = 0;
     public int PercentPeopleLight = 0;
+    public int PercentHappinessLight = 0;
 
     public int PercentGoldMedium = 0;
     public int PercentFoodMedium = 0;
     public int PercentBuildingMedium = 0;
     public int PercentPeopleMedium = 0;
+    public int PercentHappinessMedium = 0;
 
     public int PercentGoldHeavy = 0;
     public int PercentFoodHeavy = 0;
     public int PercentBuildingHeavy = 0;
     public int PercentPeopleHeavy = 0;
+    public int PercentHappinessHeavy = 0;
 
     public int AbsoluteGoldLight = 0;
     public int AbsoluteFoodLight = 0;
@@ -50,7 +54,7 @@ public class KEvent : ScriptableObject
 
     public EventInfo GetInfo()
     {
-        return new EventInfo(this.Name, this.Description, this.LeftDuration, this.battle);
+        return new EventInfo(this.ExhibitionName, this.InternalName, this.Description, this.LeftDuration, this.battle);
     }
 
     public int GetNextResource(Resource resource)
@@ -126,10 +130,47 @@ public class KEvent : ScriptableObject
         }
         return 0;
     }
+
+    public int GetPopulationModifier()
+    {
+        if (mode == Mode.UseAbsolute)
+            return 0;
+
+        switch (ActiveIntensity)
+        {
+            case Intensity.light:
+                return (PercentPeopleLight * GameManager.Instance.Population) / 100;
+            case Intensity.medium:
+                return (PercentPeopleMedium * GameManager.Instance.Population) / 100;
+            case Intensity.heavy:
+                return (PercentPeopleHeavy * GameManager.Instance.Population) / 100;
+        }
+
+        return 0;
+    }
+
+    public float GetHappinessModifier()
+    {
+        if (mode == Mode.UseAbsolute)
+            return 0;
+
+        switch (ActiveIntensity)
+        {
+            case Intensity.light:
+                return (PercentHappinessLight / 100f) * GameManager.Instance.Happiness;
+            case Intensity.medium:
+                return (PercentHappinessMedium / 100f) * GameManager.Instance.Happiness;
+            case Intensity.heavy:
+                return (PercentHappinessHeavy / 100f) * GameManager.Instance.Happiness;
+        }
+
+        return 0;
+    }
 }
 public class EventInfo
 {
-    public string name;
+    public string exhibitionName;
+    public string internalName;
     public string description;
     public int remainingDays;
 
@@ -138,10 +179,11 @@ public class EventInfo
     public int GoldToAddOrRemove;
     public Battle BattleEnabled;
 
-    public EventInfo(string name, string description, 
+    public EventInfo(string exhibitionName, string internalName, string description, 
                      int remainingDays, Battle BattleEnabled)
     {
-        this.name = name;
+        this.exhibitionName = exhibitionName;
+        this.internalName = internalName;
         this.description = description;
         this.remainingDays = remainingDays;
         this.BattleEnabled = BattleEnabled;

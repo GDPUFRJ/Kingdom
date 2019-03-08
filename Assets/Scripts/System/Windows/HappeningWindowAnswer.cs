@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class HappeningWindowAnswer:MonoBehaviour {
     [SerializeField] private Text description; 
     [SerializeField] private KEvent kevent;
+    [SerializeField] private Intensity eventIntensity;
     [SerializeField] private HappeningWindow happeningWindow;
 	
     public void SetAnswer(KAnswer ans) {
         string s = ans.answer;
-        this.description.text = s; 
+        this.description.text = s;
+        this.eventIntensity = ans.intensity;
     }
     public void SetEvent(KEvent eve)
     {
@@ -22,7 +24,7 @@ public class HappeningWindowAnswer:MonoBehaviour {
     }
     public void ActivateEvent()
     {
-        KEventManager.Instance.FireEvent(kevent, Intensity.light);
+        KEventManager.Instance.FireEvent(kevent, eventIntensity);
         happeningWindow.DestroyWindow();
     }
 }

@@ -3209,6 +3209,7 @@ GameObject:
   - component: {fileID: 1433979352}
   - component: {fileID: 1433979351}
   - component: {fileID: 1433979355}
+  - component: {fileID: 1433979356}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3314,6 +3315,21 @@ MonoBehaviour:
   - {fileID: 1034163244}
   transitionPanel: {fileID: 815021563}
   loadingPanel: {fileID: 49686336}
+--- !u!114 &1433979356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433979350}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6aaff0bad9506341a4300789ff85956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredWidth: 720
+  desiredHeight: 1280
+  desiredFullScreenMode: 3
+  preferredFreshRate: 60
 --- !u!1 &1511248199
 GameObject:
   m_ObjectHideFlags: 0

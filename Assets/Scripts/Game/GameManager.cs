@@ -9,7 +9,9 @@ public class GameManager:Singleton < GameManager >  {
     [Header("Status")]
     public int Population = 10; 
     public float Happiness = 100f; 
-    public bool CanBattle = true; 
+    public bool CanBattle = true;
+    public int PopulationNextEventModifier = 0;
+    public float HappinessNextEventModifier = 0f;
     [Space(10)]
     public int Gold = 1000; 
     public int GoldNext = 0;
@@ -60,33 +62,37 @@ public class GameManager:Singleton < GameManager >  {
         GoldNext = 0; 
         FoodNext = 0; 
         BuildingNext = 0; 
-        int MainPropertiesDominated = 0; 
+        int mainPropertiesDominated = 0; 
         foreach (Property p in PropertyManager.Instance.Propriedades) {
-            if (p.mainProperty)
-                MainPropertiesDominated++; 
-            else
-                continue; 
+            if (p.dominated && p.mainProperty)
+                mainPropertiesDominated++;
+            //else
+            //continue; 
 
-            switch (p.Level) {
-                case Level.Level1:
-                    GoldNext += p.goldLevel1; 
-                    FoodNext += p.foodLevel1; 
-                    BuildingNext += p.buildingLevel1; 
-                    break; 
-                case Level.Level2:
-                    GoldNext += p.goldLevel2; 
-                    FoodNext += p.foodLevel2; 
-                    BuildingNext += p.buildingLevel2; 
-                    break; 
-                case Level.Level3:
-                    GoldNext += p.goldLevel3; 
-                    FoodNext += p.foodLevel3; 
-                    BuildingNext += p.buildingLevel3; 
-                    break; 
+            if (p.dominated)
+            {
+                switch (p.Level)
+                {
+                    case Level.Level1:
+                        GoldNext += p.goldLevel1;
+                        FoodNext += p.foodLevel1;
+                        BuildingNext += p.buildingLevel1;
+                        break;
+                    case Level.Level2:
+                        GoldNext += p.goldLevel2;
+                        FoodNext += p.foodLevel2;
+                        BuildingNext += p.buildingLevel2;
+                        break;
+                    case Level.Level3:
+                        GoldNext += p.goldLevel3;
+                        FoodNext += p.foodLevel3;
+                        BuildingNext += p.buildingLevel3;
+                        break;
+                }
             }
         }
 
-        if (MainPropertiesDominated == PropertyManager.Instance.MainProperties)
+        if (mainPropertiesDominated == PropertyManager.Instance.MainProperties)
             GameWon(); 
     }
 
@@ -118,5 +124,14 @@ public class GameManager:Singleton < GameManager >  {
 
     void GameWon() {
         //ToDo
+        print("You won the game!");
+        Time.timeScale = 0f;
+    }
+
+    public void GameLost()
+    {
+        //ToDo
+        print("You lost the game!");
+        Time.timeScale = 0f;
     }
 }

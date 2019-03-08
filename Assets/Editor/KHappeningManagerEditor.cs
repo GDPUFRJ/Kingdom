@@ -87,7 +87,7 @@ public class KHappeningManagerEditor : Editor
                             List<string> availableEvents = new List<string>();
                             foreach(KEvent kevt in KEventManager.Instance.KEvents)
                             {
-                                availableEvents.Add(kevt.Name);
+                                availableEvents.Add(kevt.InternalName);
                             }
 
                             // Set the choice index to the previously selected index

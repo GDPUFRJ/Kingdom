@@ -29,6 +29,13 @@ public class BattleWindow : MonoBehaviour {
 	[SerializeField] private Transform enemy;
 	[SerializeField] private CanvasGroup results;
 
+    [Header("Flags")]
+    [SerializeField] private Sprite redFlag;
+    [SerializeField] private Sprite blueFlag;
+    [SerializeField] private Sprite purpleFlag;
+    [SerializeField] private Sprite greenFlag;
+    [SerializeField] private Sprite orangeFlag;
+
 	[Header("Custom")]
 	[SerializeField] private List<Sprite> backgrounds;
 	[SerializeField] private List<Sprite> characters;
@@ -42,13 +49,33 @@ public class BattleWindow : MonoBehaviour {
 	{
 		//Show(3,1);
 	}
-	public void Show(int playerBattlePoints,int enemyBattlePoints)
+	public void Show(int playerBattlePoints,int enemyBattlePoints, BattleInformation battleInformation)
 	{
 		GetComponent<CanvasGroup>().DOFade(1,0);
 		this.playerBattlePoints = playerBattlePoints;
 		this.enemyBattlePoints = enemyBattlePoints;
+        SetUpFlags(battleInformation);
 		currentBattle = StartCoroutine( ShowBattleScene() );
 	}
+    private void SetUpFlags(BattleInformation battleInformation)
+    {
+        switch (battleInformation.attackingKingdom)
+        {
+            case Kingdom.Blue:   scoreFlags[0].sprite = blueFlag;   break;
+            case Kingdom.Green:  scoreFlags[0].sprite = greenFlag;  break;
+            case Kingdom.Orange: scoreFlags[0].sprite = orangeFlag; break;
+            case Kingdom.Purple: scoreFlags[0].sprite = purpleFlag; break;
+            case Kingdom.Red:    scoreFlags[0].sprite = redFlag;    break;
+        }
+        switch (battleInformation.defendingKingdom)
+        {
+            case Kingdom.Blue:   scoreFlags[1].sprite = blueFlag;   break;
+            case Kingdom.Green:  scoreFlags[1].sprite = greenFlag;  break;
+            case Kingdom.Orange: scoreFlags[1].sprite = orangeFlag; break;
+            case Kingdom.Purple: scoreFlags[1].sprite = purpleFlag; break;
+            case Kingdom.Red:    scoreFlags[1].sprite = redFlag;    break;
+        }
+    }
 	private IEnumerator ShowBattleScene()
 	{
 		InitializeAllValues();
@@ -186,7 +213,7 @@ public class BattleWindow : MonoBehaviour {
         swordsCrossingAnimator.Play("Default");
     }
     private bool PlayerIsTheWinner(){
-		if(playerBattlePoints >= enemyBattlePoints){
+		if(playerBattlePoints > enemyBattlePoints){
 			return true;
 		}else{
 			return false;

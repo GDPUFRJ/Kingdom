@@ -40,6 +40,10 @@ public class TimerPanel : MonoBehaviour {
     {
         return dayLength;
     }
+    public int GetCurrentDay()
+    {
+        return currentDay;
+    }
 
     private void Start()
     {

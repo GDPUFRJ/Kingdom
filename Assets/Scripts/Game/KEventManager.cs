@@ -71,9 +71,14 @@ public class KEventManager : Singleton<KEventManager> {
     {
         //print("ON AFTER DAY END");
 
-        int BuildingNext = GameManager.Instance.BuildingNext;
-        int FoodNext = GameManager.Instance.FoodNext;
-        int GoldNext = GameManager.Instance.GoldNext;
+        //int BuildingNext = GameManager.Instance.BuildingNext;
+        //int FoodNext = GameManager.Instance.FoodNext;
+        //int GoldNext = GameManager.Instance.GoldNext;
+        int BuildingNextEventModifier = 0;
+        int FoodNextEventModifier = 0;
+        int GoldNextEventModifier = 0;
+        int PopulationNextEventModifier = 0;
+        float HappinessNextEventModifier = 0;
 
         Battle battle = Battle.Allowed;
 
@@ -88,11 +93,13 @@ public class KEventManager : Singleton<KEventManager> {
                 ToRemove.Add(kevt);
                 continue;
             }
-                
 
-            BuildingNext = kevt.GetNextResource(Resource.Building);
-            FoodNext = kevt.GetNextResource(Resource.Food);
-            GoldNext = kevt.GetNextResource(Resource.Gold);
+
+            BuildingNextEventModifier += kevt.GetNextResource(Resource.Building);
+            FoodNextEventModifier += kevt.GetNextResource(Resource.Food);
+            GoldNextEventModifier += kevt.GetNextResource(Resource.Gold);
+            PopulationNextEventModifier += kevt.GetPopulationModifier();
+            HappinessNextEventModifier += kevt.GetHappinessModifier();
 
             if (kevt.battle != Battle.Allowed)
                 battle = Battle.NotAllowed;
@@ -103,13 +110,24 @@ public class KEventManager : Singleton<KEventManager> {
             KEventsActives.Remove(kevt);
         }
 
-        GameManager.Instance.BuildingNextEventModifier = BuildingNext;
-        GameManager.Instance.FoodNextEventModifier = FoodNext;
-        GameManager.Instance.GoldNextEventModifier = GoldNext;
+        // Por enquanto, essas três próximas linhas só servem para mostrar no Inspector do Game Manager que o evento está tendo efeito
+        GameManager.Instance.BuildingNextEventModifier = BuildingNextEventModifier;
+        GameManager.Instance.FoodNextEventModifier = FoodNextEventModifier;
+        GameManager.Instance.GoldNextEventModifier = GoldNextEventModifier;
+        GameManager.Instance.PopulationNextEventModifier = PopulationNextEventModifier;
+        // Para o atributo satisfação, aqui eu registro a intenção de modificá-lo, e a modificação só entra em efeito no script HappinessManager
+        GameManager.Instance.HappinessNextEventModifier = HappinessNextEventModifier;
 
-        GameManager.Instance.BuildingNext += BuildingNext;
-        GameManager.Instance.FoodNext += FoodNext;
-        GameManager.Instance.GoldNext += GoldNext;
+        // Essas três próximas linhas servem para mostrar visualmente no Top Bar Info que o evento está tendo efeito sobre os recursos
+        GameManager.Instance.BuildingNext += BuildingNextEventModifier;
+        GameManager.Instance.FoodNext += FoodNextEventModifier;
+        GameManager.Instance.GoldNext += GoldNextEventModifier;
+
+        // É aqui que ocorre efetivamente a aplicação dos efeitos do evento, para esses recursos
+        GameManager.Instance.Building += BuildingNextEventModifier;
+        GameManager.Instance.Food += FoodNextEventModifier;
+        GameManager.Instance.Gold += GoldNextEventModifier;
+        GameManager.Instance.Population += PopulationNextEventModifier;
 
         GameManager.Instance.CanBattle = battle == Battle.Allowed ? true : false;
 

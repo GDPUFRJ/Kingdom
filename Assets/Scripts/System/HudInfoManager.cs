@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HudInfoManager : MonoBehaviour {
+    [Header("Top Bar Info")]
+    [SerializeField] private Text currentDate;
+    [SerializeField] private Text currentHappiness;
+    [SerializeField] private Text currentPopulation;
     [Header("RIQ (Gold)")]
     [SerializeField] private Text currentRiq;
     [SerializeField] private Text nextRiq;
@@ -21,6 +25,10 @@ public class HudInfoManager : MonoBehaviour {
     }
     public void UpdateHUD()
     {
+        currentDate.text = FindObjectOfType<TimerPanel>().GetCurrentDay().ToString();
+        currentHappiness.text = GameManager.Instance.Happiness.ToString();
+        currentPopulation.text = GameManager.Instance.Population.ToString();
+
         currentRiq.text = GameManager.Instance.Gold.ToString();
         nextRiq.text = "+" + GameManager.Instance.GoldNext.ToString();
 

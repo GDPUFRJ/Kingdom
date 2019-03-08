@@ -16,6 +16,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     public bool canBeAbandonedOrLostInBattle = true;
     public bool dominated = false;
     public bool mainProperty = false;
+    public Kingdom kingdom;
 
     [SerializeField]
     private Level level = Level.Level1;
@@ -29,6 +30,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     private int soldiers = 14;
     private int SoldiersToGetOut = 0;
     private int EnemySoldiers = 0;
+    private BattleInformation attackInformation = null;
 
     [HideInInspector] public List<BattleArrowController> ArrowsComingIn = new List<BattleArrowController>();
     [HideInInspector] public List<BattleArrowController> ArrowsComingOut = new List<BattleArrowController>();
@@ -119,8 +121,10 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
         if (EnemySoldiers > 0)
         {
-            FindObjectOfType<BattleManager>().AddBattleProperty(this);
+            FindObjectOfType<BattleManager>().AddBattleProperty(this, attackInformation);
         }
+
+        attackInformation = null;
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -256,16 +260,16 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
         //desativo a propriedade, depois verifico se algum vizinho ficou
         //isolado. Se ficou, desfaz, se nao, mantém o abandono.
-        if (canBeAbandonedOrLostInBattle == false)
+        if (dominated == false && byUser == true && canBeAbandonedOrLostInBattle == false)
             return false;
 
         this.dominated = dominated;
 
         PropertyManager.Instance.lineManager.UpdateRelatedLines(this);
-
+        UpdateSprite(this);
 
         //distribute soldiers over near friend properties
-        if(dominated == false && byUser == true)
+        if (dominated == false && byUser == true)
         {
             while(soldiers > 0)
             {
@@ -283,6 +287,8 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
         foreach (BattleArrowController bac in ArrowsComingOut)
             bac.UpdateSoldierButton();
+
+        //UpdateSoldierInfo(); // Não tá funcionando
 
         return true;
     }
@@ -416,6 +422,36 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
                 // spriteRenderer.sprite = PropertyManager.Instance.Castelo;
                 break;
         }
+
+        UpdateOutlineSprite(property);
+    }
+
+    private void UpdateOutlineSprite(Property property)
+    {
+        SpriteRenderer outline;
+        try { outline = property.transform.GetChild(0).GetComponent<SpriteRenderer>(); }
+        catch (System.Exception) { return; }
+
+        outline.sprite = property.GetComponent<SpriteRenderer>().sprite;
+
+        switch (property.kingdom)
+        {
+            case Kingdom.Blue:
+                outline.color = PropertyManager.Instance.BlueOutline;
+                break;
+            case Kingdom.Green:
+                outline.color = PropertyManager.Instance.GreenOutline;
+                break;
+            case Kingdom.Orange:
+                outline.color = PropertyManager.Instance.OrangeOutline;
+                break;
+            case Kingdom.Purple:
+                outline.color = PropertyManager.Instance.PurpleOutline;
+                break;
+            case Kingdom.Red:
+                outline.color = PropertyManager.Instance.RedOutline;
+                break;
+        }
     }
 
     public int GetCurrentResource(Resource resource)
@@ -463,6 +499,13 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
                 SoldiersToGetOut += SoldiersToAdd;
                 break;
         }
+    }
+
+    public void AddSoldiers(SoldierType type, int SoldiersToAdd, BattleInformation battleInformation)
+    {
+        AddSoldiers(type, SoldiersToAdd);
+        if (SoldiersToAdd > 0 && type == SoldierType.Enemy)
+            attackInformation = battleInformation;
     }
 
     public int GetSoldiers(SoldierType type)
@@ -520,7 +563,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         if (dominated) numSoldiersTextController.SetColor(false);
         else numSoldiersTextController.SetColor(true);
 
-        NumSoldier.GetComponent<NumSoldiersTextController>().UpdateText(soldiers.ToString());
+        numSoldiersTextController.UpdateText(soldiers.ToString());
     }
 
     public int Compare(object x, object y)

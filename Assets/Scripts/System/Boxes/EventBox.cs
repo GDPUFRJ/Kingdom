@@ -18,7 +18,7 @@ public class EventBox : MonoBehaviour {
         EventInfo e = _event.GetInfo();
         this._event = _event;
         this.panel = _panel;
-        this.title.text = e.name;
+        this.title.text = e.exhibitionName;
         this.description.text = e.description;
         this.remainingDays.text = e.remainingDays.ToString();
     }

@@ -6,8 +6,6 @@ public class HappinessManager : Singleton<HappinessManager> {
 
     protected HappinessManager() { }
 
-    [Range(-100000, -1)]public int GameOverMoney = -10000;
-
     GameManager gm;
     PropertyManager pm;
 
@@ -34,6 +32,7 @@ public class HappinessManager : Singleton<HappinessManager> {
         }
 
         gm.Happiness = NewHappyness / dominatedProperties;
+        gm.Happiness += gm.HappinessNextEventModifier;
     }
 
 
