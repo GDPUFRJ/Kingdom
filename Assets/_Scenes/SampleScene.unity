@@ -1842,8 +1842,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -3070,7 +3070,7 @@ MonoBehaviour:
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -3166,7 +3166,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5248,7 +5248,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5479,7 +5479,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -5638,7 +5638,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -5733,7 +5733,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6237,7 +6237,7 @@ MonoBehaviour:
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -6331,7 +6331,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6946,8 +6946,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7315,7 +7315,7 @@ MonoBehaviour:
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -7407,7 +7407,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7587,8 +7587,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7722,8 +7722,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -8829,7 +8829,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.128, y: -7.241, z: -10}
+  m_LocalPosition: {x: -4.943333, y: 3.9925003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9016,8 +9016,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9374,8 +9374,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9705,8 +9705,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -10018,7 +10018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0026242062, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0.0026242062, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -11003,8 +11003,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -11368,7 +11368,7 @@ MonoBehaviour:
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -11463,7 +11463,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12874,7 +12874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  dayLength: 5
+  dayLength: 0.1
   currentDay: 0
   passedTime: {fileID: 785027692}
 --- !u!1 &786270577
@@ -13308,7 +13308,7 @@ MonoBehaviour:
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -13400,7 +13400,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15447,8 +15447,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -16152,7 +16152,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17580,7 +17580,7 @@ MonoBehaviour:
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -17728,13 +17728,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 1000
-  GoldNext: 237
+  GoldNext: 302
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 273
+  FoodNext: 325
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 315
+  BuildingNext: 342
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -17848,7 +17848,7 @@ MonoBehaviour:
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -17942,7 +17942,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18197,8 +18197,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -18661,7 +18661,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -18755,7 +18755,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19023,7 +19023,7 @@ MonoBehaviour:
   customTitle: castelo vermelho
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 1
   level: 1
@@ -19117,7 +19117,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19280,8 +19280,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -19415,8 +19415,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -20247,7 +20247,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255732447}
   m_HandleRect: {fileID: 1255732446}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -21908,8 +21908,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -22343,8 +22343,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -23778,7 +23778,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -23873,7 +23873,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24375,8 +24375,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -25676,8 +25676,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -25811,8 +25811,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -26608,7 +26608,7 @@ MonoBehaviour:
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -26702,7 +26702,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27340,8 +27340,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -27665,8 +27665,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -28094,7 +28094,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -28187,7 +28187,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28381,7 +28381,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -28475,7 +28475,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29006,8 +29006,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -29755,7 +29755,7 @@ MonoBehaviour:
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -29848,7 +29848,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30454,8 +30454,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -30851,7 +30851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.012128195, y: 0.000076293945}
+  m_AnchoredPosition: {x: 0.014400726, y: 0.000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -31095,8 +31095,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -31230,8 +31230,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -31540,7 +31540,7 @@ MonoBehaviour:
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -31635,7 +31635,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32996,7 +32996,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -33081,7 +33081,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33224,7 +33224,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -33316,7 +33316,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33449,7 +33449,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -33542,7 +33542,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34113,8 +34113,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -34269,8 +34269,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -34566,7 +34566,7 @@ MonoBehaviour:
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -34658,7 +34658,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35375,8 +35375,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -36004,7 +36004,7 @@ MonoBehaviour:
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -36098,7 +36098,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36210,8 +36210,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -36480,8 +36480,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
