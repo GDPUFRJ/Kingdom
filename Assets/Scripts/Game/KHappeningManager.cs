@@ -84,7 +84,6 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
             KHappeningsHistory.Add(HappeningToAdd);
 
             //PEDRO, CHAME O QUE VOCE PRECISA AQUI
-            TimerPanel.SetPause(true);
             GameObject window = Instantiate(GameManager.Instance.happeningWindowPrefab, GameManager.Instance.CanvasHUD); 
             window.GetComponent < HappeningWindow > ().SetHappening(khpp);
             window.GetComponent<HappeningWindow>().UpdateInfo();

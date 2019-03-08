@@ -11,8 +11,12 @@ public class HappeningWindow:MonoBehaviour {
     [SerializeField] private Transform answersRoot; 
     [SerializeField] private GameObject answerPrefab; 
 
-    private KHappening happening; 
+    private KHappening happening;
 
+    private void Start()
+    {
+        TimerPanel.SetPause(true);
+    }
     public void SetHappening(KHappening happening) {
         this.happening = happening; 
     }
