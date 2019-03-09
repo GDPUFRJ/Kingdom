@@ -14,9 +14,49 @@ public class CameraMovement : MonoBehaviour {
 
     private bool canControl = true;
     private float timeToMove = 0.5f;
-    
+
+    private Camera cam;
+    private Vector2 camExtents = new Vector2(), boundsExtents = new Vector2();
+    [SerializeField] private BoxCollider worldCollider;
+
+    private void Start()
+    {
+        cam = GetComponent<Camera>();
+        
+        boundsExtents.y = worldCollider.bounds.extents.y;
+        boundsExtents.x = worldCollider.bounds.extents.x;
+    }
 
     void Update()
+    {
+        HandleTouches();
+        ClampPosition();
+    }
+
+    private void ClampPosition()
+    {
+        camExtents.y = cam.orthographicSize;
+        camExtents.x = cam.aspect * camExtents.y;
+
+        if (transform.position.x + camExtents.x > worldCollider.transform.position.x + boundsExtents.x)
+        {
+            transform.position = new Vector3(worldCollider.transform.position.x + boundsExtents.x - camExtents.x, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x - camExtents.x < worldCollider.transform.position.x - boundsExtents.x)
+        {
+            transform.position = new Vector3(worldCollider.transform.position.x - boundsExtents.x + camExtents.x, transform.position.y, transform.position.z);
+        }
+        if (transform.position.y + camExtents.y > worldCollider.transform.position.y + boundsExtents.y)
+        {
+            transform.position = new Vector3(transform.position.x, worldCollider.transform.position.y + boundsExtents.y - camExtents.y, transform.position.z);
+        }
+        if (transform.position.y - camExtents.y < worldCollider.transform.position.y - boundsExtents.y)
+        {
+            transform.position = new Vector3(transform.position.x, worldCollider.transform.position.y - boundsExtents.y + camExtents.y, transform.position.z);
+        }
+    }
+
+    private void HandleTouches()
     {
         if (!canControl)
             return;
@@ -30,7 +70,7 @@ public class CameraMovement : MonoBehaviour {
             Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
 
             //calcula o vetor distancia entre o ponto anterior e o ponto atual
-            Vector3 touchDeltaMag =  touchZeroPrevPos - touchZero.position;
+            Vector3 touchDeltaMag = touchZeroPrevPos - touchZero.position;
 
             transform.position += touchDeltaMag * MovementSpeed * (Camera.main.orthographicSize / 10);
         }
@@ -65,6 +105,17 @@ public class CameraMovement : MonoBehaviour {
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        canControl = false;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        canControl = true;
+    }
+
     public IEnumerator FollowPosition(Vector2 position)
     {
         canControl = false;
