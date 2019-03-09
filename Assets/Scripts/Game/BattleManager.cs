@@ -5,6 +5,10 @@ using UnityEngine;
 public class BattleManager : MonoBehaviour {
     private List<Property> propertiesInBattle = new List<Property>();
     private List<BattleInformation> battleInformations = new List<BattleInformation>();
+    private int numberOfBattlesLostByThePlayerLastTurn = 0;
+    private int numberOfBattlesWonByThePlayerLastTurn = 0;
+    public int NumberOfBattlesLostByThePlayerLastTurn { get { return numberOfBattlesLostByThePlayerLastTurn; } }
+    public int NumberOfBattlesWonByThePlayerLastTurn { get { return numberOfBattlesWonByThePlayerLastTurn; } }
     [SerializeField] private BattleWindow battleWindow;
     [SerializeField] private int minDiceNumber = 1;
     [SerializeField] private int maxDiceNumber = 6;
@@ -33,6 +37,8 @@ public class BattleManager : MonoBehaviour {
     private IEnumerator BattleRoutine()
     {
         TimerPanel.SetPause(true);
+        numberOfBattlesLostByThePlayerLastTurn = 0;
+        numberOfBattlesWonByThePlayerLastTurn = 0;
         for(int i = 0; i < propertiesInBattle.Count; i++)
         {
             yield return IndividualBattle(propertiesInBattle[i], battleInformations[i]);
@@ -61,12 +67,22 @@ public class BattleManager : MonoBehaviour {
         battleWindow.Show(attackerSoldiers, defenderSoldiers, attackerBattlePoints, defenderBattlePoints, battleInformation);
         if (InvaderIsTheWinner(attackerBattlePoints, defenderBattlePoints))
         {
+            if (property.dominated)
+                numberOfBattlesLostByThePlayerLastTurn++;
+            else
+                numberOfBattlesWonByThePlayerLastTurn++;
+
             property.SetDominated(!property.dominated, false);
             property.SetSoldiers(SoldierType.InProperty, attackerSoldiers - defenderSoldiers);
             property.kingdom = battleInformation.attackingKingdom;
         }
         else
         {
+            if (!property.dominated)
+                numberOfBattlesLostByThePlayerLastTurn++;
+            else
+                numberOfBattlesWonByThePlayerLastTurn++;
+
             property.SetSoldiers(SoldierType.InProperty, defenderSoldiers - attackerSoldiers);
         }
         property.SetSoldiers(SoldierType.Enemy, 0);

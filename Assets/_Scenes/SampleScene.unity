@@ -18329,6 +18329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f20c57b5993c64eaa6eae9cfd98d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  happinessLostByLosingBattle: 5
+  happinessGainedByWinningBattle: 5
+  numberOfTurnsBattlesAffectHappiness: 5
 --- !u!114 &1054705964
 MonoBehaviour:
   m_ObjectHideFlags: 0
