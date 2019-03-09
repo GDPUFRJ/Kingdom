@@ -27,10 +27,11 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 #if UNITY_EDITOR
                 applicationIsQuitting = false;
 #else
+                applicationIsQuitting = false;
                 Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
                     "' already destroyed on application quit." +
                     " Won't create again - returning null.");
-                return null;
+                //return null;
 #endif
             }
 

@@ -54,7 +54,6 @@ public class GameManager:Singleton < GameManager >  {
 
         if (!SaveSystem.newGame)
         {
-            print("Game Manager: Loading game.");
             StartCoroutine(LoadGameCoroutine());
         }
     }
