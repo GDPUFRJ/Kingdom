@@ -62,6 +62,7 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     [Header("Others")]
     public LineManager lineManager;
+    public float invasionChancePerProperty = 0.1f;
 
     [HideInInspector] public List<Property> Propriedades = new List<Property>();
     private int mainProperties = 0;

@@ -1916,8 +1916,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -2280,6 +2280,7 @@ GameObject:
   - component: {fileID: 114956740}
   - component: {fileID: 114956742}
   - component: {fileID: 114956739}
+  - component: {fileID: 114956743}
   m_Layer: 0
   m_Name: Quartel 1
   m_TagString: quarter
@@ -2421,6 +2422,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -210512
+--- !u!114 &114956743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114956737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &115438675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,6 +2960,7 @@ GameObject:
   - component: {fileID: 137315939}
   - component: {fileID: 137315938}
   - component: {fileID: 137315937}
+  - component: {fileID: 137315941}
   m_Layer: 0
   m_Name: Fazenda 1
   m_TagString: farm
@@ -3090,6 +3103,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137315941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137315935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &149715686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3124,6 +3148,7 @@ GameObject:
   - component: {fileID: 173384179}
   - component: {fileID: 173384178}
   - component: {fileID: 173384177}
+  - component: {fileID: 173384181}
   m_Layer: 0
   m_Name: Fazenda 1
   m_TagString: farm
@@ -3147,7 +3172,7 @@ MonoBehaviour:
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -3243,7 +3268,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3267,6 +3292,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &173384181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173384175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &176032457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,6 +4345,7 @@ GameObject:
   - component: {fileID: 259571684}
   - component: {fileID: 259571683}
   - component: {fileID: 259571682}
+  - component: {fileID: 259571686}
   m_Layer: 0
   m_Name: Mina 1
   m_TagString: mine
@@ -4453,6 +4490,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259571686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259571680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271442134
 GameObject:
   m_ObjectHideFlags: 0
@@ -5269,6 +5317,7 @@ GameObject:
   - component: {fileID: 340350039}
   - component: {fileID: 340350040}
   - component: {fileID: 340350038}
+  - component: {fileID: 340350041}
   m_Layer: 0
   m_Name: Fazenda 2
   m_TagString: farm
@@ -5326,7 +5375,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5347,6 +5396,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293810
+--- !u!114 &340350041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340350037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &348688353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5558,7 +5618,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -5695,6 +5755,7 @@ GameObject:
   - component: {fileID: 363470473}
   - component: {fileID: 363470472}
   - component: {fileID: 363470471}
+  - component: {fileID: 363470475}
   m_Layer: 0
   m_Name: Floresta 1
   m_TagString: forest
@@ -5718,7 +5779,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -5813,7 +5874,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5837,6 +5898,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363470475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 363470469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &378208758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,6 +6062,7 @@ GameObject:
   - component: {fileID: 404470568}
   - component: {fileID: 404470567}
   - component: {fileID: 404470566}
+  - component: {fileID: 404470570}
   m_Layer: 0
   m_Name: Fazenda 1
   m_TagString: farm
@@ -6133,6 +6206,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404470570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404470564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &405683378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6296,6 +6380,7 @@ GameObject:
   - component: {fileID: 414272080}
   - component: {fileID: 414272079}
   - component: {fileID: 414272078}
+  - component: {fileID: 414272082}
   m_Layer: 0
   m_Name: Quartel 1
   m_TagString: quarter
@@ -6319,7 +6404,7 @@ MonoBehaviour:
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -6413,7 +6498,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6437,6 +6522,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &414272082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414272076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &418413809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,6 +6620,7 @@ GameObject:
   - component: {fileID: 419071374}
   - component: {fileID: 419071373}
   - component: {fileID: 419071372}
+  - component: {fileID: 419071376}
   m_Layer: 0
   m_Name: Quartel 1
   m_TagString: quarter
@@ -6666,6 +6763,17 @@ MonoBehaviour:
   - {fileID: 1182878594}
   - {fileID: 539240200}
   - {fileID: 1679171063}
+--- !u!114 &419071376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 419071370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &420475202
 Transform:
   m_ObjectHideFlags: 0
@@ -6769,7 +6877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.011023509, y: 0}
+  m_AnchoredPosition: {x: -0.012701976, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -7030,8 +7138,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7090,6 +7198,7 @@ GameObject:
   - component: {fileID: 430192737}
   - component: {fileID: 430192736}
   - component: {fileID: 430192735}
+  - component: {fileID: 430192739}
   m_Layer: 0
   m_Name: Fazenda 2
   m_TagString: farm
@@ -7230,6 +7339,17 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1869930720}
   - {fileID: 1720318631}
+--- !u!114 &430192739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430192733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431223886
 GameObject:
   m_ObjectHideFlags: 0
@@ -7378,6 +7498,7 @@ GameObject:
   - component: {fileID: 433437235}
   - component: {fileID: 433437234}
   - component: {fileID: 433437233}
+  - component: {fileID: 433437237}
   m_Layer: 0
   m_Name: Fazenda 2
   m_TagString: farm
@@ -7401,7 +7522,7 @@ MonoBehaviour:
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -7493,7 +7614,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7517,6 +7638,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433437237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433437231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &439412277
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,8 +7805,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7808,8 +7940,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7868,6 +8000,7 @@ GameObject:
   - component: {fileID: 463094034}
   - component: {fileID: 463094033}
   - component: {fileID: 463094032}
+  - component: {fileID: 463094036}
   m_Layer: 0
   m_Name: Floresta 3
   m_TagString: forest
@@ -8010,6 +8143,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463094036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463094030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &469971036
 GameObject:
   m_ObjectHideFlags: 0
@@ -8023,6 +8167,7 @@ GameObject:
   - component: {fileID: 469971040}
   - component: {fileID: 469971039}
   - component: {fileID: 469971038}
+  - component: {fileID: 469971042}
   m_Layer: 0
   m_Name: Floresta 2
   m_TagString: forest
@@ -8167,6 +8312,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469971042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469971036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &472769807
 GameObject:
   m_ObjectHideFlags: 0
@@ -8223,6 +8379,7 @@ GameObject:
   - component: {fileID: 475447220}
   - component: {fileID: 475447219}
   - component: {fileID: 475447218}
+  - component: {fileID: 475447222}
   m_Layer: 0
   m_Name: Fazenda 1
   m_TagString: farm
@@ -8367,6 +8524,17 @@ MonoBehaviour:
   - {fileID: 1464368163}
   - {fileID: 463094031}
   - {fileID: 811072181}
+--- !u!114 &475447222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 475447216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &479554136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8469,6 +8637,7 @@ GameObject:
   - component: {fileID: 490696589}
   - component: {fileID: 490696588}
   - component: {fileID: 490696587}
+  - component: {fileID: 490696591}
   m_Layer: 0
   m_Name: Floresta 3
   m_TagString: forest
@@ -8611,6 +8780,17 @@ MonoBehaviour:
   - {fileID: 1869930720}
   - {fileID: 1720318631}
   - {fileID: 839423460}
+--- !u!114 &490696591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 490696585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &499883782
 GameObject:
   m_ObjectHideFlags: 0
@@ -8987,7 +9167,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.128, y: -7.241, z: -10}
+  m_LocalPosition: {x: -4.943333, y: 3.9925003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9174,8 +9354,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9302,6 +9482,7 @@ GameObject:
   - component: {fileID: 539240199}
   - component: {fileID: 539240198}
   - component: {fileID: 539240197}
+  - component: {fileID: 539240201}
   m_Layer: 0
   m_Name: Mina 1
   m_TagString: mine
@@ -9445,6 +9626,17 @@ MonoBehaviour:
   - {fileID: 419071375}
   - {fileID: 1182878594}
   - {fileID: 490696590}
+--- !u!114 &539240201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539240195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &545391880
 GameObject:
   m_ObjectHideFlags: 0
@@ -9533,8 +9725,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9864,8 +10056,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9998,6 +10190,7 @@ GameObject:
   - component: {fileID: 609284742}
   - component: {fileID: 609284741}
   - component: {fileID: 609284740}
+  - component: {fileID: 609284744}
   m_Layer: 0
   m_Name: Casleto Roxo
   m_TagString: castle
@@ -10140,6 +10333,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609284744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609284738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &611319636 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224313542454219392, guid: ba28d56f94573384bb723185bc6a2375,
@@ -10178,7 +10382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0026242062, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.0026242062, y: -0.000045776367}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -11163,8 +11367,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -11506,6 +11710,7 @@ GameObject:
   - component: {fileID: 720482598}
   - component: {fileID: 720482597}
   - component: {fileID: 720482596}
+  - component: {fileID: 720482600}
   m_Layer: 0
   m_Name: Fazenda 1
   m_TagString: farm
@@ -11529,7 +11734,7 @@ MonoBehaviour:
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -11624,7 +11829,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11648,6 +11853,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &720482600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720482594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &721058331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13170,6 +13386,7 @@ MonoBehaviour:
   propertyWindowPrefab: {fileID: 1694295567767992, guid: d791603763f064247b76ff6d155ec14f,
     type: 2}
   lineManager: {fileID: 1983170130}
+  invasionChancePerProperty: 0.1
   Propriedades:
   - {fileID: 866971831}
   - {fileID: 1791031546}
@@ -13451,6 +13668,7 @@ GameObject:
   - component: {fileID: 806854720}
   - component: {fileID: 806854719}
   - component: {fileID: 806854718}
+  - component: {fileID: 806854722}
   m_Layer: 0
   m_Name: Quartel 2
   m_TagString: quarter
@@ -13474,7 +13692,7 @@ MonoBehaviour:
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -13566,7 +13784,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13590,6 +13808,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806854722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806854716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809929528
 GameObject:
   m_ObjectHideFlags: 0
@@ -13603,6 +13832,7 @@ GameObject:
   - component: {fileID: 809929532}
   - component: {fileID: 809929531}
   - component: {fileID: 809929530}
+  - component: {fileID: 809929534}
   m_Layer: 0
   m_Name: Mina 2
   m_TagString: mine
@@ -13743,6 +13973,17 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 839423460}
   - {fileID: 1182878594}
+--- !u!114 &809929534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809929528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &810731886
 GameObject:
   m_ObjectHideFlags: 0
@@ -13824,6 +14065,7 @@ GameObject:
   - component: {fileID: 811072184}
   - component: {fileID: 811072183}
   - component: {fileID: 811072182}
+  - component: {fileID: 811072186}
   m_Layer: 0
   m_Name: Fazenda 2
   m_TagString: farm
@@ -13967,6 +14209,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &811072186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 811072180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &815636437
 GameObject:
   m_ObjectHideFlags: 0
@@ -14250,6 +14503,7 @@ GameObject:
   - component: {fileID: 839423459}
   - component: {fileID: 839423458}
   - component: {fileID: 839423457}
+  - component: {fileID: 839423461}
   m_Layer: 0
   m_Name: Casleto Laranja
   m_TagString: castle
@@ -14391,6 +14645,17 @@ MonoBehaviour:
   - {fileID: 490696590}
   - {fileID: 1182878594}
   - {fileID: 809929533}
+--- !u!114 &839423461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839423455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &840870085
 Prefab:
   m_ObjectHideFlags: 0
@@ -15078,6 +15343,7 @@ GameObject:
   - component: {fileID: 866971834}
   - component: {fileID: 866971833}
   - component: {fileID: 866971832}
+  - component: {fileID: 866971836}
   m_Layer: 0
   m_Name: Castelo Azul
   m_TagString: castle
@@ -15217,6 +15483,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866971836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866971830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &868960476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15617,8 +15894,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -16267,6 +16544,7 @@ GameObject:
   - component: {fileID: 946836384}
   - component: {fileID: 946836385}
   - component: {fileID: 946836383}
+  - component: {fileID: 946836386}
   m_Layer: 0
   m_Name: Quartel 1
   m_TagString: quarter
@@ -16324,7 +16602,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16345,6 +16623,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293812
+--- !u!114 &946836386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946836382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &951917380
 GameObject:
   m_ObjectHideFlags: 0
@@ -17753,7 +18042,7 @@ MonoBehaviour:
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -17977,13 +18266,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 1000
-  GoldNext: 237
+  GoldNext: 302
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 273
+  FoodNext: 325
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 315
+  BuildingNext: 342
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -18075,6 +18364,7 @@ GameObject:
   - component: {fileID: 1057051447}
   - component: {fileID: 1057051446}
   - component: {fileID: 1057051445}
+  - component: {fileID: 1057051449}
   m_Layer: 0
   m_Name: Floresta 3
   m_TagString: forest
@@ -18098,7 +18388,7 @@ MonoBehaviour:
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -18192,7 +18482,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18216,6 +18506,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057051449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1057051443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1063859519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18447,8 +18748,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -19011,6 +19312,7 @@ GameObject:
   - component: {fileID: 1099387634}
   - component: {fileID: 1099387633}
   - component: {fileID: 1099387632}
+  - component: {fileID: 1099387636}
   m_Layer: 0
   m_Name: Floresta 3
   m_TagString: forest
@@ -19034,7 +19336,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -19128,7 +19430,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19152,6 +19454,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1099387636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099387630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1105631876
 GameObject:
   m_ObjectHideFlags: 0
@@ -19374,6 +19687,7 @@ GameObject:
   - component: {fileID: 1125633897}
   - component: {fileID: 1125633896}
   - component: {fileID: 1125633895}
+  - component: {fileID: 1125633899}
   m_Layer: 0
   m_Name: Casleto Vermelho
   m_TagString: castle
@@ -19397,7 +19711,7 @@ MonoBehaviour:
   customTitle: castelo vermelho
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 1
   level: 1
@@ -19491,7 +19805,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19515,6 +19829,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1125633899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125633893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1129510096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19654,8 +19979,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -19789,8 +20114,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -20455,6 +20780,7 @@ GameObject:
   - component: {fileID: 1165873110}
   - component: {fileID: 1165873109}
   - component: {fileID: 1165873108}
+  - component: {fileID: 1165873112}
   m_Layer: 0
   m_Name: Floresta 2
   m_TagString: forest
@@ -20594,6 +20920,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1165873112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1165873106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1166172477
 GameObject:
   m_ObjectHideFlags: 0
@@ -20860,6 +21197,7 @@ GameObject:
   - component: {fileID: 1182878593}
   - component: {fileID: 1182878592}
   - component: {fileID: 1182878591}
+  - component: {fileID: 1182878595}
   m_Layer: 0
   m_Name: Floresta 2
   m_TagString: forest
@@ -21002,6 +21340,17 @@ MonoBehaviour:
   - {fileID: 539240200}
   - {fileID: 839423460}
   - {fileID: 809929533}
+--- !u!114 &1182878595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182878589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1194557831
 GameObject:
   m_ObjectHideFlags: 0
@@ -21284,6 +21633,7 @@ GameObject:
   - component: {fileID: 1227787734}
   - component: {fileID: 1227787735}
   - component: {fileID: 1227787733}
+  - component: {fileID: 1227787736}
   m_Layer: 0
   m_Name: Quartel 2
   m_TagString: quarter
@@ -21362,6 +21712,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293814
+--- !u!114 &1227787736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227787732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1234089218
 GameObject:
   m_ObjectHideFlags: 0
@@ -21375,6 +21736,7 @@ GameObject:
   - component: {fileID: 1234089222}
   - component: {fileID: 1234089221}
   - component: {fileID: 1234089220}
+  - component: {fileID: 1234089224}
   m_Layer: 0
   m_Name: Mina 1
   m_TagString: mine
@@ -21518,6 +21880,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234089224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1234089218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1234937610
 GameObject:
   m_ObjectHideFlags: 0
@@ -21531,6 +21904,7 @@ GameObject:
   - component: {fileID: 1234937614}
   - component: {fileID: 1234937613}
   - component: {fileID: 1234937612}
+  - component: {fileID: 1234937616}
   m_Layer: 0
   m_Name: Fazenda 3
   m_TagString: farm
@@ -21673,6 +22047,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234937616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1234937610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1239192785
 GameObject:
   m_ObjectHideFlags: 0
@@ -22408,8 +22793,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -22677,6 +23062,7 @@ GameObject:
   - component: {fileID: 1300151430}
   - component: {fileID: 1300151431}
   - component: {fileID: 1300151429}
+  - component: {fileID: 1300151432}
   m_Layer: 0
   m_Name: Fazenda 2
   m_TagString: farm
@@ -22755,6 +23141,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293816
+--- !u!114 &1300151432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300151428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1300576441
 GameObject:
   m_ObjectHideFlags: 0
@@ -22843,8 +23240,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -24087,6 +24484,7 @@ GameObject:
   - component: {fileID: 1354812538}
   - component: {fileID: 1354812537}
   - component: {fileID: 1354812536}
+  - component: {fileID: 1354812540}
   m_Layer: 0
   m_Name: Floresta 1
   m_TagString: forest
@@ -24229,6 +24627,17 @@ MonoBehaviour:
   - {fileID: 1869930720}
   - {fileID: 539240200}
   - {fileID: 1464368163}
+--- !u!114 &1354812540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354812534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1358666751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24288,6 +24697,7 @@ GameObject:
   - component: {fileID: 1358880441}
   - component: {fileID: 1358880442}
   - component: {fileID: 1358880440}
+  - component: {fileID: 1358880443}
   m_Layer: 0
   m_Name: Floresta 1
   m_TagString: forest
@@ -24366,6 +24776,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293818
+--- !u!114 &1358880443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358880439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1360693709
 GameObject:
   m_ObjectHideFlags: 0
@@ -24379,6 +24800,7 @@ GameObject:
   - component: {fileID: 1360693713}
   - component: {fileID: 1360693712}
   - component: {fileID: 1360693711}
+  - component: {fileID: 1360693715}
   m_Layer: 0
   m_Name: Mina 2
   m_TagString: mine
@@ -24402,7 +24824,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -24497,7 +24919,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24521,6 +24943,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360693715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360693709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363153459
 GameObject:
   m_ObjectHideFlags: 0
@@ -24534,6 +24967,7 @@ GameObject:
   - component: {fileID: 1363153463}
   - component: {fileID: 1363153462}
   - component: {fileID: 1363153461}
+  - component: {fileID: 1363153465}
   m_Layer: 0
   m_Name: Floresta 1
   m_TagString: forest
@@ -24675,6 +25109,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363153465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1363153459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1366942773
 GameObject:
   m_ObjectHideFlags: 0
@@ -25097,8 +25542,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -25452,6 +25897,7 @@ GameObject:
   - component: {fileID: 1464368166}
   - component: {fileID: 1464368165}
   - component: {fileID: 1464368164}
+  - component: {fileID: 1464368168}
   m_Layer: 0
   m_Name: Mina 2
   m_TagString: mine
@@ -25593,6 +26039,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464368168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464368162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1466718074
 GameObject:
   m_ObjectHideFlags: 0
@@ -26399,8 +26856,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -26534,8 +26991,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -27406,7 +27863,7 @@ MonoBehaviour:
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -27500,7 +27957,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27537,6 +27994,7 @@ GameObject:
   - component: {fileID: 1567179688}
   - component: {fileID: 1567179687}
   - component: {fileID: 1567179686}
+  - component: {fileID: 1567179690}
   m_Layer: 0
   m_Name: Quartel 1
   m_TagString: quarter
@@ -27679,6 +28137,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567179690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567179684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1568852439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28139,8 +28608,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -28464,8 +28933,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -28740,6 +29209,7 @@ GameObject:
   - component: {fileID: 1564080338}
   - component: {fileID: 1564080337}
   - component: {fileID: 1564080336}
+  - component: {fileID: 1637140328}
   m_Layer: 0
   m_Name: Floresta 2
   m_TagString: forest
@@ -28747,6 +29217,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1637140328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1637140327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645001498
 GameObject:
   m_ObjectHideFlags: 0
@@ -28871,6 +29352,7 @@ GameObject:
   - component: {fileID: 1672169559}
   - component: {fileID: 1672169558}
   - component: {fileID: 1672169557}
+  - component: {fileID: 1672169561}
   m_Layer: 0
   m_Name: Mina 1
   m_TagString: mine
@@ -28894,7 +29376,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -28987,7 +29469,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29011,6 +29493,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672169561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672169555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1677766328
 GameObject:
   m_ObjectHideFlags: 0
@@ -29159,6 +29652,7 @@ GameObject:
   - component: {fileID: 1679171066}
   - component: {fileID: 1679171065}
   - component: {fileID: 1679171064}
+  - component: {fileID: 1679171068}
   m_Layer: 0
   m_Name: Floresta 2
   m_TagString: forest
@@ -29182,7 +29676,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -29276,7 +29770,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29300,6 +29794,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1679171068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679171062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1681083865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29807,8 +30312,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -30002,6 +30507,7 @@ GameObject:
   - component: {fileID: 1720318630}
   - component: {fileID: 1720318629}
   - component: {fileID: 1720318628}
+  - component: {fileID: 1720318632}
   m_Layer: 0
   m_Name: Quartel 2
   m_TagString: quarter
@@ -30143,6 +30649,17 @@ MonoBehaviour:
   - {fileID: 1869930720}
   - {fileID: 430192738}
   - {fileID: 490696590}
+--- !u!114 &1720318632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1720318626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721969917
 GameObject:
   m_ObjectHideFlags: 0
@@ -30536,6 +31053,7 @@ GameObject:
   - component: {fileID: 1761837155}
   - component: {fileID: 1761837154}
   - component: {fileID: 1761837153}
+  - component: {fileID: 1761837157}
   m_Layer: 0
   m_Name: Quartel 2
   m_TagString: quarter
@@ -30559,7 +31077,7 @@ MonoBehaviour:
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -30652,7 +31170,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30676,6 +31194,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761837157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761837151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1764638303
 GameObject:
   m_ObjectHideFlags: 0
@@ -30778,6 +31307,7 @@ GameObject:
   - component: {fileID: 1791031549}
   - component: {fileID: 1791031548}
   - component: {fileID: 1791031547}
+  - component: {fileID: 1791031551}
   m_Layer: 0
   m_Name: Porto
   m_TagString: other
@@ -30920,6 +31450,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791031551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791031545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1791632649
 GameObject:
   m_ObjectHideFlags: 0
@@ -31259,8 +31800,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -31778,7 +32319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.014111445, y: -0.000015258789}
+  m_AnchoredPosition: {x: -0.0006538918, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -32022,8 +32563,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -32157,8 +32698,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -32217,6 +32758,7 @@ GameObject:
   - component: {fileID: 1869930719}
   - component: {fileID: 1869930718}
   - component: {fileID: 1869930717}
+  - component: {fileID: 1869930721}
   m_Layer: 0
   m_Name: "O\xE1sis"
   m_TagString: other
@@ -32359,6 +32901,17 @@ MonoBehaviour:
   - {fileID: 430192738}
   - {fileID: 1720318631}
   - {fileID: 490696590}
+--- !u!114 &1869930721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869930715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1876826329
 GameObject:
   m_ObjectHideFlags: 0
@@ -32446,6 +32999,7 @@ GameObject:
   - component: {fileID: 1877658835}
   - component: {fileID: 1877658834}
   - component: {fileID: 1877658833}
+  - component: {fileID: 1877658837}
   m_Layer: 0
   m_Name: Casleto Verde Oeste
   m_TagString: castle
@@ -32469,7 +33023,7 @@ MonoBehaviour:
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -32564,7 +33118,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32588,6 +33142,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1877658837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877658831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1878283158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33903,6 +34468,7 @@ GameObject:
   - component: {fileID: 1944822424}
   - component: {fileID: 1944822426}
   - component: {fileID: 1944822423}
+  - component: {fileID: 1944822427}
   m_Layer: 0
   m_Name: Floresta 1
   m_TagString: forest
@@ -33926,7 +34492,7 @@ MonoBehaviour:
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -34011,7 +34577,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34047,6 +34613,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceID: -293808
+--- !u!114 &1944822427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944822421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1948871985
 GameObject:
   m_ObjectHideFlags: 0
@@ -34132,6 +34709,7 @@ GameObject:
   - component: {fileID: 1962148912}
   - component: {fileID: 1962148911}
   - component: {fileID: 1962148910}
+  - component: {fileID: 1962148914}
   m_Layer: 0
   m_Name: Mina 1
   m_TagString: mine
@@ -34155,7 +34733,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -34247,7 +34825,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34271,6 +34849,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1962148914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962148908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1967214574
 GameObject:
   m_ObjectHideFlags: 0
@@ -34358,6 +34947,7 @@ GameObject:
   - component: {fileID: 1974962873}
   - component: {fileID: 1974962872}
   - component: {fileID: 1974962871}
+  - component: {fileID: 1974962875}
   m_Layer: 0
   m_Name: Mina 3
   m_TagString: mine
@@ -34381,7 +34971,7 @@ MonoBehaviour:
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -34474,7 +35064,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34498,6 +35088,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974962875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974962869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1976000011
 GameObject:
   m_ObjectHideFlags: 0
@@ -34585,6 +35186,7 @@ GameObject:
   - component: {fileID: 1976614325}
   - component: {fileID: 1976614324}
   - component: {fileID: 1976614323}
+  - component: {fileID: 1976614327}
   m_Layer: 0
   m_Name: Quartel 2
   m_TagString: quarter
@@ -34728,6 +35330,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976614327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976614321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1983170128
 GameObject:
   m_ObjectHideFlags: 0
@@ -35046,8 +35659,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -35202,8 +35815,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -35477,6 +36090,7 @@ GameObject:
   - component: {fileID: 2034458923}
   - component: {fileID: 2034458922}
   - component: {fileID: 2034458921}
+  - component: {fileID: 2034458925}
   m_Layer: 0
   m_Name: Mina 2
   m_TagString: mine
@@ -35500,7 +36114,7 @@ MonoBehaviour:
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -35592,7 +36206,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35616,6 +36230,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2034458925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2034458919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2040384719
 GameObject:
   m_ObjectHideFlags: 0
@@ -36309,8 +36934,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -36916,6 +37541,7 @@ GameObject:
   - component: {fileID: 2107316312}
   - component: {fileID: 2107316311}
   - component: {fileID: 2107316310}
+  - component: {fileID: 2107316314}
   m_Layer: 0
   m_Name: Casleto Verde Leste
   m_TagString: castle
@@ -36939,7 +37565,7 @@ MonoBehaviour:
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -37033,7 +37659,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37057,6 +37683,17 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107316314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107316308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2109029376
 GameObject:
   m_ObjectHideFlags: 0
@@ -37145,8 +37782,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -37415,8 +38052,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -37820,7 +38457,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645001500}
   m_HandleRect: {fileID: 1645001499}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999972
   m_NumberOfSteps: 0
   m_OnValueChanged:
