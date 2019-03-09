@@ -110,8 +110,12 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
     private void OnDayEnd()
     {
-        if (!dominated) return;
-        AddConsumption();
+        if (dominated)
+        {
+            AddConsumption();
+        }
+
+        RestockSoldiers();
     }
 
     private void OnAfterDayEnd()
@@ -216,23 +220,38 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
                 GameManager.Instance.Gold += goldLevel1;
                 GameManager.Instance.Food += foodLevel1;
                 GameManager.Instance.Building += buildingLevel1;
-                AddSoldiers(SoldierType.InProperty, soldierLevel1);
                 break;
             case Level.Level2:
                 GameManager.Instance.Gold += goldLevel2;
                 GameManager.Instance.Food += foodLevel2;
                 GameManager.Instance.Building += buildingLevel2;
-                AddSoldiers(SoldierType.InProperty, soldierLevel2);
                 break;
             case Level.Level3:
                 GameManager.Instance.Gold += goldLevel3;
                 GameManager.Instance.Food += foodLevel3;
                 GameManager.Instance.Building += buildingLevel3;
-                AddSoldiers(SoldierType.InProperty, soldierLevel3);
                 break;
         }
 
         ProcessHappiness();
+    }
+
+    private void RestockSoldiers()
+    {
+        switch (Level)
+        {
+            case Level.Level1:
+                AddSoldiers(SoldierType.InProperty, soldierLevel1);
+                break;
+            case Level.Level2:
+                AddSoldiers(SoldierType.InProperty, soldierLevel2);
+                break;
+            case Level.Level3:
+                AddSoldiers(SoldierType.InProperty, soldierLevel3);
+                break;
+        }
+
+        UpdateSoldierInfo();
     }
 
     public void LevelUp()
