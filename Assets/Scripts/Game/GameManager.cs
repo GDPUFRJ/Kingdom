@@ -54,6 +54,7 @@ public class GameManager:Singleton < GameManager >  {
 
         if (!SaveSystem.newGame)
         {
+            print("Game Manager: Loading game.");
             StartCoroutine(LoadGameCoroutine());
         }
     }
@@ -160,6 +161,7 @@ public class GameManager:Singleton < GameManager >  {
         Building = saveData.building;
         FindObjectOfType<TimerPanel>().SetCurrentDay(saveData.day);
         StartingKingdomController.Instance.PlayerKingdom = saveData.playerKingdom;
+        Camera.main.transform.position = new Vector3(saveData.cameraX, saveData.cameraY, Camera.main.transform.position.z);
         foreach (PropertySaveData pSaveData in saveData.properties)
         {
             PropertyManager.Instance.Propriedades[pSaveData.index].SetDominated(pSaveData.dominated, false);
@@ -216,7 +218,6 @@ public class GameManager:Singleton < GameManager >  {
         TimerPanel.SetPause(false);
     }
 
-    // Funções provisórias para testar o funcionamento do sistema de save
     public void SaveGame()
     {
         SaveSystem.SaveGame();

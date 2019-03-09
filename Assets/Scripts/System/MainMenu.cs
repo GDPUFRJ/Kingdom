@@ -26,11 +26,17 @@ public class MainMenu : MonoBehaviour {
     }
     public void Continue()
     {
-        loadingPanel.Open("SampleScene");
+        if (SaveSystem.CheckSaveDataExistence())
+        {
+            SaveSystem.newGame = false;
+            loadingPanel.Open("SampleScene");
+        }
     }
     public void NewGame()
     {
-        print("New Game");
+        SaveSystem.newGame = true;
+        SaveSystem.ResetSaveData();
+        loadingPanel.Open("SampleScene");
     }
     public void Credits()
     {

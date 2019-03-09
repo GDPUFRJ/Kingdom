@@ -96,4 +96,12 @@ public class TimerPanel : MonoBehaviour {
     {
         paused = isPaused;
     }
+
+    public static void UnsubscribeDelegates()
+    {
+        OnBeforeDayEnd = null;
+        OnDayEnd = null;
+        OnAfterDayEnd = null;
+        OnBattleTime = null;
+    }
 }

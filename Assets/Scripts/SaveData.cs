@@ -15,8 +15,10 @@ public class SaveData
     public Kingdom playerKingdom;
     public PropertySaveData[] properties;
     public EventSaveData[] activeEvents;
+    public float cameraX;
+    public float cameraY;
 
-    public SaveData(GameManager gameManager, TimerPanel timer, PropertyManager propertyManager, KEventManager eventManager, StartingKingdomController startingKingdomController)
+    public SaveData(GameManager gameManager, TimerPanel timer, PropertyManager propertyManager, KEventManager eventManager, StartingKingdomController startingKingdomController, Transform camera)
     {
         population = gameManager.Population;
         happiness = gameManager.Happiness;
@@ -25,6 +27,8 @@ public class SaveData
         building = gameManager.Building;
         day = timer.GetCurrentDay();
         playerKingdom = startingKingdomController.PlayerKingdom;
+        cameraX = camera.position.x;
+        cameraY = camera.position.y;
         properties = new PropertySaveData[propertyManager.Propriedades.Count];
         foreach (Property p in propertyManager.Propriedades)
         {

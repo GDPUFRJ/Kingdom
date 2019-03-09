@@ -6,21 +6,20 @@ public static class SaveSystem
 {
     public static bool newGame = true;
 
+    private static string path = Application.persistentDataPath + "/SaveData.kin";
+
     public static void SaveGame()
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/SaveData.kin";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SaveData saveData = new SaveData(GameManager.Instance, MonoBehaviour.FindObjectOfType<TimerPanel>(), PropertyManager.Instance, KEventManager.Instance, StartingKingdomController.Instance);
+        SaveData saveData = new SaveData(GameManager.Instance, MonoBehaviour.FindObjectOfType<TimerPanel>(), PropertyManager.Instance, KEventManager.Instance, StartingKingdomController.Instance, Camera.main.transform);
         formatter.Serialize(stream, saveData);
         stream.Close();
     }
 
     public static SaveData LoadGame()
     {
-        string path = Application.persistentDataPath + "/SaveData.kin";
-
         if (!File.Exists(path))
         {
             Debug.LogError("Save file not found in path: '" + path + "'");
@@ -33,5 +32,18 @@ public static class SaveSystem
         stream.Close();
 
         return saveData;
+    }
+
+    public static void ResetSaveData()
+    {
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+        }
+    }
+
+    public static bool CheckSaveDataExistence()
+    {
+        return File.Exists(path);
     }
 }

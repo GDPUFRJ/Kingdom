@@ -583,4 +583,3 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         TimerPanel.OnDayEnd -= OnDayEnd;
     }
 }
-
