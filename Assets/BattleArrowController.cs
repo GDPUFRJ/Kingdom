@@ -39,7 +39,7 @@ public class BattleArrowController : MonoBehaviour {
         if (Destination.dominated) Destination.AddSoldiers(SoldierType.InProperty, SoldiersToBeTransfered);
         else
         {
-            Destination.AddSoldiers(SoldierType.Enemy, SoldiersToBeTransfered, new BattleInformation(Source.kingdom, Destination.kingdom));
+            Destination.AddSoldiers(SoldierType.Enemy, SoldiersToBeTransfered, new BattleInformation(Source.kingdom, Destination.kingdom, SoldiersToBeTransfered, Destination.GetSoldiers(SoldierType.InProperty)));
         }
         SoldiersToBeTransfered = 0;
         UpdateArrowText();

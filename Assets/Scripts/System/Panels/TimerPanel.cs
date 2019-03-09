@@ -32,6 +32,17 @@ public class TimerPanel : MonoBehaviour {
     public delegate void BattleTime();
     public static event BattleTime OnBattleTime;
 
+    // Assim como os outros eventos, várias entidades podem se inscrever a ele, mas ele é engatilhado pelo BattleManager, no momento em que as batalhas terminam
+    // Mas de qualquer forma, ele é executado a cada turno, como os outros eventos.
+    public delegate void BattleEnd();
+    public static event BattleEnd OnBattleEnded;
+
+    public static void OnBattleEnd()
+    {
+        if (OnBattleEnded != null)
+            OnBattleEnded();
+    }
+
     public float GetTime()
     {
         return time;
@@ -103,5 +114,6 @@ public class TimerPanel : MonoBehaviour {
         OnDayEnd = null;
         OnAfterDayEnd = null;
         OnBattleTime = null;
+        OnBattleEnded = null;
     }
 }

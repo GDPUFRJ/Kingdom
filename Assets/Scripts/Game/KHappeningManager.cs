@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class KHappeningManager:Singleton < KHappeningManager >  {
 
+    // Esta variável serve apenas para propósitos de debug. Ela deve ser setada como true no inspector quando você quiser que um acontecimento ocorra
+    public bool forceHappeningNextTurn = false;
+
     protected KHappeningManager() {}
 
     public List < KHappening > KHappenings = new List < KHappening > (); 
@@ -23,7 +26,7 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
 
     // Use this for initialization
     void Start () {
-        TimerPanel.OnAfterDayEnd += OnAfterDayEnd; 
+        TimerPanel.OnBattleEnded += OnBattlesEnded; 
 
         HappeningsByRarity.Add(MuitoComumHappenings); 
         HappeningsByRarity.Add(ComumHappenings); 
@@ -55,27 +58,38 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
         }
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private bool AttemptToGenerateNewKHappening() {
 
-    private bool GenerateNewKHappening() {
+        if (forceHappeningNextTurn)
+        {
+            forceHappeningNextTurn = false;
+            return GenerateNewKHappening();
+        }
+
         //To be modified
         if (UnityEngine.Random.Range(0, 1000000) < 750000)
-            return false; 
+            return false;
 
-        int rarity = UnityEngine.Random.Range(0, 1000000) % 5; 
+        return GenerateNewKHappening();
+    }
 
-        List < KHappening > SelectedList = HappeningsByRarity[rarity];
+    private bool GenerateNewKHappening()
+    {
+        bool hasSelectedAList = false;
+        List<KHappening> SelectedList = new List<KHappening>();
+        while (!hasSelectedAList)
+        {
+            int rarity = Random.Range(0, HappeningsByRarity.Count);
 
-        //Isto está aqui para evitar uma divisao por zero, caso nao tenha acontecimentos de uma determinada raridade
-        if (SelectedList.Count == 0) return FireHappening((KHappening)null);
+            SelectedList = HappeningsByRarity[rarity];
+
+            //Isto está aqui para repetir o sorteio, caso nao tenha acontecimentos de uma determinada raridade
+            if (SelectedList.Count > 0) hasSelectedAList = true;
+        }
 
         KHappening selectedHappening = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
 
-        return FireHappening(selectedHappening); 
-
+        return FireHappening(selectedHappening);
     }
 
     public bool FireHappening(KHappening khpp) {
@@ -107,7 +121,7 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
         return null; 
     }
 
-    private void OnAfterDayEnd() {
-        GenerateNewKHappening(); 
+    private void OnBattlesEnded() {
+        AttemptToGenerateNewKHappening(); 
     }
 }

@@ -28,6 +28,7 @@ public class BattleManager : MonoBehaviour {
     public void OnBattlesEnd()
     {
         //Chamado quando terminam todas as batalhas
+        TimerPanel.OnBattleEnd();
     }
     private IEnumerator BattleRoutine()
     {
@@ -46,27 +47,27 @@ public class BattleManager : MonoBehaviour {
         yield return cam.FollowPosition(property.gameObject.transform.position);
         yield return cam.Zoom(true);
 
-        int attackerSoldiers = property.GetSoldiers(SoldierType.Enemy);
-        int defenderSoldiers = property.GetSoldiers(SoldierType.InProperty);
+        int attackerSoldiers = battleInformation.attackingSoldiers;
+        int defenderSoldiers = battleInformation.defendingSoldiers;
         int attackerBattlePoints = GetBattlePoints(attackerSoldiers);
         int defenderBattlePoints = GetBattlePoints(defenderSoldiers);
 
-        if (PropertyIsEmpty(property))
-        {
-            property.SetDominated(!property.dominated, false);
-            property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.Enemy));
-            property.kingdom = battleInformation.attackingKingdom;
-        }
+        //if (PropertyIsEmpty(property))
+        //{
+        //    property.SetDominated(!property.dominated, false);
+        //    property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.Enemy));
+        //    property.kingdom = battleInformation.attackingKingdom;
+        //}
         battleWindow.Show(attackerSoldiers, defenderSoldiers, attackerBattlePoints, defenderBattlePoints, battleInformation);
         if (InvaderIsTheWinner(attackerBattlePoints, defenderBattlePoints))
         {
             property.SetDominated(!property.dominated, false);
-            property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.Enemy) - property.GetSoldiers(SoldierType.InProperty));
+            property.SetSoldiers(SoldierType.InProperty, attackerSoldiers - defenderSoldiers);
             property.kingdom = battleInformation.attackingKingdom;
         }
         else
         {
-            property.SetSoldiers(SoldierType.InProperty, property.GetSoldiers(SoldierType.InProperty) - property.GetSoldiers(SoldierType.Enemy));
+            property.SetSoldiers(SoldierType.InProperty, defenderSoldiers - attackerSoldiers);
         }
         property.SetSoldiers(SoldierType.Enemy, 0);
         yield return battleWindow.currentBattle;
@@ -85,7 +86,7 @@ public class BattleManager : MonoBehaviour {
         return battlePoints;
     }
     
-    private bool PropertyIsEmpty(Property p) { return p.GetSoldiers(SoldierType.InProperty) == 0; }
+    //private bool PropertyIsEmpty(Property p) { return p.GetSoldiers(SoldierType.InProperty) == 0; }
 
     private bool InvaderIsTheWinner(int attackerBattlePoints, int defenderBatterPoints)
     {

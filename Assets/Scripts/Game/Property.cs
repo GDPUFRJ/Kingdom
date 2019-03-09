@@ -78,6 +78,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     {
         TimerPanel.OnDayEnd += OnDayEnd;
         TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
+        TimerPanel.OnBattleEnded += OnBattleEnd;
 
         sectionManager = GameManager.Instance.CanvasHUD.GetComponent<SectionManager>();
         EditButtons = GameManager.Instance.EditButtons;
@@ -114,8 +115,6 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         {
             AddConsumption();
         }
-
-        RestockSoldiers();
     }
 
     private void OnAfterDayEnd()
@@ -130,6 +129,11 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         }
 
         attackInformation = null;
+    }
+
+    private void OnBattleEnd()
+    {
+        RestockSoldiers();
     }
 
     public void OnPointerClick(PointerEventData eventData)

@@ -40,11 +40,15 @@ public class BattleInformation
 {
     public Kingdom attackingKingdom;
     public Kingdom defendingKingdom;
+    public int attackingSoldiers;
+    public int defendingSoldiers;
 
-    public BattleInformation(Kingdom attackingKingdom, Kingdom defendingKingdom)
+    public BattleInformation(Kingdom attackingKingdom, Kingdom defendingKingdom, int attackingSoldiers, int defendingSoldiers)
     {
         this.attackingKingdom = attackingKingdom;
         this.defendingKingdom = defendingKingdom;
+        this.attackingSoldiers = attackingSoldiers;
+        this.defendingSoldiers = defendingSoldiers;
     }
 }
 
