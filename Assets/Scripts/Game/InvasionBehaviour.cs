@@ -19,7 +19,7 @@ public class InvasionBehaviour : MonoBehaviour
 
     private void AttemptInvasion()
     {
-        if (!property.dominated && property.GetSoldiers(SoldierType.Enemy) == 0 && HasDominatedNeighbor() && Random.Range(0f, 1f) < PropertyManager.Instance.invasionChancePerProperty && property.GetSoldiers(SoldierType.InProperty) > 0)
+        if (!property.dominated && HasDominatedNeighbor() && property.GetSoldiers(SoldierType.Enemy) == 0 && Random.Range(0f, 1f) < PropertyManager.Instance.invasionChancePerProperty && property.GetSoldiers(SoldierType.InProperty) > 0)
         {
             PerformInvasion();
         }
@@ -29,7 +29,7 @@ public class InvasionBehaviour : MonoBehaviour
     {
         foreach (var neighbor in property.Neighbors)
         {
-            if (neighbor.dominated)
+            if (neighbor.dominated && neighbor.GetSoldiers(SoldierType.ToGetOut) == 0)
             {
                 return true;
             }
@@ -43,7 +43,7 @@ public class InvasionBehaviour : MonoBehaviour
         List<Property> candidates = new List<Property>();
         foreach (var neighbor in property.Neighbors)
         {
-            if (neighbor.dominated)
+            if (neighbor.dominated && neighbor.GetSoldiers(SoldierType.ToGetOut) == 0)
             {
                 candidates.Add(neighbor);
             }

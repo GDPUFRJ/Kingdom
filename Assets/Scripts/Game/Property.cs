@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, IComparer
 {
     public int index;
+    public List<Property> myCastles; // Lista que aponta para os castelos do reino a que essa propriedade pertence. Preicsa ser uma lista pois um reino pode ter vários castelos ao longo do jogo
     public Property Data { get; set; } //IVertex
     public List<IEdge<Line>> Linhas = new List<IEdge<Line>>();
 
@@ -125,6 +126,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
         if (EnemySoldiers > 0)
         {
+            attackInformation.attackingSoldiers = EnemySoldiers; // bug fix para quando várias propriedades atacam o mesmo alvo
             FindObjectOfType<BattleManager>().AddBattleProperty(this, attackInformation);
         }
 
@@ -588,6 +590,20 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         else numSoldiersTextController.SetColor(true);
 
         numSoldiersTextController.UpdateText(soldiers.ToString());
+    }
+
+    public void WeakenCastle()
+    {
+        foreach (var castle in myCastles)
+        {
+            castle.RemoveSoldiers(SoldierType.InProperty, PropertyManager.Instance.soldiersLostByCastleWhenPropertyIsDefeated);
+        }
+    }
+
+    public void ChangeKingdom(Kingdom newKingdom)
+    {
+        kingdom = newKingdom;
+        myCastles = PropertyManager.Instance.GetCastlesByKingdom(kingdom);
     }
 
     public int Compare(object x, object y)

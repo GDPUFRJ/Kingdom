@@ -2301,6 +2301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
+  myCastles:
+  - {fileID: 866971831}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -2981,6 +2983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 3
+  myCastles:
+  - {fileID: 866971831}
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -3169,6 +3173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 11
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -4366,6 +4372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 22
+  myCastles:
+  - {fileID: 609284739}
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -5617,6 +5625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 14
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -5778,6 +5788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 31
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -6085,6 +6098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 21
+  myCastles:
+  - {fileID: 609284739}
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -6403,6 +6418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 32
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -6729,6 +6747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 44
+  myCastles:
+  - {fileID: 839423460}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -6804,6 +6824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 5
+  myCastles:
+  - {fileID: 866971831}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 0
@@ -7307,6 +7329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 48
+  myCastles:
+  - {fileID: 839423460}
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -7521,6 +7545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 40
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -8023,6 +8050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 28
+  myCastles:
+  - {fileID: 609284739}
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -8190,6 +8219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 7
+  myCastles:
+  - {fileID: 866971831}
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -8488,6 +8519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 42
+  myCastles:
+  - {fileID: 839423460}
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -8746,6 +8779,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 49
+  myCastles:
+  - {fileID: 839423460}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -9591,6 +9626,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 45
+  myCastles:
+  - {fileID: 839423460}
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -10213,6 +10250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 25
+  myCastles: []
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -10384,7 +10422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0026242062, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.0026242062, y: -0.000045776367}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &614949902
@@ -11733,6 +11771,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 35
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -13389,6 +13430,7 @@ MonoBehaviour:
     type: 2}
   lineManager: {fileID: 1983170130}
   invasionChancePerProperty: 0.1
+  soldiersLostByCastleWhenPropertyIsDefeated: 5
   Propriedades:
   - {fileID: 866971831}
   - {fileID: 1791031546}
@@ -13691,6 +13733,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 41
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -13941,6 +13986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 52
+  myCastles:
+  - {fileID: 839423460}
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -14088,6 +14135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 29
+  myCastles:
+  - {fileID: 609284739}
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -14612,7 +14661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 51
-  customTitle: castelo roxo
+  myCastles: []
+  customTitle: castelo laranja
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -15366,6 +15416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  myCastles: []
   customTitle: castelo azul
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -18041,6 +18092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 13
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -18391,6 +18444,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 18
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -19339,6 +19394,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 39
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -19714,6 +19772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 16
+  myCastles: []
   customTitle: castelo vermelho
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -20807,6 +20866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 23
+  myCastles:
+  - {fileID: 609284739}
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -21310,6 +21371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 46
+  myCastles:
+  - {fileID: 839423460}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -21419,6 +21482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 6
+  myCastles:
+  - {fileID: 866971831}
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -21763,6 +21828,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 4
+  myCastles:
+  - {fileID: 866971831}
   customTitle: mina 1
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -21931,6 +21998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 8
+  myCastles:
+  - {fileID: 866971831}
   customTitle: Fazenda 3
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -24597,6 +24666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 43
+  myCastles:
+  - {fileID: 839423460}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -24827,6 +24898,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 33
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -24994,6 +25068,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 20
+  myCastles:
+  - {fileID: 609284739}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -25924,6 +26000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 27
+  myCastles:
+  - {fileID: 609284739}
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -27866,6 +27944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 12
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -28021,6 +28101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 24
+  myCastles:
+  - {fileID: 609284739}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -29379,6 +29461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 17
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -29679,6 +29763,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 36
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -30620,6 +30707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 50
+  myCastles:
+  - {fileID: 839423460}
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -31012,6 +31101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 9
+  myCastles:
+  - {fileID: 866971831}
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -31080,6 +31171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 15
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -31334,6 +31427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  myCastles:
+  - {fileID: 866971831}
   customTitle: porto
   type: 5
   canBeAbandonedOrLostInBattle: 1
@@ -32871,6 +32966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 47
+  myCastles:
+  - {fileID: 839423460}
   customTitle: porto
   type: 5
   canBeAbandonedOrLostInBattle: 1
@@ -33026,7 +33123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 38
-  customTitle: castelo roxo
+  myCastles: []
+  customTitle: castelo verde oeste
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -34495,6 +34593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 10
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -34736,6 +34836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 30
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -34974,6 +35077,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 34
+  myCastles:
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -35213,6 +35319,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 26
+  myCastles:
+  - {fileID: 609284739}
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -36117,6 +36225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 19
+  myCastles:
+  - {fileID: 1125633894}
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -37568,7 +37678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 37
-  customTitle: castelo roxo
+  myCastles: []
+  customTitle: castelo verde leste
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 1

@@ -63,8 +63,11 @@ public class PropertyManager : Singleton<PropertyManager> {
     [Header("Others")]
     public LineManager lineManager;
     public float invasionChancePerProperty = 0.1f;
+    [Tooltip("The amount of soldiers that a castle loses when a property of their kingdom is defeated in battle.")]
+    public int soldiersLostByCastleWhenPropertyIsDefeated = 5;
 
     [HideInInspector] public List<Property> Propriedades = new List<Property>();
+    private List<Property> castles = new List<Property>();
     private int mainProperties = 0;
     [HideInInspector] public int MainProperties
     {
@@ -77,11 +80,39 @@ public class PropertyManager : Singleton<PropertyManager> {
         Propriedades = new List<Property>(GetComponentsInChildren<Property>());
         foreach(Property p in Propriedades)
         {
-            if (p.mainProperty) MainProperties++;
+            if (p.mainProperty)
+            {
+                MainProperties++;
+                castles.Add(p);
+            }
+
             MapGraph.vertices.Add(p);
             p.index = Propriedades.IndexOf(p);
         }
 
+        foreach (var p in Propriedades)
+        {
+            if (p.mainProperty)
+            {
+                p.myCastles = null;
+            }
+            else
+            {
+                p.myCastles = GetCastlesByKingdom(p.kingdom);
+            }
+        }
+
         hasFinishedSettingUp = true;
+    }
+
+    public List<Property> GetCastlesByKingdom(Kingdom kingdom)
+    {
+        List<Property> list = new List<Property>();
+        foreach(var castle in castles)
+        {
+            if (castle.kingdom == kingdom)
+                list.Add(castle);
+        }
+        return list;
     }
 }

@@ -22,6 +22,7 @@ public class BattleManager : MonoBehaviour {
     {
         if (propertiesInBattle == null)
             ResetBattleList();
+
         propertiesInBattle.Add(prop);
         battleInformations.Add(attackInformation);
     }
@@ -74,7 +75,8 @@ public class BattleManager : MonoBehaviour {
 
             property.SetDominated(!property.dominated, false);
             property.SetSoldiers(SoldierType.InProperty, attackerSoldiers - defenderSoldiers);
-            property.kingdom = battleInformation.attackingKingdom;
+            property.WeakenCastle();
+            property.ChangeKingdom(battleInformation.attackingKingdom);
         }
         else
         {
