@@ -8,7 +8,7 @@ public class Section : MonoBehaviour
     [SerializeField] private PanelSwitcher panelSwitcher;
     private RectTransform rect;
 
-    private void Start()
+    protected virtual void Start()
     {
         rect = GetComponent<RectTransform>();
     }

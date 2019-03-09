@@ -7,13 +7,20 @@ public class StartingKingdomController : Singleton<StartingKingdomController>
     [SerializeField] private Transform camera;
 
     private Kingdom kingdom;
-    public Kingdom PlayerKingdom { get { return kingdom; } }
+    public Kingdom PlayerKingdom { get { return kingdom; } set { kingdom = value; } }
 
     protected StartingKingdomController() { }
 
     private void Awake()
     {
-        DefinePlayerKingdom();
+        if (SaveSystem.newGame)
+        {
+            DefinePlayerKingdom();
+        }
+    }
+
+    private void Start()
+    {
         SetUpCameraPosition();
     }
 

@@ -7,6 +7,9 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class PropertyManager : Singleton<PropertyManager> {
 
+    private bool hasFinishedSettingUp = false;
+    public bool HasFinishedSettingUp { get { return hasFinishedSettingUp; } }
+
     protected PropertyManager() { } // guarantee this will be always a singleton only - can't use the constructor!
 
     public Graph<Property> MapGraph = new Graph<Property>();
@@ -75,6 +78,9 @@ public class PropertyManager : Singleton<PropertyManager> {
         {
             if (p.mainProperty) MainProperties++;
             MapGraph.vertices.Add(p);
+            p.index = Propriedades.IndexOf(p);
         }
+
+        hasFinishedSettingUp = true;
     }
 }

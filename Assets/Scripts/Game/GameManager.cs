@@ -50,7 +50,12 @@ public class GameManager:Singleton < GameManager >  {
         TimerPanel.OnDayEnd += OnDayEnd;
         TimerPanel.OnBattleTime += TimerPanel_OnBattleTime;
         OnDayEnd(); 
-        hud = FindObjectOfType < HudInfoManager > (); 
+        hud = FindObjectOfType < HudInfoManager > ();
+
+        if (!SaveSystem.newGame)
+        {
+            StartCoroutine(LoadGameCoroutine());
+        }
     }
 
     private void TimerPanel_OnBattleTime()
@@ -133,5 +138,91 @@ public class GameManager:Singleton < GameManager >  {
         //ToDo
         print("You lost the game!");
         Time.timeScale = 0f;
+    }
+
+    private IEnumerator LoadGameCoroutine()
+    {
+        // Waits for the PropertyManager to finish setting up
+        TimerPanel.SetPause(true);
+        while(!PropertyManager.Instance.HasFinishedSettingUp)
+        {
+            yield return null;
+        }
+
+        // Loads game
+        SaveData saveData = SaveSystem.LoadGame();
+
+        // Overwrites saved game state over current game state
+        Population = saveData.population;
+        Happiness = saveData.happiness;
+        Gold = saveData.gold;
+        Food = saveData.food;
+        Building = saveData.building;
+        FindObjectOfType<TimerPanel>().SetCurrentDay(saveData.day);
+        StartingKingdomController.Instance.PlayerKingdom = saveData.playerKingdom;
+        foreach (PropertySaveData pSaveData in saveData.properties)
+        {
+            PropertyManager.Instance.Propriedades[pSaveData.index].SetDominated(pSaveData.dominated, false);
+            PropertyManager.Instance.Propriedades[pSaveData.index].SetSoldiers(SoldierType.InProperty, pSaveData.soldiers);
+            PropertyManager.Instance.Propriedades[pSaveData.index].Level = pSaveData.level;
+            PropertyManager.Instance.Propriedades[pSaveData.index].UpdateSprite(PropertyManager.Instance.Propriedades[pSaveData.index]);
+            PropertyManager.Instance.Propriedades[pSaveData.index].UpdateSoldierInfo();
+        }
+        if (saveData.activeEvents != null)
+        {
+            KEventManager.Instance.ClearActiveEvents();
+            foreach (EventSaveData eSaveData in saveData.activeEvents)
+            {
+                KEvent kevt = ScriptableObject.CreateInstance<KEvent>();
+                kevt.ExhibitionName = eSaveData.ExhibitionName;
+                kevt.InternalName = eSaveData.InternalName;
+                kevt.Description = eSaveData.Description;
+                kevt.Duration = eSaveData.Duration;
+                kevt.LeftDuration = eSaveData.LeftDuration;
+                kevt.ActiveIntensity = eSaveData.ActiveIntensity;
+                kevt.mode = eSaveData.mode;
+                kevt.battle = eSaveData.battle;
+                kevt.chance = eSaveData.chance;
+                kevt.PercentGoldLight = eSaveData.PercentGoldLight;
+                kevt.PercentFoodLight = eSaveData.PercentFoodLight;
+                kevt.PercentBuildingLight = eSaveData.PercentBuildingLight;
+                kevt.PercentPeopleLight = eSaveData.PercentPeopleLight;
+                kevt.PercentHappinessLight = eSaveData.PercentHappinessLight;
+                kevt.PercentGoldMedium = eSaveData.PercentGoldMedium;
+                kevt.PercentFoodMedium = eSaveData.PercentFoodMedium;
+                kevt.PercentBuildingMedium = eSaveData.PercentBuildingMedium;
+                kevt.PercentPeopleMedium = eSaveData.PercentPeopleMedium;
+                kevt.PercentHappinessMedium = eSaveData.PercentHappinessMedium;
+                kevt.PercentGoldHeavy = eSaveData.PercentGoldHeavy;
+                kevt.PercentFoodHeavy = eSaveData.PercentFoodHeavy;
+                kevt.PercentBuildingHeavy = eSaveData.PercentBuildingHeavy;
+                kevt.PercentPeopleHeavy = eSaveData.PercentPeopleHeavy;
+                kevt.PercentHappinessHeavy = eSaveData.PercentHappinessHeavy;
+                kevt.AbsoluteGoldLight = eSaveData.AbsoluteGoldLight;
+                kevt.AbsoluteFoodLight = eSaveData.AbsoluteFoodLight;
+                kevt.AbsoluteBuildingLight = eSaveData.AbsoluteBuildingLight;
+                kevt.AbsoluteGoldMedium = eSaveData.AbsoluteGoldMedium;
+                kevt.AbsoluteFoodMedium = eSaveData.AbsoluteFoodMedium;
+                kevt.AbsoluteBuildingMedium = eSaveData.AbsoluteBuildingMedium;
+                kevt.AbsoluteGoldHeavy = eSaveData.AbsoluteGoldHeavy;
+                kevt.AbsoluteFoodHeavy = eSaveData.AbsoluteFoodHeavy;
+                kevt.AbsoluteBuildingHeavy = eSaveData.AbsoluteBuildingHeavy;
+                kevt.showInInspector = eSaveData.showInInspector;
+                KEventManager.Instance.AddActiveEvent(kevt);
+            }
+        }
+
+        hud.UpdateHUD();
+        TimerPanel.SetPause(false);
+    }
+
+    // Funções provisórias para testar o funcionamento do sistema de save
+    public void SaveGame()
+    {
+        SaveSystem.SaveGame();
+    }
+    public void LoadGame()
+    {
+        StartCoroutine(LoadGameCoroutine());
     }
 }

@@ -188,4 +188,14 @@ public class KEventManager : Singleton<KEventManager> {
     {
         return KEventsActives;
     }
+
+    public void AddActiveEvent(KEvent kevt)
+    {
+        KEventsActives.Add(kevt);
+    }
+
+    public void ClearActiveEvents()
+    {
+        KEventsActives = new List<KEvent>();
+    }
 }

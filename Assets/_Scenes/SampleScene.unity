@@ -772,8 +772,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -1028,6 +1028,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 173384176}
   end: {fileID: 469971037}
+--- !u!1 &58981941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 58981942}
+  - component: {fileID: 58981944}
+  - component: {fileID: 58981943}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &58981942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58981941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 294862300}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &58981943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58981941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Save
+--- !u!222 &58981944
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58981941}
 --- !u!1 &61902014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,8 +1916,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -2225,6 +2299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 2
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -2434,8 +2509,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -2892,6 +2967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 3
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -3067,10 +3143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 11
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -3166,7 +3243,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4251,6 +4328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 22
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -4564,6 +4642,128 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282332268}
+--- !u!1 &294862299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 294862300}
+  - component: {fileID: 294862303}
+  - component: {fileID: 294862302}
+  - component: {fileID: 294862301}
+  m_Layer: 5
+  m_Name: Save Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &294862300
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294862299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 58981942}
+  m_Father: {fileID: 781580106}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.8693373, y: 0.75470096}
+  m_AnchorMax: {x: 1, y: 0.8018235}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &294862301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294862299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 294862302}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1054705961}
+        m_MethodName: SaveGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &294862302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294862299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &294862303
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294862299}
 --- !u!1 &296329065
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,7 +5448,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5402,8 +5602,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -5476,10 +5676,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 14
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -5635,6 +5836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 31
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -5845,8 +6047,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -5929,6 +6131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 21
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -6234,6 +6437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 32
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -6526,7 +6730,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6547,10 +6751,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 44
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -6610,6 +6815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 5
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 0
@@ -6811,8 +7017,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -6946,8 +7152,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7090,7 +7296,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7111,10 +7317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 48
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -7312,6 +7519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 40
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -7801,6 +8009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 28
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -7955,6 +8164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 7
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -8219,7 +8429,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8240,10 +8450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 42
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -8464,7 +8675,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8485,10 +8696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 49
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -8829,7 +9041,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.128, y: -7.241, z: -10}
+  m_LocalPosition: {x: 4.1372724, y: 5.747273, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9016,8 +9228,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9228,7 +9440,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9249,10 +9461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 45
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -9374,8 +9587,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9705,8 +9918,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -9858,6 +10071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 25
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -10511,8 +10725,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -11003,8 +11217,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -11365,6 +11579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 35
   customTitle: fazenda 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
@@ -12765,6 +12980,8 @@ RectTransform:
   - {fileID: 1170363735}
   - {fileID: 2040384720}
   - {fileID: 319030514}
+  - {fileID: 294862300}
+  - {fileID: 931257681}
   m_Father: {fileID: 213335080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13305,6 +13522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 41
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -13521,7 +13739,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13542,10 +13760,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 52
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -13676,6 +13895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 29
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -14166,7 +14386,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14187,10 +14407,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 51
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 4
   level: 1
@@ -14849,8 +15070,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -14928,6 +15149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   customTitle: castelo azul
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -15582,8 +15804,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -15913,6 +16135,128 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &931257680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 931257681}
+  - component: {fileID: 931257684}
+  - component: {fileID: 931257683}
+  - component: {fileID: 931257682}
+  m_Layer: 5
+  m_Name: Load Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &931257681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931257680}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999313, y: 0.9999313, z: 0.9999313}
+  m_Children:
+  - {fileID: 1010592738}
+  m_Father: {fileID: 781580106}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.8693248, y: 0.7033166}
+  m_AnchorMax: {x: 1, y: 0.75043917}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &931257682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931257680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 931257683}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1054705961}
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &931257683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931257680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &931257684
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931257680}
 --- !u!1 &940699380
 GameObject:
   m_ObjectHideFlags: 0
@@ -16152,7 +16496,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16306,8 +16650,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -17010,6 +17354,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 1234089219}
   end: {fileID: 1791031546}
+--- !u!1 &1010592737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1010592738}
+  - component: {fileID: 1010592740}
+  - component: {fileID: 1010592739}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1010592738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1010592737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 931257681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1010592739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1010592737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Load
+--- !u!222 &1010592740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1010592737}
 --- !u!1 &1012073561
 GameObject:
   m_ObjectHideFlags: 0
@@ -17577,10 +17995,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 13
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -17728,13 +18147,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 1000
-  GoldNext: 237
+  GoldNext: 228
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 273
+  FoodNext: 337
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 315
+  BuildingNext: 305
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -17845,10 +18264,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 18
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -17942,7 +18362,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18332,8 +18752,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -18658,6 +19078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 39
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -19020,10 +19441,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 16
   customTitle: castelo vermelho
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 1
   level: 1
@@ -19117,7 +19539,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19415,8 +19837,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -19979,6 +20401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 23
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -20448,7 +20871,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20469,10 +20892,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 46
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -20566,6 +20990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 6
   customTitle: fazenda 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -20896,6 +21321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 4
   customTitle: mina 1
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -21051,6 +21477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 8
   customTitle: Fazenda 3
   type: 3
   canBeAbandonedOrLostInBattle: 1
@@ -21908,8 +22335,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -22043,8 +22470,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -22343,8 +22770,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -23549,7 +23976,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23570,10 +23997,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 43
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -23775,6 +24203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 33
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -23929,6 +24358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 20
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -24375,8 +24805,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -24749,6 +25179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 27
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -25093,8 +25524,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -25228,8 +25659,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -25811,8 +26242,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -26605,10 +27036,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 12
   customTitle: floresta 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -26702,7 +27134,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26758,6 +27190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 24
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -28091,10 +28524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 17
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -28187,7 +28621,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28378,6 +28812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 36
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
@@ -29285,7 +29720,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29306,10 +29741,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 50
   customTitle: quartel 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -29686,6 +30122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 9
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -29752,10 +30189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 15
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -29848,7 +30286,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29993,6 +30431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 1
   customTitle: porto
   type: 5
   canBeAbandonedOrLostInBattle: 1
@@ -30454,8 +30893,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -30851,7 +31290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.014400726, y: 0.000076293945}
+  m_AnchoredPosition: {x: 0.009183885, y: 0.000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1838778317
@@ -31374,7 +31813,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1cf87839c2f079c4e8a46351d3da5c34, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31395,10 +31834,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 47
   customTitle: porto
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -31537,6 +31977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 38
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -31942,8 +32383,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -32376,8 +32817,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -32993,10 +33434,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 10
   customTitle: floresta 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -33081,7 +33523,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33221,6 +33663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 30
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -33446,6 +33889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 34
   customTitle: fazenda 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
@@ -33672,6 +34116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 26
   customTitle: quartel 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
@@ -34113,8 +34558,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -34563,10 +35008,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 19
   customTitle: mina 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -34658,7 +35104,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34882,8 +35328,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -35375,8 +35821,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -35922,8 +36368,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -36001,6 +36447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f28fea9a9a565846954b5458e4896e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 37
   customTitle: castelo roxo
   type: 0
   canBeAbandonedOrLostInBattle: 1
@@ -36345,8 +36792,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -36885,8 +37332,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645001500}
   m_HandleRect: {fileID: 1645001499}
   m_Direction: 0
-  m_Value: 0.29411766
-  m_Size: 0.9999949
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

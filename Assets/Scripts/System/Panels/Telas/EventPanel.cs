@@ -7,6 +7,17 @@ public class EventPanel : Section
     [SerializeField] private GameObject eventBoxPrefab;
     [SerializeField] private Transform root;
 
+    protected override void Start()
+    {
+        base.Start();
+        TimerPanel.OnAfterDayEnd += OnAfterDayEnd;
+    }
+
+    private void OnAfterDayEnd()
+    {
+        PrepareContent();
+    }
+
     public override void PrepareContent()
     {
         DeleteAllChilds();

@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-
+[System.Serializable]
 public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, IComparer
 {
+    public int index;
     public Property Data { get; set; } //IVertex
     public List<IEdge<Line>> Linhas = new List<IEdge<Line>>();
 
