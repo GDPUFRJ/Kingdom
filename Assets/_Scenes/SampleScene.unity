@@ -773,8 +773,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -1314,6 +1314,7 @@ GameObject:
   - component: {fileID: 72278908}
   - component: {fileID: 72278910}
   - component: {fileID: 72278909}
+  - component: {fileID: 72278911}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1378,6 +1379,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 72278907}
+--- !u!114 &72278911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 72278907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: salvar
+  englishText: save
+  mainMenu: 0
 --- !u!1 &74773466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1633,7 @@ GameObject:
   - component: {fileID: 92112878}
   - component: {fileID: 92112880}
   - component: {fileID: 92112879}
+  - component: {fileID: 92112881}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1682,6 +1698,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 92112877}
+--- !u!114 &92112881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 92112877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: Derrota
+  englishText: Defeat
+  mainMenu: 0
 --- !u!114 &93560218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2605,8 +2635,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -5760,8 +5790,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -6007,7 +6037,7 @@ MonoBehaviour:
   englishTitle: forest 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -6102,7 +6132,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6225,8 +6255,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -6642,7 +6672,7 @@ MonoBehaviour:
   englishTitle: barracks 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -6736,7 +6766,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6943,7 +6973,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6971,7 +7001,7 @@ MonoBehaviour:
   englishTitle: barracks 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -7247,8 +7277,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -7527,7 +7557,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7555,7 +7585,7 @@ MonoBehaviour:
   englishTitle: farm 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -7773,7 +7803,7 @@ MonoBehaviour:
   englishTitle: farm 2
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -7865,7 +7895,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8056,8 +8086,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -8191,8 +8221,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -8737,7 +8767,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8765,7 +8795,7 @@ MonoBehaviour:
   englishTitle: farm 1
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -8999,7 +9029,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9027,7 +9057,7 @@ MonoBehaviour:
   englishTitle: forest 3
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -9454,7 +9484,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.943333, y: 3.9925003, z: -10}
+  m_LocalPosition: {x: 4.1372724, y: 5.747273, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9854,7 +9884,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9882,7 +9912,7 @@ MonoBehaviour:
   englishTitle: mine 1
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -11326,8 +11356,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -12217,7 +12247,7 @@ MonoBehaviour:
   englishTitle: farm 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -12312,7 +12342,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12576,6 +12606,7 @@ GameObject:
   - component: {fileID: 728086365}
   - component: {fileID: 728086367}
   - component: {fileID: 728086366}
+  - component: {fileID: 728086368}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -12640,6 +12671,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728086364}
+--- !u!114 &728086368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728086364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: voltar ao menu
+  englishText: main menu
+  mainMenu: 0
 --- !u!1001 &739592971
 Prefab:
   m_ObjectHideFlags: 0
@@ -13216,6 +13261,310 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522295700945860, guid: 73aaa70e1cdd50d4cae4362627e2b490, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886601721715570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886601721715570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886601721715570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 290.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224777536927063200, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224777536927063200, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224777536927063200, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 290.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224342336348781574, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224342336348781574, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224342336348781574, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 290.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886601721715570, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -308.02002
+      objectReference: {fileID: 0}
+    - target: {fileID: 224777536927063200, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -107.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224342336348781574, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -246.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224479655390435606, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224479655390435606, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224479655390435606, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 243.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 224922528943005300, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224922528943005300, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224922528943005300, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 243.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 224737861759992496, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224737861759992496, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224737861759992496, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 136.66116
+      objectReference: {fileID: 0}
+    - target: {fileID: 224737861759992496, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 253.32234
+      objectReference: {fileID: 0}
+    - target: {fileID: 224631269532369214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224631269532369214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224631269532369214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 380.51117
+      objectReference: {fileID: 0}
+    - target: {fileID: 224631269532369214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 214.37767
+      objectReference: {fileID: 0}
+    - target: {fileID: 224479655390435606, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -71.225
+      objectReference: {fileID: 0}
+    - target: {fileID: 224922528943005300, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -175.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224737861759992496, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -45.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224737861759992496, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 90.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224631269532369214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -45.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224631269532369214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 90.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062924193149314, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -26.981247
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062924193149314, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062924193149314, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062924193149314, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 308.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 224133711323423214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224133711323423214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224133711323423214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 308.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 224403863183307788, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224403863183307788, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224403863183307788, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 94.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224410371214908062, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224410371214908062, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224410371214908062, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 201.78665
+      objectReference: {fileID: 0}
+    - target: {fileID: 224114266838596356, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224114266838596356, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224114266838596356, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 309.4233
+      objectReference: {fileID: 0}
+    - target: {fileID: 224357630493580424, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224357630493580424, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224357630493580424, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 144.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683090026425948, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683090026425948, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683090026425948, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 263
+      objectReference: {fileID: 0}
+    - target: {fileID: 224133711323423214, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -86.20625
+      objectReference: {fileID: 0}
+    - target: {fileID: 224403863183307788, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 224410371214908062, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 224114266838596356, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 224357630493580424, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683090026425948, guid: 73aaa70e1cdd50d4cae4362627e2b490,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73aaa70e1cdd50d4cae4362627e2b490, type: 2}
@@ -14237,7 +14586,7 @@ MonoBehaviour:
   englishTitle: barracks 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -14329,7 +14678,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14462,7 +14811,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14490,7 +14839,7 @@ MonoBehaviour:
   englishTitle: mine 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -15208,7 +15557,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15235,7 +15584,7 @@ MonoBehaviour:
   englishTitle: orange castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 4
   level: 1
@@ -15911,8 +16260,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -16531,8 +16880,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -16666,8 +17015,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -17406,8 +17755,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -18751,6 +19100,7 @@ GameObject:
   - component: {fileID: 1054232072}
   - component: {fileID: 1054232074}
   - component: {fileID: 1054232073}
+  - component: {fileID: 1054232075}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -18817,6 +19167,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1054232071}
+--- !u!114 &1054232075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054232071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: voltar ao menu principal
+  englishText: back to main menu
+  mainMenu: 0
 --- !u!1 &1054705958
 GameObject:
   m_ObjectHideFlags: 0
@@ -18914,13 +19278,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 1000
-  GoldNext: 302
+  GoldNext: 228
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 325
+  FoodNext: 337
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 342
+  BuildingNext: 305
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -19513,8 +19877,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -19770,8 +20134,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -20108,7 +20472,7 @@ MonoBehaviour:
   englishTitle: forest 3
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -20202,7 +20566,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20756,8 +21120,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -21143,6 +21507,7 @@ GameObject:
   - component: {fileID: 1153601552}
   - component: {fileID: 1153601554}
   - component: {fileID: 1153601553}
+  - component: {fileID: 1153601555}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -21209,6 +21574,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1153601551}
+--- !u!114 &1153601555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1153601551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: 'gerenciar
+
+    tropas'
+  englishText: 'manage
+
+    troops'
+  mainMenu: 0
 --- !u!1 &1155445370
 GameObject:
   m_ObjectHideFlags: 0
@@ -22069,7 +22452,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22097,7 +22480,7 @@ MonoBehaviour:
   englishTitle: forest 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -23716,8 +24099,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -25559,7 +25942,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25587,7 +25970,7 @@ MonoBehaviour:
   englishTitle: forest 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -25824,7 +26207,7 @@ MonoBehaviour:
   englishTitle: mine 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -25919,7 +26302,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27399,8 +27782,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -27534,8 +27917,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -27982,8 +28365,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -28799,6 +29182,7 @@ GameObject:
   - component: {fileID: 1549345135}
   - component: {fileID: 1549345137}
   - component: {fileID: 1549345136}
+  - component: {fileID: 1549345138}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -28863,6 +29247,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549345134}
+--- !u!114 &1549345138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549345134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: retomar
+  englishText: return
+  mainMenu: 0
 --- !u!1 &1561055801
 GameObject:
   m_ObjectHideFlags: 0
@@ -29769,8 +30167,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -30094,8 +30492,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -30415,6 +30813,7 @@ GameObject:
   - component: {fileID: 1612773829}
   - component: {fileID: 1612773831}
   - component: {fileID: 1612773830}
+  - component: {fileID: 1612773832}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -30479,6 +30878,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1612773828}
+--- !u!114 &1612773832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612773828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: "Vit\xF3ria!"
+  englishText: Victory!
+  mainMenu: 0
 --- !u!1 &1634359961
 GameObject:
   m_ObjectHideFlags: 0
@@ -31094,7 +31507,7 @@ MonoBehaviour:
   englishTitle: forest 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -31188,7 +31601,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31720,8 +32133,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -32000,7 +32413,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32028,7 +32441,7 @@ MonoBehaviour:
   englishTitle: barracks 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -34087,8 +34500,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -34222,8 +34635,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -34367,7 +34780,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1cf87839c2f079c4e8a46351d3da5c34, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34395,7 +34808,7 @@ MonoBehaviour:
   englishTitle: oasis
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -34552,7 +34965,7 @@ MonoBehaviour:
   englishTitle: west green castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -34647,7 +35060,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34966,8 +35379,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -35023,6 +35436,7 @@ GameObject:
   - component: {fileID: 1899828552}
   - component: {fileID: 1899828554}
   - component: {fileID: 1899828553}
+  - component: {fileID: 1899828555}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -35087,6 +35501,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1899828551}
+--- !u!114 &1899828555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1899828551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: voltar ao menu
+  englishText: main menu
+  mainMenu: 0
 --- !u!1 &1913582952
 GameObject:
   m_ObjectHideFlags: 0
@@ -35498,8 +35926,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -36372,7 +36800,7 @@ MonoBehaviour:
   englishTitle: mine 1
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -36464,7 +36892,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36614,7 +37042,7 @@ MonoBehaviour:
   englishTitle: mine 3
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -36707,7 +37135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37520,8 +37948,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -38229,8 +38657,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -39287,8 +39715,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -39373,7 +39801,7 @@ MonoBehaviour:
   englishTitle: east green castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -39467,7 +39895,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39590,8 +40018,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -39725,8 +40153,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
-      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}
@@ -39860,8 +40288,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
-      key1: {r: 0.5529412, g: 0.38039216, b: 0.22745098, a: 1}
+      key0: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
+      key1: {r: 0.36078432, g: 0.21568628, b: 0.08627451, a: 1}
       key2: {r: 0, g: 1, b: 0, a: 1}
       key3: {r: 0, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 1, a: 0}

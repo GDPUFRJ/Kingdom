@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: 401343710}
   - component: {fileID: 401343712}
   - component: {fileID: 401343711}
+  - component: {fileID: 401343713}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -862,6 +863,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 401343709}
+--- !u!114 &401343713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401343709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: efeitos
+  englishText: SFX
+  mainMenu: 1
 --- !u!1 &412922806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1043,7 @@ GameObject:
   - component: {fileID: 495623992}
   - component: {fileID: 495623994}
   - component: {fileID: 495623993}
+  - component: {fileID: 495623995}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1092,6 +1108,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495623991}
+--- !u!114 &495623995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495623991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: "m\xFAsica"
+  englishText: music
+  mainMenu: 1
 --- !u!1 &599465855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1271,7 @@ GameObject:
   - component: {fileID: 660345921}
   - component: {fileID: 660345923}
   - component: {fileID: 660345922}
+  - component: {fileID: 660345924}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1305,6 +1336,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 660345920}
+--- !u!114 &660345924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660345920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: voltar
+  englishText: back
+  mainMenu: 1
 --- !u!1 &664130262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1729,7 @@ GameObject:
   - component: {fileID: 837861424}
   - component: {fileID: 837861426}
   - component: {fileID: 837861425}
+  - component: {fileID: 837861427}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1748,6 +1794,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837861423}
+--- !u!114 &837861427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837861423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: "op\xE7\xF5es"
+  englishText: settings
+  mainMenu: 1
 --- !u!1 &865528097
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,6 +4108,7 @@ GameObject:
   - component: {fileID: 1902306840}
   - component: {fileID: 1902306842}
   - component: {fileID: 1902306841}
+  - component: {fileID: 1902306843}
   m_Layer: 5
   m_Name: "Texto Cr\xE9ditos"
   m_TagString: Untagged
@@ -4116,6 +4177,28 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1902306839}
+--- !u!114 &1902306843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902306839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: "Ideia original: Pedro Marques\n\nGest\xE3o de Projeto: Pedro Marques,
+    Victor Corr\xEAa, Vitor Barcellos, Pierluigi Piccolo Raso\r\n\nGame Design: Victor
+    Corr\xEAa, Lucas Cordeiro\r\n\nPrograma\xE7\xE3o: Alonso Matos, Pedro Marques,
+    Vitor Barcellos\r\n\nTextos: Victor Corr\xEAa\r\n\nArte: Roberta Paz, Hor\xE1cio
+    Mac\xEAdo\r\n\nImplementa\xE7\xE3o do \xE1udio: Wilson Santos e Janderson Barbosa"
+  englishText: "Original concept: Pedro Marques\r\n\nProject management: Pedro Marques,
+    Victor Corr\xEAa, Vitor Barcellos, Pierluigi Piccolo Raso\r\n\nGame Design: Victor
+    Corr\xEAa, Lucas Cordeiro\r\n\nCoding: Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTexts:
+    Victor Corr\xEAa\r\n\n2D Art: Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nAudio implementation:
+    Wilson Santos, Janderson Barboza"
+  mainMenu: 1
 --- !u!1 &1920872405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,6 +4209,7 @@ GameObject:
   - component: {fileID: 1920872406}
   - component: {fileID: 1920872408}
   - component: {fileID: 1920872407}
+  - component: {fileID: 1920872409}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -4190,6 +4274,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920872405}
+--- !u!114 &1920872409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920872405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: "cr\xE9ditos"
+  englishText: credits
+  mainMenu: 1
 --- !u!1 &1960769574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4200,6 +4298,7 @@ GameObject:
   - component: {fileID: 1960769575}
   - component: {fileID: 1960769577}
   - component: {fileID: 1960769576}
+  - component: {fileID: 1960769578}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -4264,6 +4363,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960769574}
+--- !u!114 &1960769578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960769574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a423ef191e33ef4890e1b3cf6b1f429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugueseText: voltar
+  englishText: back
+  mainMenu: 1
 --- !u!1 &1971461649
 GameObject:
   m_ObjectHideFlags: 0

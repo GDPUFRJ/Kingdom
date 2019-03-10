@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class TranslatedTextBehaviour : MonoBehaviour
 {
+    [TextArea]
     [SerializeField] private string portugueseText;
+    [TextArea]
     [SerializeField] private string englishText;
     [Tooltip("Marque essa caixa se o texto estiver no Menu Principal.")]
     [SerializeField] private bool mainMenu = false;
