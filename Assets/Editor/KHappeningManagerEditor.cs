@@ -61,11 +61,11 @@ public class KHappeningManagerEditor : Editor
                     EditorGUI.indentLevel++;
 
                     EditorGUILayout.PrefixLabel("Portuguese");
+                    EditorStyles.textField.wordWrap = true;
                     EditorStyles.textArea.wordWrap = true;
                     khpp.PortugueseDescription = EditorGUILayout.TextArea(khpp.PortugueseDescription);
 
                     EditorGUILayout.PrefixLabel("English");
-                    EditorStyles.textArea.wordWrap = true;
                     khpp.EnglishDescription = EditorGUILayout.TextArea(khpp.EnglishDescription);
                 }
                 EditorGUI.indentLevel--;
