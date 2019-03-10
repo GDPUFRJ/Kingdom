@@ -10,7 +10,7 @@ public class HappeningWindowAnswer:MonoBehaviour {
     [SerializeField] private HappeningWindow happeningWindow;
 	
     public void SetAnswer(KAnswer ans) {
-        string s = ans.answer;
+        string s = TranslationManager.GameLanguage == Language.Portuguese ? ans.portugueseAnswer : ans.englishAnswer;
         this.description.text = s;
         this.eventIntensity = ans.intensity;
     }

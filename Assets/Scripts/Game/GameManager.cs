@@ -179,9 +179,11 @@ public class GameManager:Singleton < GameManager >  {
             foreach (EventSaveData eSaveData in saveData.activeEvents)
             {
                 KEvent kevt = ScriptableObject.CreateInstance<KEvent>();
-                kevt.ExhibitionName = eSaveData.ExhibitionName;
+                kevt.PortugueseExhibitionName = eSaveData.PortugueseExhibitionName;
+                kevt.EnglishExhibitionName = eSaveData.EnglishExhibitionName;
                 kevt.InternalName = eSaveData.InternalName;
-                kevt.Description = eSaveData.Description;
+                kevt.PortugueseDescription = eSaveData.PortugueseDescription;
+                kevt.EnglishDescription = eSaveData.EnglishDescription;
                 kevt.Duration = eSaveData.Duration;
                 kevt.LeftDuration = eSaveData.LeftDuration;
                 kevt.ActiveIntensity = eSaveData.ActiveIntensity;

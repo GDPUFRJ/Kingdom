@@ -61,7 +61,7 @@ public class PropertyWindow : MonoBehaviour {
     public void UpdatePropertyInfo()
     {
         icon.sprite = property.GetComponent<SpriteRenderer>().sprite;
-        propertyName.text = property.customTitle;
+        propertyName.text = TranslationManager.GameLanguage == Language.Portuguese ? property.portugueseTitle : property.englishTitle;
         propertyLevel.text = property.Level.GetHashCode().ToString();
         riqResource.text = property.GetCurrentResource(Resource.Gold).ToString();
         aliResource.text = property.GetCurrentResource(Resource.Food).ToString();

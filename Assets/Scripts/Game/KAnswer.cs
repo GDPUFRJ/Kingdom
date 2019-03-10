@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class KAnswer : ScriptableObject
 {
-    public string answer = "New Answer";
+    public string portugueseAnswer = "Nova Resposta";
+    public string englishAnswer = "New Answer";
     public KEvent answerEvent;
     public Intensity intensity = Intensity.light;
 

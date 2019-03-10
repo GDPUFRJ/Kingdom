@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour {
         if (SaveSystem.CheckSaveDataExistence())
         {
             SaveSystem.newGame = false;
+            TranslationManager.UnsubscribeDelegates();
             loadingPanel.Open("SampleScene");
         }
     }
@@ -36,6 +37,7 @@ public class MainMenu : MonoBehaviour {
     {
         SaveSystem.newGame = true;
         SaveSystem.ResetSaveData();
+        TranslationManager.UnsubscribeDelegates();
         loadingPanel.Open("SampleScene");
     }
     public void Credits()
@@ -53,6 +55,10 @@ public class MainMenu : MonoBehaviour {
         ToggleGroup(groups[1], true, FADE_DURATION);
         ToggleGroup(groups[2], false, 0);
         groups[1].GetComponent<Animator>().Play("MenuOpções_OpenScroll");
+    }
+    public void ChangeLanguage()
+    {
+        TranslationManager.ChangeLanguage();
     }
     public void CloseOptionsAnimation()
     {

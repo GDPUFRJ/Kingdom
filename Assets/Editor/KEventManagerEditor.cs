@@ -41,7 +41,8 @@ public class KEventManagerEditor : Editor
                     EditorGUILayout.EndHorizontal();
                     EditorGUILayout.BeginVertical();
 
-                    kevt.ExhibitionName = EditorGUILayout.TextField(new GUIContent("Exhibition Name"), kevt.ExhibitionName);
+                    kevt.PortugueseExhibitionName = EditorGUILayout.TextField(new GUIContent("Portuguese Exhibition Name"), kevt.PortugueseExhibitionName);
+                    kevt.EnglishExhibitionName = EditorGUILayout.TextField(new GUIContent("English Exhibition Name"), kevt.EnglishExhibitionName);
 
                     if (GUILayout.Button("Delete", GUILayout.MaxWidth(50)) &&
                         EditorUtility.DisplayDialog("Confirm Deletion",
@@ -115,15 +116,15 @@ public class KEventManagerEditor : Editor
                     }
                     EditorGUILayout.EndVertical();
 
-                    EditorGUILayout.BeginHorizontal();
+                    //EditorGUILayout.BeginHorizontal();
 
-                    EditorGUILayout.PrefixLabel("Description");
-
+                    EditorGUILayout.PrefixLabel("Portuguese Description");
                     EditorStyles.textField.wordWrap = true;
-                EditorStyles.textArea.wordWrap = true;
-
-                kevt.Description = EditorGUILayout.TextArea(kevt.Description);
-                    EditorGUILayout.EndHorizontal();
+                    EditorStyles.textArea.wordWrap = true;
+                    kevt.PortugueseDescription = EditorGUILayout.TextArea(kevt.PortugueseDescription);
+                    EditorGUILayout.PrefixLabel("English Description");
+                    kevt.EnglishDescription = EditorGUILayout.TextArea(kevt.EnglishDescription);
+                    //EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.Space();
             }

@@ -6,9 +6,11 @@ using UnityEngine;
 public class KEvent : ScriptableObject
 {
 
-    public string ExhibitionName = "New Event";
+    public string PortugueseExhibitionName = "Novo Evento";
+    public string EnglishExhibitionName = "New Event";
     public string InternalName = "New Event";
-    public string Description = "Describe it here";
+    public string PortugueseDescription = "Descreva-o aqui";
+    public string EnglishDescription = "Describe it here";
 
     public int Duration = 1;
     public int LeftDuration = 1;
@@ -53,7 +55,7 @@ public class KEvent : ScriptableObject
 
     public EventInfo GetInfo()
     {
-        return new EventInfo(this.ExhibitionName, this.InternalName, this.Description, this.LeftDuration, this.battle);
+        return new EventInfo(this.PortugueseExhibitionName, this.EnglishExhibitionName, this.InternalName, this.PortugueseDescription, this.EnglishDescription, this.LeftDuration, this.battle);
     }
 
     public int GetNextResource(Resource resource)
@@ -168,9 +170,11 @@ public class KEvent : ScriptableObject
 }
 public class EventInfo
 {
-    public string exhibitionName;
+    public string portugueseExhibitionName;
+    public string englishExhibitionName;
     public string internalName;
-    public string description;
+    public string portugueseDescription;
+    public string englishDescription;
     public int remainingDays;
 
     public int BuildingToAddOrRemove;
@@ -178,12 +182,14 @@ public class EventInfo
     public int GoldToAddOrRemove;
     public Battle BattleEnabled;
 
-    public EventInfo(string exhibitionName, string internalName, string description, 
+    public EventInfo(string portugueseExhibitionName, string englishExhibitionName, string internalName, string portugueseDescription, string englishDescription,
                      int remainingDays, Battle BattleEnabled)
     {
-        this.exhibitionName = exhibitionName;
+        this.portugueseExhibitionName = portugueseExhibitionName;
+        this.englishExhibitionName = englishExhibitionName;
         this.internalName = internalName;
-        this.description = description;
+        this.portugueseDescription = portugueseDescription;
+        this.englishDescription = englishDescription;
         this.remainingDays = remainingDays;
         this.BattleEnabled = BattleEnabled;
     }

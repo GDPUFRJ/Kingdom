@@ -18,8 +18,8 @@ public class EventBox : MonoBehaviour {
         EventInfo e = _event.GetInfo();
         this._event = _event;
         this.panel = _panel;
-        this.title.text = e.exhibitionName;
-        this.description.text = e.description;
+        this.title.text = TranslationManager.GameLanguage == Language.Portuguese ? e.portugueseExhibitionName : e.englishExhibitionName;
+        this.description.text = TranslationManager.GameLanguage == Language.Portuguese ? e.portugueseDescription : e.englishDescription;
         this.remainingDays.text = e.remainingDays.ToString();
     }
     public KEvent GetEvent()

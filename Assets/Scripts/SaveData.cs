@@ -41,9 +41,11 @@ public class SaveData
             for (int i = 0; i < list.Count; i++)
             {
                 activeEvents[i] = new EventSaveData(
-                    list[i].ExhibitionName,
+                    list[i].PortugueseExhibitionName,
+                    list[i].EnglishExhibitionName,
                     list[i].InternalName,
-                    list[i].Description,
+                    list[i].PortugueseDescription,
+                    list[i].EnglishDescription,
                     list[i].Duration,
                     list[i].LeftDuration,
                     list[i].ActiveIntensity,
@@ -104,9 +106,11 @@ public class PropertySaveData
 [System.Serializable]
 public class EventSaveData
 {
-    public string ExhibitionName;
+    public string PortugueseExhibitionName;
+    public string EnglishExhibitionName;
     public string InternalName;
-    public string Description;
+    public string PortugueseDescription;
+    public string EnglishDescription;
 
     public int Duration;
     public int LeftDuration;
@@ -149,9 +153,11 @@ public class EventSaveData
     public bool showInInspector;
 
     public EventSaveData (
-        string ExhibitionName,
+        string PortugueseExhibitionName,
+        string EnglishExhibitionName,
         string InternalName,
-        string Description,
+        string PortugueseDescription,
+        string EnglishDescription,
         int Duration,
         int LeftDuration,
         Intensity ActiveIntensity,
@@ -184,9 +190,11 @@ public class EventSaveData
         int AbsoluteBuildingHeavy,
         bool showInInspector)
     {
-        this.ExhibitionName = ExhibitionName;
+        this.PortugueseExhibitionName = PortugueseExhibitionName;
+        this.EnglishExhibitionName = EnglishExhibitionName;
         this.InternalName = InternalName;
-        this.Description = Description;
+        this.PortugueseDescription = PortugueseDescription;
+        this.EnglishDescription = EnglishDescription;
         this.Duration = Duration;
         this.LeftDuration = LeftDuration;
         this.ActiveIntensity = ActiveIntensity;

@@ -43,7 +43,7 @@ public class PropertyBox : MonoBehaviour {
         this.propertyPanel = panel;
         this.property = prop;
         this.icon.sprite = info.sprite;
-        this.title.text = /*"[" + prop.Level + "] " + */prop.customTitle;
+        this.title.text = TranslationManager.GameLanguage == Language.Portuguese ? prop.portugueseTitle : prop.englishTitle;
         this.food.text = info.Food.ToString();
         this.gold.text = info.Gold.ToString();
         this.building.text = info.Building.ToString();

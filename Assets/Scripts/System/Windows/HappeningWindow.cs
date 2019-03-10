@@ -22,8 +22,8 @@ public class HappeningWindow:MonoBehaviour {
     }
 	public void UpdateInfo() {
         int answerCount = happening.Answers.Count; 
-        title.text = happening.Name; 
-        description.text = happening.Description; 
+        title.text = TranslationManager.GameLanguage == Language.Portuguese ? happening.PortugueseName: happening.EnglishName;
+        description.text = TranslationManager.GameLanguage == Language.Portuguese ? happening.PortugueseDescription : happening.EnglishDescription;
         for (int i = 0; i < happening.Answers.Count; i++) {
             GameObject ans = Instantiate(GameManager.Instance.answerPrefab, answersRoot); 
             ans.GetComponent < HappeningWindowAnswer > ().SetAnswer(happening.Answers[i]);

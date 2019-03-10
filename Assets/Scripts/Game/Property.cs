@@ -13,7 +13,8 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     public List<IEdge<Line>> Linhas = new List<IEdge<Line>>();
 
     [Header("Basic Informations")]
-    public string customTitle = " ";
+    public string portugueseTitle = " ";
+    public string englishTitle = " ";
     public PropertyType type;
     public bool canBeAbandonedOrLostInBattle = true;
     public bool dominated = false;

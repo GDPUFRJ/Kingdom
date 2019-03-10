@@ -42,33 +42,37 @@ public class KHappeningManagerEditor : Editor
 
         foreach (KHappening khpp in KHappeningManagerScript.KHappenings)
         {
-            khpp.showInInspector = EditorGUILayout.Foldout(khpp.showInInspector, "Happening " + khpp.Name);
+            khpp.showInInspector = EditorGUILayout.Foldout(khpp.showInInspector, "Happening " + khpp.PortugueseName);
             if (khpp.showInInspector)
             {
-                EditorGUILayout.BeginHorizontal();
-
-                khpp.Name = EditorGUILayout.TextField(new GUIContent("Name"), khpp.Name);
+                khpp.PortugueseName = EditorGUILayout.TextField(new GUIContent("Portuguese Name"), khpp.PortugueseName);
+                khpp.EnglishName = EditorGUILayout.TextField(new GUIContent("English Name"), khpp.EnglishName);
 
                 if (GUILayout.Button("Delete", GUILayout.MaxWidth(50)) &&
                     EditorUtility.DisplayDialog("Confirm Deletion",
-                    "Are you sure to delete " + khpp.Name + " event? This action cannot be undone.",
+                    "Are you sure to delete " + khpp.PortugueseName + " event? This action cannot be undone.",
                     "Yes", "No"))
                     ToRemove.Add(khpp);
 
-                EditorGUILayout.EndHorizontal();
+                EditorGUI.indentLevel++;
+                khpp.showDescription = EditorGUILayout.Foldout(khpp.showDescription, "Description");
+                if (khpp.showDescription)
+                {
+                    EditorGUI.indentLevel++;
 
+                    EditorGUILayout.PrefixLabel("Portuguese");
+                    EditorStyles.textArea.wordWrap = true;
+                    khpp.PortugueseDescription = EditorGUILayout.TextArea(khpp.PortugueseDescription);
 
-                khpp.Question = EditorGUILayout.TextField(new GUIContent("Question"), khpp.Question);
+                    EditorGUILayout.PrefixLabel("English");
+                    EditorStyles.textArea.wordWrap = true;
+                    khpp.EnglishDescription = EditorGUILayout.TextArea(khpp.EnglishDescription);
+                }
+                EditorGUI.indentLevel--;
+
+                khpp.PortugueseQuestion = EditorGUILayout.TextField(new GUIContent("Portuguese Question"), khpp.PortugueseQuestion);
+                khpp.EnglishQuestion = EditorGUILayout.TextField(new GUIContent("English Question"), khpp.EnglishQuestion);
                 khpp.chance = (Chance)EditorGUILayout.EnumPopup("Chance", khpp.chance);
-
-                EditorGUILayout.BeginHorizontal();
-
-                EditorGUILayout.PrefixLabel("Description");
-
-                EditorStyles.textArea.wordWrap = true;
-                khpp.Description = EditorGUILayout.TextArea(khpp.Description);
-
-                EditorGUILayout.EndHorizontal();
 
                 EditorGUI.indentLevel++;
 
@@ -79,17 +83,21 @@ public class KHappeningManagerEditor : Editor
                     foreach (KAnswer kans in khpp.Answers)
                     {
 
-                        kans.showInInspector = EditorGUILayout.Foldout(kans.showInInspector, "Answer: '" + kans.answer + "'");
+                        kans.showInInspector = EditorGUILayout.Foldout(kans.showInInspector, "Answer: '" + kans.portugueseAnswer + "'");
                         if (kans.showInInspector)
                         {
                             EditorGUILayout.BeginHorizontal();
-                            kans.answer = EditorGUILayout.TextField(new GUIContent("Text"), kans.answer);
+                            kans.portugueseAnswer = EditorGUILayout.TextField(new GUIContent("Portuguese Text"), kans.portugueseAnswer);
+                            EditorGUILayout.EndHorizontal();
+                            EditorGUILayout.BeginHorizontal();
+                            kans.englishAnswer = EditorGUILayout.TextField(new GUIContent("English Text"), kans.englishAnswer);
+                            EditorGUILayout.EndHorizontal();
 
+                            EditorGUILayout.BeginHorizontal();
                             if (GUILayout.Button("Delete", GUILayout.MaxWidth(50)) &&
-                        EditorUtility.DisplayDialog("Confirm Deletion",
-                                                    "Are you sure to delete Answer " + kans.answer + "from " + khpp.Name + " event? This action cannot be undone.",
-                                                    "Yes", "No")
-                    )
+                                                    EditorUtility.DisplayDialog("Confirm Deletion",
+                                                    "Are you sure to delete Answer " + kans.portugueseAnswer + "from " + khpp.PortugueseName + " event? This action cannot be undone.",
+                                                    "Yes", "No") )
                                 AnswerToRemove.Add(kans);
 
                             EditorGUILayout.EndHorizontal();

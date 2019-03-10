@@ -5,24 +5,17 @@ using UnityEngine;
 
 public class KHappening : ScriptableObject {
 
-    public string Name = "New Happening";
-    public string Description = "Describe it here";
-    public string Question = "Ask a Question";
-
+    public string PortugueseName = "Novo Acontecimento";
+    public string EnglishName = "New Happenning";
+    public string PortugueseDescription = "Descreva-o aqui";
+    public string EnglishDescription = "Describe it here";
+    public string PortugueseQuestion = "Faça uma pergunta";
+    public string EnglishQuestion = "Ask a question";
     
     public Chance chance = Chance.Normal;
     public List<KAnswer> Answers = new List<KAnswer>();
 
     public bool showInInspector = true;
     public bool showAnswers = true;
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public bool showDescription = true;
 }
