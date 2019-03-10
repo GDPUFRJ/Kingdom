@@ -1,6 +1,8 @@
 ﻿using System.Collections; 
 using System.Collections.Generic; 
-using UnityEngine; 
+using UnityEngine;
+using DG.Tweening;
+using UnityEngine.UI;
 
 public class GameManager:Singleton < GameManager >  {
 
@@ -43,6 +45,7 @@ public class GameManager:Singleton < GameManager >  {
     [Header("Canvas")]
     public Transform CanvasHUD;
     public GameObject CanvasBattle;
+    public GameFinishedMenu GameWonPanel, GameOverPanel;
 
     // Use this for initialization
     void Start() {
@@ -127,18 +130,17 @@ public class GameManager:Singleton < GameManager >  {
         TimerPanel.OnDayEnd -= OnDayEnd; 
     }
 
-    void GameWon() {
-        //ToDo
-        print("You won the game!");
-        Time.timeScale = 0f;
+    public void GameWon()
+    {
+        GameWonPanel.GameFinished();
     }
 
     public void GameLost()
     {
-        //ToDo
-        print("You lost the game!");
-        Time.timeScale = 0f;
+        GameOverPanel.GameFinished();
     }
+
+
 
     private IEnumerator LoadGameCoroutine()
     {
