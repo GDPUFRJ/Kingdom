@@ -19,10 +19,10 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
 
     private void Start()
     {
-        TimerPanel.OnAfterDayEnd += TimerPanel_OnAfterDayEnd;
+        TimerPanel.OnBattleEnded += TimerPanel_OnAfterBattles;
     }
 
-    private void TimerPanel_OnAfterDayEnd()
+    private void TimerPanel_OnAfterBattles()
     {
         bool moneyDefeat = CheckMoneyDefeatCondition();
         bool castleDefeat = CheckCastleDefeatCondition();
@@ -43,7 +43,7 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
     {
         foreach (Property property in PropertyManager.Instance.Propriedades)
         {
-            if (property.mainProperty && property.kingdom == StartingKingdomController.Instance.PlayerKingdom && !property.dominated)
+            if (property.mainProperty && property.OriginalKingdom == StartingKingdomController.Instance.PlayerKingdom && !property.dominated)
             {
                 return true;
             }

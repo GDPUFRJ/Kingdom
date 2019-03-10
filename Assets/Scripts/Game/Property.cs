@@ -19,6 +19,8 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     public bool dominated = false;
     public bool mainProperty = false;
     public Kingdom kingdom;
+    private Kingdom originalKingdom;
+    public Kingdom OriginalKingdom { get { return originalKingdom; } }
 
     [SerializeField]
     private Level level = Level.Level1;
@@ -108,6 +110,8 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         }
 
         UpdateSoldierInfo();
+
+        originalKingdom = kingdom;
     }
 
     private void OnDayEnd()

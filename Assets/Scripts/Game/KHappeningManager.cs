@@ -71,12 +71,10 @@ public class KHappeningManager:Singleton < KHappeningManager >
         float value = Random.value;
         if (value < HappenningChance)
         {
-            print("value = " + value + " < " + HappenningChance + ". Vai ocorrer um acontecimento.");
             return GenerateNewKHappening();
         }
         else
         {
-            print("value = " + value + " > " + HappenningChance + ". Não vai ocorrer um acontecimento.");
             return false;
         }
     }
@@ -88,33 +86,27 @@ public class KHappeningManager:Singleton < KHappeningManager >
 
         if (value > 1 - ChanceMuitoComum)
         {
-            print("value = " + value + ". O acontecimento é muito comum.");
             SelectedList = HappeningsByRarity[0];
         }
         else if (value > 1 - ChanceMuitoComum - ChanceComum)
         {
-            print("value = " + value + ". O acontecimento é comum.");
             SelectedList = HappeningsByRarity[1];
         }
         else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal)
         {
-            print("value = " + value + ". O acontecimento é normal.");
             SelectedList = HappeningsByRarity[2];
         }
         else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal - ChanceRaro)
         {
-            print("value = " + value + ". O acontecimento é raro.");
             SelectedList = HappeningsByRarity[3];
         }
         else
         {
-            print("value = " + value + ". O acontecimento é muito raro.");
             SelectedList = HappeningsByRarity[4];
         }
 
         if (SelectedList.Count == 0)
         {
-            print("Não existem acontecimentos dessa raridade");
             return false;
         }
 
