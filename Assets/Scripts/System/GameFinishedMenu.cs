@@ -32,6 +32,7 @@ public class GameFinishedMenu : MonoBehaviour
 
     public void GameFinished()
     {
+        FindObjectOfType<BattleManager>().StopBattles();
         SaveSystem.ResetSaveData();
         StartCoroutine(GameFinishedCoroutine());
     }

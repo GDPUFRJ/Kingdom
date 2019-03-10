@@ -9,9 +9,12 @@ public class BattleManager : MonoBehaviour {
     private int numberOfBattlesWonByThePlayerLastTurn = 0;
     public int NumberOfBattlesLostByThePlayerLastTurn { get { return numberOfBattlesLostByThePlayerLastTurn; } }
     public int NumberOfBattlesWonByThePlayerLastTurn { get { return numberOfBattlesWonByThePlayerLastTurn; } }
+    
     [SerializeField] private BattleWindow battleWindow;
     [SerializeField] private int minDiceNumber = 1;
     [SerializeField] private int maxDiceNumber = 6;
+
+    private bool shouldPlayBattles = true;
 
     private void ResetBattleList()
     {
@@ -28,7 +31,13 @@ public class BattleManager : MonoBehaviour {
     }
     public void BeginBattles()
     {
-        StartCoroutine(BattleRoutine());
+        if (shouldPlayBattles)
+            StartCoroutine(BattleRoutine());
+    }
+    public void StopBattles()
+    {
+        shouldPlayBattles = false;
+        StopAllCoroutines();
     }
     public void OnBattlesEnd()
     {
