@@ -8,7 +8,7 @@ public class KEventManager : Singleton<KEventManager> {
 
     protected KEventManager() { }
 
-    public int MaxActiveEvent = 3;
+    //public int MaxActiveEvent = 3;
 
     public int MuitoComumChance = 20;
     public int ComumChance = 20;
@@ -164,11 +164,12 @@ public class KEventManager : Singleton<KEventManager> {
         return null;
     }
 
+    // Esse método não está sendo usado
     private bool GenerateNewKEvent()
     {
         //To be modified
-        if (MaxActiveEvent < KEventsActives.Count)
-            return false;
+        //if (MaxActiveEvent < KEventsActives.Count)
+        //    return false;
 
         if (UnityEngine.Random.Range(0, 1000000) < 750000)
             return false;

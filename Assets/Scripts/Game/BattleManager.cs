@@ -75,7 +75,7 @@ public class BattleManager : MonoBehaviour {
 
             property.SetDominated(!property.dominated, false);
             property.SetSoldiers(SoldierType.InProperty, attackerSoldiers - defenderSoldiers);
-            property.WeakenCastle();
+            if (!property.mainProperty) property.WeakenCastle();
             property.ChangeKingdom(battleInformation.attackingKingdom);
         }
         else

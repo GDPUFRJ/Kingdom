@@ -132,11 +132,13 @@ public class GameManager:Singleton < GameManager >  {
 
     public void GameWon()
     {
+        print("GAME WON");
         GameWonPanel.GameFinished();
     }
 
     public void GameLost()
     {
+        print("GAME LOST");
         GameOverPanel.GameFinished();
     }
 

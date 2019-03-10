@@ -2,12 +2,20 @@
 using System.Collections.Generic; 
 using UnityEngine; 
 
-public class KHappeningManager:Singleton < KHappeningManager >  {
-
-    // Esta variável serve apenas para propósitos de debug. Ela deve ser setada como true no inspector quando você quiser que um acontecimento ocorra
-    public bool forceHappeningNextTurn = false;
-
+public class KHappeningManager:Singleton < KHappeningManager >
+{
     protected KHappeningManager() {}
+
+    // Chance de ocorrer um acontecimento de qualquer raridade em um dado turno
+    public float HappenningChance = 0.3f;
+
+    // Chances de ocorrer um acontecimento de certa raridade, dado que ocorrerá um acontecimento em um dado turno
+    // As probabilidades abaixo precisam somar 1
+    public float ChanceMuitoComum = 0.4f;
+    public float ChanceComum = 0.3f;
+    public float ChanceNormal = 0.2f;
+    public float ChanceRaro = 0.07f;
+    public float ChanceMuitoRaro = 0.03f;
 
     public List < KHappening > KHappenings = new List < KHappening > (); 
 
@@ -58,36 +66,59 @@ public class KHappeningManager:Singleton < KHappeningManager >  {
         }
     }
 	
-    private bool AttemptToGenerateNewKHappening() {
-
-        if (forceHappeningNextTurn)
+    private bool AttemptToGenerateNewKHappening()
+    {
+        float value = Random.value;
+        if (value < HappenningChance)
         {
-            forceHappeningNextTurn = false;
+            print("value = " + value + " < " + HappenningChance + ". Vai ocorrer um acontecimento.");
             return GenerateNewKHappening();
         }
-
-        //To be modified
-        if (UnityEngine.Random.Range(0, 1000000) < 750000)
+        else
+        {
+            print("value = " + value + " > " + HappenningChance + ". Não vai ocorrer um acontecimento.");
             return false;
-
-        return GenerateNewKHappening();
+        }
     }
 
     private bool GenerateNewKHappening()
     {
-        bool hasSelectedAList = false;
+        float value = Random.value;
         List<KHappening> SelectedList = new List<KHappening>();
-        while (!hasSelectedAList)
+
+        if (value > 1 - ChanceMuitoComum)
         {
-            int rarity = Random.Range(0, HappeningsByRarity.Count);
-
-            SelectedList = HappeningsByRarity[rarity];
-
-            //Isto está aqui para repetir o sorteio, caso nao tenha acontecimentos de uma determinada raridade
-            if (SelectedList.Count > 0) hasSelectedAList = true;
+            print("value = " + value + ". O acontecimento é muito comum.");
+            SelectedList = HappeningsByRarity[0];
+        }
+        else if (value > 1 - ChanceMuitoComum - ChanceComum)
+        {
+            print("value = " + value + ". O acontecimento é comum.");
+            SelectedList = HappeningsByRarity[1];
+        }
+        else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal)
+        {
+            print("value = " + value + ". O acontecimento é normal.");
+            SelectedList = HappeningsByRarity[2];
+        }
+        else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal - ChanceRaro)
+        {
+            print("value = " + value + ". O acontecimento é raro.");
+            SelectedList = HappeningsByRarity[3];
+        }
+        else
+        {
+            print("value = " + value + ". O acontecimento é muito raro.");
+            SelectedList = HappeningsByRarity[4];
         }
 
-        KHappening selectedHappening = SelectedList[UnityEngine.Random.Range(0, 1000000) % SelectedList.Count];
+        if (SelectedList.Count == 0)
+        {
+            print("Não existem acontecimentos dessa raridade");
+            return false;
+        }
+
+        KHappening selectedHappening = SelectedList[Random.Range(0, 1000000) % SelectedList.Count];
 
         return FireHappening(selectedHappening);
     }

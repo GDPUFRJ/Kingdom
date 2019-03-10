@@ -27,6 +27,17 @@ public class KHappeningManagerEditor : Editor
 
         RemovePendent();
 
+        EditorGUILayout.LabelField("Probabilities:", EditorStyles.boldLabel);
+
+        KHappeningManagerScript.HappenningChance = EditorGUILayout.FloatField("Chance de Acontecimento", KHappeningManagerScript.HappenningChance);
+        KHappeningManagerScript.ChanceMuitoComum = EditorGUILayout.FloatField("Chance Muito Comum", KHappeningManagerScript.ChanceMuitoComum);
+        KHappeningManagerScript.ChanceComum = EditorGUILayout.FloatField("Chance Comum", KHappeningManagerScript.ChanceComum);
+        KHappeningManagerScript.ChanceNormal = EditorGUILayout.FloatField("Chance Normal", KHappeningManagerScript.ChanceNormal);
+        KHappeningManagerScript.ChanceRaro = EditorGUILayout.FloatField("Chance Raro", KHappeningManagerScript.ChanceRaro);
+        KHappeningManagerScript.ChanceMuitoRaro = EditorGUILayout.FloatField("Chance Muito Raro", KHappeningManagerScript.ChanceMuitoRaro);
+
+        EditorGUILayout.Space();
+
         EditorGUILayout.LabelField(KHappeningManagerScript.KHappenings.Count + " Possible Happenings", EditorStyles.boldLabel);
 
         foreach (KHappening khpp in KHappeningManagerScript.KHappenings)
