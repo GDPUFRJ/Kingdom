@@ -10,39 +10,36 @@ public class Line : MonoBehaviour, IEdge<Line>
     public Property start;
     public Property end;
 
-    //private LineRenderer lr;
-    private SpriteRenderer sr;
+    private LineRenderer lr;
 
     // Use this for initialization
     void Start()
     {
-        //lr = GetComponent<LineRenderer>();
-        sr = GetComponent<SpriteRenderer>();
-        //lr.SetPosition(0, start.transform.position);
-        //lr.SetPosition(1, end.transform.position);
+        lr = GetComponent<LineRenderer>();
+        lr.SetPosition(0, start.transform.position);
+        lr.SetPosition(1, end.transform.position);
 
         if (PropertyManager.Instance == null) return;
 
         if (start.dominated == false || end.dominated == false)
         {
-            //lr.startColor = PropertyManager.Instance.NotDominatedLine;
-            //lr.endColor = PropertyManager.Instance.NotDominatedLine;
-            sr.color = PropertyManager.Instance.NotDominatedLine;
+            lr.startColor = PropertyManager.Instance.NotDominatedLine;
+            lr.endColor = PropertyManager.Instance.NotDominatedLine;
         }
 
     }
 #if UNITY_EDITOR
-    // private void Update()
-    // {
-    //     if (start == null || end == null) return;
+    private void Update()
+    {
+        if (start == null || end == null) return;
 
-    //     lr = GetComponent<LineRenderer>();
-    //     if (start.transform.hasChanged)
-    //         lr.SetPosition(0, start.transform.position);
+        lr = GetComponent<LineRenderer>();
+        if (start.transform.hasChanged)
+            lr.SetPosition(0, start.transform.position);
 
-    //     if (end.transform.hasChanged)
-    //         lr.SetPosition(1, end.transform.position);
-    // }
+        if (end.transform.hasChanged)
+            lr.SetPosition(1, end.transform.position);
+    }
 #endif
 
     private void OnDestroy()
@@ -53,20 +50,17 @@ public class Line : MonoBehaviour, IEdge<Line>
 
     public void UpdateLineColor()
     {
-        //lr = GetComponent<LineRenderer>();
-        sr = GetComponent<SpriteRenderer>();
+        lr = GetComponent<LineRenderer>();
 
         if (start.dominated == false || end.dominated == false)
         {
-            //lr.startColor = PropertyManager.Instance.NotDominatedLine;
-            //lr.endColor = PropertyManager.Instance.NotDominatedLine;
-            sr.color = PropertyManager.Instance.NotDominatedLine;
+            lr.startColor = PropertyManager.Instance.NotDominatedLine;
+            lr.endColor = PropertyManager.Instance.NotDominatedLine;
         }
         else
         {
-            // lr.startColor = PropertyManager.Instance.DominatedLine;
-            // lr.endColor = PropertyManager.Instance.DominatedLine;
-            sr.color = PropertyManager.Instance.DominatedLine;
+            lr.startColor = PropertyManager.Instance.DominatedLine;
+            lr.endColor = PropertyManager.Instance.DominatedLine;
         }
     }
 }
