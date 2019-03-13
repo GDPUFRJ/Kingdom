@@ -126,7 +126,7 @@ public class PropertyEditor : Editor
         {
             foreach (Property p in ToRemove)
             {
-                PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
+                //PropertyManager.Instance.lineManager.RemoveAnyLineConnecting(propertyScript, p);
                 propertyScript.Neighbors.Remove(p);
                 p.Neighbors.Remove(propertyScript);
 
@@ -172,7 +172,7 @@ public class PropertyEditor : Editor
                                 {
                                     Property dragged_Property = (dragged_object as GameObject).GetComponent<Property>();
                                     propertyScript.Neighbors.Add(dragged_Property);
-                                    PropertyManager.Instance.lineManager.AddLine(propertyScript, dragged_Property);
+                                    //PropertyManager.Instance.lineManager.AddLine(propertyScript, dragged_Property);
                                 }
                             }
                             else

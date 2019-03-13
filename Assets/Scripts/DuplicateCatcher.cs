@@ -24,7 +24,7 @@ public class DuplicateCatcher : MonoBehaviour {
                 //Debug.LogError("Detected Duplicate!");
                 instanceID = GetInstanceID();
                 GetComponent<Property>().Neighbors.Clear();
-                PropertyManager.Instance.lineManager.RemoveAnyInvalidLine();
+                //PropertyManager.Instance.lineManager.RemoveAnyInvalidLine();
             }
         }
 #endif
