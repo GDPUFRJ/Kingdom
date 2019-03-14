@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
 
     [SerializeField] private float fadeTime = 0.5f;
+    [SerializeField] private Image pauseButton;
+    [SerializeField] private Sprite pausedImage;
+    [SerializeField] private Sprite unpausedImage;
 
     private void Start()
     {
@@ -24,6 +28,7 @@ public class PauseMenu : MonoBehaviour
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
         TimerPanel.SetPause(true);
+        pauseButton.sprite = pausedImage;
     }
 
     public void Resume()
@@ -32,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
         TimerPanel.SetPause(false);
+        pauseButton.sprite = unpausedImage;
     }
 
     public void SaveGame()
