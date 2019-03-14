@@ -36,7 +36,7 @@ public class PauseMenu : MonoBehaviour
         canvasGroup.DOFade(0, fadeTime);
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
-        TimerPanel.SetPause(false);
+        if (!SoldierPanel.isEditButtonsEnable) TimerPanel.SetPause(false);
         pauseButton.sprite = unpausedImage;
     }
 
