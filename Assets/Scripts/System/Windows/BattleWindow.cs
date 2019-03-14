@@ -40,6 +40,7 @@ public class BattleWindow : MonoBehaviour {
     private int defenderBattlePoints;
     private int remainingAttackerSoldiers;
     private int remainingDefenderSoldiers;
+    private bool playerIsAttacking;
 
     public Coroutine currentBattle;
 
@@ -48,7 +49,8 @@ public class BattleWindow : MonoBehaviour {
 		//Show(3,1);
 	}
 	public void Show(int attackerSoldiers, int defenderSoldiers, int attackerBattlePoints, int defenderBattlePoints, BattleInformation battleInformation,
-                     int remainingAttackerSoldiers, int remainingDefenderSoldiers)
+                     int remainingAttackerSoldiers, int remainingDefenderSoldiers,
+                     bool playerIsAttacking)
 	{
 		GetComponent<CanvasGroup>().DOFade(1,0);
 		this.attackerSoldiers = attackerSoldiers;
@@ -57,6 +59,7 @@ public class BattleWindow : MonoBehaviour {
         this.defenderBattlePoints = defenderBattlePoints;
         this.remainingAttackerSoldiers = remainingAttackerSoldiers;
         this.remainingDefenderSoldiers = remainingDefenderSoldiers;
+        this.playerIsAttacking = playerIsAttacking;
         SetUpFlags(battleInformation);
 		currentBattle = StartCoroutine( ShowBattleScene() );
 	}
@@ -132,7 +135,7 @@ public class BattleWindow : MonoBehaviour {
 	private IEnumerator Battle()
 	{
 		yield return new WaitForSeconds(1f);
-		if(PlayerIsTheWinner()){
+		if(AttackerIsTheWinner()){
 			player.DOScale(1.1f,0.3f);
 			enemy.DOScale(0.9f,0.3f);
 		}else{
@@ -140,15 +143,6 @@ public class BattleWindow : MonoBehaviour {
 			player.DOScale(0.9f,0.3f);
 		}
     }
-    private IEnumerator ShowResults()
-	{
-		results.transform.GetChild(0).GetComponent<Text>().text = PlayerIsTheWinner() ? "VENCEDOR" : "PERDEDOR";
-		results.DOFade(1,0.5f);
-		results.blocksRaycasts = true;
-		yield return new WaitForSeconds(1f);
-		GetComponent<CanvasGroup>().DOFade(0, 0.5f);
-		GetComponent<CanvasGroup>().blocksRaycasts = false;
-	}
     private IEnumerator ShowSwordsCrossing()
     {
         sword1.DOFade(1, 0.5f);
@@ -174,7 +168,7 @@ public class BattleWindow : MonoBehaviour {
     }
     private IEnumerator ShowResult()
     {
-        if (PlayerIsTheWinner()) swordsCrossingAnimator.Play("SwordsCrossing_win");
+        if (IsResultPositive()) swordsCrossingAnimator.Play("SwordsCrossing_win");
         else swordsCrossingAnimator.Play("SwordsCrossing_lose");
         yield return new WaitForSeconds(1f);
         GetComponent<CanvasGroup>().DOFade(0, 0.5f);
@@ -182,7 +176,7 @@ public class BattleWindow : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         swordsCrossingAnimator.Play("Default");
     }
-    private bool PlayerIsTheWinner(){
+    private bool AttackerIsTheWinner(){
 		if(remainingAttackerSoldiers > 0)
         {
 			return true;
@@ -190,4 +184,29 @@ public class BattleWindow : MonoBehaviour {
 			return false;
 		}
 	}
+    private bool IsResultPositive()
+    {
+        if (playerIsAttacking)
+        {
+            if (AttackerIsTheWinner())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if (AttackerIsTheWinner())
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
 }

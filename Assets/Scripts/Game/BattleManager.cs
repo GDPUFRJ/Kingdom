@@ -71,7 +71,8 @@ public class BattleManager : MonoBehaviour {
         int remainingDefenderSoldiers;
         SimulateBattle(attackerSoldiers, defenderSoldiers, out remainingAttackerSoldiers, out remainingDefenderSoldiers, out attackerBattlePoints, out defenderBattlePoints);
 
-        battleWindow.Show(attackerSoldiers, defenderSoldiers, attackerBattlePoints, defenderBattlePoints, battleInformation, remainingAttackerSoldiers, remainingDefenderSoldiers);
+        battleWindow.Show(attackerSoldiers, defenderSoldiers, attackerBattlePoints, defenderBattlePoints, battleInformation, remainingAttackerSoldiers, remainingDefenderSoldiers,
+                          (battleInformation.attackingKingdom == StartingKingdomController.Instance.PlayerKingdom));
 
         if (InvaderIsTheWinner(remainingAttackerSoldiers, remainingDefenderSoldiers))
         {
