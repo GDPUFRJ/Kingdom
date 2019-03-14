@@ -1777,7 +1777,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1d85f08796a114d48a8a0ef663e4ce05, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2594,7 +2594,7 @@ MonoBehaviour:
   englishTitle: barracks 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -2676,7 +2676,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3283,7 +3283,7 @@ MonoBehaviour:
   englishTitle: farm 1
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -3293,15 +3293,15 @@ MonoBehaviour:
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 36
   foodLevel2: 51
   buildingLevel2: 37
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 19
   foodLevel3: 41
   buildingLevel3: 20
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -3378,7 +3378,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3567,7 +3567,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2dd315276a18cd94d9a1c7cf889f9ad4, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   englishTitle: farm 1
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -3761,15 +3761,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: 15
   buildingLevel2: 17
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 26
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -3847,7 +3847,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4218,7 +4218,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cbbac521e0663454e9cf4d8fcf5894f9, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5326,15 +5326,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -5514,7 +5514,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 17a9d9ffde72d96418bc8a949e7ee620, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5602,7 +5602,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: c8daf27da3d4600488459766413877b4, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6696,7 +6696,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6928,7 +6928,7 @@ MonoBehaviour:
   englishTitle: farm 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -6938,15 +6938,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -7104,15 +7104,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -7820,15 +7820,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: 15
   buildingLevel2: 17
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 26
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -8630,7 +8630,7 @@ MonoBehaviour:
   englishTitle: forest 1
   type: 4
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -8640,15 +8640,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: -10
   buildingLevel1: 30
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: -50
   buildingLevel2: 17
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: -80
   buildingLevel3: 26
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -9146,15 +9146,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -9364,15 +9364,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: 15
   buildingLevel2: 17
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 26
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -9615,7 +9615,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b9c7d084a24273b47807d571ab361e8d, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9838,7 +9838,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7888be050bf1d924999d856e63996cd3, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10149,15 +10149,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -10309,7 +10309,7 @@ MonoBehaviour:
   englishTitle: forest 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -10319,15 +10319,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -10406,7 +10406,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10620,15 +10620,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -10738,7 +10738,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 68376935cd7236a4496786b10c4dea21, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10970,15 +10970,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -11103,7 +11103,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e8b6cdd77b9f5af48a78c0ecf2b578b3, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11563,7 +11563,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9870005, y: -3.048, z: -10}
+  m_LocalPosition: {x: -0.128, y: -7.241, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12001,15 +12001,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -12525,7 +12525,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 477e82e41d6689b4291561fff68a7102, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13030,15 +13030,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -14776,15 +14776,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 15
   buildingLevel1: 30
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: 15
   buildingLevel2: 17
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 26
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 20
   foodToLevel2: 20
   buildingToLevel2: 20
@@ -15113,7 +15113,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5028ec0a5739c23488d534a567240fc7, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16788,7 +16788,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 29a5ea40acaf75940b82cc50ff20e09c, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17328,15 +17328,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -17478,15 +17478,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -18073,15 +18073,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -19089,7 +19089,7 @@ MonoBehaviour:
   englishTitle: blue castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 0
   level: 1
@@ -19181,7 +19181,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19482,7 +19482,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1b88b09fec6d0cd4e96124251cb28d75, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19570,7 +19570,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7482da99496de4e4ab248cd9f6e7d958, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19658,7 +19658,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1914f5f4eb2377942b54f0564c33b4e2, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20685,7 +20685,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e41785b6200a27e4bbc76d3066beeaf0, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20958,7 +20958,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22760,7 +22760,7 @@ MonoBehaviour:
   englishTitle: barracks 1
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -22999,13 +22999,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 1000
-  GoldNext: 228
+  GoldNext: 237
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 248
+  FoodNext: 273
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 276
+  BuildingNext: 315
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -23134,7 +23134,7 @@ MonoBehaviour:
   englishTitle: forest 3
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -23144,15 +23144,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -23228,7 +23228,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24379,15 +24379,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -24834,7 +24834,7 @@ MonoBehaviour:
   englishTitle: red castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 1
   level: 1
@@ -24844,15 +24844,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -24928,7 +24928,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25762,7 +25762,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 873c312d31d26a64b9116c849bb8fe5a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26024,15 +26024,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -26706,15 +26706,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -26894,7 +26894,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 71c41e9c063038944bd3c1569fad5ab0, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26984,7 +26984,7 @@ MonoBehaviour:
   englishTitle: farm 2
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -26994,15 +26994,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -27248,7 +27248,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27320,7 +27320,7 @@ MonoBehaviour:
   englishTitle: mine 1
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -27330,15 +27330,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -27416,7 +27416,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27491,7 +27491,7 @@ MonoBehaviour:
   englishTitle: farm 3
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -27501,15 +27501,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -27586,7 +27586,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28947,7 +28947,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29913,7 +29913,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 81fe8a411b85ec645b14c2b945c30119, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30089,7 +30089,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 007c490f212706345b12b9a32afc2d69, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30988,15 +30988,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -31142,7 +31142,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31225,15 +31225,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -31395,15 +31395,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -31865,7 +31865,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f59e909668baf8f4799c8016b6cb0b80, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32191,7 +32191,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 306865fa43af0cc4bafdf736e3f29dd3, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32891,15 +32891,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -34502,7 +34502,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6dbc71e3bf69f714383e0d77ca3529e4, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34954,7 +34954,7 @@ MonoBehaviour:
   englishTitle: forest 2
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -34964,15 +34964,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -35048,7 +35048,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36761,7 +36761,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 726b01fee2d6a4e439671b68270dd52a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37023,7 +37023,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 622f38b1f64f3604b994f59c2c9f2ccc, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37113,7 +37113,7 @@ MonoBehaviour:
   englishTitle: mine 1
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -37123,15 +37123,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -37206,7 +37206,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37496,15 +37496,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -39275,7 +39275,7 @@ MonoBehaviour:
   englishTitle: barracks 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -39346,7 +39346,7 @@ MonoBehaviour:
   englishTitle: barracks 2
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -39439,7 +39439,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39780,7 +39780,7 @@ MonoBehaviour:
   englishTitle: port
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -39790,15 +39790,15 @@ MonoBehaviour:
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 36
   foodLevel2: 51
   buildingLevel2: 37
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 19
   foodLevel3: 41
   buildingLevel3: 20
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -39875,7 +39875,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7e4a876849d2e4343a5909277b4e2a46, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41529,15 +41529,15 @@ MonoBehaviour:
   goldLevel1: 13
   foodLevel1: 30
   buildingLevel1: 26
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 36
   foodLevel2: 51
   buildingLevel2: 37
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 19
   foodLevel3: 41
   buildingLevel3: 20
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -41686,15 +41686,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -42156,7 +42156,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f19bceafc2262ba4daf3e40c5947bbfd, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43706,7 +43706,7 @@ MonoBehaviour:
   englishTitle: forest 1
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -43716,15 +43716,15 @@ MonoBehaviour:
   goldLevel1: 24
   foodLevel1: 34
   buildingLevel1: 15
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 17
   foodLevel2: 33
   buildingLevel2: 30
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 17
   foodLevel3: 39
   buildingLevel3: 30
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -43791,7 +43791,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43961,15 +43961,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -44467,15 +44467,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -45660,7 +45660,7 @@ MonoBehaviour:
   englishTitle: mine 2
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -45670,15 +45670,15 @@ MonoBehaviour:
   goldLevel1: 18
   foodLevel1: 31
   buildingLevel1: 33
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 51
   foodLevel2: 30
   buildingLevel2: 41
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 37
   buildingLevel3: 23
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -45752,7 +45752,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46672,7 +46672,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: eb85618f72dc9e74194cefae2ba5a67d, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47396,15 +47396,15 @@ MonoBehaviour:
   goldLevel1: 35
   foodLevel1: 19
   buildingLevel1: 36
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 13
   foodLevel2: 48
   buildingLevel2: 19
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 29
   foodLevel3: 41
   buildingLevel3: 14
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 28
   foodToLevel2: 25
   buildingToLevel2: 25
@@ -48621,7 +48621,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8bba4d353af089a4ea889727ae34fe14, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

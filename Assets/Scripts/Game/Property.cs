@@ -602,6 +602,10 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         foreach (var castle in myCastles)
         {
             castle.RemoveSoldiers(SoldierType.InProperty, PropertyManager.Instance.soldiersLostByCastleWhenPropertyIsDefeated);
+            if (castle.GetSoldiers(SoldierType.InProperty) < 0)
+            {
+                castle.SetSoldiers(SoldierType.InProperty, 0);
+            }
         }
     }
 
