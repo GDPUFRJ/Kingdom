@@ -38,6 +38,8 @@ public class BattleWindow : MonoBehaviour {
 	private int defenderSoldiers;
     private int attackerBattlePoints;
     private int defenderBattlePoints;
+    private int remainingAttackerSoldiers;
+    private int remainingDefenderSoldiers;
 
     public Coroutine currentBattle;
 
@@ -45,13 +47,16 @@ public class BattleWindow : MonoBehaviour {
 	{
 		//Show(3,1);
 	}
-	public void Show(int attackerSoldiers, int defenderSoldiers, int attackerBattlePoints, int defenderBattlePoints, BattleInformation battleInformation)
+	public void Show(int attackerSoldiers, int defenderSoldiers, int attackerBattlePoints, int defenderBattlePoints, BattleInformation battleInformation,
+                     int remainingAttackerSoldiers, int remainingDefenderSoldiers)
 	{
 		GetComponent<CanvasGroup>().DOFade(1,0);
 		this.attackerSoldiers = attackerSoldiers;
 		this.defenderSoldiers = defenderSoldiers;
         this.attackerBattlePoints = attackerBattlePoints;
         this.defenderBattlePoints = defenderBattlePoints;
+        this.remainingAttackerSoldiers = remainingAttackerSoldiers;
+        this.remainingDefenderSoldiers = remainingDefenderSoldiers;
         SetUpFlags(battleInformation);
 		currentBattle = StartCoroutine( ShowBattleScene() );
 	}
@@ -79,7 +84,7 @@ public class BattleWindow : MonoBehaviour {
 		InitializeAllValues();
         yield return ShowSwordsCrossing();
         yield return ShowNumberOfSoldiers();
-        yield return ShowBattlePoints();
+        //yield return ShowBattlePoints();
         yield return Battle();
         yield return ShowUpdatedBattlePoints();
         yield return ShowResult();
@@ -153,18 +158,18 @@ public class BattleWindow : MonoBehaviour {
     }
     private IEnumerator ShowUpdatedBattlePoints()
     {
-        if (attackerBattlePoints > defenderBattlePoints)
-        {
-            attackerBattlePoints = attackerBattlePoints - defenderBattlePoints;
-            defenderBattlePoints = 0;
-        }
-        else
-        {
-            defenderBattlePoints = defenderBattlePoints - attackerBattlePoints;
-            attackerBattlePoints = 0;
-        }
-        playerBattlePointsText.text = attackerBattlePoints.ToString();
-        enemyBattlePointsText.text = defenderBattlePoints.ToString();
+        //if (attackerBattlePoints > defenderBattlePoints)
+        //{
+        //    attackerBattlePoints = attackerBattlePoints - defenderBattlePoints;
+        //    defenderBattlePoints = 0;
+        //}
+        //else
+        //{
+        //    defenderBattlePoints = defenderBattlePoints - attackerBattlePoints;
+        //    attackerBattlePoints = 0;
+        //}
+        playerBattlePointsText.text = remainingAttackerSoldiers.ToString();
+        enemyBattlePointsText.text = remainingDefenderSoldiers.ToString();
         yield return new WaitForSeconds(0.5f);
     }
     private IEnumerator ShowResult()
@@ -178,7 +183,7 @@ public class BattleWindow : MonoBehaviour {
         swordsCrossingAnimator.Play("Default");
     }
     private bool PlayerIsTheWinner(){
-		if(attackerBattlePoints > defenderBattlePoints)
+		if(remainingAttackerSoldiers > 0)
         {
 			return true;
 		}else{
