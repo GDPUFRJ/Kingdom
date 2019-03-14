@@ -277,7 +277,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
     public bool Upgradable()
     {
-        if (Level == Level.Level1 || Level == Level.Level2)
+        if ((Level == Level.Level1 || Level == Level.Level2) && dominated == true)
             return true;
         else
             return false;

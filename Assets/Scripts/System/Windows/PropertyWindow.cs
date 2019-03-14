@@ -88,11 +88,13 @@ public class PropertyWindow : MonoBehaviour {
         //TODO: VERIFICAR SE ESTA PROPRIEDADE NAO VAI ISOLAR OUTRAS
         //desativo a propriedade, depois verifico se algum vizinho ficou
         //isolado. Se ficou, desfaz, se nao, mantém o abandono.
-        if (property.SetDominated(false, true))
+        if (property.dominated)
         {
-            GameManager.Instance.UpdateComsumption();
-            print("Give Up");
-        }
-            
+            if (property.SetDominated(false, true))
+            {
+                GameManager.Instance.UpdateComsumption();
+                print("Give Up");
+            }
+        }   
     }
 }
