@@ -16535,7 +16535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  dayLength: 5
+  dayLength: 10
   currentDay: 0
   passedTime: {fileID: 785027692}
 --- !u!1 &786270577
