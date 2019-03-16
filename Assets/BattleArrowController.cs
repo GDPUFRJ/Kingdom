@@ -13,6 +13,8 @@ public class BattleArrowController : MonoBehaviour {
     [Range(0.01f,1.0f)]public float PropertyDistance = 0.45f;
 
     private int SoldiersToBeTransfered = 0;
+    public int GetSoldiersToBeTransfered() { return SoldiersToBeTransfered; }
+    public void SetSoldiersToBeTransfered(int soldiers) { SoldiersToBeTransfered = soldiers; }
 
     private ArrowType tipo = ArrowType.Arrow;
 
@@ -116,23 +118,27 @@ public class BattleArrowController : MonoBehaviour {
             OpositeArrow = Destination.ArrowsComingOut.Find(x => x.Destination == this.Source);
         }
 
-        if (OpositeArrow.SoldiersToBeTransfered > 0 && tipo != ArrowType.Battle)
-        {
-            OpositeArrow.SoldiersToBeTransfered--;
-            OpositeArrow.Source.RemoveSoldiers(SoldierType.ToGetOut, 1);
-            OpositeArrow.UpdateArrowText();
-        }
+        SendTroopsBox.Instance.Activate(this, OpositeArrow);
 
-        else if (Source.GetSoldiers(SoldierType.ToGetOut) < Source.GetSoldiers(SoldierType.InProperty) 
-                    && tipo != ArrowType.Abort)
-        {
-            this.Source.AddSoldiers(SoldierType.ToGetOut, 1);
-            this.SoldiersToBeTransfered++;
-            this.UpdateArrowText();
-        }
+        // Cancelar transferência de soldados
+        //if (OpositeArrow.SoldiersToBeTransfered > 0 && tipo != ArrowType.Battle)
+        //{
+            //OpositeArrow.SoldiersToBeTransfered--;
+            //OpositeArrow.Source.RemoveSoldiers(SoldierType.ToGetOut, 1);
+            //OpositeArrow.UpdateArrowText();
+        //}
 
-        Source.UpdateSoldierInfo();
-        Destination.UpdateSoldierInfo();
+        // Transferir soldados
+        //else if (Source.GetSoldiers(SoldierType.ToGetOut) < Source.GetSoldiers(SoldierType.InProperty) 
+        //          && tipo != ArrowType.Abort)
+        //{
+            //this.Source.AddSoldiers(SoldierType.ToGetOut, 1);
+            //this.SoldiersToBeTransfered++;
+            //this.UpdateArrowText();
+        //}
+
+        //Source.UpdateSoldierInfo();
+        //Destination.UpdateSoldierInfo();
     }
 
     public void UpdateArrowText()

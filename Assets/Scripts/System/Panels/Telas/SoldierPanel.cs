@@ -46,5 +46,8 @@ public class SoldierPanel : Section
         editButtonsGroup.interactable = isEditButtonsEnable;
         editButtonsGroup.blocksRaycasts = isEditButtonsEnable;
         editButtonsGroup.DOFade(target, editButtonsFadeTime);
+
+        if (!isEditButtonsEnable && SendTroopsBox.Instance.IsActivated)
+            SendTroopsBox.Instance.CancelOperation();
     }
 }
