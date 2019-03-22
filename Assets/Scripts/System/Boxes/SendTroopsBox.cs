@@ -40,6 +40,11 @@ public class SendTroopsBox : Singleton<SendTroopsBox>
         currentSourceArrow = sourceArrow;
         currentOpositeArrow = opositeArrow;
         isActivaded = true;
+        if (sourceArrow.GetSoldiersToBeTransfered() > 0)
+        {
+            numberOfSoldiers = sourceArrow.GetSoldiersToBeTransfered();
+            UpdateText();
+        }
     }
 
     public void ConfirmSoldiers()
@@ -86,21 +91,60 @@ public class SendTroopsBox : Singleton<SendTroopsBox>
 
     public void AddSoldiers(int nSoldiers)
     {
-        // Se o número inserido dá um resultado válido
-        if (numberOfSoldiers + nSoldiers > 0)
+        switch(currentSourceArrow.GetTipo())
         {
-            if (
-                    ((currentSourceArrow.GetTipo() == ArrowType.Battle || currentSourceArrow.GetTipo() == ArrowType.Arrow) &&
-                      currentSourceArrow.Source.GetSoldiers(SoldierType.ToGetOut) + numberOfSoldiers + nSoldiers <= currentSourceArrow.Source.GetSoldiers(SoldierType.InProperty))
-                    ||
-                    (currentSourceArrow.GetTipo() == ArrowType.Abort &&
-                     currentOpositeArrow.GetSoldiersToBeTransfered() - numberOfSoldiers - nSoldiers >= 0)
-                )
-            {
-                numberOfSoldiers += nSoldiers;
-                UpdateText();
-            }
+            case ArrowType.Battle:
+            case ArrowType.Arrow:
+                if (nSoldiers > 0)
+                {
+                    if (currentSourceArrow.Source.GetSoldiers(SoldierType.ToGetOut) + numberOfSoldiers + nSoldiers <=
+                        currentSourceArrow.Source.GetSoldiers(SoldierType.InProperty))
+                    {
+                        numberOfSoldiers += nSoldiers;
+                    }
+                    else
+                    {
+                        numberOfSoldiers = currentSourceArrow.Source.GetSoldiers(SoldierType.InProperty);
+                    }
+                }
+                else if (nSoldiers < 0)
+                {
+                    if (currentSourceArrow.Source.GetSoldiers(SoldierType.ToGetOut) + numberOfSoldiers + nSoldiers >= 0)
+                    {
+                        numberOfSoldiers += nSoldiers;
+                    }
+                    else
+                    {
+                        numberOfSoldiers = 0;
+                    }
+                }
+                break;
+            case ArrowType.Abort:
+                if (nSoldiers > 0)
+                {
+                    if (currentOpositeArrow.GetSoldiersToBeTransfered() - numberOfSoldiers - nSoldiers >= 0)
+                    {
+                        numberOfSoldiers += nSoldiers;
+                    }
+                    else
+                    {
+                        numberOfSoldiers = currentOpositeArrow.GetSoldiersToBeTransfered();
+                    }
+                }
+                else if (nSoldiers < 0)
+                {
+                    if (numberOfSoldiers + nSoldiers >= 0)
+                    {
+                        numberOfSoldiers += nSoldiers;
+                    }
+                    else
+                    {
+                        numberOfSoldiers = 0;
+                    }
+                }
+                break;
         }
+        UpdateText();
     }
 
     private void UpdateText()
