@@ -40860,8 +40860,8 @@ MonoBehaviour:
   index: 1
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: porto
-  englishTitle: port
+  portugueseTitle: porto do esquecimento
+  englishTitle: forget-me-not port
   type: 5
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -42666,8 +42666,8 @@ MonoBehaviour:
   index: 47
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "o\xE1sis"
-  englishTitle: oasis
+  portugueseTitle: "o\xE1sis da miragem"
+  englishTitle: mirage oasis
   type: 5
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
