@@ -1851,7 +1851,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1d85f08796a114d48a8a0ef663e4ce05, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3553,7 +3553,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 873d953f85d3c434da77c9965422b70a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3641,7 +3641,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2dd315276a18cd94d9a1c7cf889f9ad4, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3825,7 +3825,7 @@ MonoBehaviour:
   englishTitle: ravengar's orchard
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -3921,7 +3921,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4292,7 +4292,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cbbac521e0663454e9cf4d8fcf5894f9, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5589,7 +5589,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 17a9d9ffde72d96418bc8a949e7ee620, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6771,7 +6771,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7003,7 +7003,7 @@ MonoBehaviour:
   englishTitle: thousand candles ranch
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -8688,7 +8688,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8716,7 +8716,7 @@ MonoBehaviour:
   englishTitle: hanged man barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -9272,7 +9272,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9300,7 +9300,7 @@ MonoBehaviour:
   englishTitle: tarragon estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -10746,7 +10746,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10774,7 +10774,7 @@ MonoBehaviour:
   englishTitle: zuchinni estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -11096,7 +11096,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11124,7 +11124,7 @@ MonoBehaviour:
   englishTitle: "yw\xE9's thicket"
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -11267,7 +11267,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e8b6cdd77b9f5af48a78c0ecf2b578b3, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11727,7 +11727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1372724, y: 5.747273, z: -10}
+  m_LocalPosition: {x: -0.128, y: -7.241, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12127,7 +12127,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12155,7 +12155,7 @@ MonoBehaviour:
   englishTitle: foamy hills
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -12450,7 +12450,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: fc792524f25f46d4a9c2e0ac7fd5804d, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12689,7 +12689,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 477e82e41d6689b4291561fff68a7102, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14496,7 +14496,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a90b66ec9e17b3a4385be13c31e5e2ad, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17650,7 +17650,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17678,7 +17678,7 @@ MonoBehaviour:
   englishTitle: "mount f\xE4ernik"
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -18396,7 +18396,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18423,7 +18423,7 @@ MonoBehaviour:
   englishTitle: raaja mahal
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 4
   level: 1
@@ -19075,7 +19075,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 83268cbe9c252a947a3b9544963f3e55, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19388,7 +19388,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 9269286033bd7224e92f0867b48a633f, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19964,7 +19964,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1b88b09fec6d0cd4e96124251cb28d75, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20140,7 +20140,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1914f5f4eb2377942b54f0564c33b4e2, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21440,7 +21440,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23242,7 +23242,7 @@ MonoBehaviour:
   englishTitle: broken arch barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -23481,13 +23481,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 1000
-  GoldNext: 228
+  GoldNext: 237
   GoldNextEventModifier: 0
   Food: 1000
-  FoodNext: 337
+  FoodNext: 273
   FoodNextEventModifier: 0
   Building: 1000
-  BuildingNext: 305
+  BuildingNext: 315
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -23616,7 +23616,7 @@ MonoBehaviour:
   englishTitle: faerie's grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -23710,7 +23710,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24403,7 +24403,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5235e63de7011c84ebb6fff3a312a0b2, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25290,7 +25290,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d242fd756c84d9a42877b736d4469d0f, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25649,7 +25649,7 @@ MonoBehaviour:
   englishTitle: st. germanian castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 1
   level: 1
@@ -25743,7 +25743,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26577,7 +26577,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 873c312d31d26a64b9116c849bb8fe5a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26766,7 +26766,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 512f32d47456b384ba63541a05e18284, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27482,7 +27482,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27510,7 +27510,7 @@ MonoBehaviour:
   englishTitle: stone trees grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -27708,7 +27708,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 71c41e9c063038944bd3c1569fad5ab0, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29310,7 +29310,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ed683ee3e435b074ab3f7287bf562943, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30963,7 +30963,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 914a4c7242abd0a49b17c213280b61e5, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31912,7 +31912,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31940,7 +31940,7 @@ MonoBehaviour:
   englishTitle: fig tree valley
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -32827,7 +32827,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f59e909668baf8f4799c8016b6cb0b80, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34498,31 +34498,6 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224192742138772518, guid: f4891bf6d74004a44a75601914a929af,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224192742138772518, guid: f4891bf6d74004a44a75601914a929af,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224192742138772518, guid: f4891bf6d74004a44a75601914a929af,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224192742138772518, guid: f4891bf6d74004a44a75601914a929af,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224192742138772518, guid: f4891bf6d74004a44a75601914a929af,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 224775405015462346, guid: f4891bf6d74004a44a75601914a929af,
         type: 2}
       propertyPath: m_AnchorMin.y
@@ -35989,7 +35964,7 @@ MonoBehaviour:
   englishTitle: dryad's woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -36083,7 +36058,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37016,7 +36991,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cf8c824f31ac80945944f919931205d2, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37721,7 +37696,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2cd9531b5fc0e2a42a13b2cd786dff95, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38132,7 +38107,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 622f38b1f64f3604b994f59c2c9f2ccc, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38222,7 +38197,7 @@ MonoBehaviour:
   englishTitle: earthy peak
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -38315,7 +38290,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39287,7 +39262,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ec24d678d93737243a914ec0aa123247, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39677,7 +39652,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39705,7 +39680,7 @@ MonoBehaviour:
   englishTitle: augeas' stables
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -40455,7 +40430,7 @@ MonoBehaviour:
   englishTitle: skirmisher's camp
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -40548,7 +40523,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -40827,7 +40802,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 0a73f00f7b24e714789389efcfcea773, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42479,7 +42454,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e5b49558674983d428b1cf5e9961a64a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42667,7 +42642,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1cf87839c2f079c4e8a46351d3da5c34, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42695,7 +42670,7 @@ MonoBehaviour:
   englishTitle: oasis
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -43332,7 +43307,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f19bceafc2262ba4daf3e40c5947bbfd, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44733,7 +44708,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d28b46671fe552b4081b1edc0135ced7, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45004,7 +44979,7 @@ MonoBehaviour:
   englishTitle: wolf's forest
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -45089,7 +45064,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45604,7 +45579,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e7bc8fb305a79fb418acdfa8cea2ed5a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46343,7 +46318,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 020fc3c7b0fd96c479f09e0e1034cf7e, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46958,7 +46933,7 @@ MonoBehaviour:
   englishTitle: eagle's nest
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -47050,7 +47025,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47971,7 +47946,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: eb85618f72dc9e74194cefae2ba5a67d, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
