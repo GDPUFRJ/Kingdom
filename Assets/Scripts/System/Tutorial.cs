@@ -16,6 +16,9 @@ public class Tutorial : MonoBehaviour
     [Tooltip("References to the screens of the Tutorial. The first screen always needs to be the prompt screen")]
     [SerializeField] private GameObject[] screens;
 
+    [Header("Others")]
+    [SerializeField] private float fadeDuration = 0.1f;
+
     private int currentScreen;
 
     private SectionManager sectionManager;
@@ -26,11 +29,14 @@ public class Tutorial : MonoBehaviour
         sectionManager = FindObjectOfType<SectionManager>();
         background = GetComponent<Image>();
         background.enabled = false;
+
+        foreach (var screen in screens)
+            screen.GetComponent<CanvasGroup>().DOFade(0, 0);
     }
 
     private void Start()
     {
-        HideAllScreens();
+        //HideAllScreens();
 
         if (promptAtStart)
         {
@@ -79,9 +85,9 @@ public class Tutorial : MonoBehaviour
     {
         if (currentScreen < screens.Length - 1)
         {
+            yield return HideScreen(currentScreen);
             currentScreen++;
             yield return ShowScreen(currentScreen);
-            HideScreen(currentScreen-1);
         }
 
         else if (currentScreen == screens.Length - 1)
@@ -94,7 +100,7 @@ public class Tutorial : MonoBehaviour
     {
         for (int i = 0; i < screens.Length; i++)
         {
-            HideScreen(i);
+            StartCoroutine(HideScreen(i));
         }
     }
 
@@ -104,13 +110,15 @@ public class Tutorial : MonoBehaviour
         {
             yield return ProcessCurrentScreen(screenIndex);
             screens[screenIndex].SetActive(true);
+            yield return screens[screenIndex].GetComponent<CanvasGroup>().DOFade(1, fadeDuration).WaitForCompletion();
         }
     }
 
-    private void HideScreen(int screenIndex)
+    private IEnumerator HideScreen(int screenIndex)
     {
         if (currentScreen < screens.Length)
         {
+            yield return screens[screenIndex].GetComponent<CanvasGroup>().DOFade(0, fadeDuration).WaitForCompletion();
             screens[screenIndex].SetActive(false);
         }
     }
@@ -120,28 +128,23 @@ public class Tutorial : MonoBehaviour
         switch(screenIndex)
         {
             case 8:
-                HideScreen(currentScreen - 1);
                 sectionManager.SelectSection(2);
                 yield return new WaitForSeconds(0.4f);
                 break;
             case 9:
-                HideScreen(currentScreen - 1);
                 sectionManager.SelectSection(0);
                 yield return new WaitForSeconds(0.4f);
                 break;
             case 10:
-                HideScreen(currentScreen - 1);
                 sectionManager.SelectSection(3);
                 yield return new WaitForSeconds(0.4f);
                 break;
             case 12:
-                HideScreen(currentScreen - 1);
                 sectionManager.SelectSection(1);
                 background.DOFade(0.6509804f, 0);
                 yield return new WaitForSeconds(0.4f);
                 break;
             case 13:
-                HideScreen(currentScreen - 1);
                 background.DOFade(0.2784314f, 0);
                 break;
         }
