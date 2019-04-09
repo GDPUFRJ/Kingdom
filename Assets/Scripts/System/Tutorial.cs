@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class Tutorial : MonoBehaviour
 {
@@ -11,9 +13,20 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private bool thisIsTheGameScene = true;
 
     [Header("UI Elements")]
+    [Tooltip("References to the screens of the Tutorial. The first screen always needs to be the prompt screen")]
     [SerializeField] private GameObject[] screens;
 
     private int currentScreen;
+
+    private SectionManager sectionManager;
+    private Image background;
+
+    private void Awake()
+    {
+        sectionManager = FindObjectOfType<SectionManager>();
+        background = GetComponent<Image>();
+        background.enabled = false;
+    }
 
     private void Start()
     {
@@ -34,7 +47,8 @@ public class Tutorial : MonoBehaviour
             TimerPanel.SetPause(true);
         }
 
-        ShowScreen(currentScreen);
+        background.enabled = true;
+        StartCoroutine(ShowScreen(currentScreen));
     }
 
     public void StartTutorial()
@@ -46,12 +60,14 @@ public class Tutorial : MonoBehaviour
             TimerPanel.SetPause(true);
         }
 
-        ShowScreen(currentScreen);
+        background.enabled = true;
+        StartCoroutine(ShowScreen(currentScreen));
     }
 
     private void FinishTutorial()
     {
         HideAllScreens();
+        background.enabled = false;
 
         if (thisIsTheGameScene)
         {
@@ -59,13 +75,13 @@ public class Tutorial : MonoBehaviour
         }
     }
 
-    private void NextScreen()
+    private IEnumerator NextScreen()
     {
         if (currentScreen < screens.Length - 1)
         {
-            HideScreen(currentScreen);
             currentScreen++;
-            ShowScreen(currentScreen);
+            yield return ShowScreen(currentScreen);
+            HideScreen(currentScreen-1);
         }
 
         else if (currentScreen == screens.Length - 1)
@@ -82,10 +98,11 @@ public class Tutorial : MonoBehaviour
         }
     }
 
-    private void ShowScreen(int screenIndex)
+    private IEnumerator ShowScreen(int screenIndex)
     {
         if (currentScreen < screens.Length)
         {
+            yield return ProcessCurrentScreen(screenIndex);
             screens[screenIndex].SetActive(true);
         }
     }
@@ -98,9 +115,41 @@ public class Tutorial : MonoBehaviour
         }
     }
 
+    private IEnumerator ProcessCurrentScreen(int screenIndex)
+    {
+        switch(screenIndex)
+        {
+            case 8:
+                HideScreen(currentScreen - 1);
+                sectionManager.SelectSection(2);
+                yield return new WaitForSeconds(0.4f);
+                break;
+            case 9:
+                HideScreen(currentScreen - 1);
+                sectionManager.SelectSection(0);
+                yield return new WaitForSeconds(0.4f);
+                break;
+            case 10:
+                HideScreen(currentScreen - 1);
+                sectionManager.SelectSection(3);
+                yield return new WaitForSeconds(0.4f);
+                break;
+            case 12:
+                HideScreen(currentScreen - 1);
+                sectionManager.SelectSection(1);
+                background.DOFade(0.6509804f, 0);
+                yield return new WaitForSeconds(0.4f);
+                break;
+            case 13:
+                HideScreen(currentScreen - 1);
+                background.DOFade(0.2784314f, 0);
+                break;
+        }
+    }
+
     public void OnNextButtonClicked()
     {
-        NextScreen();
+        StartCoroutine(NextScreen());
     }
 
     public void OnCloseTutorialButtonClicked()
