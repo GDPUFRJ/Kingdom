@@ -54,8 +54,8 @@ public class SendTroopsBox : Singleton<SendTroopsBox>
         {
             case ArrowType.Battle:
             case ArrowType.Arrow:
-                currentSourceArrow.Source.AddSoldiers(SoldierType.ToGetOut, numberOfSoldiers);
-                currentSourceArrow.SetSoldiersToBeTransfered(currentSourceArrow.GetSoldiersToBeTransfered() + numberOfSoldiers);
+                currentSourceArrow.Source.SetSoldiers(SoldierType.ToGetOut, numberOfSoldiers);
+                currentSourceArrow.SetSoldiersToBeTransfered(numberOfSoldiers);
                 currentSourceArrow.UpdateArrowText();
                 break;
             case ArrowType.Abort:
@@ -109,7 +109,7 @@ public class SendTroopsBox : Singleton<SendTroopsBox>
                 }
                 else if (nSoldiers < 0)
                 {
-                    if (currentSourceArrow.Source.GetSoldiers(SoldierType.ToGetOut) + numberOfSoldiers + nSoldiers >= 0)
+                    if (numberOfSoldiers + nSoldiers >= 0)
                     {
                         numberOfSoldiers += nSoldiers;
                     }
