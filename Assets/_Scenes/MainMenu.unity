@@ -4167,10 +4167,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Ideia original: Pedro Marques\n\nGest\xE3o de Projeto: Pedro Marques, Victor
-    Corr\xEAa, Vitor Barcellos, Pierluigi Piccolo Raso\r\n\nGame Design: Victor Corr\xEAa,
-    Lucas Cordeiro\r\n\nPrograma\xE7\xE3o: Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTextos:
-    Victor Corr\xEAa\r\n\nArte: Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nImplementa\xE7\xE3o
-    do \xE1udio: Wilson Santos e Janderson Barbosa"
+    Corr\xEAa, Vitor Barcellos\n\nGame Design: Victor Corr\xEAa, Lucas Cordeiro\r\n\nPrograma\xE7\xE3o:
+    Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTextos: Victor Corr\xEAa\r\n\nArte:
+    Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nImplementa\xE7\xE3o do \xE1udio: Wilson
+    Santos e Janderson Barbosa"
 --- !u!222 &1902306842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4189,15 +4189,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portugueseText: "Ideia original: Pedro Marques\n\nGest\xE3o de Projeto: Pedro Marques,
-    Victor Corr\xEAa, Vitor Barcellos, Pierluigi Piccolo Raso\r\n\nGame Design: Victor
-    Corr\xEAa, Lucas Cordeiro\r\n\nPrograma\xE7\xE3o: Alonso Matos, Pedro Marques,
-    Vitor Barcellos\r\n\nTextos: Victor Corr\xEAa\r\n\nArte: Roberta Paz, Hor\xE1cio
-    Mac\xEAdo\r\n\nImplementa\xE7\xE3o do \xE1udio: Wilson Santos e Janderson Barbosa"
+    Victor Corr\xEAa, Vitor Barcellos\n\nGame Design: Victor Corr\xEAa, Lucas Cordeiro\r\n\nPrograma\xE7\xE3o:
+    Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTextos: Victor Corr\xEAa\r\n\nArte:
+    Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nImplementa\xE7\xE3o do \xE1udio: Wilson
+    Santos e Janderson Barbosa"
   englishText: "Original concept: Pedro Marques\r\n\nProject management: Pedro Marques,
-    Victor Corr\xEAa, Vitor Barcellos, Pierluigi Piccolo Raso\r\n\nGame Design: Victor
-    Corr\xEAa, Lucas Cordeiro\r\n\nCoding: Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTexts:
-    Victor Corr\xEAa\r\n\n2D Art: Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nAudio implementation:
-    Wilson Santos, Janderson Barboza"
+    Victor Corr\xEAa, Vitor Barcellos\n\nGame Design: Victor Corr\xEAa, Lucas Cordeiro\r\n\nCoding:
+    Alonso Matos, Pedro Marques, Vitor Barcellos\r\n\nTexts: Victor Corr\xEAa\r\n\n2D
+    Art: Roberta Paz, Hor\xE1cio Mac\xEAdo\r\n\nAudio implementation: Wilson Santos,
+    Janderson Barboza"
   mainMenu: 1
 --- !u!1 &1920872405
 GameObject:
