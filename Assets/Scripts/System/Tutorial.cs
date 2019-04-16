@@ -59,6 +59,7 @@ public class Tutorial : MonoBehaviour
 
     public void StartTutorial()
     {
+        sectionManager.SelectSection(1);
         currentScreen = 1;
 
         if (thisIsTheGameScene)
@@ -79,6 +80,8 @@ public class Tutorial : MonoBehaviour
         {
             TimerPanel.SetPause(false);
         }
+
+        sectionManager.SelectSection(1);
     }
 
     private IEnumerator NextScreen()
@@ -135,16 +138,16 @@ public class Tutorial : MonoBehaviour
                 sectionManager.SelectSection(0);
                 yield return new WaitForSeconds(0.4f);
                 break;
-            case 10:
+            case 11:
                 sectionManager.SelectSection(3);
                 yield return new WaitForSeconds(0.4f);
                 break;
-            case 12:
+            case 13:
                 sectionManager.SelectSection(1);
                 background.DOFade(0.6509804f, 0);
                 yield return new WaitForSeconds(0.4f);
                 break;
-            case 13:
+            case 14:
                 background.DOFade(0.2784314f, 0);
                 break;
         }

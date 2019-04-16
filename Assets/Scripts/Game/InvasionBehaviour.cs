@@ -19,7 +19,12 @@ public class InvasionBehaviour : MonoBehaviour
 
     private void AttemptInvasion()
     {
-        if (!property.dominated && HasDominatedNeighbor() && property.GetSoldiers(SoldierType.Enemy) == 0 && Random.Range(0f, 1f) < PropertyManager.Instance.invasionChancePerProperty && property.GetSoldiers(SoldierType.InProperty) > 0)
+        if (!property.dominated &&
+            HasDominatedNeighbor() &&
+            property.GetSoldiers(SoldierType.Enemy) == 0 &&
+            Random.Range(0f, 1f) < PropertyManager.Instance.invasionChancePerProperty &&
+            property.GetSoldiers(SoldierType.InProperty) > 0 &&
+            property.GetSoldiers(SoldierType.InProperty) > (GetRandomDominatedNeighbor().GetSoldiers(SoldierType.InProperty) / 2))
         {
             PerformInvasion();
         }

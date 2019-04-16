@@ -32,18 +32,18 @@ public class HappinessManager : Singleton<HappinessManager> {
 
     private void TimerPanel_OnAfterDayEnd()
     {
-        float NewHappyness = 0;
-        int dominatedProperties = 0;
-        foreach(Property p in pm.Propriedades)
-        {
-            if (p.dominated == true)
-            {
-                NewHappyness += p.happiness;
-                dominatedProperties++;
-            }
-        }
+        //float NewHappyness = 0;
+        //int dominatedProperties = 0;
+        //foreach(Property p in pm.Propriedades)
+        //{
+        //    if (p.dominated == true)
+        //    {
+        //        NewHappyness += p.happiness;
+        //        dominatedProperties++;
+        //    }
+        //}
 
-        gm.Happiness = NewHappyness / dominatedProperties;
+        //gm.Happiness = NewHappyness / dominatedProperties;
         gm.Happiness += gm.HappinessNextEventModifier;
     }
 

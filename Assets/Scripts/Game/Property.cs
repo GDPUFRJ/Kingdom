@@ -43,29 +43,29 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     public float happiness = 60;
 
     [Header("Production Information")]
-    [Range(-100, 100)] public int goldLevel1 = 0;
-    [Range(-100, 100)] public int foodLevel1 = 0;
-    [Range(-100, 100)] public int buildingLevel1 = 0;
-    [Range(0, 100)] public int soldierLevel1 = 0;
+    [Range(-1000, 1000)] public int goldLevel1 = 0;
+    [Range(-1000, 1000)] public int foodLevel1 = 0;
+    [Range(-1000, 1000)] public int buildingLevel1 = 0;
+    [Range(0, 1000)] public int soldierLevel1 = 0;
     [Space(10)]
-    [Range(-100, 100)] public int goldLevel2 = 0;
-    [Range(-100, 100)] public int foodLevel2 = 0;
-    [Range(-100, 100)] public int buildingLevel2 = 0;
-    [Range(0, 100)] public int soldierLevel2 = 0;
+    [Range(-1000, 100)] public int goldLevel2 = 0;
+    [Range(-1000, 1000)] public int foodLevel2 = 0;
+    [Range(-1000, 1000)] public int buildingLevel2 = 0;
+    [Range(0, 1000)] public int soldierLevel2 = 0;
     [Space(10)]
-    [Range(-100, 100)] public int goldLevel3 = 0;
-    [Range(-100, 100)] public int foodLevel3 = 0;
-    [Range(-100, 100)] public int buildingLevel3 = 0;
-    [Range(0, 100)] public int soldierLevel3 = 0;
+    [Range(-1000, 1000)] public int goldLevel3 = 0;
+    [Range(-1000, 1000)] public int foodLevel3 = 0;
+    [Range(-1000, 1000)] public int buildingLevel3 = 0;
+    [Range(0, 1000)] public int soldierLevel3 = 0;
 
     [Header("Upgrade Demands")]
-    [Range(-100, 100)] public int goldToLevel2 = 0;
-    [Range(-100, 100)] public int foodToLevel2 = 0;
-    [Range(-100, 100)] public int buildingToLevel2 = 0;
+    [Range(-1000, 1000)] public int goldToLevel2 = 0;
+    [Range(-1000, 1000)] public int foodToLevel2 = 0;
+    [Range(-1000, 1000)] public int buildingToLevel2 = 0;
     [Space(10)]
-    [Range(-100, 100)] public int goldToLevel3 = 0;
-    [Range(-100, 100)] public int foodToLevel3 = 0;
-    [Range(-100, 100)] public int buildingToLevel3 = 0;
+    [Range(-1000, 1000)] public int goldToLevel3 = 0;
+    [Range(-1000, 1000)] public int foodToLevel3 = 0;
+    [Range(-1000, 1000)] public int buildingToLevel3 = 0;
 
     [Header("Custom Sprites")]
     public Sprite CustomLevel1;
