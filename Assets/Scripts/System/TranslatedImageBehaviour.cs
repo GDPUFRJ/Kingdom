@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class TranslatedSpriteBehaviour : MonoBehaviour
+public class TranslatedImageBehaviour : MonoBehaviour
 {
     [SerializeField] private Sprite portugueseSprite;
     [SerializeField] private Sprite englishSprite;
@@ -10,11 +11,11 @@ public class TranslatedSpriteBehaviour : MonoBehaviour
     [Tooltip("Marque essa caixa se a sprite estiver no Menu Principal.")]
     [SerializeField] private bool mainMenu = false;
 
-    private SpriteRenderer spriteRenderer;
+    private Image imageComponent;
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        imageComponent = GetComponent<Image>();
 
         ChangeText(TranslationManager.GameLanguage);
 
@@ -34,10 +35,10 @@ public class TranslatedSpriteBehaviour : MonoBehaviour
         switch (language)
         {
             case Language.Portuguese:
-                spriteRenderer.sprite = portugueseSprite;
+                imageComponent.sprite = portugueseSprite;
                 break;
             case Language.English:
-                spriteRenderer.sprite = englishSprite;
+                imageComponent.sprite = englishSprite;
                 break;
         }
     }
