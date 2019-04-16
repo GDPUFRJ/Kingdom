@@ -25,7 +25,7 @@ public class HudInfoManager : MonoBehaviour {
     }
     public void UpdateHUD()
     {
-        currentDate.text = FindObjectOfType<TimerPanel>().GetCurrentDay().ToString();
+        currentDate.text = ((TranslationManager.GameLanguage == Language.Portuguese) ? ("dia ") : ("day ")) + FindObjectOfType<TimerPanel>().GetCurrentDay().ToString();
         currentHappiness.text = GameManager.Instance.Happiness.ToString();
         currentPopulation.text = GameManager.Instance.Population.ToString();
 
