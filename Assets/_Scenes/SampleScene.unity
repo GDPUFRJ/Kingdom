@@ -2637,11 +2637,11 @@ MonoBehaviour:
     example out of them. What is the Throne\u2019s official position?"
   PortugueseQuestion: Proibir?
   EnglishQuestion: Forbid?
-  chance: 3
+  chance: 4
   Answers:
   - {fileID: 128664944}
   - {fileID: 1783996548}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
   showDescription: 0
 --- !u!1001 &93959017
@@ -3390,7 +3390,7 @@ MonoBehaviour:
   englishTitle: king's barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -3472,7 +3472,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3685,7 +3685,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 1042552050}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &123794886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,7 +3779,7 @@ MonoBehaviour:
   englishAnswer: Forbid
   answerEvent: {fileID: 1941502089}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &132379525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,7 +4079,7 @@ MonoBehaviour:
   englishTitle: montgomery farm
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -4174,7 +4174,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4370,7 +4370,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 873d953f85d3c434da77c9965422b70a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5886,7 +5886,7 @@ MonoBehaviour:
   englishAnswer: Endorse
   answerEvent: {fileID: 405683378}
   intensity: 2
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &211910184
 GameObject:
   m_ObjectHideFlags: 0
@@ -6995,7 +6995,7 @@ MonoBehaviour:
   Answers:
   - {fileID: 1530806957}
   - {fileID: 1708772822}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
   showDescription: 0
 --- !u!1 &259571680
@@ -7709,7 +7709,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: c8daf27da3d4600488459766413877b4, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7908,7 +7908,7 @@ MonoBehaviour:
   englishAnswer: Partake
   answerEvent: {fileID: 1089450818}
   intensity: 2
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &282332268
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,7 +11160,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11188,7 +11188,7 @@ MonoBehaviour:
   englishTitle: hanged man barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -11266,7 +11266,7 @@ MonoBehaviour:
   englishTitle: ruffian's woods
   type: 4
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -11338,7 +11338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.008380299, y: -0.000015258789}
+  m_AnchoredPosition: {x: -0.008380299, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -12355,7 +12355,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12383,7 +12383,7 @@ MonoBehaviour:
   englishTitle: tarragon estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -12862,7 +12862,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b9c7d084a24273b47807d571ab361e8d, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13274,7 +13274,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7888be050bf1d924999d856e63996cd3, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13446,7 +13446,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 868960476}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &457121415
 GameObject:
   m_ObjectHideFlags: 0
@@ -14116,7 +14116,7 @@ MonoBehaviour:
   englishTitle: shadowy woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -14213,7 +14213,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14389,7 +14389,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14417,7 +14417,7 @@ MonoBehaviour:
   englishTitle: zuchinni estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -14669,7 +14669,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 68376935cd7236a4496786b10c4dea21, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14863,7 +14863,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14891,7 +14891,7 @@ MonoBehaviour:
   englishTitle: "yw\xE9's thicket"
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -15805,9 +15805,9 @@ MonoBehaviour:
   Answers:
   - {fileID: 2141783207}
   - {fileID: 117087425}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
-  showDescription: 1
+  showDescription: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -15894,7 +15894,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1372724, y: 5.747273, z: -10}
+  m_LocalPosition: {x: -4.9870005, y: -3.048, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16527,7 +16527,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16555,7 +16555,7 @@ MonoBehaviour:
   englishTitle: foamy hills
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -16850,7 +16850,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: fc792524f25f46d4a9c2e0ac7fd5804d, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18031,12 +18031,12 @@ MonoBehaviour:
     the people!
   PortugueseQuestion: Patrocinar?
   EnglishQuestion: Endorse?
-  chance: 3
+  chance: 4
   Answers:
   - {fileID: 209995895}
   - {fileID: 879918912}
-  showInInspector: 0
-  showAnswers: 0
+  showInInspector: 1
+  showAnswers: 1
   showDescription: 0
 --- !u!1 &630167740
 GameObject:
@@ -18391,13 +18391,13 @@ MonoBehaviour:
     gods for the abundance. Will government officials collaborate with the feast?
   PortugueseQuestion: Contribuir?
   EnglishQuestion: Contribute?
-  chance: 3
+  chance: 4
   Answers:
   - {fileID: 2032535812}
   - {fileID: 1051779030}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
-  showDescription: 1
+  showDescription: 0
 --- !u!114 &661767944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18413,7 +18413,7 @@ MonoBehaviour:
   englishAnswer: Help the people
   answerEvent: {fileID: 1568852439}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!114 &670402468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18861,8 +18861,8 @@ MonoBehaviour:
   Answers:
   - {fileID: 1927541805}
   - {fileID: 860291740}
-  showInInspector: 0
-  showAnswers: 0
+  showInInspector: 1
+  showAnswers: 1
   showDescription: 0
 --- !u!1 &680556353
 GameObject:
@@ -19522,7 +19522,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a90b66ec9e17b3a4385be13c31e5e2ad, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20298,7 +20298,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 1039217894}
   intensity: 1
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &721320743
 GameObject:
   m_ObjectHideFlags: 0
@@ -20500,7 +20500,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5028ec0a5739c23488d534a567240fc7, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21363,7 +21363,7 @@ MonoBehaviour:
   englishAnswer: Send workers
   answerEvent: {fileID: 135245344}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &751601477
 GameObject:
   m_ObjectHideFlags: 0
@@ -21594,13 +21594,13 @@ MonoBehaviour:
     feel safe, and ask for intervention by the governor to help the rebuild."
   PortugueseQuestion: "Enviar oper\xE1rios?"
   EnglishQuestion: Send workers?
-  chance: 3
+  chance: 4
   Answers:
   - {fileID: 747739535}
   - {fileID: 118313925}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
-  showDescription: 1
+  showDescription: 0
 --- !u!1 &757110294
 GameObject:
   m_ObjectHideFlags: 0
@@ -22522,7 +22522,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 29a5ea40acaf75940b82cc50ff20e09c, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23214,7 +23214,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23242,7 +23242,7 @@ MonoBehaviour:
   englishTitle: "mount f\xE4ernik"
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -24065,7 +24065,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24092,7 +24092,7 @@ MonoBehaviour:
   englishTitle: raaja mahal
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 4
   level: 1
@@ -24479,14 +24479,14 @@ MonoBehaviour:
     the people gather their weapons and scream for justice at the castle gates.
   PortugueseQuestion: Dialogar?
   EnglishQuestion: Dialogue?
-  chance: 5
+  chance: 2
   Answers:
   - {fileID: 922866446}
   - {fileID: 15843042}
   - {fileID: 1878283158}
-  showInInspector: 0
-  showAnswers: 1
-  showDescription: 1
+  showInInspector: 1
+  showAnswers: 0
+  showDescription: 0
 --- !u!1 &849065439
 GameObject:
   m_ObjectHideFlags: 0
@@ -25060,7 +25060,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 83268cbe9c252a947a3b9544963f3e55, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25171,7 +25171,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 1915713774}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &863435418
 GameObject:
   m_ObjectHideFlags: 0
@@ -25373,7 +25373,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 9269286033bd7224e92f0867b48a633f, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25434,7 +25434,7 @@ MonoBehaviour:
   englishTitle: gulliver's castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 0
   level: 1
@@ -25526,7 +25526,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25882,7 +25882,7 @@ MonoBehaviour:
   englishAnswer: Veto
   answerEvent: {fileID: 868960476}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &883103901
 GameObject:
   m_ObjectHideFlags: 0
@@ -26037,7 +26037,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7482da99496de4e4ab248cd9f6e7d958, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27591,7 +27591,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e41785b6200a27e4bbc76d3066beeaf0, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28807,7 +28807,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 1358666751}
   intensity: 2
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &996768275
 GameObject:
   m_ObjectHideFlags: 0
@@ -30485,7 +30485,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 868960476}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1054705958
 GameObject:
   m_ObjectHideFlags: 0
@@ -30584,13 +30584,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 100
-  GoldNext: 10
+  GoldNext: 15
   GoldNextEventModifier: 0
   Food: 100
-  FoodNext: 30
+  FoodNext: 40
   FoodNextEventModifier: 0
   Building: 100
-  BuildingNext: 15
+  BuildingNext: 20
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -30966,7 +30966,7 @@ MonoBehaviour:
   englishAnswer: Death sentence
   answerEvent: {fileID: 1914208422}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1065110197
 GameObject:
   m_ObjectHideFlags: 0
@@ -31427,7 +31427,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5235e63de7011c84ebb6fff3a312a0b2, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32317,7 +32317,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d242fd756c84d9a42877b736d4469d0f, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34238,13 +34238,13 @@ MonoBehaviour:
     reserves, but should we send our troops to retaliate before they get to the city?
   PortugueseQuestion: Combater?
   EnglishQuestion: Fight?
-  chance: 3
+  chance: 2
   Answers:
   - {fileID: 479554136}
   - {fileID: 993692160}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
-  showDescription: 1
+  showDescription: 0
 --- !u!1 &1164068531
 GameObject:
   m_ObjectHideFlags: 0
@@ -34311,7 +34311,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 512f32d47456b384ba63541a05e18284, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35246,7 +35246,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35274,7 +35274,7 @@ MonoBehaviour:
   englishTitle: stone trees grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -35562,7 +35562,7 @@ MonoBehaviour:
   englishTitle: jack's farm
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -36104,7 +36104,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36176,7 +36176,7 @@ MonoBehaviour:
   englishTitle: death mountain
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -36272,7 +36272,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36347,7 +36347,7 @@ MonoBehaviour:
   englishTitle: barney's ranch
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -36442,7 +36442,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37352,7 +37352,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ed683ee3e435b074ab3f7287bf562943, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37877,7 +37877,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39308,7 +39308,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 81fe8a411b85ec645b14c2b945c30119, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39586,7 +39586,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 914a4c7242abd0a49b17c213280b61e5, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39674,7 +39674,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 007c490f212706345b12b9a32afc2d69, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41282,7 +41282,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41310,7 +41310,7 @@ MonoBehaviour:
   englishTitle: fig tree valley
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -41474,7 +41474,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42523,7 +42523,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 306865fa43af0cc4bafdf736e3f29dd3, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43318,7 +43318,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 2079948607}
   intensity: 1
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1445611452
 GameObject:
   m_ObjectHideFlags: 0
@@ -43393,7 +43393,7 @@ MonoBehaviour:
   - {fileID: 361624915}
   - {fileID: 1203987966}
   showInInspector: 1
-  showAnswers: 0
+  showAnswers: 1
   showDescription: 0
 --- !u!114 &1451726361
 MonoBehaviour:
@@ -43421,11 +43421,11 @@ MonoBehaviour:
     efforts would be doubled, and further losses for the nobles would be prevented.
   PortugueseQuestion: "Sentenciar \xE0 morte?"
   EnglishQuestion: Death sentence?
-  chance: 3
+  chance: 2
   Answers:
   - {fileID: 1063859519}
   - {fileID: 1443699338}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
   showDescription: 0
 --- !u!1 &1459380480
@@ -46374,7 +46374,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6dbc71e3bf69f714383e0d77ca3529e4, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46500,7 +46500,7 @@ MonoBehaviour:
   englishAnswer: Outlaw manifestations
   answerEvent: {fileID: 236225160}
   intensity: 1
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1543451412
 GameObject:
   m_ObjectHideFlags: 0
@@ -48269,7 +48269,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cf8c824f31ac80945944f919931205d2, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -49306,7 +49306,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2cd9531b5fc0e2a42a13b2cd786dff95, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -49381,7 +49381,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 726b01fee2d6a4e439671b68270dd52a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51365,7 +51365,7 @@ MonoBehaviour:
   englishAnswer: Ignore
   answerEvent: {fileID: 870076946}
   intensity: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1709756319
 GameObject:
   m_ObjectHideFlags: 0
@@ -51520,7 +51520,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ec24d678d93737243a914ec0aa123247, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51910,7 +51910,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51938,7 +51938,7 @@ MonoBehaviour:
   englishTitle: augeas' stables
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -52440,13 +52440,13 @@ MonoBehaviour:
     from the swamps, and whom the thirst threatened now dreads the water.
   PortugueseQuestion: "Ajudar a popula\xE7\xE3o?"
   EnglishQuestion: Help the people?
-  chance: 4
+  chance: 3
   Answers:
   - {fileID: 661767944}
   - {fileID: 721058331}
-  showInInspector: 0
-  showAnswers: 1
-  showDescription: 1
+  showInInspector: 1
+  showAnswers: 0
+  showDescription: 0
 --- !u!1 &1735654201
 GameObject:
   m_ObjectHideFlags: 0
@@ -52834,7 +52834,7 @@ MonoBehaviour:
   englishTitle: bearheart lucius' base
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -53252,7 +53252,7 @@ MonoBehaviour:
   englishAnswer: Encourage
   answerEvent: {fileID: 1502753265}
   intensity: 1
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1784672387
 GameObject:
   m_ObjectHideFlags: 0
@@ -53319,7 +53319,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 0a73f00f7b24e714789389efcfcea773, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53449,7 +53449,7 @@ MonoBehaviour:
   englishTitle: forget-me-not port
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -53544,7 +53544,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7e4a876849d2e4343a5909277b4e2a46, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53979,7 +53979,7 @@ MonoBehaviour:
   Answers:
   - {fileID: 282008938}
   - {fileID: 454537078}
-  showInInspector: 0
+  showInInspector: 1
   showAnswers: 1
   showDescription: 0
 --- !u!1 &1819032608
@@ -55567,7 +55567,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e5b49558674983d428b1cf5e9961a64a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55755,7 +55755,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1cf87839c2f079c4e8a46351d3da5c34, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55783,7 +55783,7 @@ MonoBehaviour:
   englishTitle: mirage oasis
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -57487,7 +57487,7 @@ MonoBehaviour:
   englishAnswer: Tax increase
   answerEvent: {fileID: 550254910}
   intensity: 1
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &1930920379
 GameObject:
   m_ObjectHideFlags: 0
@@ -58111,7 +58111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d28b46671fe552b4081b1edc0135ced7, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -59410,7 +59410,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e7bc8fb305a79fb418acdfa8cea2ed5a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -60238,7 +60238,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 020fc3c7b0fd96c479f09e0e1034cf7e, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -61318,7 +61318,7 @@ MonoBehaviour:
   englishAnswer: Offering to the gods
   answerEvent: {fileID: 1839591816}
   intensity: 1
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &2034458919
 GameObject:
   m_ObjectHideFlags: 0
@@ -61773,7 +61773,7 @@ MonoBehaviour:
   AbsoluteGoldHeavy: 0
   AbsoluteFoodHeavy: 0
   AbsoluteBuildingHeavy: 0
-  showInInspector: 1
+  showInInspector: 0
 --- !u!1 &2050094674
 GameObject:
   m_ObjectHideFlags: 0
@@ -65008,7 +65008,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8bba4d353af089a4ea889727ae34fe14, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
