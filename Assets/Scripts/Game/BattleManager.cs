@@ -39,6 +39,11 @@ public class BattleManager : MonoBehaviour {
         shouldPlayBattles = false;
         StopAllCoroutines();
     }
+    public void OnIndividualBattleEnded()
+    {
+        //Chamado quando cada batalha individual termina
+        TimerPanel.OnIndividualBattleEnd();
+    }
     public void OnBattlesEnd()
     {
         //Chamado quando terminam todas as batalhas
@@ -52,6 +57,7 @@ public class BattleManager : MonoBehaviour {
         for(int i = 0; i < propertiesInBattle.Count; i++)
         {
             yield return IndividualBattle(propertiesInBattle[i], battleInformations[i]);
+            OnIndividualBattleEnded();
         }
         OnBattlesEnd();
         TimerPanel.SetPause(false);

@@ -19,10 +19,10 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
 
     private void Start()
     {
-        TimerPanel.OnBattleEnded += TimerPanel_OnAfterBattles;
+        TimerPanel.OnIndividualBattleEnded += TimerPanel_OnAfterIndividualBattles;
     }
 
-    private void TimerPanel_OnAfterBattles()
+    private void TimerPanel_OnAfterIndividualBattles()
     {
         bool moneyDefeat = CheckMoneyDefeatCondition();
         bool castleDefeat = CheckCastleDefeatCondition();

@@ -37,6 +37,15 @@ public class TimerPanel : MonoBehaviour {
     public delegate void BattleEnd();
     public static event BattleEnd OnBattleEnded;
 
+    public delegate void IndividualBattleEnd();
+    public static event IndividualBattleEnd OnIndividualBattleEnded;
+
+    public static void OnIndividualBattleEnd()
+    {
+        if (OnIndividualBattleEnded != null)
+            OnIndividualBattleEnded();
+    }
+
     public static void OnBattleEnd()
     {
         if (OnBattleEnded != null)
