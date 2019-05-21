@@ -107,12 +107,25 @@ public class PropertyManager : Singleton<PropertyManager> {
 
     public List<Property> GetCastlesByKingdom(Kingdom kingdom)
     {
-        List<Property> list = new List<Property>();
+        var list = new List<Property>();
         foreach(var castle in castles)
         {
             if (castle.kingdom == kingdom)
                 list.Add(castle);
         }
+        
+        return list;
+    }
+
+    public List<Property> GetPropertiesByKingdom(Kingdom kingdom)
+    {
+        var list = new List<Property>();
+        foreach (var property in Propriedades)
+        {
+            if (property.kingdom == kingdom)
+                list.Add(property);
+        }
+
         return list;
     }
 }

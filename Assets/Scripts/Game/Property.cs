@@ -327,7 +327,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
         }
 
-        foreach (BattleArrowController bac in ArrowsComingOut)
+        foreach (var bac in ArrowsComingOut)
             bac.UpdateSoldierButton();
 
         //UpdateSoldierInfo(); // Não tá funcionando
@@ -622,8 +622,20 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
 
     public void ChangeKingdom(Kingdom newKingdom)
     {
+        var oldKingdom = kingdom;
         kingdom = newKingdom;
         myCastles = PropertyManager.Instance.GetCastlesByKingdom(kingdom);
+        
+        // Ao conquistar todos os castelos de um reino, o jogador conquista todas as outras propriedades desse reino
+        if (type == PropertyType.Castle && PropertyManager.Instance.GetCastlesByKingdom(oldKingdom).Count == 0)
+        {
+            var properties = PropertyManager.Instance.GetPropertiesByKingdom(oldKingdom);
+            foreach (var property in properties)
+            {
+                property.ChangeKingdom(newKingdom);
+                if (!property.dominated) property.SetDominated(true, false);
+            }
+        }
     }
 
     public int Compare(object x, object y)

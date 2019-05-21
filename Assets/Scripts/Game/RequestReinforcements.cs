@@ -30,7 +30,7 @@ public class RequestReinforcements : MonoBehaviour
 
         foreach (var neighborBarrack in neighborBarracks)
         {
-            if (neighborBarrack.GetSoldiers(SoldierType.InProperty) > mySoldiers)
+            if (!neighborBarrack.dominated && neighborBarrack.GetSoldiers(SoldierType.InProperty) > mySoldiers)
                 barracks.Add(neighborBarrack);
         }
 
