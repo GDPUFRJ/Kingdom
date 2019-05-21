@@ -29,13 +29,13 @@ public class StartingKingdomController : Singleton<StartingKingdomController>
         List<Kingdom> kingdoms = new List<Kingdom> { Kingdom.Blue, Kingdom.Green, Kingdom.Orange, Kingdom.Purple, Kingdom.Red };
         Kingdom randomKingdom = kingdoms[Random.Range(0, kingdoms.Count)];
 
-        foreach (Kingdom kingdom in kingdoms)
+        foreach (Kingdom k in kingdoms)
         {
-            List<Property> kingdomProperties = GetKingdomProperties(kingdom);
+            List<Property> kingdomProperties = GetKingdomProperties(k);
 
             foreach(Property property in kingdomProperties)
             {
-                if (kingdom == randomKingdom)
+                if (k == randomKingdom)
                 {
                     property.SetDominated(true, false);
                 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.2d.animation@1.0.16-preview.2/Editor/MeshModule/Resources" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@1.8.8/Editor/Resources/Styles" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@1.8.8/Editor/Resources/Templates" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.7-preview/PostProcessing/Shaders" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.core@1.1.11-preview/CoreRP" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.lightweight@1.1.11-preview/LWRP/ShaderLibrary" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.lightweight@1.1.11-preview/LWRP/Shaders" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@1.1.9-preview/Editor/Resources/Shaders" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@1.1.9-preview/Editor/Resources/Styles" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@1.1.9-preview/Editor/Resources/UXML" />
+    <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@1.1.9-preview/ShaderGraphLibrary" />
+    <content url="file://$MODULE_DIR$/../.." />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

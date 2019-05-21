@@ -3390,7 +3390,7 @@ MonoBehaviour:
   englishTitle: king's barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -3420,8 +3420,9 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1791031546}
+  - {fileID: 866971831}
   - {fileID: 137315936}
-  - {fileID: 1962148909}
+  - {fileID: 1234089219}
 --- !u!65 &114956739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3472,7 +3473,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3489,7 +3490,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 114956737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.15, y: -0.84, z: 0}
+  m_LocalPosition: {x: -7.094, y: -2.691, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 490456442}
@@ -4079,7 +4080,7 @@ MonoBehaviour:
   englishTitle: montgomery farm
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -4108,10 +4109,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1791031546}
   - {fileID: 420475203}
-  - {fileID: 114956738}
   - {fileID: 1234089219}
+  - {fileID: 1791031546}
+  - {fileID: 114956738}
 --- !u!65 &137315937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4174,7 +4175,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4370,7 +4371,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 873d953f85d3c434da77c9965422b70a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7709,7 +7710,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: c8daf27da3d4600488459766413877b4, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9463,10 +9464,10 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 173384176}
   - {fileID: 1046291980}
-  - {fileID: 1057051444}
   - {fileID: 1672169556}
   - {fileID: 1761077139}
   - {fileID: 1234937611}
+  - {fileID: 1761837152}
 --- !u!1 &361541279
 GameObject:
   m_ObjectHideFlags: 0
@@ -9627,10 +9628,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 414272077}
-  - {fileID: 720482595}
   - {fileID: 1976614322}
   - {fileID: 420475203}
+  - {fileID: 414272077}
+  - {fileID: 720482595}
 --- !u!65 &363470471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10800,9 +10801,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 363470470}
-  - {fileID: 720482595}
+  - {fileID: 1877658832}
   - {fileID: 1360693710}
+  - {fileID: 720482595}
+  - {fileID: 363470470}
 --- !u!65 &414272078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10882,7 +10884,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414272076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.73, y: 1.68, z: 0}
+  m_LocalPosition: {x: -4.018, y: 3.252, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 213606621}
@@ -11091,7 +11093,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 419071370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.71, y: 4.51, z: 0}
+  m_LocalPosition: {x: 1.76, y: 6.12, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 800362056}
@@ -11160,7 +11162,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11188,7 +11190,7 @@ MonoBehaviour:
   englishTitle: hanged man barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -11217,10 +11219,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 475447221}
+  - {fileID: 839423460}
+  - {fileID: 809929533}
   - {fileID: 1182878594}
   - {fileID: 539240200}
-  - {fileID: 1679171063}
 --- !u!114 &419071376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11266,7 +11268,7 @@ MonoBehaviour:
   englishTitle: ruffian's woods
   type: 4
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -12355,7 +12357,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12383,7 +12385,7 @@ MonoBehaviour:
   englishTitle: tarragon estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -12413,7 +12415,7 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1869930720}
-  - {fileID: 1720318631}
+  - {fileID: 490696590}
 --- !u!114 &430192739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12862,7 +12864,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b9c7d084a24273b47807d571ab361e8d, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13274,7 +13276,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7888be050bf1d924999d856e63996cd3, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14116,7 +14118,7 @@ MonoBehaviour:
   englishTitle: shadowy woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -14213,7 +14215,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14389,7 +14391,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14417,7 +14419,7 @@ MonoBehaviour:
   englishTitle: zuchinni estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -14447,11 +14449,11 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1354812539}
-  - {fileID: 419071375}
   - {fileID: 539240200}
   - {fileID: 1464368163}
   - {fileID: 463094031}
   - {fileID: 811072181}
+  - {fileID: 1182878594}
 --- !u!114 &475447222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14669,7 +14671,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 68376935cd7236a4496786b10c4dea21, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14794,7 +14796,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 490696585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.81, y: 6.88, z: 0}
+  m_LocalPosition: {x: 7.23, y: 7.42, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 361541280}
@@ -14863,7 +14865,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14891,7 +14893,7 @@ MonoBehaviour:
   englishTitle: "yw\xE9's thicket"
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -14920,10 +14922,9 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 539240200}
-  - {fileID: 1869930720}
   - {fileID: 1720318631}
-  - {fileID: 839423460}
+  - {fileID: 1869930720}
+  - {fileID: 430192738}
 --- !u!114 &490696591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15894,7 +15895,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9870005, y: -3.048, z: -10}
+  m_LocalPosition: {x: 4.15, y: 5.7472725, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16527,7 +16528,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16555,7 +16556,7 @@ MonoBehaviour:
   englishTitle: foamy hills
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -16588,7 +16589,7 @@ MonoBehaviour:
   - {fileID: 475447221}
   - {fileID: 419071375}
   - {fileID: 1182878594}
-  - {fileID: 490696590}
+  - {fileID: 1720318631}
 --- !u!114 &539240201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16850,7 +16851,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: fc792524f25f46d4a9c2e0ac7fd5804d, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17690,6 +17691,7 @@ GameObject:
   - component: {fileID: 609284741}
   - component: {fileID: 609284740}
   - component: {fileID: 609284744}
+  - component: {fileID: 609284745}
   m_Layer: 0
   m_Name: Casleto Roxo
   m_TagString: castle
@@ -17845,6 +17847,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &609284745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609284738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42726644c926d0d41a85db884ff4409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborBarracks:
+  - {fileID: 1567179685}
+  - {fileID: 1976614322}
+  turnInterval: 2
 --- !u!224 &611319636 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224313542454219392, guid: ba28d56f94573384bb723185bc6a2375,
@@ -19522,7 +19539,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a90b66ec9e17b3a4385be13c31e5e2ad, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20093,10 +20110,9 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 363470470}
   - {fileID: 414272077}
   - {fileID: 1360693710}
-  - {fileID: 1877658832}
+  - {fileID: 363470470}
 --- !u!65 &720482596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20176,7 +20192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 720482594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.03, y: 3.32, z: 0}
+  m_LocalPosition: {x: -4.711, y: 1.628, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 1516661029}
@@ -20500,7 +20516,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5028ec0a5739c23488d534a567240fc7, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22522,7 +22538,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 29a5ea40acaf75940b82cc50ff20e09c, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22950,7 +22966,9 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1099387631}
+  - {fileID: 2107316309}
+  - {fileID: 811072181}
+  - {fileID: 1182878594}
 --- !u!65 &806854718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23030,7 +23048,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 806854716}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.08, y: 7.68, z: 0}
+  m_LocalPosition: {x: -1.13, y: 3.92, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 1976000012}
@@ -23214,7 +23232,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23242,7 +23260,7 @@ MonoBehaviour:
   englishTitle: "mount f\xE4ernik"
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -23272,7 +23290,7 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 839423460}
-  - {fileID: 1182878594}
+  - {fileID: 419071375}
 --- !u!114 &809929534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23425,7 +23443,7 @@ MonoBehaviour:
   - {fileID: 463094031}
   - {fileID: 1976614322}
   - {fileID: 475447221}
-  - {fileID: 1679171063}
+  - {fileID: 806854717}
 --- !u!65 &811072182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23981,6 +23999,7 @@ GameObject:
   - component: {fileID: 839423458}
   - component: {fileID: 839423457}
   - component: {fileID: 839423461}
+  - component: {fileID: 839423462}
   m_Layer: 0
   m_Name: Casleto Laranja
   m_TagString: castle
@@ -24065,7 +24084,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24092,7 +24111,7 @@ MonoBehaviour:
   englishTitle: raaja mahal
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 4
   level: 1
@@ -24121,9 +24140,9 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 490696590}
-  - {fileID: 1182878594}
   - {fileID: 809929533}
+  - {fileID: 419071375}
+  - {fileID: 1720318631}
 --- !u!114 &839423461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24135,6 +24154,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &839423462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839423455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42726644c926d0d41a85db884ff4409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborBarracks:
+  - {fileID: 419071375}
+  - {fileID: 1720318631}
+  turnInterval: 2
 --- !u!1001 &840870085
 Prefab:
   m_ObjectHideFlags: 0
@@ -25060,7 +25094,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 83268cbe9c252a947a3b9544963f3e55, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25373,7 +25407,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 9269286033bd7224e92f0867b48a633f, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25409,6 +25443,7 @@ GameObject:
   - component: {fileID: 866971833}
   - component: {fileID: 866971832}
   - component: {fileID: 866971836}
+  - component: {fileID: 866971837}
   m_Layer: 0
   m_Name: Castelo Azul
   m_TagString: castle
@@ -25434,7 +25469,7 @@ MonoBehaviour:
   englishTitle: gulliver's castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 0
   level: 1
@@ -25444,15 +25479,15 @@ MonoBehaviour:
   goldLevel1: 10
   foodLevel1: 0
   buildingLevel1: 0
-  soldierLevel1: 20
+  soldierLevel1: 0
   goldLevel2: 20
   foodLevel2: 0
   buildingLevel2: 0
-  soldierLevel2: 20
+  soldierLevel2: 0
   goldLevel3: 40
   foodLevel3: 0
   buildingLevel3: 0
-  soldierLevel3: 20
+  soldierLevel3: 0
   goldToLevel2: 100
   foodToLevel2: 0
   buildingToLevel2: 100
@@ -25463,7 +25498,7 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1791031546}
+  - {fileID: 114956738}
 --- !u!65 &866971832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25526,7 +25561,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25561,6 +25596,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &866971837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866971830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42726644c926d0d41a85db884ff4409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborBarracks:
+  - {fileID: 114956738}
+  turnInterval: 2
 --- !u!114 &868960476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26037,7 +26086,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7482da99496de4e4ab248cd9f6e7d958, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27591,7 +27640,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e41785b6200a27e4bbc76d3066beeaf0, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30584,13 +30633,13 @@ MonoBehaviour:
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 100
-  GoldNext: 15
+  GoldNext: 10
   GoldNextEventModifier: 0
   Food: 100
-  FoodNext: 40
+  FoodNext: 30
   FoodNextEventModifier: 0
   Building: 100
-  BuildingNext: 20
+  BuildingNext: 15
   BuildingNextEventModifier: 0
   battleManager: {fileID: 319030517}
   happeningWindowPrefab: {fileID: 1885649452659116, guid: 3cb88891d2788b84991d1a30efddfb1a,
@@ -30748,9 +30797,8 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1125633894}
-  - {fileID: 361505745}
-  - {fileID: 1672169556}
+  - {fileID: 1564080335}
+  - {fileID: 1363153460}
 --- !u!65 &1057051445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30830,7 +30878,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1057051443}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.14, y: -9.99, z: 0}
+  m_LocalPosition: {x: 3.04, y: -6.9, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 1151926057}
@@ -31427,7 +31475,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5235e63de7011c84ebb6fff3a312a0b2, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32031,7 +32079,7 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1974962870}
   - {fileID: 1877658832}
-  - {fileID: 806854717}
+  - {fileID: 1679171063}
 --- !u!65 &1099387632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32317,7 +32365,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d242fd756c84d9a42877b736d4469d0f, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32962,6 +33010,7 @@ GameObject:
   - component: {fileID: 1125633896}
   - component: {fileID: 1125633895}
   - component: {fileID: 1125633899}
+  - component: {fileID: 1125633900}
   m_Layer: 0
   m_Name: Casleto Vermelho
   m_TagString: castle
@@ -33018,7 +33067,7 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1046291980}
   - {fileID: 2034458920}
-  - {fileID: 1057051444}
+  - {fileID: 1761837152}
 --- !u!65 &1125633895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33116,6 +33165,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1125633900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125633893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42726644c926d0d41a85db884ff4409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborBarracks:
+  - {fileID: 1046291980}
+  - {fileID: 1761837152}
+  turnInterval: 2
 --- !u!114 &1129510096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34311,7 +34375,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 512f32d47456b384ba63541a05e18284, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35177,7 +35241,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182878589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.69, y: 6.09, z: 0}
+  m_LocalPosition: {x: 0.75, y: 4.53, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 768834407}
@@ -35246,7 +35310,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35274,7 +35338,7 @@ MonoBehaviour:
   englishTitle: stone trees grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -35304,9 +35368,9 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 419071375}
+  - {fileID: 806854717}
   - {fileID: 539240200}
-  - {fileID: 839423460}
-  - {fileID: 809929533}
+  - {fileID: 475447221}
 --- !u!114 &1182878595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35562,7 +35626,7 @@ MonoBehaviour:
   englishTitle: jack's farm
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -36104,7 +36168,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36176,7 +36240,7 @@ MonoBehaviour:
   englishTitle: death mountain
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -36205,11 +36269,11 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1791031546}
   - {fileID: 1194851518}
   - {fileID: 469971037}
   - {fileID: 420475203}
   - {fileID: 137315936}
+  - {fileID: 114956738}
 --- !u!65 &1234089220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36272,7 +36336,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36347,7 +36411,7 @@ MonoBehaviour:
   englishTitle: barney's ranch
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -36442,7 +36506,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37352,7 +37416,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ed683ee3e435b074ab3f7287bf562943, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37877,7 +37941,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39308,7 +39372,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 81fe8a411b85ec645b14c2b945c30119, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39586,7 +39650,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 914a4c7242abd0a49b17c213280b61e5, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39674,7 +39738,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 007c490f212706345b12b9a32afc2d69, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41282,7 +41346,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41310,7 +41374,7 @@ MonoBehaviour:
   englishTitle: fig tree valley
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -41474,7 +41538,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41576,10 +41640,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 720482595}
   - {fileID: 1974962870}
-  - {fileID: 414272077}
   - {fileID: 1877658832}
+  - {fileID: 414272077}
+  - {fileID: 720482595}
 --- !u!65 &1360693711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41748,7 +41812,7 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1165873107}
   - {fileID: 404470565}
-  - {fileID: 1761837152}
+  - {fileID: 1057051444}
 --- !u!65 &1363153461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42523,7 +42587,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 306865fa43af0cc4bafdf736e3f29dd3, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46374,7 +46438,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6dbc71e3bf69f714383e0d77ca3529e4, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47086,7 +47150,7 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1944822422}
   - {fileID: 1046291980}
-  - {fileID: 1761837152}
+  - {fileID: 1057051444}
 --- !u!65 &1564080336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48269,7 +48333,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cf8c824f31ac80945944f919931205d2, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -49306,7 +49370,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2cd9531b5fc0e2a42a13b2cd786dff95, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -49381,7 +49445,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 726b01fee2d6a4e439671b68270dd52a, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -50244,8 +50308,8 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1057051444}
   - {fileID: 361505745}
+  - {fileID: 1761837152}
 --- !u!65 &1672169557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50617,9 +50681,7 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 2107316309}
-  - {fileID: 419071375}
-  - {fileID: 811072181}
+  - {fileID: 1099387631}
 --- !u!65 &1679171064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50699,7 +50761,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679171062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.12, y: 3.96, z: 0}
+  m_LocalPosition: {x: -7.13, y: 7.59, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 1352496580}
@@ -51520,7 +51582,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ec24d678d93737243a914ec0aa123247, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51841,7 +51903,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720318626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.24, y: 7.46, z: 0}
+  m_LocalPosition: {x: 4.85, y: 6.87, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 1462494892}
@@ -51910,7 +51972,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51938,7 +52000,7 @@ MonoBehaviour:
   englishTitle: augeas' stables
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -51967,9 +52029,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1869930720}
-  - {fileID: 430192738}
+  - {fileID: 839423460}
   - {fileID: 490696590}
+  - {fileID: 1869930720}
+  - {fileID: 539240200}
 --- !u!114 &1720318632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52834,7 +52897,7 @@ MonoBehaviour:
   englishTitle: bearheart lucius' base
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -52934,8 +52997,9 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 1564080335}
-  - {fileID: 1363153460}
+  - {fileID: 1672169556}
+  - {fileID: 361505745}
+  - {fileID: 1125633894}
 --- !u!65 &1761837153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53015,7 +53079,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761837151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.13, y: -6.85, z: 0}
+  m_LocalPosition: {x: -1.13, y: -10.02, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 3433847}
@@ -53319,7 +53383,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 0a73f00f7b24e714789389efcfcea773, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53449,7 +53513,7 @@ MonoBehaviour:
   englishTitle: forget-me-not port
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 0
   level: 1
@@ -53478,10 +53542,9 @@ MonoBehaviour:
   CustomLevel2: {fileID: 21300000, guid: 7e4a876849d2e4343a5909277b4e2a46, type: 3}
   CustomLevel3: {fileID: 21300000, guid: 7e4a876849d2e4343a5909277b4e2a46, type: 3}
   Neighbors:
-  - {fileID: 866971831}
   - {fileID: 114956738}
   - {fileID: 137315936}
-  - {fileID: 1234089219}
+  - {fileID: 1962148909}
 --- !u!65 &1791031547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53544,7 +53607,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7e4a876849d2e4343a5909277b4e2a46, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53561,7 +53624,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1791031545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.11, y: -2.72, z: 0}
+  m_LocalPosition: {x: -8.099, y: -0.888, z: 0}
   m_LocalScale: {x: 0.11712, y: 0.11712, z: 0.11712}
   m_Children:
   - {fileID: 1751220129}
@@ -55567,7 +55630,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e5b49558674983d428b1cf5e9961a64a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55755,7 +55818,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1cf87839c2f079c4e8a46351d3da5c34, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55783,7 +55846,7 @@ MonoBehaviour:
   englishTitle: mirage oasis
   type: 5
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 4
   level: 1
@@ -55915,6 +55978,7 @@ GameObject:
   - component: {fileID: 1877658834}
   - component: {fileID: 1877658833}
   - component: {fileID: 1877658837}
+  - component: {fileID: 1877658838}
   m_Layer: 0
   m_Name: Casleto Verde Oeste
   m_TagString: castle
@@ -55969,10 +56033,10 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 720482595}
   - {fileID: 1360693710}
   - {fileID: 1099387631}
   - {fileID: 2107316309}
+  - {fileID: 414272077}
 --- !u!65 &1877658833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56070,6 +56134,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1877658838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877658831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42726644c926d0d41a85db884ff4409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborBarracks:
+  - {fileID: 414272077}
+  turnInterval: 2
 --- !u!1 &1878169231
 GameObject:
   m_ObjectHideFlags: 0
@@ -58111,7 +58189,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d28b46671fe552b4081b1edc0135ced7, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -58874,7 +58952,7 @@ MonoBehaviour:
   CustomLevel2: {fileID: 0}
   CustomLevel3: {fileID: 0}
   Neighbors:
-  - {fileID: 114956738}
+  - {fileID: 1791031546}
 --- !u!65 &1962148910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59410,7 +59488,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e7bc8fb305a79fb418acdfa8cea2ed5a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -60238,7 +60316,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 020fc3c7b0fd96c479f09e0e1034cf7e, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -63644,6 +63722,7 @@ GameObject:
   - component: {fileID: 2107316311}
   - component: {fileID: 2107316310}
   - component: {fileID: 2107316314}
+  - component: {fileID: 2107316315}
   m_Layer: 0
   m_Name: Casleto Verde Leste
   m_TagString: castle
@@ -63699,8 +63778,8 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1877658832}
-  - {fileID: 1679171063}
   - {fileID: 433437232}
+  - {fileID: 806854717}
 --- !u!65 &2107316310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63798,6 +63877,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec41db18d21d8498ec5ce3e4bc7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2107316315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107316308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42726644c926d0d41a85db884ff4409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborBarracks:
+  - {fileID: 806854717}
+  turnInterval: 2
 --- !u!1 &2108315372
 GameObject:
   m_ObjectHideFlags: 0
@@ -65008,7 +65101,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8bba4d353af089a4ea889727ae34fe14, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
