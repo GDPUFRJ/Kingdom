@@ -75,7 +75,7 @@ public class PropertyWindow : MonoBehaviour {
         {
             if (GameManager.Instance.ConsumeItens(property.GetUpgradeInformations()))
             {
-                property.LevelUp();
+                property.LevelUp(true);
                 print("Upgraded");
                 UpdatePropertyInfo();
 

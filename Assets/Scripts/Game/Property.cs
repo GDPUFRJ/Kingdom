@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -77,6 +78,11 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     private GameObject EditButtons;
 
     [HideInInspector] public List<Property> Neighbors = new List<Property>();
+
+    [Space]
+    [Space]
+    [Space]
+    public UnityEvent OnUpgraded;
 
     private void Start()
     {
@@ -265,7 +271,7 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
         UpdateSoldierInfo();
     }
 
-    public void LevelUp()
+    public void LevelUp(bool byPlayer)
     {
         if (Level == Level.Level3)
             return;
@@ -273,6 +279,11 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
             this.Level = Level.Level2;
         else if (Level == Level.Level2)
             this.Level = Level.Level3;
+
+        if (byPlayer && OnUpgraded != null)
+        {
+            OnUpgraded.Invoke();
+        }
     }
 
     public bool Upgradable()

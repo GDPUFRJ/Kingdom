@@ -73,7 +73,7 @@ public class PropertyBox : MonoBehaviour {
     }
     private IEnumerator UpgradeAnimation()
     {
-        this.property.LevelUp();
+        this.property.LevelUp(true);
         this.gameObject.transform.DOPunchScale(new Vector3(BOX_MAX_INCREASE_TAX, BOX_MAX_INCREASE_TAX, BOX_MAX_INCREASE_TAX), TIME_TO_UPGRADE);
         yield return new WaitForSeconds(TIME_TO_UPGRADE);
         this.SetInformation(property, propertyPanel);

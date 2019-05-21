@@ -40,6 +40,7 @@
           <e p="Game" t="Include">
             <e p="BattleManager.cs" t="Include" />
             <e p="CameraMovement.cs" t="Include" />
+            <e p="EnemyUpgradeBehaviour.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="Graph.cs" t="Include" />
             <e p="InvasionBehaviour.cs" t="Include" />

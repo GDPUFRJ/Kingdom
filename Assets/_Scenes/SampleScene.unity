@@ -3423,6 +3423,66 @@ MonoBehaviour:
   - {fileID: 866971831}
   - {fileID: 137315936}
   - {fileID: 1234089219}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114956738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114956738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114956738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114956738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114956738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &114956739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4113,6 +4173,66 @@ MonoBehaviour:
   - {fileID: 1234089219}
   - {fileID: 1791031546}
   - {fileID: 114956738}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137315936}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137315936}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137315936}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137315936}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137315936}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &137315937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4798,6 +4918,66 @@ MonoBehaviour:
   - {fileID: 1046291980}
   - {fileID: 469971037}
   - {fileID: 1234937611}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 173384176}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 173384176}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 173384176}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 173384176}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 173384176}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &173384177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7074,6 +7254,66 @@ MonoBehaviour:
   - {fileID: 1944822422}
   - {fileID: 469971037}
   - {fileID: 1194851518}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 259571681}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 259571681}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 259571681}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 259571681}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 259571681}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &259571682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9468,6 +9708,66 @@ MonoBehaviour:
   - {fileID: 1761077139}
   - {fileID: 1234937611}
   - {fileID: 1761837152}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 361505745}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 361505745}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 361505745}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 361505745}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 361505745}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &361541279
 GameObject:
   m_ObjectHideFlags: 0
@@ -9632,6 +9932,66 @@ MonoBehaviour:
   - {fileID: 420475203}
   - {fileID: 414272077}
   - {fileID: 720482595}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 363470470}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 363470470}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 363470470}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 363470470}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 363470470}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &363470471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10481,6 +10841,66 @@ MonoBehaviour:
   - {fileID: 1567179685}
   - {fileID: 609284739}
   - {fileID: 1944822422}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 404470565}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 404470565}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 404470565}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 404470565}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 404470565}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &404470566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10805,6 +11225,66 @@ MonoBehaviour:
   - {fileID: 1360693710}
   - {fileID: 720482595}
   - {fileID: 363470470}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 414272077}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 414272077}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 414272077}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 414272077}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 414272077}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &414272078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11223,6 +11703,66 @@ MonoBehaviour:
   - {fileID: 809929533}
   - {fileID: 1182878594}
   - {fileID: 539240200}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 419071375}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 419071375}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 419071375}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 419071375}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 419071375}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &419071376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11301,6 +11841,66 @@ MonoBehaviour:
   - {fileID: 1194851518}
   - {fileID: 1234089219}
   - {fileID: 363470470}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 420475203}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 420475203}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 420475203}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 420475203}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 420475203}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &420714265 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114413081971732150, guid: ba28d56f94573384bb723185bc6a2375,
@@ -12416,6 +13016,66 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1869930720}
   - {fileID: 490696590}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 430192738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 430192738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 430192738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 430192738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 430192738}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &430192739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12633,6 +13293,66 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 2107316309}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 433437232}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 433437232}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 433437232}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 433437232}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 433437232}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &433437233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13856,6 +14576,66 @@ MonoBehaviour:
   - {fileID: 1464368163}
   - {fileID: 811072181}
   - {fileID: 475447221}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 463094031}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 463094031}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 463094031}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 463094031}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 463094031}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &463094032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14153,6 +14933,66 @@ MonoBehaviour:
   - {fileID: 173384176}
   - {fileID: 1944822422}
   - {fileID: 259571681}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 469971037}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 469971037}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 469971037}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 469971037}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 469971037}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &469971038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14454,6 +15294,66 @@ MonoBehaviour:
   - {fileID: 463094031}
   - {fileID: 811072181}
   - {fileID: 1182878594}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 475447221}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 475447221}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 475447221}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 475447221}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 475447221}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &475447222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14925,6 +15825,66 @@ MonoBehaviour:
   - {fileID: 1720318631}
   - {fileID: 1869930720}
   - {fileID: 430192738}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 490696590}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 490696590}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 490696590}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 490696590}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 490696590}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &490696591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14944,6 +15904,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 499883783}
+  - component: {fileID: 499883784}
   m_Layer: 0
   m_Name: === Reino Laranja ===
   m_TagString: Untagged
@@ -14964,6 +15925,29 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499883784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499883782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686648aa90813ce4b848bf90bfc43e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myProperties:
+  - {fileID: 475447221}
+  - {fileID: 1354812539}
+  - {fileID: 419071375}
+  - {fileID: 539240200}
+  - {fileID: 1182878594}
+  - {fileID: 1869930720}
+  - {fileID: 430192738}
+  - {fileID: 490696590}
+  - {fileID: 1720318631}
+  - {fileID: 839423460}
+  - {fileID: 809929533}
 --- !u!224 &501036245 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224565030326050824, guid: 7ba713e4197fe9f499f1c20b7bddd3e4,
@@ -16590,6 +17574,66 @@ MonoBehaviour:
   - {fileID: 419071375}
   - {fileID: 1182878594}
   - {fileID: 1720318631}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 539240200}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 539240200}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 539240200}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 539240200}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 539240200}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &539240201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17750,6 +18794,66 @@ MonoBehaviour:
   - {fileID: 1567179685}
   - {fileID: 259571681}
   - {fileID: 1976614322}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 609284739}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 609284739}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 609284739}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 609284739}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 609284739}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &609284740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20113,6 +21217,66 @@ MonoBehaviour:
   - {fileID: 414272077}
   - {fileID: 1360693710}
   - {fileID: 363470470}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 720482595}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 720482595}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 720482595}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 720482595}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 720482595}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &720482596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21693,6 +22857,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 765986898}
+  - component: {fileID: 765986899}
   m_Layer: 0
   m_Name: === Reino Roxo ===
   m_TagString: Untagged
@@ -21713,6 +22878,28 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765986899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765986897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686648aa90813ce4b848bf90bfc43e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myProperties:
+  - {fileID: 1363153460}
+  - {fileID: 404470565}
+  - {fileID: 259571681}
+  - {fileID: 1165873107}
+  - {fileID: 1567179685}
+  - {fileID: 609284739}
+  - {fileID: 1976614322}
+  - {fileID: 1464368163}
+  - {fileID: 463094031}
+  - {fileID: 811072181}
 --- !u!1 &768834406
 GameObject:
   m_ObjectHideFlags: 0
@@ -22969,6 +24156,66 @@ MonoBehaviour:
   - {fileID: 2107316309}
   - {fileID: 811072181}
   - {fileID: 1182878594}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 806854717}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 806854717}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 806854717}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 806854717}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 806854717}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &806854718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23291,6 +24538,66 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 839423460}
   - {fileID: 419071375}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 809929533}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 809929533}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 809929533}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 809929533}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 809929533}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &809929534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23444,6 +24751,66 @@ MonoBehaviour:
   - {fileID: 1976614322}
   - {fileID: 475447221}
   - {fileID: 806854717}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 811072181}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 811072181}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 811072181}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 811072181}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 811072181}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &811072182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24143,6 +25510,66 @@ MonoBehaviour:
   - {fileID: 809929533}
   - {fileID: 419071375}
   - {fileID: 1720318631}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 839423460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 839423460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 839423460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 839423460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 839423460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &839423461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25499,6 +26926,66 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 114956738}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 866971831}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 866971831}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 866971831}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 866971831}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 866971831}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &866971832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27822,6 +29309,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 943229316}
+  - component: {fileID: 943229317}
   m_Layer: 0
   m_Name: === Reino Azul ===
   m_TagString: Untagged
@@ -27842,6 +29330,28 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943229317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 943229315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686648aa90813ce4b848bf90bfc43e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myProperties:
+  - {fileID: 866971831}
+  - {fileID: 1791031546}
+  - {fileID: 114956738}
+  - {fileID: 137315936}
+  - {fileID: 1234089219}
+  - {fileID: 420475203}
+  - {fileID: 1194851518}
+  - {fileID: 469971037}
+  - {fileID: 1234937611}
+  - {fileID: 1761077139}
 --- !u!1 &946836382
 GameObject:
   m_ObjectHideFlags: 0
@@ -30450,6 +31960,66 @@ MonoBehaviour:
   - {fileID: 1564080335}
   - {fileID: 173384176}
   - {fileID: 361505745}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1046291980}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1046291980}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1046291980}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1046291980}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1046291980}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1050700455
 GameObject:
   m_ObjectHideFlags: 0
@@ -30801,6 +32371,66 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1564080335}
   - {fileID: 1363153460}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1057051444}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1057051444}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1057051444}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1057051444}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1057051444}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1057051445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32082,6 +33712,66 @@ MonoBehaviour:
   - {fileID: 1974962870}
   - {fileID: 1877658832}
   - {fileID: 1679171063}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1099387631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1099387631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1099387631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1099387631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1099387631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1099387632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33070,6 +34760,66 @@ MonoBehaviour:
   - {fileID: 1046291980}
   - {fileID: 2034458920}
   - {fileID: 1761837152}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1125633894}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1125633894}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1125633894}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1125633894}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1125633894}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1125633895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34469,6 +36219,66 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1363153460}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1165873107}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1165873107}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1165873107}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1165873107}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1165873107}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1165873108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35373,6 +37183,66 @@ MonoBehaviour:
   - {fileID: 806854717}
   - {fileID: 539240200}
   - {fileID: 475447221}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1182878594}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1182878594}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1182878594}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1182878594}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1182878594}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1182878595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35662,6 +37532,66 @@ MonoBehaviour:
   - {fileID: 469971037}
   - {fileID: 259571681}
   - {fileID: 1976614322}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1194851518}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1194851518}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1194851518}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1194851518}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1194851518}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1203199862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36276,6 +38206,66 @@ MonoBehaviour:
   - {fileID: 420475203}
   - {fileID: 137315936}
   - {fileID: 114956738}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234089219}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234089219}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234089219}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234089219}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234089219}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1234089220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36446,6 +38436,66 @@ MonoBehaviour:
   - {fileID: 1761077139}
   - {fileID: 361505745}
   - {fileID: 173384176}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234937611}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234937611}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234937611}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234937611}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1234937611}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1234937612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41409,6 +43459,66 @@ MonoBehaviour:
   - {fileID: 1869930720}
   - {fileID: 539240200}
   - {fileID: 1464368163}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1354812539}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1354812539}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1354812539}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1354812539}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1354812539}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1354812540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41646,6 +43756,66 @@ MonoBehaviour:
   - {fileID: 1877658832}
   - {fileID: 414272077}
   - {fileID: 720482595}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1360693710}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1360693710}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1360693710}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1360693710}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1360693710}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1360693711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41815,6 +43985,66 @@ MonoBehaviour:
   - {fileID: 1165873107}
   - {fileID: 404470565}
   - {fileID: 1057051444}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1363153460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1363153460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1363153460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1363153460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1363153460}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1363153461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42177,6 +44407,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1372688353}
+  - component: {fileID: 1372688354}
   m_Layer: 0
   m_Name: === Reino Verde ===
   m_TagString: Untagged
@@ -42197,6 +44428,30 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372688354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372688352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686648aa90813ce4b848bf90bfc43e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myProperties:
+  - {fileID: 1962148909}
+  - {fileID: 363470470}
+  - {fileID: 414272077}
+  - {fileID: 1360693710}
+  - {fileID: 1974962870}
+  - {fileID: 720482595}
+  - {fileID: 1679171063}
+  - {fileID: 2107316309}
+  - {fileID: 1877658832}
+  - {fileID: 1099387631}
+  - {fileID: 433437232}
+  - {fileID: 806854717}
 --- !u!1 &1377045293
 GameObject:
   m_ObjectHideFlags: 0
@@ -42999,7 +45254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.80500007}
   m_AnchorMax: {x: 1, y: 0.9171891}
-  m_AnchoredPosition: {x: -0.0025024414, y: -0.28448486}
+  m_AnchoredPosition: {x: -0.0025024414, y: -0.2845459}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432961122
@@ -43939,6 +46194,66 @@ MonoBehaviour:
   - {fileID: 463094031}
   - {fileID: 1354812539}
   - {fileID: 475447221}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1464368163}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1464368163}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1464368163}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1464368163}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1464368163}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1464368164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47153,6 +49468,66 @@ MonoBehaviour:
   - {fileID: 1944822422}
   - {fileID: 1046291980}
   - {fileID: 1057051444}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1564080335}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1564080335}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1564080335}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1564080335}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1564080335}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1564080336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47312,6 +49687,66 @@ MonoBehaviour:
   - {fileID: 609284739}
   - {fileID: 463094031}
   - {fileID: 811072181}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1567179685}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1567179685}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1567179685}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1567179685}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1567179685}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1567179686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49257,7 +51692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: -0.40687722, y: 0.4206484}
   m_AnchorMax: {x: 1.4067845, y: 0.729163}
-  m_AnchoredPosition: {x: 0, y: -0.0000038146973}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0.0000076293945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1619288244
@@ -50221,6 +52656,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1668295856}
+  - component: {fileID: 1668295857}
   m_Layer: 0
   m_Name: === Reino Vermelho ===
   m_TagString: Untagged
@@ -50241,6 +52677,28 @@ Transform:
   m_Father: {fileID: 786270578}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1668295857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1668295855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686648aa90813ce4b848bf90bfc43e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myProperties:
+  - {fileID: 1944822422}
+  - {fileID: 173384176}
+  - {fileID: 1564080335}
+  - {fileID: 1046291980}
+  - {fileID: 361505745}
+  - {fileID: 1761837152}
+  - {fileID: 1125633894}
+  - {fileID: 1672169556}
+  - {fileID: 1057051444}
+  - {fileID: 2034458920}
 --- !u!1 &1672169555
 GameObject:
   m_ObjectHideFlags: 0
@@ -50312,6 +52770,66 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 361505745}
   - {fileID: 1761837152}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1672169556}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1672169556}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1672169556}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1672169556}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1672169556}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1672169557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50684,6 +53202,66 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1099387631}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1679171063}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1679171063}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1679171063}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1679171063}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1679171063}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1679171064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52035,6 +54613,66 @@ MonoBehaviour:
   - {fileID: 490696590}
   - {fileID: 1869930720}
   - {fileID: 539240200}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1720318631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1720318631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1720318631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1720318631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1720318631}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1720318632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52930,6 +55568,66 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1234937611}
   - {fileID: 361505745}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761077139}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761077139}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761077139}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761077139}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761077139}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1761837151
 GameObject:
   m_ObjectHideFlags: 0
@@ -53002,6 +55700,66 @@ MonoBehaviour:
   - {fileID: 1672169556}
   - {fileID: 361505745}
   - {fileID: 1125633894}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761837152}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761837152}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761837152}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761837152}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1761837152}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1761837153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53547,6 +56305,66 @@ MonoBehaviour:
   - {fileID: 114956738}
   - {fileID: 137315936}
   - {fileID: 1962148909}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1791031546}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1791031546}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1791031546}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1791031546}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1791031546}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1791031547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55881,6 +58699,66 @@ MonoBehaviour:
   - {fileID: 430192738}
   - {fileID: 1720318631}
   - {fileID: 490696590}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1869930720}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1869930720}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1869930720}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1869930720}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1869930720}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1869930721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56039,6 +58917,66 @@ MonoBehaviour:
   - {fileID: 1099387631}
   - {fileID: 2107316309}
   - {fileID: 414272077}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1877658832}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1877658832}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1877658832}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1877658832}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1877658832}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1877658833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58497,6 +61435,66 @@ MonoBehaviour:
   - {fileID: 469971037}
   - {fileID: 404470565}
   - {fileID: 259571681}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1944822422}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1944822422}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1944822422}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1944822422}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1944822422}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1944822423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58955,6 +61953,66 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1791031546}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1962148909}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1962148909}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1962148909}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1962148909}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1962148909}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1962148910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59672,6 +62730,66 @@ MonoBehaviour:
   Neighbors:
   - {fileID: 1360693710}
   - {fileID: 1099387631}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1974962870}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1974962870}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1974962870}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1974962870}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1974962870}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1974962871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59917,6 +63035,66 @@ MonoBehaviour:
   - {fileID: 811072181}
   - {fileID: 1194851518}
   - {fileID: 363470470}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1976614322}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1976614322}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1976614322}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1976614322}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1976614322}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1976614323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61079,7 +64257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.9176563}
   m_AnchorMax: {x: 1, y: 0.93169606}
-  m_AnchoredPosition: {x: -0.0025024414, y: -0.3345337}
+  m_AnchoredPosition: {x: -0.0025024414, y: -0.33459473}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2019629204
@@ -61469,6 +64647,66 @@ MonoBehaviour:
   CustomLevel3: {fileID: 0}
   Neighbors:
   - {fileID: 1125633894}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2034458920}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2034458920}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2034458920}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2034458920}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2034458920}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &2034458921
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63782,6 +67020,66 @@ MonoBehaviour:
   - {fileID: 1877658832}
   - {fileID: 433437232}
   - {fileID: 806854717}
+  OnUpgraded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 943229317}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2107316309}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1668295857}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2107316309}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765986899}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2107316309}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1372688354}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2107316309}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499883784}
+        m_MethodName: OnPlayerUpgraded
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2107316309}
+          m_ObjectArgumentAssemblyTypeName: Property, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &2107316310
 BoxCollider:
   m_ObjectHideFlags: 0
