@@ -81,38 +81,47 @@ public class KHappeningManager:Singleton < KHappeningManager >
 
     private bool GenerateNewKHappening()
     {
-        float value = Random.value;
-        List<KHappening> SelectedList = new List<KHappening>();
+        while (true)
+        {
+            float value = Random.value;
+            List<KHappening> SelectedList = new List<KHappening>();
 
-        if (value > 1 - ChanceMuitoComum)
-        {
-            SelectedList = HappeningsByRarity[0];
-        }
-        else if (value > 1 - ChanceMuitoComum - ChanceComum)
-        {
-            SelectedList = HappeningsByRarity[1];
-        }
-        else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal)
-        {
-            SelectedList = HappeningsByRarity[2];
-        }
-        else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal - ChanceRaro)
-        {
-            SelectedList = HappeningsByRarity[3];
-        }
-        else
-        {
-            SelectedList = HappeningsByRarity[4];
-        }
+            if (value > 1 - ChanceMuitoComum)
+            {
+                SelectedList = HappeningsByRarity[0];
+            }
+            else if (value > 1 - ChanceMuitoComum - ChanceComum)
+            {
+                SelectedList = HappeningsByRarity[1];
+            }
+            else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal)
+            {
+                SelectedList = HappeningsByRarity[2];
+            }
+            else if (value > 1 - ChanceMuitoComum - ChanceComum - ChanceNormal - ChanceRaro)
+            {
+                SelectedList = HappeningsByRarity[3];
+            }
+            else
+            {
+                SelectedList = HappeningsByRarity[4];
+            }
 
-        if (SelectedList.Count == 0)
-        {
-            return false;
+            if (SelectedList.Count == 0)
+            {
+                return false;
+            }
+
+            var selectedHappening = SelectedList[Random.Range(0, 1000000) % SelectedList.Count];
+
+            if (IsThisHappeningActive(selectedHappening))
+            {
+                continue;
+            }
+
+            return FireHappening(selectedHappening);
+            break;
         }
-
-        KHappening selectedHappening = SelectedList[Random.Range(0, 1000000) % SelectedList.Count];
-
-        return FireHappening(selectedHappening);
     }
 
     public bool FireHappening(KHappening khpp) {
@@ -136,12 +145,27 @@ public class KHappeningManager:Singleton < KHappeningManager >
     }
 
     private KHappening FindHappeningByName(string name) {
-        foreach (KHappening khpp in KHappenings) {
+        foreach (var khpp in KHappenings) {
             if (khpp.name.Equals(name))
                 return khpp; 
         }
 
         return null; 
+    }
+
+    private static bool IsThisHappeningActive(KHappening happening)
+    {
+        var eventManager = KEventManager.Instance;
+        foreach (var activeEvent in eventManager.GetAllActiveEvents())
+        {
+            foreach (var answer in happening.Answers)
+            {
+                if (answer.answerEvent == activeEvent)
+                    return true;
+            }
+        }
+
+        return false;
     }
 
     private void OnBattlesEnded() {

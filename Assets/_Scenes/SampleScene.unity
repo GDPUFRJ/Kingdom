@@ -32197,7 +32197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c64019f1aac0f42bca3208cfd87d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Population: 14
+  Population: 10
   foodInfluenceOverPopulationCoefficient: 0.1
   Happiness: 60
   CanBattle: 1
