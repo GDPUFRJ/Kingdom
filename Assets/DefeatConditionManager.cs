@@ -14,6 +14,7 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
 
     [Range(-100000, 0)] public int GameOverMoney = 0;
     [Range(0, 100)] public int GameOverHappiness = 0;
+    [Range(0, 10000)] public int GameOverPopulation = 0;
 
     protected DefeatConditionManager() { }
 
@@ -24,11 +25,12 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
 
     private void TimerPanel_OnAfterIndividualBattles()
     {
-        bool moneyDefeat = CheckMoneyDefeatCondition();
-        bool castleDefeat = CheckCastleDefeatCondition();
-        bool happinessDefeat = CheckHappinessDefeatCondition();
+        var moneyDefeat = CheckMoneyDefeatCondition();
+        var castleDefeat = CheckCastleDefeatCondition();
+        var happinessDefeat = CheckHappinessDefeatCondition();
+        var populationDefeat = CheckPopulationDefeatCondition();
 
-        if (moneyDefeat || castleDefeat || happinessDefeat)
+        if (moneyDefeat || castleDefeat || happinessDefeat || populationDefeat)
         {
             GameManager.Instance.GameLost();
         }
@@ -55,5 +57,10 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
     private bool CheckHappinessDefeatCondition()
     {
         return GameManager.Instance.Happiness <= GameOverHappiness;
+    }
+
+    private bool CheckPopulationDefeatCondition()
+    {
+        return GameManager.Instance.Population <= GameOverPopulation;
     }
 }

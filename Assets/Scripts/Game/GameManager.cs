@@ -9,8 +9,10 @@ public class GameManager:Singleton < GameManager >  {
     protected GameManager() {}
 
     [Header("Status")]
-    public int Population = 10; 
-    public float Happiness = 100f; 
+    public int Population = 10;
+    [Tooltip("Food influence over population. This value is multiplied by the food modifier to determine the population modifier")]
+    [Range(0f, 1f)] public float foodInfluenceOverPopulationCoefficient = 0.1f;
+    public float Happiness = 100f;
     public bool CanBattle = true;
     public int PopulationNextEventModifier = 0;
     public float HappinessNextEventModifier = 0f;
@@ -66,6 +68,10 @@ public class GameManager:Singleton < GameManager >  {
         battleManager.BeginBattles();
     }
 
+    /// <summary>
+    /// Updates the resource values (gold, food, building) and population
+    /// Checks if player has won the game (by conquering all enemy castles)
+    /// </summary>
     private void OnDayEnd() {
         GoldNext = 0; 
         FoodNext = 0; 
@@ -99,6 +105,8 @@ public class GameManager:Singleton < GameManager >  {
                 }
             }
         }
+
+        Population += (int)Mathf.Floor(FoodNext * foodInfluenceOverPopulationCoefficient);
 
         if (mainPropertiesDominated == PropertyManager.Instance.MainProperties)
             GameWon(); 

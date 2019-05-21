@@ -11340,7 +11340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.008380299, y: 0}
+  m_AnchoredPosition: {x: 0.009503001, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &421819239
@@ -30627,7 +30627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c64019f1aac0f42bca3208cfd87d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Population: 10
+  Population: 14
+  foodInfluenceOverPopulationCoefficient: 0.1
   Happiness: 60
   CanBattle: 1
   PopulationNextEventModifier: 0
@@ -30716,6 +30717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverMoney: 0
   GameOverHappiness: 0
+  GameOverPopulation: 0
 --- !u!114 &1054705965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48430,7 +48432,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722285217}
   m_HandleRect: {fileID: 722285216}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
