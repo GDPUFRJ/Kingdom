@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114954950605673398}
+  - {fileID: 114725703148675816}
+  EditorEvents:
+  - {fileID: 114728996349357942}
+  - {fileID: 114420029808381146}
+  - {fileID: 114138896801047048}
+  - {fileID: 114928996190813898}
+  - {fileID: 114544190803789198}
+  - {fileID: 114236928991180124}
+  - {fileID: 114820008488856526}
+  - {fileID: 114065040578586996}
+  - {fileID: 114060241146032484}
+  - {fileID: 114209777294900920}
+  - {fileID: 114933638042205924}
+  - {fileID: 114718905854032864}
+  - {fileID: 114763301195551782}
+  - {fileID: 114473860256978162}
+  - {fileID: 114400633473769198}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 114725703148675816}
+  StringsBanks:
+  - {fileID: 114954950605673398}
+  stringsBankWriteTime: 636882890844175795
+  cacheVersion: 3
+--- !u!114 &114060241146032484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_ui_newgame
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_ui_newgame
+  guid: 78a7a85200d66b448d1b406ac5df2599
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1918
+--- !u!114 &114065040578586996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_click_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_click_v001
+  guid: 6a6e285b274c5447847f6820458fc2a8
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 110
+--- !u!114 &114138896801047048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_tropas_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_tropas_v001
+  guid: 2f80a21f8672864ea962a332a502a7a0
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1200
+--- !u!114 &114209777294900920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_battle_clash_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_battle_clash_v001
+  guid: 8b4e99d4b30e1d4998f4bc356493ef41
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 906
+--- !u!114 &114236928991180124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_pages_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_pages_v001
+  guid: 5181780d42f3634a94186c854d8bdbaf
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 229
+--- !u!114 &114400633473769198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_battle_whoosh_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_battle_whoosh_v001
+  guid: ec6c64729ab1ea4a8d76a4ccbd98ddb5
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
+--- !u!114 &114420029808381146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_battle_blades_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_battle_blades_v001
+  guid: 268ceee47d3ce04c8899b2e38d64d648
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1494
+--- !u!114 &114461993360742488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/k_gp_soldier_v001/Game
+  m_EditorClassIdentifier: 
+  Name: Game
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &114473860256978162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_evoluir_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_evoluir_v001
+  guid: c984412d451d8f48b236cd460b91bed9
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 410
+--- !u!114 &114544190803789198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_soldier_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_soldier_v001
+  guid: 49250f7dd4135b4387a65fdfa7378798
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114461993360742488}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14
+--- !u!114 &114718905854032864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/k_music_gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/music/k_music_gameplay
+  guid: a9a7b63bea2f3c4793e4c2e74ce12a0d
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114811868294918676}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 804418
+--- !u!114 &114725703148675816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\vtorb\Documents\Unity Projects\Fmod Projects\Kingdom_FMOD\Build\Desktop\Master
+    Bank.bank
+  SubDir: 
+  lastModified: 636882890844145801
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12205664
+  Exists: 1
+--- !u!114 &114728996349357942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/k_music_ui_maintheme
+  m_EditorClassIdentifier: 
+  Path: event:/music/k_music_ui_maintheme
+  guid: 05d91a0ee368f940950d41fcb32cbab7
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 178604
+--- !u!114 &114763301195551782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_battle_derrota_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_battle_derrota_v001
+  guid: bde8964a8acba045bf95ba1b01cb4390
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 380
+--- !u!114 &114811868294918676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/k_music_gameplay/Game
+  m_EditorClassIdentifier: 
+  Name: Game
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &114820008488856526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_battle_vitoria_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_battle_vitoria_v001
+  guid: 573a656b8172dc428d86de61d9b56ff2
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 400
+--- !u!114 &114928996190813898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_ui_click
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_ui_click
+  guid: 4022c9515376c84e8883a135d4f4c93d
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 232
+--- !u!114 &114933638042205924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/k_gp_subpages_v001
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/k_gp_subpages_v001
+  guid: 94e4765fdca7d443b61c30112dc6c6af
+  Banks:
+  - {fileID: 114725703148675816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 195
+--- !u!114 &114954950605673398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\vtorb\Documents\Unity Projects\Fmod Projects\Kingdom_FMOD\Build\Desktop\Master
+    Bank.strings.bank
+  SubDir: 
+  lastModified: 636882890844175795
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1542
+  Exists: 1
