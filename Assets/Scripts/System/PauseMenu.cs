@@ -49,6 +49,7 @@ public class PauseMenu : MonoBehaviour
     {
         TimerPanel.SetPause(false);
         TimerPanel.UnsubscribeDelegates();
+        FMODPlayer.StopAllSounds();
         SceneManager.LoadScene(0);
     }
 }

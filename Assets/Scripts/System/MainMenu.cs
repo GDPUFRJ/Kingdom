@@ -10,6 +10,8 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private List<CanvasGroup> groups;
     [SerializeField] private CanvasGroup transitionPanel;
     [SerializeField] private LoadingPanel loadingPanel;
+    [SerializeField] private FMODPlayer musicPlayer;
+    [SerializeField] private FMODPlayer newGameSoundPlayer;
 
     private void Start()
     {
@@ -30,6 +32,8 @@ public class MainMenu : MonoBehaviour {
         {
             SaveSystem.newGame = false;
             TranslationManager.UnsubscribeDelegates();
+            FMODPlayer.StopAllSounds();
+            newGameSoundPlayer.Play();
             loadingPanel.Open("SampleScene");
         }
     }
@@ -38,6 +42,8 @@ public class MainMenu : MonoBehaviour {
         SaveSystem.newGame = true;
         SaveSystem.ResetSaveData();
         TranslationManager.UnsubscribeDelegates();
+        FMODPlayer.StopAllSounds();
+        newGameSoundPlayer.Play();
         loadingPanel.Open("SampleScene");
     }
     public void Credits()

@@ -8,6 +8,7 @@ public class SectionManager : MonoBehaviour
     public int currentSection = 2;
     public float mouseMinOffset = 1f;
     public float timeMin = 0.25f;
+    [SerializeField] private FMODPlayer changeSectionSoundPlayer;
 
     public void Start()
     {
@@ -21,6 +22,9 @@ public class SectionManager : MonoBehaviour
     }
     public void SelectSection(int i)
     {
+        if (currentSection != i)
+            changeSectionSoundPlayer.Play();
+
         if (i - currentSection < 0)
         {
             sections[currentSection].hide(1);

@@ -13,6 +13,7 @@ public class SoldierPanel : Section
     [SerializeField] private float editButtonsFadeTime = 0.3f;
     [SerializeField] private Color editEnabledColor = Color.green;
     [SerializeField] private Color editDisabledColor = Color.red;
+    [SerializeField] private FMODPlayer enterBattleModeSoundPlayer;
 
     public static bool isEditButtonsEnable = false;
 
@@ -40,6 +41,7 @@ public class SoldierPanel : Section
     public void ToggleEditButtons()
     {
         isEditButtonsEnable = !isEditButtonsEnable;
+        if (isEditButtonsEnable) enterBattleModeSoundPlayer.Play();
         TimerPanel.SetPause(isEditButtonsEnable);
         toggle.color = isEditButtonsEnable ? editEnabledColor : editDisabledColor;
         float target = isEditButtonsEnable ? 1 : 0;
