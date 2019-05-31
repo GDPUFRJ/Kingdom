@@ -63,7 +63,7 @@ public class BattleArrowController : MonoBehaviour {
                 GetComponent<Image>().sprite = Battle;
                 break;
             case ArrowType.Abort:
-                GetComponent<Image>().enabled = true;
+                GetComponent<Image>().enabled = false;
                 GetComponent<Image>().sprite = Abort;
                 break;
             case ArrowType.Disabled:
