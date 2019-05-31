@@ -3397,8 +3397,8 @@ MonoBehaviour:
   index: 2
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: quartel do rei
-  englishTitle: king's barracks
+  portugueseTitle: Quartel do Rei
+  englishTitle: King's Barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -4147,8 +4147,8 @@ MonoBehaviour:
   index: 3
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: fazenda montgomery
-  englishTitle: montgomery farm
+  portugueseTitle: Fazenda Montgomery
+  englishTitle: Montgomery Farm
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -4902,8 +4902,8 @@ MonoBehaviour:
   index: 11
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: pomar de ravengar
-  englishTitle: ravengar's orchard
+  portugueseTitle: Pomar de Ravengar
+  englishTitle: Ravengar's Orchard
   type: 3
   canBeAbandonedOrLostInBattle: 0
   dominated: 0
@@ -7248,8 +7248,8 @@ MonoBehaviour:
   index: 22
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: montanha lunar
-  englishTitle: moon mountain
+  portugueseTitle: Montanha Lunar
+  englishTitle: Moon Mountain
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -9713,8 +9713,8 @@ MonoBehaviour:
   index: 14
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: rancho das mil velas
-  englishTitle: thousand candles ranch
+  portugueseTitle: Rancho das Mil Velas
+  englishTitle: Thousand Candles Ranch
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -9939,8 +9939,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: "floresta de g\xE4el"
-  englishTitle: "g\xE4elwood"
+  portugueseTitle: "Floresta de G\xE4el"
+  englishTitle: "G\xE4elwood"
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -10847,8 +10847,8 @@ MonoBehaviour:
   index: 21
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: pomar de helena
-  englishTitle: helen's orchard
+  portugueseTitle: Pomar de Helena
+  englishTitle: Helen's Orchard
   type: 3
   canBeAbandonedOrLostInBattle: 0
   dominated: 0
@@ -11232,8 +11232,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: "guarni\xE7\xE3o do a\xE7o"
-  englishTitle: steel garrison
+  portugueseTitle: "Guarni\xE7\xE3o do A\xE7o"
+  englishTitle: Steel Garrison
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -11710,8 +11710,8 @@ MonoBehaviour:
   index: 44
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: quartel do enforcado
-  englishTitle: hanged man barracks
+  portugueseTitle: Quartel do Enforcado
+  englishTitle: Hanged Man Barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -11848,8 +11848,8 @@ MonoBehaviour:
   index: 5
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: floresta dos malandros
-  englishTitle: ruffian's woods
+  portugueseTitle: Floresta dos Malandros
+  englishTitle: Ruffian's Woods
   type: 4
   canBeAbandonedOrLostInBattle: 0
   dominated: 0
@@ -13025,8 +13025,8 @@ MonoBehaviour:
   index: 48
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "s\xEDtio estrag\xE3o"
-  englishTitle: tarragon estate
+  portugueseTitle: "S\xEDtio Estrag\xE3o"
+  englishTitle: Tarragon Estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -13303,8 +13303,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: granja do nicolau
-  englishTitle: nichola's grange
+  portugueseTitle: Granja do Nicolau
+  englishTitle: Nichola's Grange
   type: 3
   canBeAbandonedOrLostInBattle: 0
   dominated: 1
@@ -14594,8 +14594,8 @@ MonoBehaviour:
   index: 28
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: jardim dos grifos
-  englishTitle: griffon's garden
+  portugueseTitle: Jardim dos Grifos
+  englishTitle: Griffon's Garden
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -14949,8 +14949,8 @@ MonoBehaviour:
   index: 7
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: floresta sombria
-  englishTitle: shadowy woods
+  portugueseTitle: Floresta Sombria
+  englishTitle: Shadowy Woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -15310,8 +15310,8 @@ MonoBehaviour:
   index: 42
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "s\xEDtio abobrinha"
-  englishTitle: zuchinni estate
+  portugueseTitle: "S\xEDtio Abobrinha"
+  englishTitle: Zuchinni Estate
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -15844,8 +15844,8 @@ MonoBehaviour:
   index: 49
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "mata de yw\xE9"
-  englishTitle: "yw\xE9's thicket"
+  portugueseTitle: "Mata de Yw\xE9"
+  englishTitle: "Yw\xE9's Thicket"
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -17626,8 +17626,8 @@ MonoBehaviour:
   index: 45
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: colinas espumantes
-  englishTitle: foamy hills
+  portugueseTitle: Colinas Espumantes
+  englishTitle: Foamy Hills
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -18847,8 +18847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 25
   myCastles: []
-  portugueseTitle: "pal\xE1cio das quatro luas"
-  englishTitle: four moons palace
+  portugueseTitle: "Pal\xE1cio das Quatro Luas"
+  englishTitle: Four Moons Palace
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -21271,8 +21271,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: fazenda dos tweedy
-  englishTitle: tweedy's farm
+  portugueseTitle: Fazenda dos Tweedy
+  englishTitle: Tweedy's Farm
   type: 3
   canBeAbandonedOrLostInBattle: 0
   dominated: 1
@@ -24232,8 +24232,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: irmandade do sangue
-  englishTitle: blood brotherhood
+  portugueseTitle: Irmandade do Sangue
+  englishTitle: Blood Brotherhood
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -24615,8 +24615,8 @@ MonoBehaviour:
   index: 52
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "monte f\xE4ernik"
-  englishTitle: "mount f\xE4ernik"
+  portugueseTitle: "Monte F\xE4ernik"
+  englishTitle: "Mount F\xE4ernik"
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -24825,8 +24825,8 @@ MonoBehaviour:
   index: 29
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: horta da geada
-  englishTitle: frost garden
+  portugueseTitle: Horta da Geada
+  englishTitle: Frost Garden
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -25586,8 +25586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 51
   myCastles: []
-  portugueseTitle: raaja mahal
-  englishTitle: raaja mahal
+  portugueseTitle: Raaja Mahal
+  englishTitle: Raaja Mahal
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -27016,7 +27016,7 @@ MonoBehaviour:
   index: 0
   myCastles: []
   portugueseTitle: Castelo de Gulliver
-  englishTitle: gulliver's castle
+  englishTitle: Gulliver's Castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -32118,8 +32118,8 @@ MonoBehaviour:
   index: 13
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: quartel do arco quebrado
-  englishTitle: broken arch barracks
+  portugueseTitle: Quartel do Arco Quebrado
+  englishTitle: Broken Arch Barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -32532,8 +32532,8 @@ MonoBehaviour:
   index: 18
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: bosque das fadas
-  englishTitle: faerie's grove
+  portugueseTitle: Bosque das Fadas
+  englishTitle: Faerie's Grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -33872,8 +33872,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: floresta dos pinheiros em chamas
-  englishTitle: blazing pine woods
+  portugueseTitle: Floresta dos Pinheiros em Chamas
+  englishTitle: Blazing Pine Woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -34942,8 +34942,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 16
   myCastles: []
-  portugueseTitle: "castelo de s\xE3o germaniano"
-  englishTitle: st. germanian castle
+  portugueseTitle: "Castelo de S\xE3o Germaniano"
+  englishTitle: St. Germanian Castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -36403,8 +36403,8 @@ MonoBehaviour:
   index: 23
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: bosque da hidra
-  englishTitle: hydra's grove
+  portugueseTitle: Bosque da Hidra
+  englishTitle: Hydra's Grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -37364,8 +37364,8 @@ MonoBehaviour:
   index: 46
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "bosque das \xE1rvores petrificadas"
-  englishTitle: stone trees grove
+  portugueseTitle: "Bosque das \xC1rvores Petrificadas"
+  englishTitle: Stone Trees Grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -37712,8 +37712,8 @@ MonoBehaviour:
   index: 6
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: fazenda do chico
-  englishTitle: jack's farm
+  portugueseTitle: Fazenda do Chico
+  englishTitle: Jack's Farm
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -38386,8 +38386,8 @@ MonoBehaviour:
   index: 4
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: montanha da morte
-  englishTitle: death mountain
+  portugueseTitle: Montanha da Morte
+  englishTitle: Death Mountain
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -38617,8 +38617,8 @@ MonoBehaviour:
   index: 8
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: rancho dos barney
-  englishTitle: barney's ranch
+  portugueseTitle: Rancho dos Barney
+  englishTitle: Barney's Ranch
   type: 3
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -43695,8 +43695,8 @@ MonoBehaviour:
   index: 43
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: vale das figueiras
-  englishTitle: fig tree valley
+  portugueseTitle: Vale das Figueiras
+  englishTitle: Fig Tree Valley
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -43992,8 +43992,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: pico do bardo
-  englishTitle: bard's peak
+  portugueseTitle: Pico do Bardo
+  englishTitle: Bard's Peak
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -44222,8 +44222,8 @@ MonoBehaviour:
   index: 20
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: clareira safira
-  englishTitle: sapphire clearing
+  portugueseTitle: Clareira Safira
+  englishTitle: Sapphire Clearing
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -46442,8 +46442,8 @@ MonoBehaviour:
   index: 27
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: caverna do urso dormente
-  englishTitle: sleeping bear caverns
+  portugueseTitle: Caverna do Urso Dormente
+  englishTitle: Sleeping Bear Caverns
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -49749,8 +49749,8 @@ MonoBehaviour:
   index: 12
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: "floresta da dr\xEDade"
-  englishTitle: dryad's woods
+  portugueseTitle: "Floresta da Dr\xEDade"
+  englishTitle: Dryad's Woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -49967,8 +49967,8 @@ MonoBehaviour:
   index: 24
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: dojo dos espadachins
-  englishTitle: swordsmen's dojo
+  portugueseTitle: Dojo dos Espadachins
+  englishTitle: Swordsmen's Dojo
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -53063,8 +53063,8 @@ MonoBehaviour:
   index: 17
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: pico terroso
-  englishTitle: earthy peak
+  portugueseTitle: Pico Terroso
+  englishTitle: Earthy Peak
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -53496,8 +53496,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: selva de ymir
-  englishTitle: ymir jungle
+  portugueseTitle: Selva de Ymir
+  englishTitle: Ymir Jungle
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -54904,8 +54904,8 @@ MonoBehaviour:
   index: 50
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "est\xE1bulos de \xE1ugias"
-  englishTitle: augeas' stables
+  portugueseTitle: "Est\xE1bulos de \xC1ugias"
+  englishTitle: Augeas' Stables
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -55861,8 +55861,8 @@ MonoBehaviour:
   index: 9
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: "base de l\xFAcio-cora\xE7\xE3o-de-urso"
-  englishTitle: bearheart lucius' base
+  portugueseTitle: "Base de L\xFAcio-Cora\xE7\xE3o-de-Urso"
+  englishTitle: Bearheart Lucius' Base
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -55992,8 +55992,8 @@ MonoBehaviour:
   index: 15
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: "acampamento dos escaramu\xE7adores"
-  englishTitle: skirmisher's camp
+  portugueseTitle: "Acampamento dos Escaramu\xE7adores"
+  englishTitle: Skirmisher's Camp
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -56597,8 +56597,8 @@ MonoBehaviour:
   index: 1
   myCastles:
   - {fileID: 866971831}
-  portugueseTitle: porto do esquecimento
-  englishTitle: forget-me-not port
+  portugueseTitle: Porto do Esquecimento
+  englishTitle: Forget-me-not Port
   type: 5
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -59012,8 +59012,8 @@ MonoBehaviour:
   index: 47
   myCastles:
   - {fileID: 839423460}
-  portugueseTitle: "o\xE1sis da miragem"
-  englishTitle: mirage oasis
+  portugueseTitle: "O\xE1sis da Miragem"
+  englishTitle: Mirage Oasis
   type: 5
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -59230,8 +59230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 38
   myCastles: []
-  portugueseTitle: forte do lobo branco
-  englishTitle: white wolf's keep
+  portugueseTitle: Forte do Lobo Branco
+  englishTitle: White Wolf's Keep
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -61826,8 +61826,8 @@ MonoBehaviour:
   index: 10
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: floresta dos lobos
-  englishTitle: wolf's forest
+  portugueseTitle: Floresta dos Lobos
+  englishTitle: Wolf's Forest
   type: 4
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -62349,8 +62349,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: mina da pedra escarlate
-  englishTitle: scarlet rock mines
+  portugueseTitle: Mina da Pedra Escarlate
+  englishTitle: Scarlet Rock Mines
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -63136,8 +63136,8 @@ MonoBehaviour:
   myCastles:
   - {fileID: 2107316309}
   - {fileID: 1877658832}
-  portugueseTitle: "cordilheira dos anci\xF5es"
-  englishTitle: elder's range
+  portugueseTitle: "Cordilheira dos Anci\xF5es"
+  englishTitle: Elder's Range
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
@@ -63438,8 +63438,8 @@ MonoBehaviour:
   index: 26
   myCastles:
   - {fileID: 609284739}
-  portugueseTitle: fortaleza dos lanceiros
-  englishTitle: spearmen's fortress
+  portugueseTitle: Fortaleza dos Lanceiros
+  englishTitle: Spearmen's Fortress
   type: 6
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -65054,8 +65054,8 @@ MonoBehaviour:
   index: 19
   myCastles:
   - {fileID: 1125633894}
-  portugueseTitle: "ninho da \xE1guia"
-  englishTitle: eagle's nest
+  portugueseTitle: "Ninho da \xC1guia"
+  englishTitle: Eagle's Nest
   type: 1
   canBeAbandonedOrLostInBattle: 1
   dominated: 0
@@ -67437,8 +67437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 37
   myCastles: []
-  portugueseTitle: "forte do c\xE3o negro"
-  englishTitle: black dog's keep
+  portugueseTitle: "Forte do C\xE3o Negro"
+  englishTitle: Black Dog's Keep
   type: 0
   canBeAbandonedOrLostInBattle: 1
   dominated: 1
