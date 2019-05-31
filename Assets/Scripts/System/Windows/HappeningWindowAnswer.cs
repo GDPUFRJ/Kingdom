@@ -25,6 +25,7 @@ public class HappeningWindowAnswer:MonoBehaviour {
     public void ActivateEvent()
     {
         KEventManager.Instance.FireEvent(kevent, eventIntensity);
+        FMODPlayer.Instance.Play("ui click");
         happeningWindow.DestroyWindow();
     }
 }

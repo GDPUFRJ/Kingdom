@@ -51,6 +51,7 @@ public class GameManager:Singleton < GameManager >  {
 
     // Use this for initialization
     void Start() {
+        Population = 10;
         battleManager = FindObjectOfType<BattleManager>();
         TimerPanel.OnDayEnd += OnDayEnd;
         TimerPanel.OnBattleTime += TimerPanel_OnBattleTime;

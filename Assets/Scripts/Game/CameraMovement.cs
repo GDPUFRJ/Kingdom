@@ -125,6 +125,7 @@ public class CameraMovement : MonoBehaviour {
     }
     public IEnumerator Zoom(bool toggle)
     {
+        FMODPlayer.Instance.Play("whoosh");
         canControl = false;
         float tax = toggle ? zoomAnimationTax : 1f / zoomAnimationTax;
         Camera.main.DOOrthoSize(Camera.main.orthographicSize*tax, timeToMove);

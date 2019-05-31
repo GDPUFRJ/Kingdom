@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VolumeManager : MonoBehaviour
+public class VolumeManager : Singleton<VolumeManager>
 {
+    protected VolumeManager() { }
+
     [Range(0, 1)] public float volumeMusic = 1;
     [Range(0, 1)] public float volumeSFX = 1;
     [Range(0, 1)] public float volumeUiMusic = 1;

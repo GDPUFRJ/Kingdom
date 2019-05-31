@@ -135,6 +135,7 @@ public class BattleWindow : MonoBehaviour {
 	private IEnumerator Battle()
 	{
 		yield return new WaitForSeconds(1f);
+        FMODPlayer.Instance.Play("battle results");
 		if(AttackerIsTheWinner()){
 			player.DOScale(1.1f,0.3f);
 			enemy.DOScale(0.9f,0.3f);

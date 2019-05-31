@@ -78,6 +78,7 @@ public class PropertyWindow : MonoBehaviour {
                 property.LevelUp(true);
                 print("Upgraded");
                 UpdatePropertyInfo();
+                FMODPlayer.Instance.Play("upgrade");
 
             }
         }

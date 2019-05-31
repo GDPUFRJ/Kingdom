@@ -56,8 +56,11 @@ public class PropertyBox : MonoBehaviour {
     }
     public void Upgrade()
     {
-        if(property.Level != Level.Level3)
+        if (property.Level != Level.Level3)
+        {
             StartCoroutine(UpgradeAnimation());
+            FMODPlayer.Instance.Play("upgrade");
+        }
     }
     public void GiveUp()
     {
@@ -104,6 +107,7 @@ public class PropertyBox : MonoBehaviour {
             propertyBox.DOSizeDelta(new Vector2(propertyBox.sizeDelta.x, 443.2f), TIME_TO_OPEN_OR_CLOSE_UPGRADE_PANEL);
             SetUpgradeInformation();
             isUpgradePanelOpen = true;
+            FMODPlayer.Instance.Play("open upgrade panel");
         }
     }
     public void CloseUpgradePanel()

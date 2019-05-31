@@ -120,6 +120,8 @@ public class BattleArrowController : MonoBehaviour {
 
         SendTroopsBox.Instance.Activate(this, OpositeArrow);
 
+        FMODPlayer.Instance.Play("arrow");
+
         // Cancelar transferência de soldados
         //if (OpositeArrow.SoldiersToBeTransfered > 0 && tipo != ArrowType.Battle)
         //{

@@ -2,57 +2,77 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FMODPlayer : MonoBehaviour
+public class FMODPlayer : Singleton<FMODPlayer>
 {
-    [FMODUnity.EventRef] public string fmodEvent;
-    FMOD.Studio.EventInstance eventInstance;
-    
-    [SerializeField] private bool playOnAwake = true;
+    protected FMODPlayer() { }
 
-    private void Awake()
+    [System.Serializable]
+    public class Audio
     {
-        if (playOnAwake)
+        public string name;
+        [FMODUnity.EventRef] public string fmodEvent;
+        public FMOD.Studio.EventInstance eventInstance;
+    }
+
+    [SerializeField] private List<Audio> audios;
+
+    public void Play(string name)
+    {
+        var audio = FindAudioByName(name);
+
+        if (audio.fmodEvent != null)
         {
-            CreateFmodInstance();
-            Play();
+            if (!audio.eventInstance.isValid()) CreateFmodInstance(audio);
+
+            audio.eventInstance.start();
         }
     }
 
-    public void CreateFmodInstance()
+    private Audio FindAudioByName(string name)
     {
-        // criando instância do evento de áudio
-        eventInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
-    }
-
-    // função para executar o evento
-    public void Play()
-    {
-        // se tiver algum evento
-        if (fmodEvent != null)
+        foreach (var audio in audios)
         {
-            if (!eventInstance.isValid()) CreateFmodInstance();
-
-            // dispara o som
-            eventInstance.start();
+            if (audio.name == name)
+            {
+                return audio;
+            }
         }
+
+        Debug.LogError("FMODPlayer: Não consegui encontrar o áudio " + name + "! Verifique no objeto " + this.name + " se você adicionou esse áudio.");
+        return null;
     }
 
-    // função para finalizar música em loop
+    private void CreateFmodInstance(string name)
+    {
+        var audio = FindAudioByName(name);
+        if (audio.fmodEvent != null)
+            audio.eventInstance = FMODUnity.RuntimeManager.CreateInstance(audio.fmodEvent);
+    }
+
+    private void CreateFmodInstance(Audio audio)
+    {
+        if (audio.fmodEvent != null)
+            audio.eventInstance = FMODUnity.RuntimeManager.CreateInstance(audio.fmodEvent);
+    }
+
     public static void StopAllSounds()
     {
         FMOD.Studio.Bus playerBus = FMODUnity.RuntimeManager.GetBus("bus:/");
         playerBus.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
-    public void SetParameterByName(string parameterName, float value)
+    public void SetParameterByName(string audioName, string parameterName, float parameterValue)
     {
-        eventInstance.setParameterByName(parameterName, value);
+        var audio = FindAudioByName(audioName);
+        if (!audio.eventInstance.isValid()) CreateFmodInstance(audio);
+        audio.eventInstance.setParameterByName(parameterName, parameterValue);
     }
 
-    public float GetParameterByName(string parameterName)
+    public float GetParameterByName(string audioName, string parameterName)
     {
+        var audio = FindAudioByName(audioName);
         float value;
-        eventInstance.getParameterByName(parameterName, out value);
+        audio.eventInstance.getParameterByName(parameterName, out value);
         return value;
     }
 }

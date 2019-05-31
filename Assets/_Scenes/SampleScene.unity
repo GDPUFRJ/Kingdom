@@ -608,6 +608,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &12183277
@@ -2505,7 +2516,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1d85f08796a114d48a8a0ef663e4ce05, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4579,7 +4590,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2dd315276a18cd94d9a1c7cf889f9ad4, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4685,6 +4696,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -4884,7 +4906,7 @@ MonoBehaviour:
   englishTitle: ravengar's orchard
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -5040,7 +5062,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5454,6 +5476,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5906,7 +5939,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cbbac521e0663454e9cf4d8fcf5894f9, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6134,7 +6167,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2d1cd1ac9f022da4f9bcf73eb32ddd3d, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7702,7 +7735,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 17a9d9ffde72d96418bc8a949e7ee620, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8631,6 +8664,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &298089959
@@ -9439,7 +9483,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9673,7 +9717,7 @@ MonoBehaviour:
   englishTitle: thousand candles ranch
   type: 3
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -9899,7 +9943,7 @@ MonoBehaviour:
   englishTitle: "g\xE4elwood"
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -10054,7 +10098,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10243,7 +10287,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d11e78127af8a6c4b95bad6e1ca12671, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11192,7 +11236,7 @@ MonoBehaviour:
   englishTitle: steel garrison
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -11347,7 +11391,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13263,7 +13307,7 @@ MonoBehaviour:
   englishTitle: nichola's grange
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -13415,7 +13459,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13893,6 +13937,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -15381,38 +15436,6 @@ MonoBehaviour:
   answerEvent: {fileID: 1681083865}
   intensity: 1
   showInInspector: 0
---- !u!1 &480933181
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 480933182}
-  m_Layer: 0
-  m_Name: Music & SFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &480933182
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 480933181}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1028428599}
-  - {fileID: 780356227}
-  - {fileID: 1345639087}
-  - {fileID: 869919698}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &485887337
 GameObject:
   m_ObjectHideFlags: 0
@@ -16051,7 +16074,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e8b6cdd77b9f5af48a78c0ecf2b578b3, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16157,6 +16180,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -16912,7 +16946,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9457507, y: 3.9716663, z: -10}
+  m_LocalPosition: {x: -0.13600002, y: -7.2490005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18310,7 +18344,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 477e82e41d6689b4291561fff68a7102, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21230,7 +21264,7 @@ MonoBehaviour:
   englishTitle: tweedy's farm
   type: 3
   canBeAbandonedOrLostInBattle: 0
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -21384,7 +21418,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 478208792ab56d74eb756ab5a93e62cc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22675,6 +22709,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &751601480
@@ -23242,48 +23287,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 777349171}
---- !u!1 &780356226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 780356227}
-  - component: {fileID: 780356228}
-  m_Layer: 0
-  m_Name: Bottom Button Sound Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &780356227
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 780356226}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 480933182}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &780356228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 780356226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f13afd7190a5b044873f50d92cbfd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodEvent: event:/sfx/k_gp_click_v001
-  playOnAwake: 0
 --- !u!1 &781580102
 GameObject:
   m_ObjectHideFlags: 0
@@ -23410,7 +23413,6 @@ MonoBehaviour:
   currentSection: 1
   mouseMinOffset: 1
   timeMin: 0.25
-  changeSectionSoundPlayer: {fileID: 1345639088}
 --- !u!1 &785027690
 GameObject:
   m_ObjectHideFlags: 0
@@ -24136,6 +24138,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: arrow
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &803985281
@@ -24212,7 +24225,7 @@ MonoBehaviour:
   englishTitle: blood brotherhood
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -24366,7 +24379,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26521,7 +26534,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e40391578429c20448bb901d2df30d51, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27232,48 +27245,6 @@ MonoBehaviour:
   AbsoluteFoodHeavy: 0
   AbsoluteBuildingHeavy: 0
   showInInspector: 0
---- !u!1 &869919697
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 869919698}
-  - component: {fileID: 869919699}
-  m_Layer: 0
-  m_Name: Enter Battle Mode Sound Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &869919698
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 869919697}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 480933182}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &869919699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 869919697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f13afd7190a5b044873f50d92cbfd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodEvent: event:/sfx/k_gp_tropas_v001
-  playOnAwake: 0
 --- !u!114 &870076946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27498,6 +27469,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: arrow
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &877603850
@@ -27615,7 +27597,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1b88b09fec6d0cd4e96124251cb28d75, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27791,7 +27773,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1914f5f4eb2377942b54f0564c33b4e2, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28246,6 +28228,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ui click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &902326855
@@ -28419,7 +28412,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f30dc89190b6d314b90e3edd3c11cad7, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29399,15 +29392,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 780356228}
+      - m_Target: {fileID: 1940691552}
         m_MethodName: Play
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -29553,7 +29546,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30076,7 +30069,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1e17f27e8535c1341b0451c3c2f067bf, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30264,7 +30257,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a3049863a45ed054eab52e581475f2f7, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30444,6 +30437,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -31310,7 +31314,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ae7d7edf5c46d1b40bb6b8486b5710ef, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31797,28 +31801,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1028428599}
-  - component: {fileID: 1028428598}
   - component: {fileID: 1028428600}
   m_Layer: 0
-  m_Name: Background Music Player
+  m_Name: Background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1028428598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1028428597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f13afd7190a5b044873f50d92cbfd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodEvent: event:/music/k_music_gameplay
-  playOnAwake: 0
 --- !u!4 &1028428599
 Transform:
   m_ObjectHideFlags: 0
@@ -31829,8 +31819,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 480933182}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1028428600
 MonoBehaviour:
@@ -32110,7 +32100,7 @@ MonoBehaviour:
   englishTitle: broken arch barracks
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -32381,14 +32371,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c64019f1aac0f42bca3208cfd87d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Population: 65
+  Population: 11
   foodInfluenceOverPopulationCoefficient: 0.1
   Happiness: 60
   CanBattle: 1
   PopulationNextEventModifier: 0
   HappinessNextEventModifier: 0
   Gold: 100
-  GoldNext: 25
+  GoldNext: 10
   GoldNextEventModifier: 0
   Food: 100
   FoodNext: 10
@@ -32524,7 +32514,7 @@ MonoBehaviour:
   englishTitle: faerie's grove
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -32677,7 +32667,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33864,7 +33854,7 @@ MonoBehaviour:
   englishTitle: blazing pine woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -34018,7 +34008,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34138,6 +34128,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ui click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -34702,6 +34703,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: arrow
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1123566407
@@ -34912,7 +34924,7 @@ MonoBehaviour:
   englishTitle: st. germanian castle
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 1
   kingdom: 1
   level: 1
@@ -35066,7 +35078,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36122,7 +36134,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 873c312d31d26a64b9116c849bb8fe5a, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37592,7 +37604,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 71c41e9c063038944bd3c1569fad5ab0, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39133,15 +39145,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 780356228}
+      - m_Target: {fileID: 1940691552}
         m_MethodName: Play
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -40854,6 +40866,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1312810515
@@ -41794,6 +41817,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -42873,15 +42907,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 780356228}
+      - m_Target: {fileID: 1940691552}
         m_MethodName: Play
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -42899,48 +42933,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enabledSprite: {fileID: 21300000, guid: 3378abc2d82c9c044a15e2ca1c9bb2d8, type: 3}
   disabledSprite: {fileID: 21300000, guid: cad1203bb8e746c4ea682b79293c534e, type: 3}
---- !u!1 &1345639086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1345639087}
-  - component: {fileID: 1345639088}
-  m_Layer: 0
-  m_Name: Change Section Sound Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1345639087
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1345639086}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 480933182}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1345639088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1345639086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f13afd7190a5b044873f50d92cbfd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodEvent: event:/sfx/k_gp_pages_v001
-  playOnAwake: 0
 --- !u!1 &1346176118
 GameObject:
   m_ObjectHideFlags: 0
@@ -43971,7 +43963,7 @@ MonoBehaviour:
   englishTitle: bard's peak
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -44126,7 +44118,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44766,7 +44758,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f59e909668baf8f4799c8016b6cb0b80, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46172,6 +46164,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1459700865
@@ -46719,15 +46722,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 780356228}
+      - m_Target: {fileID: 1940691552}
         m_MethodName: Play
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -48282,6 +48285,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1504209646
@@ -49641,6 +49655,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1562563731
@@ -49695,7 +49720,7 @@ MonoBehaviour:
   englishTitle: dryad's woods
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -49849,7 +49874,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51632,6 +51657,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1608238139
@@ -52885,7 +52921,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 622f38b1f64f3604b994f59c2c9f2ccc, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -52998,7 +53034,7 @@ MonoBehaviour:
   englishTitle: earthy peak
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -53151,7 +53187,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53431,7 +53467,7 @@ MonoBehaviour:
   englishTitle: ymir jungle
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -53583,7 +53619,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55009,7 +55045,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2e2a6e05bd643dc48ab301725b40d7ed, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55927,7 +55963,7 @@ MonoBehaviour:
   englishTitle: skirmisher's camp
   type: 6
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -56081,7 +56117,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ea4adb71e747c74aa517bea4cecef22, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -57602,6 +57638,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ui click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -59143,7 +59190,7 @@ MonoBehaviour:
   englishTitle: white wolf's keep
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -59298,7 +59345,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -59464,6 +59511,17 @@ MonoBehaviour:
           m_IntArgument: -10
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: arrow
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -59836,7 +59894,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f19bceafc2262ba4daf3e40c5947bbfd, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -60543,7 +60601,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cf8937321d9cfe145a30f6f8ece6951b, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -61273,6 +61331,75 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940516779}
+--- !u!1 &1940691551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1940691553}
+  - component: {fileID: 1940691552}
+  m_Layer: 0
+  m_Name: FMOD Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1940691552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940691551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f13afd7190a5b044873f50d92cbfd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audios:
+  - name: gameplayBG
+    fmodEvent: event:/music/k_music_gameplay
+  - name: new game
+    fmodEvent: event:/sfx/k_ui_newgame
+  - name: change section
+    fmodEvent: event:/sfx/k_gp_pages_v001
+  - name: enter battle mode
+    fmodEvent: event:/sfx/k_gp_tropas_v001
+  - name: gameplay click
+    fmodEvent: event:/sfx/k_gp_click_v001
+  - name: ui click
+    fmodEvent: event:/sfx/k_ui_click
+  - name: open upgrade panel
+    fmodEvent: event:/sfx/k_gp_subpages_v001
+  - name: upgrade
+    fmodEvent: event:/sfx/k_gp_evoluir_v001
+  - name: arrow
+    fmodEvent: event:/sfx/k_gp_soldier_v001
+  - name: whoosh
+    fmodEvent: event:/sfx/k_gp_battle_whoosh_v001
+  - name: swords crossing
+    fmodEvent: event:/sfx/k_gp_battle_blades_v001
+  - name: battle results
+    fmodEvent: event:/sfx/k_gp_battle_clash_v001
+  - name: battle win
+    fmodEvent: event:/sfx/k_gp_battle_vitoria_v001
+  - name: battle lose
+    fmodEvent: event:/sfx/k_gp_battle_derrota_v001
+--- !u!4 &1940691553
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940691551}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1941502089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61659,7 +61786,7 @@ MonoBehaviour:
   englishTitle: wolf's forest
   type: 4
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -61804,7 +61931,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d14b2a85e75f0a346b1eaab028ba5bd3, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -62182,7 +62309,7 @@ MonoBehaviour:
   englishTitle: scarlet rock mines
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -62334,7 +62461,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -62632,6 +62759,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1940691552}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: gameplay click
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1966108124
@@ -62895,7 +63033,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e1988a89fbe45814fab6ac6bc3bac73f, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -62958,7 +63096,7 @@ MonoBehaviour:
   englishTitle: elder's range
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 0
   kingdom: 3
   level: 1
@@ -63111,7 +63249,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -64876,7 +65014,7 @@ MonoBehaviour:
   englishTitle: eagle's nest
   type: 1
   canBeAbandonedOrLostInBattle: 1
-  dominated: 0
+  dominated: 1
   mainProperty: 0
   kingdom: 1
   level: 1
@@ -65028,7 +65166,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9a9cf51750d83c45aa9628bbab46bb7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -65133,7 +65271,6 @@ MonoBehaviour:
   editButtonsFadeTime: 0.3
   editEnabledColor: {r: 1, g: 0.6313726, b: 0, a: 1}
   editDisabledColor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
-  enterBattleModeSoundPlayer: {fileID: 869919699}
 --- !u!1 &2044876216
 GameObject:
   m_ObjectHideFlags: 0
@@ -65854,6 +65991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068343626}
   - component: {fileID: 2068343627}
+  - component: {fileID: 2068343628}
   m_Layer: 5
   m_Name: Swords
   m_TagString: Untagged
@@ -65901,6 +66039,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2068343628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068343625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da12a7037f1f2ff4e83ff31918d31489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2069169761
 GameObject:
   m_ObjectHideFlags: 0
@@ -66102,7 +66251,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: eb85618f72dc9e74194cefae2ba5a67d, type: 3}
-  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
+  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -67248,7 +67397,7 @@ MonoBehaviour:
   englishTitle: black dog's keep
   type: 0
   canBeAbandonedOrLostInBattle: 1
-  dominated: 1
+  dominated: 0
   mainProperty: 1
   kingdom: 3
   level: 1
@@ -67402,7 +67551,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f37be2ccc04f56e428e0a03c94e9dafc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -67517,7 +67666,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 4be9b121d72c3ba48a508247a27652ce, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -67875,7 +68024,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a8d3684c7ccb3684a8b475bdcf5e9a47, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -67963,7 +68112,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 3cdb4d49f6912284aa81418bcd55ee18, type: 3}
-  m_Color: {r: 0.5529412, g: 0.3803922, b: 0.227451, a: 1}
+  m_Color: {r: 0.36078432, g: 0.21568629, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -68919,15 +69068,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 780356228}
+      - m_Target: {fileID: 1940691552}
         m_MethodName: Play
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: gameplay click
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
