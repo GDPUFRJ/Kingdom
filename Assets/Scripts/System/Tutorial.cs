@@ -19,12 +19,15 @@ public class Tutorial : MonoBehaviour
     [Header("Others")]
     [SerializeField] private float fadeDuration = 0.1f;
 
-    private int currentScreen;
+	private static bool hasShowedAtStart = false;
+	public static bool HasShowedAsStart { get { return hasShowedAtStart; } }
+
+	private int currentScreen;
 
     private SectionManager sectionManager;
     private Image background;
 
-    private void Awake()
+	private void Awake()
     {
         sectionManager = FindObjectOfType<SectionManager>();
         background = GetComponent<Image>();
@@ -38,9 +41,10 @@ public class Tutorial : MonoBehaviour
     {
         //HideAllScreens();
 
-        if (promptAtStart)
+        if (promptAtStart && !HasShowedAsStart)
         {
             Prompt();
+			hasShowedAtStart = true;
         }
     }
 
