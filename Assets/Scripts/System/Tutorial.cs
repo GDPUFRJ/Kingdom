@@ -25,13 +25,10 @@ public class Tutorial : MonoBehaviour
 	private int currentScreen;
 
     private SectionManager sectionManager;
-    private Image background;
 
 	private void Awake()
     {
         sectionManager = FindObjectOfType<SectionManager>();
-        background = GetComponent<Image>();
-        background.enabled = false;
 
         foreach (var screen in screens)
             screen.GetComponent<CanvasGroup>().DOFade(0, 0);
@@ -57,7 +54,6 @@ public class Tutorial : MonoBehaviour
             TimerPanel.SetPause(true);
         }
 
-        background.enabled = true;
         StartCoroutine(ShowScreen(currentScreen));
     }
 
@@ -71,14 +67,12 @@ public class Tutorial : MonoBehaviour
             TimerPanel.SetPause(true);
         }
 
-        background.enabled = true;
         StartCoroutine(ShowScreen(currentScreen));
     }
 
     private void FinishTutorial()
     {
         HideAllScreens();
-        background.enabled = false;
 
         if (thisIsTheGameScene)
         {
@@ -148,11 +142,7 @@ public class Tutorial : MonoBehaviour
                 break;
             case 13:
                 sectionManager.SelectSection(1);
-                background.DOFade(0.6509804f, 0);
                 yield return new WaitForSeconds(0.4f);
-                break;
-            case 14:
-                background.DOFade(0.2784314f, 0);
                 break;
         }
     }
