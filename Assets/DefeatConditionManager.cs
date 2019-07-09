@@ -20,11 +20,13 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
 
     private void Start()
     {
-        TimerPanel.OnIndividualBattleEnded += TimerPanel_OnAfterIndividualBattles;
+        TimerPanel.OnAfterDayEnd += TimerPanel_OnAfterDayEnd;
     }
 
-    private void TimerPanel_OnAfterIndividualBattles()
+    private void TimerPanel_OnAfterDayEnd()
     {
+        print("<color=blue>Checando condições de derrota.</color>");
+
         var moneyDefeat = CheckMoneyDefeatCondition();
         var castleDefeat = CheckCastleDefeatCondition();
         var happinessDefeat = CheckHappinessDefeatCondition();

@@ -66,6 +66,7 @@ public class GameFinishedMenu : MonoBehaviour
 
     public void BackToMenu()
     {
+        FMODPlayer.StopAllSounds();
         StopCoroutine(BackToMenuButtonAnimation());
         TimerPanel.UnsubscribeDelegates();
         TimerPanel.SetPause(false);
