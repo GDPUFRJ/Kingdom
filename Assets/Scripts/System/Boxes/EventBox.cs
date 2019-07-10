@@ -11,9 +11,11 @@ public class EventBox : MonoBehaviour {
     [SerializeField] private Text description;
 
     private KEvent _event;
+#pragma warning disable 0414
     private EventPanel panel;
+#pragma warning restore 0414
 
-	public void SetInformation(KEvent _event, EventPanel _panel)
+    public void SetInformation(KEvent _event, EventPanel _panel)
     {
         EventInfo e = _event.GetInfo();
         this._event = _event;

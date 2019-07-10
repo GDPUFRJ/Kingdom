@@ -7,7 +7,6 @@ public class HappinessManager : Singleton<HappinessManager> {
     protected HappinessManager() { }
 
     GameManager gm;
-    PropertyManager pm;
     BattleManager bm;
     private List<BattleEffectOverHappiness> battleEffectsOverHappiness = new List<BattleEffectOverHappiness>();
 
@@ -26,7 +25,6 @@ public class HappinessManager : Singleton<HappinessManager> {
         TimerPanel.OnBattleEnded += OnBattlesEnded;
 
         gm = GameManager.Instance;
-        pm = PropertyManager.Instance;
         bm = FindObjectOfType<BattleManager>();
 	}
 

@@ -8,7 +8,6 @@ public class LineManager : MonoBehaviour
 {
     public Line newLine;
     public List<Line> lines = new List<Line>();
-    private List<Line> toRemove = new List<Line>();
 
 //#if UNITY_EDITOR
 //    private void Update()

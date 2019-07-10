@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartingKingdomController : Singleton<StartingKingdomController>
 {
-    [SerializeField] private Transform camera;
+    [SerializeField] private Transform mainCamera;
 
     private Kingdom kingdom;
     public Kingdom PlayerKingdom { get { return kingdom; } set { kingdom = value; } }
@@ -60,7 +60,7 @@ public class StartingKingdomController : Singleton<StartingKingdomController>
         }
 
         meanPosition /= playerProperties.Count;
-        camera.position = new Vector3(meanPosition.x, meanPosition.y, camera.position.z);
+        mainCamera.position = new Vector3(meanPosition.x, meanPosition.y, mainCamera.position.z);
     }
 
     private List<Property> GetKingdomProperties(Kingdom kingdom)

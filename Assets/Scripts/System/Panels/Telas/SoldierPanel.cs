@@ -16,7 +16,7 @@ public class SoldierPanel : Section
 
     public static bool isEditButtonsEnable = false;
 
-    private void Start()
+    private new void Start()
     {
         InitializeEditToggle();
         CanvasBattle.SetActive(false);

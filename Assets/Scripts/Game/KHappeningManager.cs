@@ -120,7 +120,6 @@ public class KHappeningManager:Singleton < KHappeningManager >
             }
 
             return FireHappening(selectedHappening);
-            break;
         }
     }
 
