@@ -82,7 +82,8 @@ public class BattleArrowController : MonoBehaviour {
         float CamSize = Camera.main.orthographicSize;
 
         Vector3 SourceOnScreen = Source.transform.position;
-        Vector3 DestinationOnScreen = Destination.transform.position;
+        //Vector3 DestinationOnScreen = Destination.transform.position;
+        Vector3 DestinationOnScreen = Source.GetArrowDirection(Destination.transform).position;
 
         Vector3 MediumPoint = (SourceOnScreen + DestinationOnScreen) / 2;
         transform.position = FindIdealPosition(SourceOnScreen, 0.45f, MediumPoint);

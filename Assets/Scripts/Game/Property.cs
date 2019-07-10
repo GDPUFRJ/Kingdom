@@ -84,6 +84,8 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     [Space]
     public UnityEvent OnUpgraded;
 
+    [SerializeField] private List<ArrowDirection> arrowDirections;
+
     private void Start()
     {
         TimerPanel.OnDayEnd += OnDayEnd;
@@ -653,4 +655,25 @@ public class Property : MonoBehaviour, IVertex<Property>, IPointerClickHandler, 
     {
         TimerPanel.OnDayEnd -= OnDayEnd;
     }
+
+    public Transform GetArrowDirection(Transform destination)
+    {
+        foreach (var direction in arrowDirections)
+        {
+            if (direction.destination == destination)
+            {
+                return direction.transform;
+            }
+        }
+
+        Debug.Log("Não pude obter a direção da propriedade " + gameObject.name + " para a " + destination.gameObject.name + ".");
+        return null;
+    }
+}
+
+[System.Serializable]
+public class ArrowDirection
+{
+    public Transform transform;
+    public Transform destination;
 }

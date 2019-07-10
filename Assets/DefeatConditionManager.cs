@@ -25,8 +25,6 @@ public class DefeatConditionManager : Singleton<DefeatConditionManager>
 
     private void TimerPanel_OnAfterDayEnd()
     {
-        print("<color=blue>Checando condições de derrota.</color>");
-
         var moneyDefeat = CheckMoneyDefeatCondition();
         var castleDefeat = CheckCastleDefeatCondition();
         var happinessDefeat = CheckHappinessDefeatCondition();
