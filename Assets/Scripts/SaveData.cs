@@ -32,7 +32,7 @@ public class SaveData
         properties = new PropertySaveData[propertyManager.Propriedades.Count];
         foreach (Property p in propertyManager.Propriedades)
         {
-            properties[p.index] = new PropertySaveData(p.index, p.dominated, p.GetSoldiers(SoldierType.InProperty), p.Level);
+            properties[p.index] = new PropertySaveData(p.index, p.dominated, p.GetSoldiers(SoldierType.InProperty), p.Level, p.kingdom);
         }
         if (eventManager.GetAllActiveEvents().Count > 0)
         {
@@ -93,13 +93,15 @@ public class PropertySaveData
     public bool dominated;
     public int soldiers;
     public Level level;
+    public Kingdom kingdom;
 
-    public PropertySaveData (int index, bool dominated, int soldiers, Level level)
+    public PropertySaveData (int index, bool dominated, int soldiers, Level level, Kingdom kingdom)
     {
         this.index = index;
         this.dominated = dominated;
         this.soldiers = soldiers;
         this.level = level;
+        this.kingdom = kingdom;
     }
 }
 

@@ -179,8 +179,9 @@ public class GameManager:Singleton < GameManager >  {
             PropertyManager.Instance.Propriedades[pSaveData.index].SetDominated(pSaveData.dominated, false);
             PropertyManager.Instance.Propriedades[pSaveData.index].SetSoldiers(SoldierType.InProperty, pSaveData.soldiers);
             PropertyManager.Instance.Propriedades[pSaveData.index].Level = pSaveData.level;
-            PropertyManager.Instance.Propriedades[pSaveData.index].UpdateSprite(PropertyManager.Instance.Propriedades[pSaveData.index]);
             PropertyManager.Instance.Propriedades[pSaveData.index].UpdateSoldierInfo();
+            PropertyManager.Instance.Propriedades[pSaveData.index].kingdom = pSaveData.kingdom;
+            PropertyManager.Instance.Propriedades[pSaveData.index].UpdateSprite(PropertyManager.Instance.Propriedades[pSaveData.index]);
         }
         if (saveData.activeEvents != null)
         {
