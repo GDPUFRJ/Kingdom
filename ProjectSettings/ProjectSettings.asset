@@ -243,8 +243,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/vtorb/Documents/Kingdom/Keystore/producao.keystore
+  AndroidKeyaliasName: producao
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
