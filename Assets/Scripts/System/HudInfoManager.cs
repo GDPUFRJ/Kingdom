@@ -30,12 +30,12 @@ public class HudInfoManager : MonoBehaviour {
         currentPopulation.text = GameManager.Instance.Population.ToString();
 
         currentRiq.text = GameManager.Instance.Gold.ToString();
-        nextRiq.text = "+" + GameManager.Instance.GoldNext.ToString();
+        nextRiq.text = (GameManager.Instance.GoldNext >= 0)?("+" + GameManager.Instance.GoldNext.ToString()):(GameManager.Instance.GoldNext.ToString());
 
         currentCon.text = GameManager.Instance.Building.ToString();
-        nextCon.text = "+" + GameManager.Instance.BuildingNext.ToString();
+        nextCon.text = (GameManager.Instance.BuildingNext >= 0)?("+" + GameManager.Instance.BuildingNext.ToString()):(GameManager.Instance.BuildingNext.ToString());
 
         currentAli.text = GameManager.Instance.Food.ToString();
-        nextAli.text = "+" + GameManager.Instance.FoodNext.ToString();
+        nextAli.text = (GameManager.Instance.FoodNext >= 0)?("+" + GameManager.Instance.FoodNext.ToString()):(GameManager.Instance.FoodNext.ToString());
     }
 }
