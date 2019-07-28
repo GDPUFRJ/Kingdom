@@ -65,3 +65,9 @@ public class CommonDefinitions : MonoBehaviour {
 		
 	}
 }
+
+public class KingdomULRs
+{
+    private static string s_privacyPolicy = "https://kingdom-war-of-conq.flycricket.io/privacy.html";
+    public static string PRIVACY_POLICY { get => s_privacyPolicy; }
+}
